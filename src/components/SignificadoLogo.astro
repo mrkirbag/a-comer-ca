@@ -1,0 +1,123 @@
+---
+import { site } from "../data/site";
+
+const { kicker, title, intro, image, imageAlt, elements } = site.about.logo;
+---
+
+<div data-logo-meaning class="flex min-h-screen items-center bg-burgundy">
+    <div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:px-8 lg:py-24">
+        <div data-logo-visual class="flex justify-center lg:justify-start">
+            <div class="w-full max-w-md rounded-3xl bg-cream p-8 shadow-[0_24px_60px_rgba(0,0,0,0.25)] sm:p-10">
+                <img
+                    src={image}
+                    alt={imageAlt}
+                    class="mx-auto h-auto w-full max-w-sm"
+                    width="480"
+                    height="220"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </div>
+        </div>
+
+        <div>
+            <p
+                data-logo-copy
+                class="inline-flex rounded-full bg-copper px-4 py-1.5 font-heading text-xs font-extrabold tracking-[0.2em] text-grey uppercase"
+            >
+                {kicker}
+            </p>
+            <h3
+                data-logo-copy
+                class="mt-3 font-accent text-4xl leading-none text-cream sm:text-5xl md:text-6xl"
+            >
+                {title}
+            </h3>
+            <p data-logo-copy class="mt-5 max-w-xl font-sans text-base leading-relaxed text-white/85 sm:text-lg">
+                {intro}
+            </p>
+
+            <ul class="mt-10 grid gap-6 sm:grid-cols-2">
+                {
+                    elements.map((element) => (
+                        <li data-logo-item>
+                            <p class="font-accent text-3xl leading-none text-white">{element.letter}</p>
+                            <h4 class="mt-2 font-heading text-base font-bold text-cream">
+                                {element.title}
+                            </h4>
+                            <p class="mt-2 font-sans text-sm leading-relaxed text-cream/80">
+                                {element.body}
+                            </p>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+<style>
+    [data-logo-meaning]:not([data-ready]) :is([data-logo-visual], [data-logo-copy], [data-logo-item]) {
+        visibility: hidden;
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    function initLogoMeaning() {
+        const root = document.querySelector("[data-logo-meaning]");
+        if (!(root instanceof HTMLElement) || root.dataset.ready === "true") return;
+
+        const visual = root.querySelector("[data-logo-visual]");
+        const copy = root.querySelectorAll("[data-logo-copy]");
+        const items = root.querySelectorAll("[data-logo-item]");
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.dataset.ready = "true";
+            return;
+        }
+
+        const setFrom = (dir: number) => {
+            gsap.set(visual, { y: 40 * dir, opacity: 0, scale: 0.94 });
+            gsap.set(copy, { y: 24 * dir, opacity: 0 });
+            gsap.set(items, { y: 24 * dir, opacity: 0 });
+        };
+
+        const tl = gsap.timeline({
+            paused: true,
+            defaults: { ease: "power3.out" },
+        });
+
+        tl.to(visual, { y: 0, opacity: 1, scale: 1, duration: 0.9 }, 0)
+            .to(copy, { y: 0, opacity: 1, duration: 0.7, stagger: 0.1 }, 0.18)
+            .to(items, { y: 0, opacity: 1, duration: 0.6, stagger: 0.08 }, 0.38);
+
+        const play = (dir: number) => {
+            tl.pause(0);
+            setFrom(dir);
+            tl.invalidate().restart();
+        };
+
+        setFrom(1);
+        root.dataset.ready = "true";
+
+        ScrollTrigger.create({
+            trigger: root,
+            start: "top 72%",
+            end: "bottom top",
+            onEnter: () => play(1),
+            onEnterBack: () => play(-1),
+            onLeave: () => tl.reverse(),
+            onLeaveBack: () => tl.reverse(),
+        });
+    }
+
+    initLogoMeaning();
+    document.addEventListener("astro:page-load", initLogoMeaning);
+</script>

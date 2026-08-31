@@ -1,0 +1,252 @@
+---
+import { site } from "../data/site";
+
+const { kicker, title, items } = site.about.timeline;
+
+const iconPaths = {
+    olla: "M19 19c0 1.11-.89 2-2 2H7a2 2 0 0 1-2-2v-7H3v-2h18v2h-2M8 1.5a3.35 3.35 0 0 0 0 6.7h1.53c.39 0 .76.1 1.08.3h2.02c-.58-1.05-1.77-1.75-3.1-1.75H8c-1 0-1.85-.98-1.85-2S7 3 8 3m4.85-1c0 1-.85 1.85-1.85 1.85v1.5c1.92 0 3.5 1.35 3.89 3.15h1.53a5.54 5.54 0 0 0-3.07-4.12c.62-.61 1-1.45 1-2.38Z",
+    plato: "M2 12v3c0 3.9 3.1 7 7 7h6c3.9 0 7-3.1 7-7v-3zm2 2h16v1c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5z",
+    cubiertos: "M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4",
+    taza: "M2 21h18v-2H2M20 8h-2V5h2m0-2H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2",
+} as const;
+---
+
+<div data-timeline class="relative">
+    <header data-timeline-header class="max-w-2xl">
+        <p class="inline-flex rounded-full bg-olive/60 px-4 py-1.5 font-heading text-xs font-semibold tracking-[0.2em] text-cream uppercase">
+            {kicker}
+        </p>
+        <h3 class="mt-3 font-accent text-4xl leading-none text-burgundy sm:text-5xl md:text-6xl">
+            {title}
+        </h3>
+    </header>
+
+    <ol class="relative mt-14 overflow-x-clip lg:mt-20">
+        <div
+            data-timeline-track
+            class="absolute top-6 bottom-6 left-6 w-px bg-burgundy/15 lg:left-1/2 lg:-translate-x-1/2"
+            aria-hidden="true"
+        >
+            <span
+                data-timeline-line
+                class="absolute inset-x-0 top-0 h-full origin-top bg-linear-to-b from-burgundy via-burgundy to-copper"
+            ></span>
+            <span
+                data-timeline-head
+                class="absolute top-0 left-1/2 z-10 size-3 rounded-full bg-copper"
+            ></span>
+        </div>
+
+        {
+            items.map((item, index) => {
+                const isRight = index % 2 === 0;
+
+                return (
+                    <li
+                        data-timeline-item
+                        class="relative grid pb-12 last:pb-0 lg:grid-cols-2 lg:gap-28 lg:pb-16"
+                    >
+                        <span class="absolute top-0 left-0 z-10 lg:left-1/2 lg:-translate-x-1/2">
+                            <span
+                                data-timeline-dot
+                                class="flex size-12 items-center justify-center rounded-full border-[3px] border-cream bg-burgundy text-cream shadow-[0_0_0_3px_var(--color-burgundy)]"
+                            >
+                                <svg class="size-6" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="currentColor" d={iconPaths[item.icon]} />
+                                </svg>
+                                <span class="sr-only">{item.iconLabel}</span>
+                            </span>
+                        </span>
+
+                        <article
+                            data-timeline-card
+                            class:list={[
+                                "pt-1.5 pl-20 lg:pl-0",
+                                isRight
+                                    ? "lg:col-start-2 lg:text-left"
+                                    : "lg:col-start-1 lg:row-start-1 lg:text-right",
+                            ]}
+                        >
+                            <h4 class="font-heading text-xl font-bold text-burgundy sm:text-2xl">
+                                {item.title}
+                            </h4>
+                            <p class="mt-3 max-w-md font-sans text-base leading-relaxed text-grey/80 lg:max-w-none">
+                                {item.body}
+                            </p>
+                        </article>
+                    </li>
+                );
+            })
+        }
+    </ol>
+</div>
+
+<style>
+    [data-timeline]:not([data-ready]) :is(
+        [data-timeline-header],
+        [data-timeline-item],
+        [data-timeline-line],
+        [data-timeline-head]
+    ) {
+        visibility: hidden;
+    }
+
+    [data-timeline-dot] {
+        transition: box-shadow 0.45s ease;
+    }
+
+    [data-timeline-item].is-active [data-timeline-dot] {
+        box-shadow:
+            0 0 0 3px var(--color-burgundy),
+            0 0 22px 6px color-mix(in srgb, var(--color-copper) 70%, transparent);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        [data-timeline-head] {
+            box-shadow:
+                0 0 0 3px var(--color-cream),
+                0 0 14px 4px color-mix(in srgb, var(--color-copper) 75%, transparent);
+            animation: timeline-head-pulse 1.8s ease-in-out infinite;
+        }
+    }
+
+    @keyframes timeline-head-pulse {
+        0%,
+        100% {
+            box-shadow:
+                0 0 0 3px var(--color-cream),
+                0 0 10px 3px color-mix(in srgb, var(--color-copper) 50%, transparent);
+        }
+        50% {
+            box-shadow:
+                0 0 0 5px var(--color-cream),
+                0 0 22px 8px color-mix(in srgb, var(--color-copper) 85%, transparent);
+        }
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx: gsap.Context | undefined;
+
+    function initTimeline() {
+        const root = document.querySelector("[data-timeline]");
+        if (!(root instanceof HTMLElement)) return;
+
+        ctx?.revert();
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.dataset.ready = "true";
+            return;
+        }
+
+        ctx = gsap.context(() => {
+            const header = root.querySelector("[data-timeline-header]");
+            const track = root.querySelector("[data-timeline-track]");
+            const line = root.querySelector("[data-timeline-line]");
+            const head = root.querySelector("[data-timeline-head]");
+            const items = gsap.utils.toArray<HTMLElement>("[data-timeline-item]", root);
+
+            if (!(track instanceof HTMLElement)) return;
+
+            gsap.set(header, { y: 32, opacity: 0 });
+            gsap.set(line, { scaleY: 0, transformOrigin: "top center" });
+            gsap.set(head, { xPercent: -50, yPercent: -50, y: 0, scale: 0, opacity: 0 });
+
+            const mm = gsap.matchMedia();
+
+            mm.add("(min-width: 1024px)", () => setupItems(items, true));
+            mm.add("(max-width: 1023px)", () => setupItems(items, false));
+
+            root.dataset.ready = "true";
+
+            gsap.to(header, {
+                y: 0,
+                opacity: 1,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: header,
+                    start: "top 90%",
+                    end: "top 68%",
+                    scrub: 0.7,
+                },
+            });
+
+            const lineTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: track,
+                    start: "top 75%",
+                    end: "bottom 42%",
+                    scrub: 0.9,
+                    invalidateOnRefresh: true,
+                },
+            });
+
+            lineTl
+                .to(head, { opacity: 1, scale: 1, duration: 0.08, ease: "none" }, 0)
+                .to(line, { scaleY: 1, duration: 1, ease: "none" }, 0)
+                .to(
+                    head,
+                    {
+                        y: () => track.offsetHeight,
+                        duration: 1,
+                        ease: "none",
+                    },
+                    0,
+                );
+        }, root);
+    }
+
+    function setupItems(items: HTMLElement[], isDesktop: boolean) {
+        items.forEach((item, index) => {
+            const card = item.querySelector("[data-timeline-card]");
+            const dot = item.querySelector("[data-timeline-dot]");
+            const fromX = isDesktop ? (index % 2 === 0 ? 72 : -72) : 36;
+            const fromRotate = isDesktop ? (index % 2 === 0 ? 2.5 : -2.5) : 1.5;
+
+            gsap.set(card, { x: fromX, y: 40, opacity: 0, rotate: fromRotate, scale: 0.96 });
+            gsap.set(dot, { scale: 0, rotate: -100 });
+
+            gsap.to(card, {
+                x: 0,
+                y: 0,
+                opacity: 1,
+                rotate: 0,
+                scale: 1,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 88%",
+                    end: "top 52%",
+                    scrub: 0.75,
+                },
+            });
+
+            gsap.to(dot, {
+                scale: 1,
+                rotate: 0,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 86%",
+                    end: "top 62%",
+                    scrub: 0.55,
+                },
+            });
+
+            ScrollTrigger.create({
+                trigger: item,
+                start: "top 62%",
+                end: "bottom 48%",
+                toggleClass: { targets: item, className: "is-active" },
+            });
+        });
+    }
+
+    initTimeline();
+    document.addEventListener("astro:page-load", initTimeline);
+</script>

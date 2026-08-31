@@ -1,0 +1,252 @@
+---
+import { Icon } from "astro-icon/components";
+import { site, telHref, waHref } from "../data/site";
+import HistoriaTimeline from "./HistoriaTimeline.astro";
+import SignificadoLogo from "./SignificadoLogo.astro";
+
+const { title, intro, mission, vision } = site.about;
+const address = `${site.contact.address.line}, ${site.contact.address.city}, ${site.contact.address.state}`;
+const whatsappHref = waHref(site.contact.whatsapp.raw, site.contact.whatsapp.message);
+
+const facts = [
+    {
+        icon: "mdi:email-outline",
+        label: "Correo",
+        value: site.contact.email,
+        href: `mailto:${site.contact.email}`,
+        long: true,
+    },
+    {
+        icon: "mdi:map-marker-outline",
+        label: "Dirección",
+        value: address,
+        href: site.contact.address.mapsUrl,
+        external: true,
+    },
+    {
+        icon: "mdi:clock-outline",
+        label: "Horario",
+        value: site.contact.hours,
+    },
+    {
+        icon: "mdi:card-account-details-outline",
+        label: "RIF",
+        value: site.company.rif,
+    },
+];
+
+const socials = (
+    [
+        { label: "Instagram", href: site.social.instagram, icon: "logos:instagram-icon" },
+        { label: "Facebook", href: site.social.facebook, icon: "logos:facebook" },
+        { label: "TikTok", href: site.social.tiktok, icon: "logos:tiktok-icon" },
+        { label: "WhatsApp", href: whatsappHref, icon: "logos:whatsapp-icon" },
+    ] as const
+).filter((social) => Boolean(social.href));
+---
+
+<section id="sobre-nosotros" class="relative z-20 -mt-px bg-cream" aria-labelledby="sobre-nosotros-title">
+    <div class="mx-auto max-w-7xl px-5 pt-24 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
+        <header class="mx-auto max-w-3xl text-center">
+            <p class="inline-flex rounded-full bg-olive/60 px-4 py-1.5 font-heading text-xs font-semibold tracking-[0.2em] text-cream uppercase">
+                {site.company.legalName}
+            </p>
+            <h2
+                id="sobre-nosotros-title"
+                class="mt-3 font-accent text-5xl leading-none text-burgundy sm:text-6xl md:text-7xl"
+            >
+                {title}
+            </h2>
+            <span class="mx-auto mt-5 flex items-center justify-center gap-2" aria-hidden="true">
+                <span class="h-px w-8 bg-copper/50"></span>
+                <span class="size-1.5 rotate-45 bg-copper"></span>
+                <span class="h-px w-8 bg-copper/50"></span>
+            </span>
+            <p class="mx-auto mt-5 max-w-2xl font-heading text-base font-bold leading-snug text-balance text-burgundy/80 sm:text-lg">
+                {intro}
+            </p>
+        </header>
+
+        <div class="mt-16 lg:mt-24">
+            <HistoriaTimeline />
+        </div>
+
+        <div class="mt-20 grid gap-6 lg:mt-28 lg:grid-cols-2">
+            <article class="rounded-3xl border border-burgundy/10 bg-white/50 p-8 transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(122,0,16,0.22)] lg:p-10">
+                <h3 class="font-accent text-3xl leading-none text-burgundy sm:text-4xl">
+                    {mission.title}
+                </h3>
+                <p class="mt-5 font-sans text-base leading-relaxed text-justify text-grey/80">
+                    {mission.body}
+                </p>
+            </article>
+            <article class="rounded-3xl bg-olive p-8 transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(122,0,16,0.22)] lg:p-10">
+                <h3 class="font-accent text-3xl leading-none text-cream sm:text-4xl">
+                    {vision.title}
+                </h3>
+                <p class="mt-5 font-sans text-base leading-relaxed text-justify text-cream/85">
+                    {vision.body}
+                </p>
+            </article>
+        </div>
+
+        <div data-about-info>
+            <div class="mt-10 grid gap-4 sm:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1.25fr)_minmax(0,1fr)_max-content]">
+                {
+                    facts.map((fact) => (
+                        <article data-about-fact class="min-w-0 rounded-2xl border border-burgundy/10 bg-white/50 p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-burgundy/10 text-burgundy">
+                                    <Icon name={fact.icon} class="size-5" aria-hidden="true" />
+                                </div>
+                                <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                                    {fact.label}
+                                </p>
+                            </div>
+                            {fact.href ? (
+                                <a
+                                    href={fact.href}
+                                    class:list={[
+                                        "mt-3 block font-heading font-bold leading-snug text-burgundy transition-colors hover:text-copper",
+                                        fact.long
+                                            ? "break-all text-[13px] sm:text-sm lg:text-base"
+                                            : "text-base",
+                                    ]}
+                                    target={fact.external ? "_blank" : undefined}
+                                    rel={fact.external ? "noopener noreferrer" : undefined}
+                                >
+                                    {fact.value}
+                                </a>
+                            ) : (
+                                <p class="mt-3 font-heading text-base font-bold leading-snug text-burgundy">{fact.value}</p>
+                            )}
+                        </article>
+                    ))
+                }
+            </div>
+
+            <div class="mt-6 grid gap-4 lg:grid-cols-[1fr_auto]">
+                <article data-about-fact class="rounded-2xl border border-burgundy/10 bg-white/50 p-5 sm:p-6">
+                    <div class="flex items-center gap-3">
+                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-burgundy/10 text-burgundy">
+                            <Icon name="mdi:phone-outline" class="size-5" aria-hidden="true" />
+                        </div>
+                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                            Teléfonos
+                        </p>
+                    </div>
+                    <ul class="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-10">
+                        {
+                            site.contact.phones.map((phone) => (
+                                <li>
+                                    <p class="font-sans text-xs text-grey/55">{phone.label}</p>
+                                    <a
+                                        href={telHref(phone.raw)}
+                                        class="font-heading text-lg font-bold text-burgundy transition-colors hover:text-copper"
+                                    >
+                                        {phone.display}
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </article>
+
+                <article data-about-fact class="flex flex-col justify-between rounded-2xl bg-burgundy p-5 sm:p-6 lg:min-w-72">
+                    <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                        Redes sociales
+                    </p>
+                    <ul class="mt-5 flex flex-wrap gap-5">
+                        {
+                            socials.map((social) => (
+                                <li data-about-social>
+                                    <a
+                                        href={social.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="group flex flex-col items-center gap-2"
+                                        aria-label={social.label}
+                                    >
+                                        <span class="flex size-14 items-center justify-center rounded-full bg-cream transition duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_10px_24px_rgba(253,248,237,0.28)]">
+                                            <Icon name={social.icon} class="size-7" aria-hidden="true" />
+                                        </span>
+                                        <span class="font-heading text-xs font-bold text-cream">{social.label}</span>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <SignificadoLogo />
+</section>
+
+<style>
+    [data-about-info]:not([data-ready]) [data-about-fact] {
+        visibility: hidden;
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx: gsap.Context | undefined;
+
+    function initAboutInfo() {
+        const root = document.querySelector("[data-about-info]");
+        if (!(root instanceof HTMLElement)) return;
+
+        ctx?.revert();
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.dataset.ready = "true";
+            return;
+        }
+
+        ctx = gsap.context(() => {
+            const cards = gsap.utils.toArray<HTMLElement>("[data-about-fact]", root);
+            const socials = gsap.utils.toArray<HTMLElement>("[data-about-social]", root);
+
+            gsap.set(cards, { y: 32, opacity: 0, scale: 0.97 });
+            gsap.set(socials, { y: 16, opacity: 0, scale: 0.8 });
+
+            root.dataset.ready = "true";
+
+            const tl = gsap.timeline({
+                defaults: { ease: "power3.out" },
+                scrollTrigger: {
+                    trigger: root,
+                    start: "top 82%",
+                },
+            });
+
+            tl.to(cards, {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.7,
+                stagger: 0.08,
+            }).to(
+                socials,
+                {
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.5,
+                    stagger: 0.1,
+                    ease: "back.out(1.7)",
+                },
+                0.42,
+            );
+        }, root);
+    }
+
+    initAboutInfo();
+    document.addEventListener("astro:page-load", initAboutInfo);
+</script>

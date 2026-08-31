@@ -1,0 +1,133 @@
+---
+import { site } from "../data/site";
+
+const links = site.nav;
+---
+
+<header data-navbar class="group/nav fixed inset-x-0 top-0 z-50 bg-burgundy">
+    <nav
+        class="relative z-20 mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-3 lg:px-8"
+        aria-label="Principal"
+    >
+        <a href="#inicio" class="relative z-20 shrink-0">
+            <img
+                src="/brand/logo-blanco.png"
+                alt={`${site.company.name} — ${site.company.tagline}`}
+                class="h-10 w-auto lg:h-12"
+                width="180"
+                height="48"
+            />
+        </a>
+
+        <ul class="hidden items-center gap-7 lg:flex">
+            {
+                links.map((link) => (
+                    <li>
+                        <a
+                            href={link.href}
+                            class="font-heading text-base font-bold tracking-normal text-cream transition-colors hover:text-copper"
+                        >
+                            {link.label}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+
+        <button
+            type="button"
+            class="relative z-20 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-cream/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copper lg:hidden"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-nav-toggle
+        >
+            <span class="sr-only">Menú</span>
+            <span class="flex h-3.5 w-6 flex-col justify-between" aria-hidden="true">
+                <span
+                    class="block h-0.5 w-full origin-center bg-cream transition duration-300 ease-out group-data-open/nav:translate-y-1.5 group-data-open/nav:rotate-45"
+                ></span>
+                <span
+                    class="block h-0.5 w-full bg-cream transition duration-300 ease-out group-data-open/nav:scale-x-0 group-data-open/nav:opacity-0"
+                ></span>
+                <span
+                    class="block h-0.5 w-full origin-center bg-cream transition duration-300 ease-out group-data-open/nav:-translate-y-1.5 group-data-open/nav:-rotate-45"
+                ></span>
+            </span>
+        </button>
+    </nav>
+
+    <div
+        id="nav-menu"
+        class="pointer-events-none invisible fixed inset-0 z-10 flex items-center bg-burgundy opacity-0 transition-[opacity,visibility] duration-300 ease-out group-data-open/nav:pointer-events-auto group-data-open/nav:visible group-data-open/nav:opacity-100 lg:hidden"
+        data-nav-panel
+    >
+        <ul class="flex w-full flex-col gap-1 px-8">
+            {
+                links.map((link, index) => (
+                    <li
+                        class="translate-y-4 opacity-0 transition duration-500 ease-out group-data-open/nav:translate-y-0 group-data-open/nav:opacity-100"
+                        style={`transition-delay: ${80 + index * 50}ms`}
+                    >
+                        <a
+                            href={link.href}
+                            class="flex items-baseline gap-4 py-2 font-heading text-3xl font-bold text-cream transition-colors hover:text-copper"
+                            data-nav-link
+                        >
+                            <span class="font-sans text-xs tracking-[0.2em] text-copper/80">
+                                {String(index + 1).padStart(2, "0")}
+                            </span>
+                            {link.label}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</header>
+
+<script>
+    function initNavbar() {
+        const header = document.querySelector("[data-navbar]");
+        if (!(header instanceof HTMLElement) || header.dataset.ready === "true") return;
+        header.dataset.ready = "true";
+
+        const toggle = header.querySelector("[data-nav-toggle]");
+        const panel = header.querySelector("[data-nav-panel]");
+        const links = header.querySelectorAll("[data-nav-link]");
+        if (!(toggle instanceof HTMLButtonElement) || !(panel instanceof HTMLElement)) return;
+
+        const desktopQuery = window.matchMedia("(min-width: 1024px)");
+
+        const setOpen = (open: boolean) => {
+            if (open) {
+                header.setAttribute("data-open", "true");
+            } else {
+                header.removeAttribute("data-open");
+            }
+
+            toggle.setAttribute("aria-expanded", String(open));
+            toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+            document.body.classList.toggle("overflow-hidden", open);
+        };
+
+        const isOpen = () => header.getAttribute("data-open") === "true";
+
+        toggle.addEventListener("click", () => setOpen(!isOpen()));
+
+        links.forEach((link) => {
+            link.addEventListener("click", () => setOpen(false));
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && isOpen()) setOpen(false);
+        });
+
+        desktopQuery.addEventListener("change", (event) => {
+            if (event.matches) setOpen(false);
+        });
+    }
+
+    initNavbar();
+    document.addEventListener("astro:page-load", initNavbar);
+</script>

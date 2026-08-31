@@ -1,0 +1,388 @@
+---
+import { site } from "../data/site";
+
+const { kicker, title, subtitle, items } = site.catalog;
+
+function slug(value: string) {
+    return value
+        .normalize("NFD")
+        .replace(/\p{Diacritic}/gu, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+}
+
+const brands = items.map((item) => ({
+    ...item,
+    id: slug(item.title),
+    initial: item.title.slice(0, 1),
+    featured: item.title === "Indelma",
+}));
+---
+
+<section id="catalogo" data-catalog class="relative z-20 bg-cream" aria-labelledby="catalogo-title">
+    <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+        <header data-catalog-header class="mx-auto max-w-3xl text-center">
+            <p data-catalog-copy class="inline-flex rounded-full bg-olive/60 px-4 py-1.5 font-heading text-xs font-semibold tracking-[0.2em] text-cream uppercase">
+                {kicker}
+            </p>
+            <h2
+                data-catalog-copy
+                id="catalogo-title"
+                class="mt-3 font-accent text-5xl leading-none text-burgundy sm:text-6xl md:text-7xl"
+            >
+                {title}
+            </h2>
+            <span data-catalog-copy class="mx-auto mt-5 flex items-center justify-center gap-2" aria-hidden="true">
+                <span class="h-px w-8 bg-copper/50"></span>
+                <span class="size-1.5 rotate-45 bg-copper"></span>
+                <span class="h-px w-8 bg-copper/50"></span>
+            </span>
+            <p data-catalog-copy class="mx-auto mt-5 max-w-2xl font-heading text-base font-bold leading-snug text-balance text-burgundy/80 sm:text-lg">
+                {subtitle}
+            </p>
+        </header>
+
+        <ul class="mt-16 grid gap-4 lg:mt-24 lg:grid-cols-2 lg:gap-5">
+            {
+                brands.map((brand) => (
+                    <li class:list={["min-w-0", brand.featured && "lg:col-span-2"]}>
+                        <article
+                            data-catalog-card
+                            data-featured={brand.featured ? "true" : undefined}
+                            class:list={[
+                                "h-full overflow-hidden rounded-3xl border border-burgundy/10 bg-white/50 transition-[border-color,box-shadow,background-color] duration-300 hover:shadow-[0_16px_40px_rgba(122,0,16,0.14)]",
+                                brand.featured && "lg:border-burgundy/20 lg:bg-white",
+                            ]}
+                        >
+                            <h3>
+                                <button
+                                    type="button"
+                                    data-catalog-toggle
+                                    class:list={[
+                                        "flex w-full cursor-pointer items-center gap-4 px-5 py-4 text-left focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-burgundy sm:px-6 sm:py-5",
+                                        brand.featured && "lg:gap-6 lg:px-8 lg:py-7",
+                                    ]}
+                                    aria-expanded="false"
+                                    aria-controls={`catalog-panel-${brand.id}`}
+                                    id={`catalog-trigger-${brand.id}`}
+                                >
+                                    <span
+                                        data-catalog-logo-well
+                                        class:list={[
+                                            "flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-burgundy/10 bg-white p-2 sm:size-18",
+                                            brand.featured && "lg:size-24 lg:p-3",
+                                        ]}
+                                    >
+                                        {brand.logo ? (
+                                            <img
+                                                data-catalog-logo
+                                                src={brand.logo}
+                                                alt=""
+                                                class="h-full w-full object-contain"
+                                                width="72"
+                                                height="72"
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
+                                        ) : null}
+                                        <span
+                                            data-catalog-logo-fallback
+                                            class:list={[
+                                                "font-heading text-2xl font-extrabold text-burgundy",
+                                                brand.logo ? "hidden" : "",
+                                            ]}
+                                            aria-hidden="true"
+                                        >
+                                            {brand.initial}
+                                        </span>
+                                    </span>
+                                    <span class="min-w-0 flex-1">
+                                        {brand.featured ? (
+                                            <span class="mb-2 hidden font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase lg:inline-flex">
+                                                Principal
+                                            </span>
+                                        ) : null}
+                                        <span
+                                            class:list={[
+                                                "block font-heading text-lg font-bold text-burgundy sm:text-xl",
+                                                brand.featured && "lg:text-3xl",
+                                            ]}
+                                        >
+                                            {brand.title}
+                                        </span>
+                                        <span
+                                            class:list={[
+                                                "mt-1 block font-sans text-sm leading-snug text-grey/70",
+                                                brand.featured && "lg:text-base",
+                                            ]}
+                                        >
+                                            {brand.description}
+                                        </span>
+                                    </span>
+                                    <span
+                                        data-catalog-chevron
+                                        class="flex size-9 shrink-0 items-center justify-center rounded-full bg-burgundy/10 text-burgundy"
+                                        aria-hidden="true"
+                                    >
+                                        <svg class="size-5" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M6 9l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2.2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h3>
+
+                            <div
+                                data-catalog-panel
+                                id={`catalog-panel-${brand.id}`}
+                                role="region"
+                                aria-labelledby={`catalog-trigger-${brand.id}`}
+                                aria-hidden="true"
+                                class="overflow-hidden"
+                            >
+                                <div
+                                    class:list={[
+                                        "grid gap-5 border-t border-burgundy/10 px-5 pt-5 pb-5 sm:px-6 sm:pb-6 lg:items-center",
+                                        brand.featured && "lg:px-8 lg:pb-8",
+                                        brand.body && "lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]",
+                                    ]}
+                                >
+                                    {brand.body ? (
+                                        <p class="font-sans text-base leading-relaxed text-grey/80">
+                                            {brand.body}
+                                        </p>
+                                    ) : null}
+                                    <figure class="overflow-hidden rounded-2xl">
+                                        {brand.image ? (
+                                            <img
+                                                data-catalog-photo
+                                                src={brand.image}
+                                                alt={brand.imageAlt}
+                                                class="hidden aspect-4/3 h-full w-full object-cover"
+                                                width="640"
+                                                height="480"
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
+                                        ) : null}
+                                        <div
+                                            data-catalog-photo-fallback
+                                            class="flex aspect-4/3 items-center justify-center bg-white p-8"
+                                        >
+                                            {brand.logo ? (
+                                                <img
+                                                    data-catalog-fallback-logo
+                                                    src={brand.logo}
+                                                    alt={brand.imageAlt}
+                                                    class="max-h-full max-w-[80%] object-contain"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                />
+                                            ) : null}
+                                            <p
+                                                data-catalog-fallback-title
+                                                class:list={[
+                                                    "font-heading text-sm font-bold tracking-[0.18em] text-burgundy/50 uppercase",
+                                                    brand.logo ? "hidden" : "",
+                                                ]}
+                                            >
+                                                {brand.title}
+                                            </p>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</section>
+
+<style>
+    [data-catalog]:not([data-ready]) :is([data-catalog-copy], [data-catalog-card]) {
+        visibility: hidden;
+    }
+
+    [data-catalog-card][data-open] {
+        border-color: color-mix(in srgb, var(--color-burgundy) 28%, transparent);
+        background-color: #fff;
+        box-shadow: 0 16px 40px rgba(122, 0, 16, 0.14);
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx: gsap.Context | undefined;
+
+    function initCatalog() {
+        const root = document.querySelector("[data-catalog]");
+        if (!(root instanceof HTMLElement) || root.dataset.bound === "true") return;
+        root.dataset.bound = "true";
+
+        ctx?.revert();
+
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const cards = gsap.utils.toArray<HTMLElement>("[data-catalog-card]", root);
+
+        wireMediaFallbacks(root);
+
+        ctx = gsap.context(() => {
+            cards.forEach((card) => {
+                const panel = card.querySelector("[data-catalog-panel]");
+                if (panel instanceof HTMLElement) {
+                    gsap.set(panel, { height: 0 });
+                }
+            });
+
+            if (reduce) {
+                root.dataset.ready = "true";
+            } else {
+                const copy = root.querySelectorAll("[data-catalog-copy]");
+
+                const setFrom = (dir: number) => {
+                    gsap.set(copy, { y: 24 * dir, opacity: 0 });
+                    gsap.set(cards, { y: 32 * dir, opacity: 0, scale: 0.97 });
+                };
+
+                const tl = gsap.timeline({
+                    paused: true,
+                    defaults: { ease: "power3.out" },
+                });
+
+                tl.to(copy, { y: 0, opacity: 1, duration: 0.7, stagger: 0.1 }, 0).to(
+                    cards,
+                    {
+                        y: 0,
+                        opacity: 1,
+                        scale: 1,
+                        duration: 0.7,
+                        stagger: 0.08,
+                    },
+                    0.18,
+                );
+
+                const play = (dir: number) => {
+                    tl.pause(0);
+                    setFrom(dir);
+                    tl.invalidate().restart();
+                };
+
+                setFrom(1);
+                root.dataset.ready = "true";
+
+                ScrollTrigger.create({
+                    trigger: root,
+                    start: "top 82%",
+                    end: "bottom top",
+                    onEnter: () => play(1),
+                    onEnterBack: () => play(-1),
+                    onLeave: () => tl.reverse(),
+                    onLeaveBack: () => tl.reverse(),
+                });
+            }
+
+            cards.forEach((card) => {
+                const toggle = card.querySelector("[data-catalog-toggle]");
+                if (!(toggle instanceof HTMLButtonElement)) return;
+
+                toggle.addEventListener("click", () => {
+                    const isOpen = card.hasAttribute("data-open");
+                    cards.forEach((other) => setCardOpen(other, other === card && !isOpen, reduce));
+                });
+            });
+        }, root);
+    }
+
+    function wireMediaFallbacks(root: HTMLElement) {
+        root.querySelectorAll<HTMLImageElement>("[data-catalog-logo]").forEach((img) => {
+            const well = img.closest("[data-catalog-logo-well]");
+            const fallback = well?.querySelector("[data-catalog-logo-fallback]");
+
+            const showFallback = () => {
+                img.classList.add("hidden");
+                fallback?.classList.remove("hidden");
+            };
+
+            img.addEventListener("error", showFallback);
+            if (img.complete && img.naturalWidth === 0) showFallback();
+        });
+
+        root.querySelectorAll<HTMLImageElement>("[data-catalog-photo]").forEach((img) => {
+            const fallback = img.parentElement?.querySelector("[data-catalog-photo-fallback]");
+
+            const showPhoto = () => {
+                img.classList.remove("hidden");
+                fallback?.classList.add("hidden");
+            };
+
+            img.addEventListener("load", showPhoto);
+            if (img.complete && img.naturalWidth > 0) showPhoto();
+        });
+
+        root.querySelectorAll<HTMLImageElement>("[data-catalog-fallback-logo]").forEach((img) => {
+            const titleEl = img.parentElement?.querySelector("[data-catalog-fallback-title]");
+            const showTitle = () => {
+                img.classList.add("hidden");
+                titleEl?.classList.remove("hidden");
+            };
+
+            img.addEventListener("error", showTitle);
+            if (img.complete && img.naturalWidth === 0) showTitle();
+        });
+    }
+
+    function setCardOpen(card: HTMLElement, open: boolean, reduce: boolean) {
+        const toggle = card.querySelector("[data-catalog-toggle]");
+        const panel = card.querySelector("[data-catalog-panel]");
+        const chevron = card.querySelector("[data-catalog-chevron]");
+
+        if (!(toggle instanceof HTMLButtonElement) || !(panel instanceof HTMLElement)) return;
+        if (open === card.hasAttribute("data-open")) return;
+
+        toggle.setAttribute("aria-expanded", String(open));
+        panel.setAttribute("aria-hidden", String(!open));
+
+        if (open) {
+            card.setAttribute("data-open", "true");
+        } else {
+            card.removeAttribute("data-open");
+        }
+
+        gsap.killTweensOf([panel, chevron]);
+
+        if (reduce) {
+            gsap.set(panel, { height: open ? "auto" : 0 });
+            gsap.set(chevron, { rotate: open ? 180 : 0 });
+            ScrollTrigger.refresh();
+            return;
+        }
+
+        gsap.to(chevron, { rotate: open ? 180 : 0, duration: 0.35, ease: "power3.out" });
+        gsap.to(panel, {
+            height: open ? "auto" : 0,
+            duration: open ? 0.5 : 0.38,
+            ease: "power3.inOut",
+            onComplete: () => {
+                ScrollTrigger.refresh();
+                if (open) {
+                    card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                }
+            },
+        });
+    }
+
+    initCatalog();
+    document.addEventListener("astro:page-load", initCatalog);
+</script>

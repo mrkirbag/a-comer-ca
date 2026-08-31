@@ -1,0 +1,197 @@
+---
+import { Icon } from "astro-icon/components";
+import { site, waHref } from "../data/site";
+
+const { title, subtitle, ctaBtn, ctaHref, contactBtn, imageDesktop, imageMobile } = site.hero;
+const whatsappHref = waHref(site.contact.whatsapp.raw, site.contact.whatsapp.message);
+const titleWords = title.split(" ");
+---
+
+<section id="inicio" data-hero class="relative isolate min-h-svh overflow-hidden">
+    <picture class="opacity-20">
+        <source media="(min-width: 768px)" srcset={imageDesktop} type="image/webp" />
+        <img
+            data-hero-media
+            src={imageMobile}
+            alt=""
+            class="absolute inset-0 -z-20 h-full w-full max-w-none object-cover object-center"
+            fetchpriority="high"
+            decoding="async"
+        />
+    </picture>
+
+    <div data-hero-overlay class="absolute inset-0 -z-10 bg-copper/55" aria-hidden="true"></div>
+
+    <div class="absolute inset-0 z-20 flex items-center justify-center px-5 pt-20 lg:px-8">
+        <div class="flex w-full max-w-3xl flex-col items-center text-center">
+            <h1
+                data-hero-title
+                class="font-accent text-4xl leading-[0.9] text-burgundy sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+                {
+                    titleWords.map((word) => (
+                        <span class="mr-[0.28em] inline-block overflow-hidden pb-[0.18em] align-bottom [clip-path:inset(0)] last:mr-0">
+                            <span data-hero-word class="inline-block">
+                                {word}
+                            </span>
+                        </span>
+                    ))
+                }
+            </h1>
+            <p
+                data-hero-subtitle
+                class="mt-4 max-w-xl font-sans text-base font-bold leading-tight text-cream [text-shadow:0_1px_1px_#7a0010,0_2px_10px_rgba(122,0,16,0.75)] sm:text-lg md:text-xl"
+            >
+                {subtitle}
+            </p>
+            <div
+                data-hero-actions
+                class="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row sm:gap-4"
+            >
+                <a
+                    data-hero-action
+                    href={ctaHref}
+                    class="inline-flex min-w-44 items-center justify-center rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+                >
+                    {ctaBtn}
+                </a>
+                <a
+                    data-hero-action
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex min-w-44 items-center justify-center gap-2 rounded-full bg-cream px-8 py-3 font-heading text-sm font-bold tracking-wide text-burgundy transition-colors hover:bg-cream/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+                >
+                    <Icon name="logos:whatsapp-icon" class="size-5" aria-hidden="true" />
+                    {contactBtn}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-fade pointer-events-none absolute inset-x-0 bottom-0 z-10" aria-hidden="true">
+        <div class="hero-fade__blur"></div>
+        <div class="hero-fade__tint"></div>
+    </div>
+</section>
+
+<style>
+    [data-hero]:not([data-ready]) :is([data-hero-media], [data-hero-overlay], [data-hero-title], [data-hero-subtitle], [data-hero-actions]) {
+        visibility: hidden;
+    }
+
+    .hero-fade {
+        height: clamp(6.5rem, 20vh, 10rem);
+    }
+
+    .hero-fade__blur,
+    .hero-fade__tint {
+        position: absolute;
+        inset: 0;
+    }
+
+    .hero-fade__blur {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 55%,
+            rgb(0 0 0 / 0.08) 72%,
+            rgb(0 0 0 / 0.35) 88%,
+            #000 100%
+        );
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 55%,
+            rgb(0 0 0 / 0.08) 72%,
+            rgb(0 0 0 / 0.35) 88%,
+            #000 100%
+        );
+    }
+
+    .hero-fade__tint {
+        background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 48%,
+            rgb(253 248 237 / 0.04) 68%,
+            rgb(253 248 237 / 0.22) 84%,
+            rgb(253 248 237 / 0.62) 94%,
+            var(--color-cream) 100%
+        );
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+
+    function initHero() {
+        const hero = document.querySelector("[data-hero]");
+        if (!(hero instanceof HTMLElement) || hero.dataset.ready === "true") return;
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            hero.dataset.ready = "true";
+            return;
+        }
+
+        const media = hero.querySelector("[data-hero-media]");
+        const overlay = hero.querySelector("[data-hero-overlay]");
+        const words = hero.querySelectorAll("[data-hero-word]");
+        const subtitle = hero.querySelector("[data-hero-subtitle]");
+        const actions = hero.querySelectorAll("[data-hero-action]");
+
+        gsap.set(media, { scale: 1.18, transformOrigin: "50% 50%" });
+        gsap.set(overlay, { opacity: 0 });
+        gsap.set(words, { yPercent: 165, opacity: 0 });
+        gsap.set(subtitle, { y: 28, opacity: 0, filter: "blur(10px)" });
+        gsap.set(actions, { y: 28, opacity: 0, scale: 0.92 });
+
+        hero.dataset.ready = "true";
+
+        const tl = gsap.timeline({
+            defaults: { ease: "power3.out" },
+            delay: 0.08,
+        });
+
+        tl.to(media, { scale: 1, duration: 2.2, ease: "power2.out" }, 0)
+            .to(overlay, { opacity: 1, duration: 1.15, ease: "power2.out" }, 0.08)
+            .to(
+                words,
+                {
+                    yPercent: 0,
+                    opacity: 1,
+                    duration: 0.95,
+                    stagger: 0.07,
+                    ease: "power4.out",
+                },
+                0.28,
+            )
+            .to(
+                subtitle,
+                {
+                    y: 0,
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    duration: 0.8,
+                },
+                0.58,
+            )
+            .to(
+                actions,
+                {
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.7,
+                    stagger: 0.12,
+                    ease: "back.out(1.7)",
+                },
+                0.78,
+            );
+    }
+
+    initHero();
+    document.addEventListener("astro:page-load", initHero);
+</script>
