@@ -1,8 +1,8 @@
 ---
-nombre: "Fadi Kirbag"
-empresa: "Independiente"
+nombre: Fadi Kirbag
+empresa: Independiente
 estrellas: 5
-aprobada: false
+aprobada: true
 fecha: 2026-08-31
 ---
 
