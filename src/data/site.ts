@@ -256,6 +256,37 @@ export const site = {
         imageAlt: "Acompañamiento profesional en el uso de insumos para la gastronomía",
         badge: "De la venta al oficio",
     },
+
+    opiniones: {
+        kicker: "Voces de la cocina",
+        title: "Opiniones",
+        subtitle:
+            "Lo que dicen quienes cocinan y producen con nosotros en el occidente del país",
+        empty: "Pronto publicaremos las voces de nuestros aliados. Si trabajas con A-Comer, deja la tuya en Contacto.",
+        cta: "Dejar mi opinión",
+        ctaHref: "#contacto",
+    },
+
+    contacto: {
+        kicker: "Hablemos",
+        title: "Contacto",
+        subtitle: "Estamos en San Cristóbal. Escríbenos, visítanos o deja tu opinión para la web.",
+        whatsappCta: "Escribir por WhatsApp",
+        mapCta: "Cómo llegar",
+        form: {
+            kicker: "Tu voz en la mesa",
+            title: "Deja tu opinión",
+            body: "La revisamos antes de publicarla. Si se acepta, aparece en la sección Opiniones.",
+            nombre: "Nombre",
+            empresa: "Empresa o local",
+            estrellas: "Calificación",
+            texto: "Tu opinión",
+            submit: "Enviar opinión",
+            success: "Gracias. La revisaremos y, si se publica, aparecerá en Opiniones.",
+            error: "No se pudo enviar. Intenta de nuevo o escríbenos por WhatsApp.",
+            localHint: "En local el envío no llega a Netlify. En producción sí entra al panel.",
+        },
+    },
 } as const;
 
 export function telHref(raw: string) {

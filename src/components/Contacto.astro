@@ -1,0 +1,372 @@
+---
+import { Icon } from "astro-icon/components";
+import { site, telHref, waHref } from "../data/site";
+
+const copy = site.contacto;
+const form = copy.form;
+const address = `${site.contact.address.line}, ${site.contact.address.city}, ${site.contact.address.state}`;
+const whatsappHref = waHref(site.contact.whatsapp.raw, site.contact.whatsapp.message);
+const year = new Date().getFullYear();
+const stars = [5, 4, 3, 2, 1] as const;
+---
+
+<section
+    id="contacto"
+    data-contacto
+    class="relative z-20 isolate overflow-hidden bg-burgundy"
+    aria-labelledby="contacto-title"
+>
+    <div class="contacto-glow" aria-hidden="true"></div>
+
+    <div class="relative mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+        <header class="mx-auto max-w-3xl text-center">
+            <p
+                data-contacto-copy
+                class="inline-flex rounded-full bg-copper px-4 py-1.5 font-heading text-xs font-extrabold tracking-[0.2em] text-grey uppercase"
+            >
+                {copy.kicker}
+            </p>
+            <h2
+                data-contacto-copy
+                id="contacto-title"
+                class="mt-3 font-accent text-5xl leading-none text-cream sm:text-6xl md:text-7xl"
+            >
+                {copy.title}
+            </h2>
+            <p data-contacto-copy class="mx-auto mt-5 max-w-2xl font-sans text-base leading-relaxed text-cream/85 sm:text-lg">
+                {copy.subtitle}
+            </p>
+        </header>
+
+        <div class="mt-16 grid gap-8 lg:mt-24 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-12">
+            <div data-contacto-info class="flex flex-col gap-4">
+                <article class="rounded-2xl border border-cream/15 bg-cream/8 p-5">
+                    <div class="flex items-center gap-3">
+                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-cream/15 text-cream">
+                            <Icon name="mdi:phone-outline" class="size-5" aria-hidden="true" />
+                        </div>
+                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                            Teléfonos
+                        </p>
+                    </div>
+                    <ul class="mt-4 flex flex-col gap-3">
+                        {
+                            site.contact.phones.map((phone) => (
+                                <li>
+                                    <p class="font-sans text-xs text-cream/55">{phone.label}</p>
+                                    <a
+                                        href={telHref(phone.raw)}
+                                        class="font-heading text-lg font-bold text-cream transition-colors hover:text-copper"
+                                    >
+                                        {phone.display}
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </article>
+
+                <article class="rounded-2xl border border-cream/15 bg-cream/8 p-5">
+                    <div class="flex items-center gap-3">
+                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-cream/15 text-cream">
+                            <Icon name="mdi:email-outline" class="size-5" aria-hidden="true" />
+                        </div>
+                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                            Correo
+                        </p>
+                    </div>
+                    <a
+                        href={`mailto:${site.contact.email}`}
+                        class="mt-3 block break-all font-heading text-sm font-bold leading-snug text-cream transition-colors hover:text-copper"
+                    >
+                        {site.contact.email}
+                    </a>
+                </article>
+
+                <article class="rounded-2xl border border-cream/15 bg-cream/8 p-5">
+                    <div class="flex items-center gap-3">
+                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-cream/15 text-cream">
+                            <Icon name="mdi:map-marker-outline" class="size-5" aria-hidden="true" />
+                        </div>
+                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                            Dirección
+                        </p>
+                    </div>
+                    <p class="mt-3 font-heading text-base font-bold leading-snug text-cream">{address}</p>
+                    <p class="mt-2 font-sans text-sm text-cream/70">{site.contact.hours}</p>
+                    <a
+                        href={site.contact.address.mapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-4 inline-flex items-center justify-center rounded-full border border-cream/30 px-5 py-2 font-heading text-xs font-bold tracking-wide text-cream transition-colors hover:border-copper hover:text-copper"
+                    >
+                        {copy.mapCta}
+                    </a>
+                </article>
+
+                <a
+                    data-contacto-wa
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-cream px-8 py-3 font-heading text-sm font-bold tracking-wide text-burgundy transition duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+                >
+                    <Icon name="logos:whatsapp-icon" class="size-5" aria-hidden="true" />
+                    {copy.whatsappCta}
+                </a>
+            </div>
+
+            <article
+                data-contacto-form
+                class="rounded-3xl bg-cream p-6 shadow-[0_20px_48px_rgba(0,0,0,0.28)] sm:p-8 lg:p-10"
+            >
+                <p class="inline-flex rounded-full bg-olive/60 px-3 py-1 font-heading text-[10px] font-semibold tracking-[0.18em] text-cream uppercase">
+                    {form.kicker}
+                </p>
+                <h3 class="mt-3 font-accent text-3xl leading-none text-burgundy sm:text-4xl">
+                    {form.title}
+                </h3>
+                <p class="mt-3 font-sans text-sm leading-relaxed text-grey/75 sm:text-base">
+                    {form.body}
+                </p>
+
+                <form
+                    name="opinion"
+                    method="POST"
+                    action="/gracias"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    data-opinion-form
+                    data-success={form.success}
+                    data-error={form.error}
+                    data-local={form.localHint}
+                    class="mt-8 flex flex-col gap-5"
+                >
+                    <input type="hidden" name="form-name" value="opinion" />
+                    <p class="hidden">
+                        <label>
+                            No llenar <input name="bot-field" tabindex="-1" autocomplete="off" />
+                        </label>
+                    </p>
+
+                    <label class="block">
+                        <span class="font-heading text-xs font-bold tracking-[0.14em] text-burgundy uppercase">
+                            {form.nombre}
+                        </span>
+                        <input
+                            type="text"
+                            name="nombre"
+                            required
+                            maxlength="80"
+                            autocomplete="name"
+                            class="mt-2 w-full rounded-2xl border border-burgundy/15 bg-white px-4 py-3 font-sans text-base text-grey outline-none transition-colors focus:border-burgundy"
+                        />
+                    </label>
+
+                    <label class="block">
+                        <span class="font-heading text-xs font-bold tracking-[0.14em] text-burgundy uppercase">
+                            {form.empresa}
+                        </span>
+                        <input
+                            type="text"
+                            name="empresa"
+                            maxlength="80"
+                            autocomplete="organization"
+                            class="mt-2 w-full rounded-2xl border border-burgundy/15 bg-white px-4 py-3 font-sans text-base text-grey outline-none transition-colors focus:border-burgundy"
+                        />
+                    </label>
+
+                    <fieldset>
+                        <legend class="font-heading text-xs font-bold tracking-[0.14em] text-burgundy uppercase">
+                            {form.estrellas}
+                        </legend>
+                        <div class="star-rating mt-3 flex flex-row-reverse justify-end gap-1">
+                            {
+                                stars.map((value, index) => (
+                                    <>
+                                        <input
+                                            class="peer sr-only"
+                                            type="radio"
+                                            name="estrellas"
+                                            id={`estrella-${value}`}
+                                            value={value}
+                                            required={index === stars.length - 1}
+                                            checked={value === 5}
+                                        />
+                                        <label
+                                            for={`estrella-${value}`}
+                                            class="cursor-pointer transition-colors"
+                                        >
+                                            <span class="sr-only">{value} estrellas</span>
+                                            <svg class="size-8" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path
+                                                    fill="currentColor"
+                                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                                                />
+                                            </svg>
+                                        </label>
+                                    </>
+                                ))
+                            }
+                        </div>
+                    </fieldset>
+
+                    <label class="block">
+                        <span class="font-heading text-xs font-bold tracking-[0.14em] text-burgundy uppercase">
+                            {form.texto}
+                        </span>
+                        <textarea
+                            name="texto"
+                            required
+                            maxlength="600"
+                            rows="5"
+                            class="mt-2 w-full resize-y rounded-2xl border border-burgundy/15 bg-white px-4 py-3 font-sans text-base text-grey outline-none transition-colors focus:border-burgundy"
+                        ></textarea>
+                    </label>
+
+                    <p
+                        data-form-status
+                        class="hidden font-sans text-sm leading-relaxed"
+                        role="status"
+                    ></p>
+
+                    <button
+                        type="submit"
+                        class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+                    >
+                        <svg class="size-4" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M2 21 23 12 2 3v7l15 2-15 2z" />
+                        </svg>
+                        {form.submit}
+                    </button>
+                </form>
+            </article>
+        </div>
+
+        <p data-contacto-copy class="mt-16 text-center font-sans text-xs text-cream/50">
+            {site.company.legalName} · {site.company.rif} · {year}
+        </p>
+    </div>
+</section>
+
+<style>
+    [data-contacto]:not([data-ready]) :is(
+        [data-contacto-copy],
+        [data-contacto-info],
+        [data-contacto-form]
+    ) {
+        visibility: hidden;
+    }
+
+    .contacto-glow {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(ellipse 70% 55% at 8% 90%, rgb(192 138 124 / 0.28), transparent 58%),
+            radial-gradient(ellipse 45% 40% at 96% 8%, rgb(88 105 76 / 0.35), transparent 52%);
+    }
+
+    .star-rating label {
+        color: rgb(122 0 16 / 0.18);
+    }
+
+    .star-rating label:hover,
+    .star-rating label:hover ~ label,
+    .star-rating input:checked ~ label {
+        color: var(--color-copper);
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    function initContactoMotion() {
+        const root = document.querySelector("[data-contacto]");
+        if (!(root instanceof HTMLElement) || root.dataset.ready === "true") return;
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.dataset.ready = "true";
+            return;
+        }
+
+        const copy = root.querySelectorAll("[data-contacto-copy]");
+        const info = root.querySelector("[data-contacto-info]");
+        const formCard = root.querySelector("[data-contacto-form]");
+
+        gsap.set(copy, { y: 24, opacity: 0 });
+        gsap.set(info, { x: -28, opacity: 0 });
+        gsap.set(formCard, { x: 28, opacity: 0 });
+
+        root.dataset.ready = "true";
+
+        gsap.timeline({
+            defaults: { ease: "power3.out" },
+            scrollTrigger: {
+                trigger: root,
+                start: "top 72%",
+            },
+        })
+            .to(copy, { y: 0, opacity: 1, duration: 0.7, stagger: 0.08 })
+            .to(info, { x: 0, opacity: 1, duration: 0.8 }, 0.18)
+            .to(formCard, { x: 0, opacity: 1, duration: 0.8 }, 0.22);
+    }
+
+    function initOpinionForm() {
+        const form = document.querySelector("[data-opinion-form]");
+        const status = document.querySelector("[data-form-status]");
+        if (!(form instanceof HTMLFormElement) || !(status instanceof HTMLElement)) return;
+        if (form.dataset.bound === "true") return;
+        form.dataset.bound = "true";
+
+        const isLocal =
+            window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+
+        form.addEventListener("submit", async (event) => {
+            if (isLocal) {
+                event.preventDefault();
+                status.classList.remove("hidden", "text-burgundy");
+                status.classList.add("text-olive");
+                status.textContent = form.dataset.local ?? "";
+                return;
+            }
+
+            event.preventDefault();
+            status.classList.add("hidden");
+
+            try {
+                const body = new URLSearchParams();
+                for (const [key, value] of new FormData(form).entries()) {
+                    if (typeof value === "string") body.append(key, value);
+                }
+
+                const response = await fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body,
+                });
+                if (!response.ok) throw new Error("form");
+                form.reset();
+                const five = form.querySelector<HTMLInputElement>("#estrella-5");
+                if (five) five.checked = true;
+                status.classList.remove("hidden", "text-burgundy");
+                status.classList.add("text-olive");
+                status.textContent = form.dataset.success ?? "";
+            } catch {
+                status.classList.remove("hidden", "text-olive");
+                status.classList.add("text-burgundy");
+                status.textContent = form.dataset.error ?? "";
+            }
+        });
+    }
+
+    initContactoMotion();
+    initOpinionForm();
+    document.addEventListener("astro:page-load", () => {
+        initContactoMotion();
+        initOpinionForm();
+    });
+</script>

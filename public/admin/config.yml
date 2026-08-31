@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Solo aplica en localhost con `npx decap-server`. En Netlify se ignora.
+local_backend: true
+
+locale: es
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: opiniones
+    label: Opiniones
+    label_singular: Opinión
+    folder: src/content/opiniones
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: nombre
+    summary: "{{nombre}} — {{empresa}}"
+    fields:
+      - { label: Nombre, name: nombre, widget: string }
+      - { label: Empresa o local, name: empresa, widget: string, required: false }
+      - { label: Estrellas, name: estrellas, widget: number, min: 1, max: 5, value_type: int, default: 5 }
+      - { label: Aprobada, name: aprobada, widget: boolean, default: false }
+      - { label: Fecha, name: fecha, widget: datetime, date_format: YYYY-MM-DD, time_format: false }
+      - { label: Opinión, name: body, widget: text }
