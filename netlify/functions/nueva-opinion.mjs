@@ -1,49 +1,47 @@
 const OPINIONES_DIR = "src/content/opiniones";
 const BRANCH = process.env.GITHUB_BRANCH || "main";
 
+const headers = {
+    "Content-Type": "application/json; charset=utf-8",
+};
+
 export async function handler(event) {
-    if (event.httpMethod && event.httpMethod !== "POST") {
-        return { statusCode: 405, body: "Method Not Allowed" };
+    if (event.httpMethod === "OPTIONS") {
+        return { statusCode: 204, headers };
     }
 
-    let payload;
-    try {
-        payload = JSON.parse(event.body || "{}").payload;
-    } catch {
-        return { statusCode: 400, body: "Invalid payload" };
+    if (event.httpMethod !== "POST") {
+        return json(405, { ok: false, error: "method" });
     }
 
-    if (!payload || payload.form_name !== "opinion") {
-        return { statusCode: 200, body: "ignored" };
-    }
-
-    const data = payload.data || {};
+    const data = parseBody(event);
     if (typeof data["bot-field"] === "string" && data["bot-field"].trim()) {
-        return { statusCode: 200, body: "spam" };
+        return json(200, { ok: true });
     }
 
     const nombre = cleanText(data.nombre, 80);
     const texto = cleanText(data.texto, 600);
     if (!nombre || !texto) {
-        return { statusCode: 200, body: "invalid" };
+        return json(400, { ok: false, error: "invalid" });
     }
 
     const empresa = cleanText(data.empresa, 80);
     const estrellas = clampStars(data.estrellas);
-    const fecha = isoDate(payload.created_at);
+    const fecha = isoDate();
     const markdown = toMarkdown({ nombre, empresa, estrellas, fecha, texto });
-    const filename = `${fecha}-${slugify(nombre)}-${slugify(empresa) || "opinion"}.md`;
+    const unique = Date.now().toString(36).slice(-5);
+    const filename = `${fecha}-${slugify(nombre)}-${slugify(empresa) || "opinion"}-${unique}.md`;
 
     const token = process.env.GITHUB_TOKEN;
     const repo = resolveRepo();
     if (!token || !repo) {
         console.error("Falta GITHUB_TOKEN o GITHUB_REPO");
-        return { statusCode: 500, body: "Missing GitHub credentials" };
+        return json(500, { ok: false, error: "config" });
     }
 
     const path = `${OPINIONES_DIR}/${filename}`;
     const response = await fetch(
-        `https://api.github.com/repos/${repo}/contents/${path}`,
+        `https://api.github.com/repos/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F", "/")}`,
         {
             method: "PUT",
             headers: {
@@ -63,16 +61,39 @@ export async function handler(event) {
     if (!response.ok) {
         const detail = await response.text();
         console.error("GitHub contents error", response.status, detail);
-        return { statusCode: 502, body: "GitHub write failed" };
+        return json(502, { ok: false, error: "github" });
     }
 
-    return { statusCode: 200, body: "created" };
+    return json(200, { ok: true });
+}
+
+function json(statusCode, body) {
+    return { statusCode, headers, body: JSON.stringify(body) };
+}
+
+function parseBody(event) {
+    const raw = event.body || "";
+    const text = event.isBase64Encoded ? Buffer.from(raw, "base64").toString("utf8") : raw;
+    const type = String(event.headers?.["content-type"] || event.headers?.["Content-Type"] || "");
+
+    if (type.includes("application/x-www-form-urlencoded")) {
+        return Object.fromEntries(new URLSearchParams(text));
+    }
+
+    try {
+        const parsed = JSON.parse(text || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+    } catch {
+        return {};
+    }
 }
 
 function resolveRepo() {
-    if (process.env.GITHUB_REPO) return process.env.GITHUB_REPO.replace(/\.git$/, "");
+    if (process.env.GITHUB_REPO) {
+        return process.env.GITHUB_REPO.replace(/\.git$/, "").replace(/^\/|\/$/g, "");
+    }
     const url = process.env.REPOSITORY_URL || "";
-    const match = url.match(/github\.com[:/](.+?)(?:\.git)?$/i);
+    const match = url.match(/github\.com[:/](.+?)(?:\.git)?\/?$/i);
     return match ? match[1] : "";
 }
 

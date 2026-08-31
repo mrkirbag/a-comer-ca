@@ -131,18 +131,14 @@ const stars = [5, 4, 3, 2, 1] as const;
                 </p>
 
                 <form
-                    name="opinion"
                     method="POST"
-                    action="/gracias"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
+                    action="/.netlify/functions/nueva-opinion"
                     data-opinion-form
                     data-success={form.success}
                     data-error={form.error}
                     data-local={form.localHint}
                     class="mt-8 flex flex-col gap-5"
                 >
-                    <input type="hidden" name="form-name" value="opinion" />
                     <p class="hidden">
                         <label>
                             No llenar <input name="bot-field" tabindex="-1" autocomplete="off" />
@@ -232,7 +228,8 @@ const stars = [5, 4, 3, 2, 1] as const;
 
                     <button
                         type="submit"
-                        class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+                        data-form-submit
+                        class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy disabled:opacity-60"
                     >
                         <svg class="size-4" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill="currentColor" d="M2 21 23 12 2 3v7l15 2-15 2z" />
@@ -325,30 +322,36 @@ const stars = [5, 4, 3, 2, 1] as const;
         const isLocal =
             window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 
+        const submit = form.querySelector("[data-form-submit]");
+
         form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
             if (isLocal) {
-                event.preventDefault();
                 status.classList.remove("hidden", "text-burgundy");
                 status.classList.add("text-olive");
                 status.textContent = form.dataset.local ?? "";
                 return;
             }
 
-            event.preventDefault();
             status.classList.add("hidden");
+            if (submit instanceof HTMLButtonElement) submit.disabled = true;
 
             try {
-                const body = new URLSearchParams();
-                for (const [key, value] of new FormData(form).entries()) {
-                    if (typeof value === "string") body.append(key, value);
-                }
+                const fields = Object.fromEntries(
+                    [...new FormData(form).entries()].filter(
+                        (entry): entry is [string, string] => typeof entry[1] === "string",
+                    ),
+                );
 
-                const response = await fetch("/", {
+                const response = await fetch("/.netlify/functions/nueva-opinion", {
                     method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body,
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(fields),
                 });
-                if (!response.ok) throw new Error("form");
+                const payload = await response.json().catch(() => ({}));
+                if (!response.ok || payload.ok !== true) throw new Error("form");
+
                 form.reset();
                 const five = form.querySelector<HTMLInputElement>("#estrella-5");
                 if (five) five.checked = true;
@@ -359,6 +362,8 @@ const stars = [5, 4, 3, 2, 1] as const;
                 status.classList.remove("hidden", "text-olive");
                 status.classList.add("text-burgundy");
                 status.textContent = form.dataset.error ?? "";
+            } finally {
+                if (submit instanceof HTMLButtonElement) submit.disabled = false;
             }
         });
     }
