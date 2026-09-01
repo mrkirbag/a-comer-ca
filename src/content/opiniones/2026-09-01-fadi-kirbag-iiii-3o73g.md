@@ -1,8 +1,8 @@
 ---
-nombre: "Fadi Kirbag"
-empresa: "iiii"
+nombre: Fadi Kirbag
+empresa: iiii
 estrellas: 5
-aprobada: false
+aprobada: true
 fecha: 2026-09-01
 ---
 
