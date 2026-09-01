@@ -43,7 +43,7 @@ const brands = items.map((item) => ({
             </p>
         </header>
 
-        <ul class="mt-16 grid gap-4 lg:mt-24 lg:grid-cols-2 lg:gap-5">
+        <ul class="mt-16 grid items-start gap-4 lg:mt-24 lg:grid-cols-2 lg:gap-5">
             {
                 brands.map((brand) => (
                     <li class:list={["min-w-0", brand.featured && "lg:col-span-2"]}>
@@ -51,7 +51,7 @@ const brands = items.map((item) => ({
                             data-catalog-card
                             data-featured={brand.featured ? "true" : undefined}
                             class:list={[
-                                "h-full overflow-hidden rounded-3xl border border-burgundy/10 bg-white/50 transition-[border-color,box-shadow,background-color] duration-300 hover:shadow-[0_16px_40px_rgba(122,0,16,0.14)]",
+                                "overflow-hidden rounded-3xl border border-burgundy/10 bg-white/50 transition-[border-color,box-shadow,background-color] duration-300 hover:shadow-[0_16px_40px_rgba(122,0,16,0.14)]",
                                 brand.featured && "lg:border-burgundy/20 lg:bg-white",
                             ]}
                         >
@@ -98,11 +98,6 @@ const brands = items.map((item) => ({
                                         </span>
                                     </span>
                                     <span class="min-w-0 flex-1">
-                                        {brand.featured ? (
-                                            <span class="mb-2 hidden font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase lg:inline-flex">
-                                                Principal
-                                            </span>
-                                        ) : null}
                                         <span
                                             class:list={[
                                                 "block font-heading text-lg font-bold text-burgundy sm:text-xl",
@@ -110,14 +105,6 @@ const brands = items.map((item) => ({
                                             ]}
                                         >
                                             {brand.title}
-                                        </span>
-                                        <span
-                                            class:list={[
-                                                "mt-1 block font-sans text-sm leading-snug text-grey/70",
-                                                brand.featured && "lg:text-base",
-                                            ]}
-                                        >
-                                            {brand.description}
                                         </span>
                                     </span>
                                     <span
@@ -148,54 +135,56 @@ const brands = items.map((item) => ({
                             >
                                 <div
                                     class:list={[
-                                        "grid gap-5 border-t border-burgundy/10 px-5 pt-5 pb-5 sm:px-6 sm:pb-6 lg:items-center",
-                                        brand.featured && "lg:px-8 lg:pb-8",
-                                        brand.body && "lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]",
+                                        "border-t border-burgundy/10 px-5 pt-5 pb-5 sm:px-6 sm:pb-6",
+                                        brand.featured && "lg:px-8 lg:pt-6 lg:pb-8",
+                                        brand.featured
+                                            ? "flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-8"
+                                            : "flex flex-col gap-4",
                                     ]}
                                 >
-                                    {brand.body ? (
-                                        <p class="font-sans text-base leading-relaxed text-grey/80">
-                                            {brand.body}
-                                        </p>
-                                    ) : null}
-                                    <figure class="overflow-hidden rounded-2xl">
+                                    <figure
+                                        class:list={[
+                                            "mx-auto w-fit max-w-full overflow-hidden rounded-3xl border border-burgundy/10 bg-white shadow-[0_10px_28px_rgba(122,0,16,0.16)] ring-1 ring-copper/30",
+                                            brand.featured && "lg:mx-0 lg:shrink-0",
+                                        ]}
+                                    >
                                         {brand.image ? (
                                             <img
                                                 data-catalog-photo
                                                 src={brand.image}
                                                 alt={brand.imageAlt}
-                                                class="hidden aspect-4/3 h-full w-full object-cover"
-                                                width="640"
-                                                height="480"
+                                                class:list={[
+                                                    "block h-44 w-auto max-w-full object-contain object-center sm:h-52",
+                                                    brand.featured && "lg:h-64",
+                                                ]}
+                                                width="1376"
+                                                height="768"
                                                 loading="lazy"
                                                 decoding="async"
                                             />
                                         ) : null}
                                         <div
                                             data-catalog-photo-fallback
-                                            class="flex aspect-4/3 items-center justify-center bg-white p-8"
+                                            class:list={[
+                                                "flex h-44 w-72 items-center justify-center bg-white p-4 sm:h-52",
+                                                brand.image ? "hidden" : "",
+                                            ]}
                                         >
-                                            {brand.logo ? (
-                                                <img
-                                                    data-catalog-fallback-logo
-                                                    src={brand.logo}
-                                                    alt={brand.imageAlt}
-                                                    class="max-h-full max-w-[80%] object-contain"
-                                                    loading="lazy"
-                                                    decoding="async"
-                                                />
-                                            ) : null}
-                                            <p
-                                                data-catalog-fallback-title
-                                                class:list={[
-                                                    "font-heading text-sm font-bold tracking-[0.18em] text-burgundy/50 uppercase",
-                                                    brand.logo ? "hidden" : "",
-                                                ]}
-                                            >
+                                            <p class="font-heading text-xs font-bold tracking-[0.18em] text-burgundy/50 uppercase">
                                                 {brand.title}
                                             </p>
                                         </div>
                                     </figure>
+                                    <div class="min-w-0 flex-1 rounded-2xl border border-copper/25 bg-cream px-4 py-4 shadow-[0_8px_20px_rgba(122,0,16,0.08)] sm:px-5">
+                                        <span class="mb-3 flex items-center gap-2" aria-hidden="true">
+                                            <span class="h-px w-5 bg-copper/50"></span>
+                                            <span class="size-1.5 rotate-45 bg-copper"></span>
+                                            <span class="h-px flex-1 bg-copper/25"></span>
+                                        </span>
+                                        <p class="font-sans text-base leading-relaxed text-grey/90">
+                                            {brand.description}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </article>
@@ -321,25 +310,24 @@ const brands = items.map((item) => ({
 
         root.querySelectorAll<HTMLImageElement>("[data-catalog-photo]").forEach((img) => {
             const fallback = img.parentElement?.querySelector("[data-catalog-photo-fallback]");
+            const card = img.closest("[data-catalog-card]");
 
-            const showPhoto = () => {
-                img.classList.remove("hidden");
-                fallback?.classList.add("hidden");
-            };
-
-            img.addEventListener("load", showPhoto);
-            if (img.complete && img.naturalWidth > 0) showPhoto();
-        });
-
-        root.querySelectorAll<HTMLImageElement>("[data-catalog-fallback-logo]").forEach((img) => {
-            const titleEl = img.parentElement?.querySelector("[data-catalog-fallback-title]");
-            const showTitle = () => {
+            const showFallback = () => {
                 img.classList.add("hidden");
-                titleEl?.classList.remove("hidden");
+                fallback?.classList.remove("hidden");
             };
 
-            img.addEventListener("error", showTitle);
-            if (img.complete && img.naturalWidth === 0) showTitle();
+            const fitOpenPanel = () => {
+                const panel = card?.querySelector("[data-catalog-panel]");
+                if (card?.hasAttribute("data-open") && panel instanceof HTMLElement) {
+                    gsap.set(panel, { height: "auto" });
+                    ScrollTrigger.refresh();
+                }
+            };
+
+            img.addEventListener("error", showFallback);
+            img.addEventListener("load", fitOpenPanel);
+            if (img.complete && img.naturalWidth === 0) showFallback();
         });
     }
 

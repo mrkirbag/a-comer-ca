@@ -1,21 +1,147 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import { site } from "../data/site";
 import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+    image?: string;
+    noindex?: boolean;
+}
+
+const {
+    title = site.seo.title,
+    description = site.seo.description,
+    image = site.seo.image,
+    noindex = false,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? site.seo.url);
+canonicalURL.hash = "";
+canonicalURL.search = "";
+if (canonicalURL.pathname !== "/" && canonicalURL.pathname.endsWith("/")) {
+    canonicalURL.pathname = canonicalURL.pathname.slice(0, -1);
+}
+
+const imageURL = new URL(image, canonicalURL).href;
+const logoURL = new URL("/brand/logo.webp", canonicalURL).href;
+const socialLinks = [site.social.instagram, site.social.facebook, site.social.tiktok].filter(Boolean);
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": `${site.seo.url}/#website`,
+            url: site.seo.url,
+            name: site.company.name,
+            alternateName: [site.company.legalName, site.company.tagline],
+            description: site.seo.description,
+            inLanguage: "es-VE",
+            publisher: { "@id": `${site.seo.url}/#business` },
+        },
+        {
+            "@type": ["LocalBusiness", "Organization"],
+            "@id": `${site.seo.url}/#business`,
+            name: site.company.name,
+            legalName: site.company.legalName,
+            alternateName: site.company.tagline,
+            url: site.seo.url,
+            logo: logoURL,
+            image: imageURL,
+            description: site.seo.description,
+            taxID: site.company.rif,
+            telephone: `+${site.contact.phones[0]?.raw ?? ""}`,
+            email: site.contact.emails[0],
+            sameAs: socialLinks,
+            address: {
+                "@type": "PostalAddress",
+                streetAddress: site.contact.address.line,
+                addressLocality: site.contact.address.city,
+                addressRegion: site.contact.address.state,
+                addressCountry: "VE",
+            },
+            geo: {
+                "@type": "GeoCoordinates",
+                latitude: site.contact.address.lat,
+                longitude: site.contact.address.lng,
+            },
+            hasMap: site.contact.address.mapsUrl,
+            openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "08:00",
+                closes: "17:00",
+            },
+            areaServed: [
+                { "@type": "AdministrativeArea", name: "Táchira" },
+                { "@type": "Country", name: "Venezuela" },
+            ],
+            contactPoint: site.contact.phones.map((phone) => ({
+                "@type": "ContactPoint",
+                telephone: `+${phone.raw}`,
+                contactType: phone.label,
+                availableLanguage: "Spanish",
+            })),
+        },
+    ],
+};
 ---
 
-<html lang="es">
+<html lang="es-VE">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <meta name="generator" content={Astro.generator} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content={site.seo.description} />
-        <title>{site.seo.title}</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={site.seo.keywords} />
+        <meta name="author" content={site.company.legalName} />
+        <meta name="theme-color" content={site.seo.themeColor} />
+        <meta name="color-scheme" content="light" />
+        {noindex ? (
+            <meta name="robots" content="noindex, nofollow" />
+        ) : (
+            <meta name="robots" content="index, follow, max-image-preview:large" />
+        )}
+        <meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow"} />
+        <link rel="canonical" href={canonicalURL.href} />
+        <link rel="alternate" hreflang="es-VE" href={canonicalURL.href} />
+        <link rel="alternate" hreflang="es" href={canonicalURL.href} />
+        <link rel="alternate" hreflang="x-default" href={canonicalURL.href} />
+        <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+
+        <link rel="icon" type="image/webp" href="/brand/logo.webp" />
+        <link rel="apple-touch-icon" href="/brand/logo.webp" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content={site.seo.locale} />
+        <meta property="og:site_name" content={site.company.legalName} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalURL.href} />
+        <meta property="og:image" content={imageURL} />
+        <meta property="og:image:alt" content={site.seo.imageAlt} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={imageURL} />
+        <meta name="twitter:image:alt" content={site.seo.imageAlt} />
+
+        <meta name="geo.region" content="VE-S" />
+        <meta name="geo.placename" content={`${site.contact.address.city}, ${site.contact.address.state}`} />
+        <meta name="geo.position" content={`${site.contact.address.lat};${site.contact.address.lng}`} />
+        <meta name="ICBM" content={`${site.contact.address.lat}, ${site.contact.address.lng}`} />
+
+        <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+        <meta name="generator" content={Astro.generator} />
     </head>
     <body>
         <Navbar />
         <slot />
+        <Footer />
         <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <script is:inline>
             if (window.netlifyIdentity) {

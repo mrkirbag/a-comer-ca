@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import { site } from "../data/site";
 
-const { kicker, title, subtitle, empty, cta, ctaHref } = site.opiniones;
+const { kicker, title, empty, cta, ctaHref } = site.opiniones;
 
 const opiniones = (await getCollection("opiniones"))
     .filter((entry) => entry.data.aprobada)
@@ -13,8 +13,10 @@ function formatFecha(fecha: Date) {
 }
 ---
 
-<section id="opiniones" data-opiniones class="relative z-20 bg-cream" aria-labelledby="opiniones-title">
-    <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+<section id="opiniones" data-opiniones class="relative z-20 isolate overflow-x-clip bg-cream" aria-labelledby="opiniones-title">
+    <div class="opiniones-wash" aria-hidden="true"></div>
+
+    <div class="relative mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
         <header data-opiniones-header class="mx-auto max-w-3xl text-center">
             <p
                 data-opiniones-copy
@@ -34,82 +36,125 @@ function formatFecha(fecha: Date) {
                 <span class="size-1.5 rotate-45 bg-copper"></span>
                 <span class="h-px w-8 bg-copper/50"></span>
             </span>
-            <p
-                data-opiniones-copy
-                class="mx-auto mt-5 max-w-2xl font-heading text-base font-bold leading-snug text-balance text-burgundy/80 sm:text-lg"
-            >
-                {subtitle}
-            </p>
         </header>
 
         {
             opiniones.length === 0 ? (
-                <div data-opiniones-empty class="mx-auto mt-16 max-w-xl rounded-3xl border border-burgundy/10 bg-white/50 p-8 text-center lg:mt-24">
-                    <p class="font-sans text-base leading-relaxed text-grey/80">{empty}</p>
+                <div data-opiniones-empty class="relative mx-auto mt-8 max-w-xl overflow-hidden rounded-3xl border border-copper/30 bg-white p-8 text-center shadow-[0_8px_24px_rgba(51,51,51,0.06)] lg:mt-10 lg:p-12">
+                    <p class="relative font-sans text-base leading-relaxed text-grey/80 italic">
+                        <span class="opiniones-mark opiniones-mark--open font-accent italic" aria-hidden="true">"</span>
+                        {empty}
+                        <span class="opiniones-mark opiniones-mark--close font-accent italic" aria-hidden="true">"</span>
+                    </p>
                     <a
                         href={ctaHref}
-                        class="mt-6 inline-flex min-w-44 items-center justify-center rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+                        class="relative mt-6 inline-flex min-w-44 items-center justify-center rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
                     >
                         {cta}
                     </a>
                 </div>
             ) : (
-                <ul class="mt-16 grid gap-5 md:grid-cols-2 lg:mt-24 lg:grid-cols-3 lg:gap-6">
-                    {opiniones.map((opinion) => (
-                        <li data-opiniones-card>
-                            <article class="flex h-full flex-col rounded-3xl border border-burgundy/10 bg-white/50 p-7 transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(122,0,16,0.14)] lg:p-8">
-                                <svg class="size-8 text-copper" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        fill="currentColor"
-                                        d="M14 17h3V6h-5v7.5c0 1.93 1.57 3.5 3.5 3.5zm-8 0h3V6H4v7.5C4 15.43 5.57 17 7.5 17z"
-                                    />
-                                </svg>
-                                <p class="mt-4 flex-1 font-sans text-base leading-relaxed text-grey/80">
-                                    {opinion.body?.trim()}
-                                </p>
-                                <div
-                                    class="mt-5 flex gap-0.5 text-copper"
-                                    aria-label={`${opinion.data.estrellas} de 5 estrellas`}
-                                >
-                                    {Array.from({ length: 5 }, (_, index) => (
-                                        <svg
-                                            class:list={[
-                                                "size-5",
-                                                index < opinion.data.estrellas
-                                                    ? "text-copper"
-                                                    : "text-burgundy/15",
-                                            ]}
-                                            viewBox="0 0 24 24"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill="currentColor"
-                                                d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
-                                            />
-                                        </svg>
-                                    ))}
-                                </div>
-                                <p class="mt-4 font-heading text-lg font-bold text-burgundy">
-                                    {opinion.data.nombre}
-                                </p>
-                                {opinion.data.empresa ? (
-                                    <p class="font-heading text-sm font-semibold tracking-wide text-olive">
-                                        {opinion.data.empresa}
-                                    </p>
-                                ) : null}
-                                <p class="mt-1 font-sans text-xs capitalize text-grey/50">
-                                    {formatFecha(opinion.data.fecha)}
-                                </p>
-                            </article>
-                        </li>
-                    ))}
-                </ul>
+                <div data-opiniones-carousel class="opiniones-carousel mt-8 lg:mt-10">
+                    <button
+                        type="button"
+                        data-opiniones-prev
+                        class="opiniones-nav"
+                        aria-label="Opiniones anteriores"
+                    >
+                        <svg class="size-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M15 6l-6 6 6 6"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+
+                    <div
+                        data-opiniones-viewport
+                        class="opiniones-viewport"
+                        role="region"
+                        aria-roledescription="carrusel"
+                        aria-label="Galería de opiniones"
+                        tabindex="0"
+                    >
+                        <ul data-opiniones-track class="opiniones-track">
+                            {opiniones.map((opinion) => (
+                                <li class="opiniones-slide">
+                                    <article class="opiniones-frame">
+                                        <blockquote class="relative z-10 flex h-full min-h-0 flex-col">
+                                            <p class="flex-1 font-sans text-[1.05rem] leading-relaxed text-grey/85 italic sm:text-lg">
+                                                <span class="opiniones-mark opiniones-mark--open font-accent italic" aria-hidden="true">"</span>
+                                                {opinion.body?.trim()}
+                                                <span class="opiniones-mark opiniones-mark--close font-accent italic" aria-hidden="true">"</span>
+                                            </p>
+                                            <footer class="mt-6 border-t border-copper/25 pt-5">
+                                                <div
+                                                    class="flex gap-0.5 text-copper"
+                                                    aria-label={`${opinion.data.estrellas} de 5 estrellas`}
+                                                >
+                                                    {Array.from({ length: 5 }, (_, index) => (
+                                                        <svg
+                                                            class:list={[
+                                                                "size-4",
+                                                                index < opinion.data.estrellas
+                                                                    ? "text-copper"
+                                                                    : "text-burgundy/15",
+                                                            ]}
+                                                            viewBox="0 0 24 24"
+                                                            aria-hidden="true"
+                                                        >
+                                                            <path
+                                                                fill="currentColor"
+                                                                d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                                                            />
+                                                        </svg>
+                                                    ))}
+                                                </div>
+                                                <p class="mt-3 font-heading text-lg font-bold text-burgundy">
+                                                    {opinion.data.nombre}
+                                                </p>
+                                                {opinion.data.empresa ? (
+                                                    <p class="font-heading text-sm font-semibold tracking-wide text-olive">
+                                                        {opinion.data.empresa}
+                                                    </p>
+                                                ) : null}
+                                                <p class="mt-1 font-sans text-xs capitalize text-grey/50">
+                                                    {formatFecha(opinion.data.fecha)}
+                                                </p>
+                                            </footer>
+                                        </blockquote>
+                                    </article>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <button
+                        type="button"
+                        data-opiniones-next
+                        class="opiniones-nav"
+                        aria-label="Opiniones siguientes"
+                    >
+                        <svg class="size-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M9 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+                </div>
             )
         }
 
         {
             opiniones.length > 0 ? (
-                <div data-opiniones-cta class="mt-12 text-center lg:mt-16">
+                <div data-opiniones-cta class="mt-10 text-center lg:mt-14">
                     <a
                         href={ctaHref}
                         class="inline-flex min-w-44 items-center justify-center rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
@@ -125,11 +170,187 @@ function formatFecha(fecha: Date) {
 <style>
     [data-opiniones]:not([data-ready]) :is(
         [data-opiniones-copy],
-        [data-opiniones-card],
+        [data-opiniones-carousel],
         [data-opiniones-empty],
         [data-opiniones-cta]
     ) {
         visibility: hidden;
+    }
+
+    .opiniones-carousel {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .opiniones-wash {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(ellipse 70% 50% at 50% 0%, rgb(253 248 237 / 1), transparent 70%),
+            radial-gradient(ellipse 50% 40% at 8% 80%, rgb(88 105 76 / 0.06), transparent 58%),
+            radial-gradient(ellipse 45% 35% at 96% 18%, rgb(192 138 124 / 0.08), transparent 55%);
+    }
+
+    .opiniones-viewport {
+        container-type: inline-size;
+        overflow: hidden;
+        min-width: 0;
+        outline: none;
+        touch-action: pan-y;
+        margin-block: -0.85rem;
+        padding-block: 0.85rem;
+    }
+
+    .opiniones-track {
+        display: flex;
+        align-items: stretch;
+        gap: 1.25rem;
+        will-change: transform;
+    }
+
+    .opiniones-slide {
+        min-width: 0;
+        flex: 0 0 100cqi;
+    }
+
+    .opiniones-nav {
+        display: flex;
+        width: 2.75rem;
+        height: 2.75rem;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(122 0 16 / 0.14);
+        border-radius: 999px;
+        background: rgb(255 255 255 / 0.78);
+        color: var(--color-burgundy);
+        cursor: pointer;
+        transition:
+            background-color 0.25s ease,
+            color 0.25s ease,
+            border-color 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    .opiniones-nav:hover {
+        border-color: transparent;
+        background: var(--color-burgundy);
+        color: var(--color-cream);
+    }
+
+    .opiniones-nav:focus-visible {
+        outline: 2px solid var(--color-burgundy);
+        outline-offset: 3px;
+    }
+
+    .opiniones-carousel[data-single] .opiniones-nav {
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .opiniones-frame {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid rgb(192 138 124 / 0.38);
+        border-radius: 1.5rem;
+        background: #fff;
+        padding: 2rem 1.75rem 1.75rem;
+        box-shadow: 0 8px 22px rgb(51 51 51 / 0.05);
+        transition:
+            transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+            box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+            border-color 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .opiniones-mark {
+        display: inline-block;
+        font-family: "Oleo Script", cursive;
+        font-style: italic;
+        line-height: 0;
+        color: rgb(192 138 124 / 0.72);
+        user-select: none;
+    }
+
+    .opiniones-mark--open {
+        font-size: 2.85em;
+        margin-right: 0.08em;
+        vertical-align: -0.28em;
+    }
+
+    .opiniones-mark--close {
+        font-size: 2.35em;
+        margin-left: 0.06em;
+        vertical-align: -0.22em;
+    }
+
+    @media (min-width: 768px) {
+        .opiniones-carousel {
+            gap: 0.9rem;
+        }
+
+        .opiniones-track {
+            gap: 1.5rem;
+        }
+
+        .opiniones-slide {
+            flex-basis: calc((100cqi - 1.5rem) / 2);
+        }
+
+        .opiniones-frame {
+            padding: 2.25rem 2rem 2rem;
+        }
+
+        .opiniones-slide:nth-child(odd) .opiniones-frame {
+            transform: rotate(-1.1deg);
+        }
+
+        .opiniones-slide:nth-child(even) .opiniones-frame {
+            transform: rotate(1.1deg);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .opiniones-carousel {
+            gap: 1.1rem;
+        }
+
+        .opiniones-nav {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .opiniones-track {
+            gap: 1.75rem;
+        }
+
+        .opiniones-slide {
+            flex-basis: calc((100cqi - 3.5rem) / 3);
+        }
+
+        .opiniones-slide:nth-child(3n + 1) .opiniones-frame {
+            transform: rotate(-1.4deg);
+        }
+
+        .opiniones-slide:nth-child(3n + 2) .opiniones-frame {
+            transform: rotate(1.2deg);
+        }
+
+        .opiniones-slide:nth-child(3n) .opiniones-frame {
+            transform: rotate(-0.8deg);
+        }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        .opiniones-slide:hover .opiniones-frame,
+        .opiniones-slide:focus-within .opiniones-frame {
+            transform: rotate(0deg) translateY(-0.4rem);
+            border-color: rgb(192 138 124 / 0.7);
+            box-shadow: 0 16px 32px rgb(51 51 51 / 0.1);
+        }
     }
 </style>
 
@@ -139,41 +360,152 @@ function formatFecha(fecha: Date) {
 
     gsap.registerPlugin(ScrollTrigger);
 
+    function perView() {
+        if (window.matchMedia("(min-width: 1024px)").matches) return 3;
+        if (window.matchMedia("(min-width: 768px)").matches) return 2;
+        return 1;
+    }
+
+    function initCarousel(root: HTMLElement) {
+        const carousel = root.querySelector("[data-opiniones-carousel]");
+        const viewport = root.querySelector("[data-opiniones-viewport]");
+        const track = root.querySelector("[data-opiniones-track]");
+        const prev = root.querySelector("[data-opiniones-prev]");
+        const next = root.querySelector("[data-opiniones-next]");
+        const slides = root.querySelectorAll(".opiniones-slide");
+
+        if (
+            !(carousel instanceof HTMLElement) ||
+            !(viewport instanceof HTMLElement) ||
+            !(track instanceof HTMLElement) ||
+            !(prev instanceof HTMLButtonElement) ||
+            !(next instanceof HTMLButtonElement) ||
+            slides.length === 0
+        ) {
+            return;
+        }
+
+        const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        let start = 0;
+        let swipeX = 0;
+
+        const maxStart = () => Math.max(0, slides.length - perView());
+
+        const xFor = (index: number) => {
+            const first = slides[0];
+            if (!(first instanceof HTMLElement)) return 0;
+            const gap = Number.parseFloat(getComputedStyle(track).gap) || 0;
+            return -(index * (first.getBoundingClientRect().width + gap));
+        };
+
+        const syncNav = () => {
+            const single = slides.length <= perView();
+            carousel.toggleAttribute("data-single", single);
+        };
+
+        const goTo = (index: number, animate: boolean) => {
+            start = Math.min(Math.max(0, index), maxStart());
+            const x = xFor(start);
+            gsap.killTweensOf(track);
+            if (animate && !reduced) {
+                gsap.to(track, { x, duration: 0.7, ease: "power3.inOut" });
+            } else {
+                gsap.set(track, { x });
+            }
+            syncNav();
+        };
+
+        const step = (dir: number) => {
+            const view = perView();
+            const max = maxStart();
+            if (max === 0) return;
+
+            if (dir > 0) goTo(start >= max ? 0 : start + view, true);
+            else goTo(start <= 0 ? max : start - view, true);
+        };
+
+        prev.addEventListener("click", () => step(-1));
+        next.addEventListener("click", () => step(1));
+
+        viewport.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") {
+                event.preventDefault();
+                step(-1);
+            }
+            if (event.key === "ArrowRight") {
+                event.preventDefault();
+                step(1);
+            }
+        });
+
+        viewport.addEventListener("pointerdown", (event) => {
+            swipeX = event.clientX;
+        });
+
+        viewport.addEventListener("pointerup", (event) => {
+            const delta = event.clientX - swipeX;
+            if (Math.abs(delta) < 50) return;
+            step(delta < 0 ? 1 : -1);
+        });
+
+        window.addEventListener("resize", () => goTo(start, false));
+
+        goTo(0, false);
+    }
+
     function initOpiniones() {
         const root = document.querySelector("[data-opiniones]");
         if (!(root instanceof HTMLElement) || root.dataset.ready === "true") return;
+
+        initCarousel(root);
+
+        const copy = root.querySelectorAll("[data-opiniones-copy]");
+        const carousel = root.querySelector("[data-opiniones-carousel]");
+        const empty = root.querySelector("[data-opiniones-empty]");
+        const cta = root.querySelector("[data-opiniones-cta]");
 
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             root.dataset.ready = "true";
             return;
         }
 
-        const copy = root.querySelectorAll("[data-opiniones-copy]");
-        const cards = root.querySelectorAll("[data-opiniones-card]");
-        const empty = root.querySelector("[data-opiniones-empty]");
-        const cta = root.querySelector("[data-opiniones-cta]");
-
-        gsap.set(copy, { y: 24, opacity: 0 });
-        if (cards.length) gsap.set(cards, { y: 32, opacity: 0, scale: 0.97 });
-        if (empty) gsap.set(empty, { y: 24, opacity: 0 });
-        if (cta) gsap.set(cta, { y: 16, opacity: 0 });
-
-        root.dataset.ready = "true";
+        const setFrom = (dir: number) => {
+            gsap.set(copy, { y: 24 * dir, opacity: 0 });
+            if (carousel) gsap.set(carousel, { y: 36 * dir, opacity: 0 });
+            if (empty) gsap.set(empty, { y: 28 * dir, opacity: 0, scale: 0.96 });
+            if (cta) gsap.set(cta, { y: 16 * dir, opacity: 0, scale: 0.92 });
+        };
 
         const tl = gsap.timeline({
+            paused: true,
             defaults: { ease: "power3.out" },
-            scrollTrigger: {
-                trigger: root,
-                start: "top 72%",
-            },
         });
 
-        tl.to(copy, { y: 0, opacity: 1, duration: 0.7, stagger: 0.08 });
-        if (cards.length) {
-            tl.to(cards, { y: 0, opacity: 1, scale: 1, duration: 0.7, stagger: 0.1 }, 0.22);
+        tl.to(copy, { y: 0, opacity: 1, duration: 0.7, stagger: 0.08 }, 0);
+        if (carousel) tl.to(carousel, { y: 0, opacity: 1, duration: 0.8 }, 0.18);
+        if (empty) tl.to(empty, { y: 0, opacity: 1, scale: 1, duration: 0.7 }, 0.22);
+        if (cta) {
+            tl.to(cta, { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 0.4);
         }
-        if (empty) tl.to(empty, { y: 0, opacity: 1, duration: 0.6 }, 0.2);
-        if (cta) tl.to(cta, { y: 0, opacity: 1, duration: 0.5 }, 0.45);
+
+        const play = (dir: number) => {
+            tl.pause(0);
+            setFrom(dir);
+            tl.invalidate().restart();
+        };
+
+        setFrom(1);
+        root.dataset.ready = "true";
+
+        ScrollTrigger.create({
+            trigger: root,
+            start: "top 72%",
+            end: "bottom top",
+            onEnter: () => play(1),
+            onEnterBack: () => play(-1),
+            onLeave: () => tl.reverse(),
+            onLeaveBack: () => tl.reverse(),
+        });
     }
 
     initOpiniones();

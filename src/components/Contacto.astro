@@ -5,130 +5,113 @@ import { site, telHref, waHref } from "../data/site";
 const copy = site.contacto;
 const form = copy.form;
 const address = `${site.contact.address.line}, ${site.contact.address.city}, ${site.contact.address.state}`;
+const mapsEmbed = `https://www.google.com/maps?q=${site.contact.address.lat},${site.contact.address.lng}&hl=es&z=18&output=embed`;
 const whatsappHref = waHref(site.contact.whatsapp.raw, site.contact.whatsapp.message);
-const year = new Date().getFullYear();
 const stars = [5, 4, 3, 2, 1] as const;
 ---
 
 <section
     id="contacto"
     data-contacto
-    class="relative z-20 isolate overflow-hidden bg-burgundy"
+    class="relative z-20 isolate overflow-x-clip bg-burgundy"
     aria-labelledby="contacto-title"
 >
     <div class="contacto-glow" aria-hidden="true"></div>
 
-    <div class="relative mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+    <div class="relative mx-auto flex min-h-svh w-full max-w-7xl flex-col justify-center px-5 py-16 lg:px-8 lg:py-16">
         <header class="mx-auto max-w-3xl text-center">
             <p
                 data-contacto-copy
-                class="inline-flex rounded-full bg-copper px-4 py-1.5 font-heading text-xs font-extrabold tracking-[0.2em] text-grey uppercase"
+                class="inline-flex rounded-full bg-copper px-3 py-1 font-heading text-[10px] font-extrabold tracking-[0.2em] text-grey uppercase"
             >
                 {copy.kicker}
             </p>
             <h2
                 data-contacto-copy
                 id="contacto-title"
-                class="mt-3 font-accent text-5xl leading-none text-cream sm:text-6xl md:text-7xl"
+                class="mt-2 font-accent text-4xl leading-none text-cream sm:text-5xl"
             >
                 {copy.title}
             </h2>
-            <p data-contacto-copy class="mx-auto mt-5 max-w-2xl font-sans text-base leading-relaxed text-cream/85 sm:text-lg">
-                {copy.subtitle}
-            </p>
         </header>
 
-        <div class="mt-16 grid gap-8 lg:mt-24 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-12">
-            <div data-contacto-info class="flex flex-col gap-4">
-                <article class="rounded-2xl border border-cream/15 bg-cream/8 p-5">
-                    <div class="flex items-center gap-3">
-                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-cream/15 text-cream">
-                            <Icon name="mdi:phone-outline" class="size-5" aria-hidden="true" />
-                        </div>
-                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
-                            Teléfonos
-                        </p>
-                    </div>
-                    <ul class="mt-4 flex flex-col gap-3">
-                        {
-                            site.contact.phones.map((phone) => (
-                                <li>
-                                    <p class="font-sans text-xs text-cream/55">{phone.label}</p>
-                                    <a
-                                        href={telHref(phone.raw)}
-                                        class="font-heading text-lg font-bold text-cream transition-colors hover:text-copper"
-                                    >
-                                        {phone.display}
-                                    </a>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </article>
-
-                <article class="rounded-2xl border border-cream/15 bg-cream/8 p-5">
-                    <div class="flex items-center gap-3">
-                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-cream/15 text-cream">
-                            <Icon name="mdi:email-outline" class="size-5" aria-hidden="true" />
-                        </div>
-                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
-                            Correo
-                        </p>
-                    </div>
+        <div class="mt-8 grid items-stretch gap-5 lg:grid-cols-2 lg:gap-6">
+            <div data-contacto-info class="flex h-full min-h-0 flex-col gap-3">
+                <div class="grid shrink-0 grid-cols-2 gap-3">
                     <a
-                        href={`mailto:${site.contact.email}`}
-                        class="mt-3 block break-all font-heading text-sm font-bold leading-snug text-cream transition-colors hover:text-copper"
+                        data-contacto-social
+                        href={whatsappHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-cream px-4 py-2.5 font-heading text-sm font-bold tracking-wide text-burgundy transition duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
                     >
-                        {site.contact.email}
+                        <Icon name="logos:whatsapp-icon" class="size-5" aria-hidden="true" />
+                        {copy.whatsappCta}
                     </a>
-                </article>
+                    <a
+                        data-contacto-social
+                        href={site.social.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-cream px-4 py-2.5 font-heading text-sm font-bold tracking-wide text-burgundy transition duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+                    >
+                        <Icon name="logos:instagram-icon" class="size-5" aria-hidden="true" />
+                        {copy.instagramCta}
+                    </a>
+                </div>
 
-                <article class="rounded-2xl border border-cream/15 bg-cream/8 p-5">
-                    <div class="flex items-center gap-3">
-                        <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-cream/15 text-cream">
-                            <Icon name="mdi:map-marker-outline" class="size-5" aria-hidden="true" />
-                        </div>
-                        <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
-                            Dirección
-                        </p>
-                    </div>
-                    <p class="mt-3 font-heading text-base font-bold leading-snug text-cream">{address}</p>
-                    <p class="mt-2 font-sans text-sm text-cream/70">{site.contact.hours}</p>
+                <figure
+                    data-contacto-map
+                    class="relative min-h-56 flex-1 overflow-hidden rounded-2xl border border-cream/15 bg-cream/8"
+                >
+                    <iframe
+                        title={`Ubicación de ${site.company.name}: ${address}`}
+                        src={mapsEmbed}
+                        class="absolute inset-0 h-full w-full border-0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
                     <a
                         href={site.contact.address.mapsUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="mt-4 inline-flex items-center justify-center rounded-full border border-cream/30 px-5 py-2 font-heading text-xs font-bold tracking-wide text-cream transition-colors hover:border-copper hover:text-copper"
+                        class="absolute bottom-3 left-3 z-10 inline-flex items-center rounded-full bg-cream px-3 py-1.5 font-heading text-[10px] font-extrabold tracking-[0.14em] text-burgundy uppercase shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-colors hover:bg-white"
                     >
                         {copy.mapCta}
                     </a>
-                </article>
+                </figure>
 
-                <a
-                    data-contacto-wa
-                    href={whatsappHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-cream px-8 py-3 font-heading text-sm font-bold tracking-wide text-burgundy transition duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
-                >
-                    <Icon name="logos:whatsapp-icon" class="size-5" aria-hidden="true" />
-                    {copy.whatsappCta}
-                </a>
+                <div class="grid shrink-0 grid-cols-2 gap-3">
+                    {
+                        site.contact.phones.map((phone) => (
+                            <a
+                                data-contacto-phone
+                                href={telHref(phone.raw)}
+                                class="flex min-h-16 flex-col justify-center rounded-2xl border border-cream/15 bg-cream/8 px-4 py-3 transition-colors hover:border-copper hover:bg-cream/12 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+                            >
+                                <p class="font-heading text-[10px] font-semibold tracking-[0.18em] text-copper uppercase">
+                                    {phone.label}
+                                </p>
+                                <p class="mt-1 font-heading text-sm font-bold text-cream sm:text-base">
+                                    {phone.display}
+                                </p>
+                            </a>
+                        ))
+                    }
+                </div>
             </div>
 
             <article
                 data-contacto-form
-                class="rounded-3xl bg-cream p-6 shadow-[0_20px_48px_rgba(0,0,0,0.28)] sm:p-8 lg:p-10"
+                class="flex h-full flex-col rounded-2xl bg-cream p-5 shadow-[0_16px_36px_rgba(0,0,0,0.28)] sm:p-6"
             >
-                <p class="inline-flex rounded-full bg-olive/60 px-3 py-1 font-heading text-[10px] font-semibold tracking-[0.18em] text-cream uppercase">
+                <p class="inline-flex w-fit rounded-full bg-olive/60 px-3 py-1 font-heading text-[10px] font-semibold tracking-[0.18em] text-cream uppercase">
                     {form.kicker}
                 </p>
-                <h3 class="mt-3 font-accent text-3xl leading-none text-burgundy sm:text-4xl">
+                <h3 class="mt-2 font-accent text-2xl leading-none text-burgundy sm:text-3xl">
                     {form.title}
                 </h3>
-                <p class="mt-3 font-sans text-sm leading-relaxed text-grey/75 sm:text-base">
-                    {form.body}
-                </p>
 
                 <form
                     method="POST"
@@ -137,7 +120,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                     data-success={form.success}
                     data-error={form.error}
                     data-local={form.localHint}
-                    class="mt-8 flex flex-col gap-5"
+                    class="mt-4 flex min-h-0 flex-1 flex-col gap-3"
                 >
                     <p class="hidden">
                         <label>
@@ -155,7 +138,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                             required
                             maxlength="80"
                             autocomplete="name"
-                            class="mt-2 w-full rounded-2xl border border-burgundy/15 bg-white px-4 py-3 font-sans text-base text-grey outline-none transition-colors focus:border-burgundy"
+                            class="mt-1.5 w-full rounded-xl border border-burgundy/15 bg-white px-3.5 py-2.5 font-sans text-sm text-grey outline-none transition-colors focus:border-burgundy"
                         />
                     </label>
 
@@ -168,7 +151,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                             name="empresa"
                             maxlength="80"
                             autocomplete="organization"
-                            class="mt-2 w-full rounded-2xl border border-burgundy/15 bg-white px-4 py-3 font-sans text-base text-grey outline-none transition-colors focus:border-burgundy"
+                            class="mt-1.5 w-full rounded-xl border border-burgundy/15 bg-white px-3.5 py-2.5 font-sans text-sm text-grey outline-none transition-colors focus:border-burgundy"
                         />
                     </label>
 
@@ -176,7 +159,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                         <legend class="font-heading text-xs font-bold tracking-[0.14em] text-burgundy uppercase">
                             {form.estrellas}
                         </legend>
-                        <div class="star-rating mt-3 flex flex-row-reverse justify-end gap-1">
+                        <div class="star-rating mt-2 flex flex-row-reverse justify-end gap-1">
                             {
                                 stars.map((value, index) => (
                                     <>
@@ -194,7 +177,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                                             class="cursor-pointer transition-colors"
                                         >
                                             <span class="sr-only">{value} estrellas</span>
-                                            <svg class="size-8" viewBox="0 0 24 24" aria-hidden="true">
+                                            <svg class="size-7" viewBox="0 0 24 24" aria-hidden="true">
                                                 <path
                                                     fill="currentColor"
                                                     d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
@@ -207,7 +190,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                         </div>
                     </fieldset>
 
-                    <label class="block">
+                    <label class="flex min-h-0 flex-1 flex-col">
                         <span class="font-heading text-xs font-bold tracking-[0.14em] text-burgundy uppercase">
                             {form.texto}
                         </span>
@@ -215,8 +198,8 @@ const stars = [5, 4, 3, 2, 1] as const;
                             name="texto"
                             required
                             maxlength="600"
-                            rows="5"
-                            class="mt-2 w-full resize-y rounded-2xl border border-burgundy/15 bg-white px-4 py-3 font-sans text-base text-grey outline-none transition-colors focus:border-burgundy"
+                            rows="4"
+                            class="mt-1.5 min-h-24 w-full flex-1 resize-none rounded-xl border border-burgundy/15 bg-white px-3.5 py-2.5 font-sans text-sm text-grey outline-none transition-colors focus:border-burgundy"
                         ></textarea>
                     </label>
 
@@ -229,7 +212,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                     <button
                         type="submit"
                         data-form-submit
-                        class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy disabled:opacity-60"
+                        class="inline-flex min-h-11 w-full shrink-0 items-center justify-center gap-2 rounded-full bg-burgundy px-7 py-2.5 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy disabled:opacity-60"
                     >
                         <svg class="size-4" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill="currentColor" d="M2 21 23 12 2 3v7l15 2-15 2z" />
@@ -239,17 +222,15 @@ const stars = [5, 4, 3, 2, 1] as const;
                 </form>
             </article>
         </div>
-
-        <p data-contacto-copy class="mt-16 text-center font-sans text-xs text-cream/50">
-            {site.company.legalName} · {site.company.rif} · {year}
-        </p>
     </div>
 </section>
 
 <style>
     [data-contacto]:not([data-ready]) :is(
         [data-contacto-copy],
-        [data-contacto-info],
+        [data-contacto-social],
+        [data-contacto-map],
+        [data-contacto-phone],
         [data-contacto-form]
     ) {
         visibility: hidden;
@@ -285,31 +266,54 @@ const stars = [5, 4, 3, 2, 1] as const;
         const root = document.querySelector("[data-contacto]");
         if (!(root instanceof HTMLElement) || root.dataset.ready === "true") return;
 
+        const copy = root.querySelectorAll("[data-contacto-copy]");
+        const socials = root.querySelectorAll("[data-contacto-social]");
+        const map = root.querySelector("[data-contacto-map]");
+        const phones = root.querySelectorAll("[data-contacto-phone]");
+        const formCard = root.querySelector("[data-contacto-form]");
+
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             root.dataset.ready = "true";
             return;
         }
 
-        const copy = root.querySelectorAll("[data-contacto-copy]");
-        const info = root.querySelector("[data-contacto-info]");
-        const formCard = root.querySelector("[data-contacto-form]");
+        const setFrom = (dir: number) => {
+            gsap.set(copy, { y: 24 * dir, opacity: 0 });
+            gsap.set(socials, { y: 20 * dir, opacity: 0, scale: 0.92 });
+            gsap.set(map, { y: 28 * dir, opacity: 0, scale: 0.97 });
+            gsap.set(phones, { y: 20 * dir, opacity: 0 });
+            gsap.set(formCard, { x: 32 * dir, opacity: 0 });
+        };
 
-        gsap.set(copy, { y: 24, opacity: 0 });
-        gsap.set(info, { x: -28, opacity: 0 });
-        gsap.set(formCard, { x: 28, opacity: 0 });
+        const tl = gsap.timeline({
+            paused: true,
+            defaults: { ease: "power3.out" },
+        });
 
+        tl.to(copy, { y: 0, opacity: 1, duration: 0.65, stagger: 0.08 }, 0)
+            .to(socials, { y: 0, opacity: 1, scale: 1, duration: 0.55, stagger: 0.08, ease: "back.out(1.5)" }, 0.12)
+            .to(map, { y: 0, opacity: 1, scale: 1, duration: 0.8 }, 0.22)
+            .to(phones, { y: 0, opacity: 1, duration: 0.55, stagger: 0.08 }, 0.32)
+            .to(formCard, { x: 0, opacity: 1, duration: 0.85 }, 0.18);
+
+        const play = (dir: number) => {
+            tl.pause(0);
+            setFrom(dir);
+            tl.invalidate().restart();
+        };
+
+        setFrom(1);
         root.dataset.ready = "true";
 
-        gsap.timeline({
-            defaults: { ease: "power3.out" },
-            scrollTrigger: {
-                trigger: root,
-                start: "top 72%",
-            },
-        })
-            .to(copy, { y: 0, opacity: 1, duration: 0.7, stagger: 0.08 })
-            .to(info, { x: 0, opacity: 1, duration: 0.8 }, 0.18)
-            .to(formCard, { x: 0, opacity: 1, duration: 0.8 }, 0.22);
+        ScrollTrigger.create({
+            trigger: root,
+            start: "top 78%",
+            end: "bottom top",
+            onEnter: () => play(1),
+            onEnterBack: () => play(-1),
+            onLeave: () => tl.reverse(),
+            onLeaveBack: () => tl.reverse(),
+        });
     }
 
     function initOpinionForm() {

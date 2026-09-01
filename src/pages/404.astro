@@ -4,23 +4,26 @@ import { site } from "../data/site";
 ---
 
 <MainLayout
-    title={`Gracias | ${site.company.name}`}
-    description={site.contacto.form.success}
+    title={`Página no encontrada | ${site.company.name}`}
+    description="Esta página no existe. Vuelve al inicio de A-Comer C.A. para ver el catálogo, los servicios y el contacto."
     noindex
 >
     <section class="flex min-h-svh items-center justify-center bg-cream px-5 pt-24 pb-16">
         <div class="max-w-lg rounded-3xl border border-burgundy/10 bg-white/50 p-8 text-center lg:p-12">
             <p class="inline-flex rounded-full bg-olive/60 px-4 py-1.5 font-heading text-xs font-semibold tracking-[0.2em] text-cream uppercase">
-                Opinión recibida
+                Página no encontrada
             </p>
-            <h1 class="mt-4 font-accent text-4xl leading-none text-burgundy sm:text-5xl">
-                Gracias
+            <p class="mt-5 font-accent text-7xl leading-none text-burgundy sm:text-8xl">
+                404
+            </p>
+            <h1 class="mt-4 font-heading text-2xl font-bold text-burgundy sm:text-3xl">
+                Esta mesa no está en la carta
             </h1>
             <p class="mt-5 font-sans text-base leading-relaxed text-grey/80">
-                {site.contacto.form.success}
+                El enlace no existe o ya no está disponible. Vuelve al inicio para ver el catálogo, los servicios y el contacto.
             </p>
             <a
-                href="/#opiniones"
+                href="/#inicio"
                 class="mt-8 inline-flex min-w-44 items-center justify-center rounded-full bg-burgundy px-8 py-3 font-heading text-sm font-bold tracking-wide text-cream transition-colors hover:bg-burgundy/85"
             >
                 Volver al inicio

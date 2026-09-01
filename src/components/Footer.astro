@@ -1,0 +1,210 @@
+---
+import { Icon } from "astro-icon/components";
+import { site, telHref, waHref } from "../data/site";
+
+const year = new Date().getFullYear();
+const address = `${site.contact.address.line}, ${site.contact.address.city}, ${site.contact.address.state}`;
+const whatsappHref = waHref(site.contact.whatsapp.raw, site.contact.whatsapp.message);
+const nav = [...site.nav, { href: "#aliados", label: "Aliados" }];
+---
+
+<footer data-footer class="relative z-20 isolate overflow-hidden bg-burgundy">
+    <div class="footer-glow" aria-hidden="true"></div>
+
+    <div class="relative mx-auto max-w-7xl px-5 pt-16 pb-8 lg:px-8 lg:pt-20 lg:pb-10">
+        <div class="grid gap-12 lg:grid-cols-[1.15fr_0.7fr_1fr_0.95fr] lg:gap-10">
+            <div data-footer-col>
+                <a href="/#inicio" class="inline-block">
+                    <img
+                        src="/brand/logo-blanco.png"
+                        alt={`${site.company.name} — ${site.company.tagline}`}
+                        class="h-12 w-auto lg:h-14"
+                        width="200"
+                        height="56"
+                    />
+                </a>
+                <p class="mt-5 font-accent text-2xl leading-none text-cream">{site.company.tagline}</p>
+                <p class="mt-4 max-w-sm font-sans text-sm leading-relaxed text-cream/70">
+                    {site.about.intro}
+                </p>
+                {
+                    site.social.instagram ? (
+                        <a
+                            href={site.social.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="mt-6 inline-flex items-center gap-2 font-heading text-xs font-bold tracking-[0.14em] text-cream uppercase transition-colors hover:text-copper"
+                        >
+                            <Icon name="logos:instagram-icon" class="size-4" aria-hidden="true" />
+                            Instagram
+                        </a>
+                    ) : null
+                }
+            </div>
+
+            <nav data-footer-col aria-label="Pie de página">
+                <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                    Explorar
+                </p>
+                <ul class="mt-5 flex flex-col gap-2.5">
+                    {
+                        nav.map((link) => (
+                            <li>
+                                <a
+                                    href={`/${link.href}`}
+                                    class="font-heading text-sm font-bold text-cream/85 transition-colors hover:text-copper"
+                                >
+                                    {link.label}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </nav>
+
+            <div data-footer-col>
+                <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                    Casa
+                </p>
+                <p class="mt-5 font-heading text-sm font-bold leading-snug text-cream">{address}</p>
+                <p class="mt-3 font-sans text-sm text-cream/65">{site.contact.hours}</p>
+                <a
+                    href={site.contact.address.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-4 inline-flex items-center gap-1.5 font-heading text-xs font-bold tracking-wide text-copper transition-colors hover:text-cream"
+                >
+                    Cómo llegar
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div data-footer-col>
+                <p class="font-heading text-[11px] font-semibold tracking-[0.2em] text-copper uppercase">
+                    Hablar
+                </p>
+                <ul class="mt-5 flex flex-col gap-3">
+                    {
+                        site.contact.phones.map((phone) => (
+                            <li>
+                                <p class="font-sans text-[11px] text-cream/50">{phone.label}</p>
+                                <a
+                                    href={telHref(phone.raw)}
+                                    class="font-heading text-base font-bold text-cream transition-colors hover:text-copper"
+                                >
+                                    {phone.display}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+                {
+                    site.contact.emails.map((email, index) => (
+                        <a
+                            href={`mailto:${email}`}
+                            class:list={[
+                                "block break-all font-sans text-xs leading-snug text-cream/70 transition-colors hover:text-copper",
+                                index === 0 ? "mt-4" : "mt-1",
+                            ]}
+                        >
+                            {email}
+                        </a>
+                    ))
+                }
+                <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-cream px-5 py-2.5 font-heading text-xs font-bold tracking-wide text-burgundy transition duration-300 hover:-translate-y-0.5 hover:bg-white"
+                >
+                    <Icon name="logos:whatsapp-icon" class="size-4" aria-hidden="true" />
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div
+            data-footer-bar
+            class="mt-14 flex flex-col items-center justify-between gap-3 border-t border-cream/12 pt-6 text-center lg:flex-row lg:text-left"
+        >
+            <p class="font-sans text-[11px] leading-relaxed text-cream/45">
+                {site.company.legalName} · {site.company.rif}
+            </p>
+            <p class="font-sans text-[11px] text-cream/45">
+                {site.contact.address.city}, {site.contact.address.state} · {year}
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    [data-footer]:not([data-ready]) :is([data-footer-col], [data-footer-bar]) {
+        visibility: hidden;
+    }
+
+    .footer-glow {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(ellipse 60% 50% at 0% 100%, rgb(192 138 124 / 0.22), transparent 55%),
+            radial-gradient(ellipse 40% 40% at 100% 0%, rgb(88 105 76 / 0.28), transparent 50%);
+    }
+</style>
+
+<script>
+    import gsap from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    function initFooter() {
+        const root = document.querySelector("[data-footer]");
+        if (!(root instanceof HTMLElement) || root.dataset.ready === "true") return;
+
+        const cols = root.querySelectorAll("[data-footer-col]");
+        const bar = root.querySelector("[data-footer-bar]");
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            root.dataset.ready = "true";
+            return;
+        }
+
+        const setFrom = (dir: number) => {
+            gsap.set(cols, { y: 22 * dir, opacity: 0 });
+            gsap.set(bar, { y: 12 * dir, opacity: 0 });
+        };
+
+        const tl = gsap.timeline({
+            paused: true,
+            defaults: { ease: "power3.out" },
+        });
+
+        tl.to(cols, { y: 0, opacity: 1, duration: 0.7, stagger: 0.08 }, 0).to(
+            bar,
+            { y: 0, opacity: 1, duration: 0.5 },
+            0.28,
+        );
+
+        const play = (dir: number) => {
+            tl.pause(0);
+            setFrom(dir);
+            tl.invalidate().restart();
+        };
+
+        setFrom(1);
+        root.dataset.ready = "true";
+
+        ScrollTrigger.create({
+            trigger: root,
+            start: "top 90%",
+            end: "bottom top",
+            onEnter: () => play(1),
+            onEnterBack: () => play(-1),
+            onLeaveBack: () => tl.reverse(),
+        });
+    }
+
+    initFooter();
+    document.addEventListener("astro:page-load", initFooter);
+</script>

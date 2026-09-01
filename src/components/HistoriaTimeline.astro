@@ -21,12 +21,13 @@ const iconPaths = {
         </h3>
     </header>
 
-    <ol class="relative mt-14 overflow-x-clip lg:mt-20">
-        <div
-            data-timeline-track
-            class="absolute top-6 bottom-6 left-6 w-px bg-burgundy/15 lg:left-1/2 lg:-translate-x-1/2"
-            aria-hidden="true"
-        >
+    <div class="relative mt-8 max-lg:-mx-5 max-lg:overflow-x-clip max-lg:px-5 max-lg:py-6 lg:mt-20 lg:overflow-x-clip">
+        <ol class="relative">
+            <div
+                data-timeline-track
+                class="absolute top-6 bottom-6 left-7 w-px bg-burgundy/15 lg:left-1/2 lg:-translate-x-1/2"
+                aria-hidden="true"
+            >
             <span
                 data-timeline-line
                 class="absolute inset-x-0 top-0 h-full origin-top bg-linear-to-b from-burgundy via-burgundy to-copper"
@@ -46,7 +47,7 @@ const iconPaths = {
                         data-timeline-item
                         class="relative grid pb-12 last:pb-0 lg:grid-cols-2 lg:gap-28 lg:pb-16"
                     >
-                        <span class="absolute top-0 left-0 z-10 lg:left-1/2 lg:-translate-x-1/2">
+                        <span class="absolute top-0 left-1 z-10 lg:left-1/2 lg:-translate-x-1/2">
                             <span
                                 data-timeline-dot
                                 class="flex size-12 items-center justify-center rounded-full border-[3px] border-cream bg-burgundy text-cream shadow-[0_0_0_3px_var(--color-burgundy)]"
@@ -78,7 +79,8 @@ const iconPaths = {
                 );
             })
         }
-    </ol>
+        </ol>
+    </div>
 </div>
 
 <style>

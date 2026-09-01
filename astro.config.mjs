@@ -1,8 +1,12 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import icon from 'astro-icon';
+import sitemap from '@astrojs/sitemap';
+
+const site = 'https://acomerca.com';
 
 export default defineConfig({
+  site,
   integrations: [
     icon({
       include: {
@@ -14,6 +18,20 @@ export default defineConfig({
           'clock-outline',
           'card-account-details-outline',
         ],
+      },
+    }),
+    sitemap({
+      filter: (page) =>
+        !page.includes('/admin') &&
+        !page.includes('/gracias') &&
+        !page.includes('/404'),
+      serialize(item) {
+        const homepage = item.url === `${site}/` || item.url === site;
+        return {
+          ...item,
+          changefreq: homepage ? 'weekly' : 'monthly',
+          priority: homepage ? 1 : 0.6,
+        };
       },
     }),
   ],
