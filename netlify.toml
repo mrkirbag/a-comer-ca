@@ -16,8 +16,8 @@
   status = 301
 
 [[redirects]]
-  from = "https://www.acomerca.com/*"
-  to = "https://acomerca.com/:splat"
+  from = "https://www.a-comerca.com/*"
+  to = "https://a-comerca.com/:splat"
   status = 301
   force = true
 

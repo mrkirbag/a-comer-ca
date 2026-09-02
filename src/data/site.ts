@@ -45,7 +45,7 @@ export const site = {
     },
 
     seo: {
-        url: "https://acomerca.com",
+        url: "https://a-comerca.com",
         title: "Andina de Comercialización C.A. | A-Comer C.A.",
         description:
             "Suministros e insumos para la gastronomía en el occidente de Venezuela. Marcas aliadas, equipos y acompañamiento profesional desde San Cristóbal, Táchira.",
@@ -142,7 +142,7 @@ export const site = {
                 {
                     letter: "er",
                     title: "El oficio",
-                    body: "La e es el tenedor; la r, los utensilios de cocina: el gesto de servir y las manos en el fogón, juntas en el mismo trazo.",
+                    body: "La E es el tenedor; la R los utensilios de cocina: el gesto de servir y las manos en el fogón, juntas en el mismo trazo.",
                 },
             ],
         },
@@ -152,7 +152,7 @@ export const site = {
         kicker: "Catálogo",
         title: "Marcas Aliadas",
         subtitle:
-            "Ingredientes, equipos y menaje de las marcas que representamos para las empresas del mundo de la gastronomía",
+            "Ingredientes, equipos y menaje de las marcas que representamos para las empresas del mundo de la gastronomía y afines",
         // logo: archivo en public/logos-proveedores (visible afuera, cerrado)
         // image: archivo en public/imagenes-proveedores (visible adentro, al abrir)
         // description: texto breve visible adentro, junto a la imagen
@@ -160,21 +160,21 @@ export const site = {
             {
                 title: "Indelma",
                 logo: "/logos-proveedores/indelma.png",
-                description: "Almidones, glucosas y caramelina para la industria alimentaria. Ideales para elaborar todo tipo de dulces, panadería, pastelería, salsas, embutidos y jarabes",
+                description: "Almidones, glucosas y caramelina para la industria alimentaria y farmaceutica. Ideales para elaborar todo tipo de dulces, panadería, pastelería, helados, yogurt, salsas, embutidos y jarabes para la tos",
                 image: "/imagenes-proveedores/indelma.webp",
                 imageAlt: "Ingredientes Indelma",
             },
             {
                 title: "Frutalia",
                 logo: "/logos-proveedores/frutalia.webp",
-                description: "Sabores y colores vegetales 100% garantizados, esencias y aromas para pastelería, gelatinas y flanes",
+                description: "Sabores y colores vegetales 100% garantizados para pastelería, repostería, heladería, bebidas lácteas, gelatinas y flanes",
                 image: "/imagenes-proveedores/frutalia.webp",
                 imageAlt: "Sabores y colores Frutalia",
             },
             {
                 title: "Multicao",
                 logo: "/logos-proveedores/multicao.webp",
-                description: "Chocolate untable con avellanasy capita mágica para heladería y repostería",
+                description: "Chocolate untable con avellanas y capita mágica para heladería y repostería",
                 image: "/imagenes-proveedores/multicao.webp",
                 imageAlt: "Productos Multicao",
             },
@@ -188,14 +188,14 @@ export const site = {
             {
                 title: "Alumware",
                 logo: "/logos-proveedores/alumware.png",
-                description: "Ollas, bandejas y utensilios para la cocina profesional. Desde cacerolas y sartenes hasta vasos y jarras",
+                description: "Ollas, bandejas, moldes para pan, cupcakes y demás utensilios para la cocina profesional",
                 image: "/imagenes-proveedores/alumware.webp",
                 imageAlt: "Utensilios Alumware",
             },
             {
                 title: "Coldelec",
                 logo: "/logos-proveedores/coldelec.png",
-                description: "Hornos industriales para panadería, pastelería y cocina",
+                description: "Hornos industriales para panadería, pastelería, pizzerias y cocina en general",
                 image: "/imagenes-proveedores/coldelec.webp",
                 imageAlt: "Hornos industriales Coldelec",
             },
@@ -241,16 +241,16 @@ export const site = {
     services: {
         kicker: "Nuestro diferencial",
         title: "Servicios de acompañamiento",
-        highlight: "No solo vendemos. Te acompañamos",
-        body: "No importa si es un insumo, un equipo o un menaje: profesionales del área te orientan para elegir bien y para usarlo bien",
+        highlight: "No solo vendemos productos, te brindamos asesoría",
+        body: "No importa si es un insumo, un equipo o un menaje: profesionales del área te apoyan para que tomes la mejor decisión a la hora de comprar",
         examples: [
             {
                 title: "Te orientamos al comprar",
-                body: "Profesionales del área te dicen qué insumo o equipo te sirve, según tu proceso",
+                body: "Escuchamos tus requerimientos para poder sugerirte las diferentes opciones que tenemos para ti",
             },
             {
-                title: "Te acompañamos al usarlo",
-                body: "Insumos, recetas o menaje: te explican cómo aplicarlo para que rinda en la cocina",
+                title: "Te brindamos la mejor asesoría",
+                body: "Nuestros productos vienen acompañados con sus fichas técnicas para que puedas aprovechar al máximo cada producto",
             },
         ],
         cta: "Conoce más",

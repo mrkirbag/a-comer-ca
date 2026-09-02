@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import InstagramIcon from "./InstagramIcon.astro";
 import { site, telHref, waHref } from "../data/site";
 
 const copy = site.contacto;
@@ -55,7 +56,7 @@ const stars = [5, 4, 3, 2, 1] as const;
                         rel="noopener noreferrer"
                         class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-cream px-4 py-2.5 font-heading text-sm font-bold tracking-wide text-burgundy transition duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
                     >
-                        <Icon name="logos:instagram-icon" class="size-5" aria-hidden="true" />
+                        <InstagramIcon class="size-5" />
                         {copy.instagramCta}
                     </a>
                 </div>

@@ -3,14 +3,14 @@ import tailwindcss from '@tailwindcss/vite';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 
-const site = 'https://acomerca.com';
+const site = 'https://a-comerca.com';
 
 export default defineConfig({
   site,
   integrations: [
     icon({
       include: {
-        logos: ['whatsapp-icon', 'instagram-icon', 'tiktok-icon', 'facebook'],
+        logos: ['whatsapp-icon', 'tiktok-icon', 'facebook'],
         mdi: [
           'map-marker-outline',
           'email-outline',

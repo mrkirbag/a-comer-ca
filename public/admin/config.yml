@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://acomerca.com
-display_url: https://acomerca.com
+site_url: https://a-comerca.com
+display_url: https://a-comerca.com
 logo_url: /brand/logo.webp
 
 # Solo aplica en localhost con `npx decap-server`. En Netlify se ignora.
