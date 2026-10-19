@@ -1,0 +1,344 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import FloatingCartDrawer from "../../components/FloatingCartDrawer.astro";
+import productsData from "../../data/products.json";
+import { catalogCategories, type Product } from "../../data/catalogTypes";
+
+export function getStaticPaths() {
+    const products: Product[] = productsData as Product[];
+    return products.map((product) => ({
+        params: { id: product.id },
+        props: { product },
+    }));
+}
+
+interface Props {
+    product: Product;
+}
+
+const { product } = Astro.props;
+
+// Related products in the same category or brand
+const allProducts: Product[] = productsData as Product[];
+const relatedProducts = allProducts
+    .filter((p) => p.id !== product.id && (p.category === product.category || p.brand === product.brand))
+    .slice(0, 4);
+
+const categoryInfo = catalogCategories.find((c) => c.id === product.category);
+---
+
+<MainLayout
+    title={`${product.name} — Catálogo A-Comer C.A.`}
+    description={product.description ? `${product.description.slice(0, 155)}...` : `${product.name} disponible en A-Comer C.A. Distribución gastronómica en San Cristóbal, Táchira.`}
+    image={product.image}
+>
+    <!-- Breadcrumb & Back Navigation -->
+    <nav class="bg-white border-b border-burgundy/10 pt-28 pb-4">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <div class="flex flex-wrap items-center gap-2 font-sans text-xs text-grey/70">
+                <a href="/" class="hover:text-burgundy transition-colors">Inicio</a>
+                <span>/</span>
+                <a href="/catalogo" class="hover:text-burgundy transition-colors">Catálogo</a>
+                <span>/</span>
+                {categoryInfo && (
+                    <>
+                        <a href="/catalogo" class="hover:text-burgundy transition-colors capitalize">
+                            {categoryInfo.name}
+                        </a>
+                        <span>/</span>
+                    </>
+                )}
+                <span class="font-bold text-burgundy truncate max-w-xs sm:max-w-md">{product.name}</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="py-10 lg:py-16 bg-cream min-h-[calc(100vh-280px)]">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <!-- Back Button -->
+            <div class="mb-8">
+                <a
+                    href="/catalogo"
+                    class="inline-flex items-center gap-2 rounded-full border border-burgundy/20 bg-white/70 px-4 py-2 font-heading text-xs font-bold text-burgundy shadow-sm transition-all hover:bg-white hover:border-burgundy/40 hover:-translate-x-1"
+                >
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Volver al Catálogo</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+                <!-- Product Gallery / Visual Column (5 Cols) -->
+                <div class="lg:col-span-5">
+                    <div class="sticky top-28 overflow-hidden rounded-3xl border border-burgundy/15 bg-white p-8 shadow-xl">
+                        <!-- Brand Badge -->
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-burgundy/10 px-3.5 py-1 font-heading text-xs font-bold uppercase tracking-wider text-burgundy">
+                                {product.brand}
+                            </span>
+                            {product.subCategory && (
+                                <span class="rounded-lg bg-olive/15 px-3 py-1 font-sans text-xs font-semibold text-olive">
+                                    {product.subCategory}
+                                </span>
+                            )}
+                        </div>
+
+                        <!-- Main Image Display -->
+                        <div class="relative flex h-80 sm:h-96 w-full items-center justify-center rounded-2xl bg-gradient-to-b from-cream/40 to-cream/90 p-6">
+                            <img
+                                src={product.image}
+                                alt={product.name}
+                                class="max-h-full max-w-full object-contain transition-transform duration-500 hover:scale-105"
+                            />
+                        </div>
+
+                        <!-- Editorial Disclaimer -->
+                        <div class="mt-6 flex items-center gap-3 rounded-2xl bg-cream/70 p-4 border border-burgundy/10 text-xs text-grey/80 font-sans">
+                            <svg class="size-5 text-copper shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>
+                                <strong>Modelo Revista:</strong> Consulta disponibilidad inmediata, especificaciones de embalaje y precio en divisas o moneda nacional.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Content / Specification Column (7 Cols) -->
+                <div class="lg:col-span-7 space-y-8">
+                    <!-- Heading Area -->
+                    <div class="space-y-3 border-b border-burgundy/15 pb-6">
+                        <div class="flex items-center gap-2">
+                            <span class="font-heading text-xs font-bold uppercase tracking-[0.2em] text-copper">
+                                {categoryInfo?.name || "Catálogo A-Comer"}
+                            </span>
+                        </div>
+                        <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-burgundy leading-tight">
+                            {product.name}
+                        </h1>
+                        {product.description && (
+                            <p class="font-sans text-base sm:text-lg text-grey/80 leading-relaxed">
+                                {product.description}
+                            </p>
+                        )}
+                    </div>
+
+                    <!-- Features & Key Bullets -->
+                    {product.features && product.features.length > 0 && (
+                        <div class="space-y-4">
+                            <h2 class="font-heading text-lg font-bold text-burgundy">
+                                Características Destacadas
+                            </h2>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-sans text-sm text-grey/80">
+                                {product.features.map((feature) => (
+                                    <li class="flex items-start gap-2.5 rounded-xl border border-burgundy/10 bg-white/70 p-3 shadow-sm">
+                                        <svg class="size-5 text-olive shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                        <span class="leading-snug">{feature}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                    <!-- Details Table (Presentation & Usage) -->
+                    <div class="rounded-2xl border border-burgundy/15 bg-white p-6 shadow-sm space-y-4">
+                        <h3 class="font-heading text-base font-bold text-burgundy">
+                            Ficha de Suministro
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-sans">
+                            {product.presentation && (
+                                <div class="rounded-xl bg-cream/60 p-3 border border-burgundy/5">
+                                    <span class="block font-heading text-xs font-bold uppercase tracking-wider text-burgundy/70">
+                                        Presentación Comercial
+                                    </span>
+                                    <span class="mt-1 block font-medium text-grey">
+                                        {product.presentation}
+                                    </span>
+                                </div>
+                            )}
+
+                            {product.brand && (
+                                <div class="rounded-xl bg-cream/60 p-3 border border-burgundy/5">
+                                    <span class="block font-heading text-xs font-bold uppercase tracking-wider text-burgundy/70">
+                                        Marca / Fabricante
+                                    </span>
+                                    <span class="mt-1 block font-medium text-grey">
+                                        {product.brand}
+                                    </span>
+                                </div>
+                            )}
+
+                            {product.usage && (
+                                <div class="sm:col-span-2 rounded-xl bg-cream/60 p-3 border border-burgundy/5">
+                                    <span class="block font-heading text-xs font-bold uppercase tracking-wider text-burgundy/70">
+                                        Modo de Uso / Aplicación
+                                    </span>
+                                    <span class="mt-1 block font-medium text-grey/90 leading-relaxed">
+                                        {product.usage}
+                                    </span>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    <!-- Action Box: Quantity selector + Add to List + Direct WhatsApp -->
+                    <div class="rounded-3xl border-2 border-burgundy/20 bg-white p-6 sm:p-8 shadow-xl space-y-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-heading text-xs font-semibold text-olive uppercase tracking-wider">
+                                    Disponibilidad & Cotización
+                                </span>
+                                <h4 class="font-heading text-xl font-bold text-burgundy">
+                                    Agregar a tu Lista de Revista
+                                </h4>
+                            </div>
+                            <span class="inline-flex rounded-full bg-copper/20 px-3 py-1 font-heading text-xs font-bold text-burgundy">
+                                Sin Pago Online
+                            </span>
+                        </div>
+
+                        <!-- Quantity Selector and Buttons -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                            <!-- Quantity -->
+                            <div class="flex items-center justify-between sm:justify-start rounded-2xl border border-burgundy/20 bg-cream/50 px-4 py-2.5">
+                                <span class="mr-3 font-heading text-xs font-bold uppercase tracking-wider text-burgundy/70">
+                                    Cantidad:
+                                </span>
+                                <div class="flex items-center gap-3">
+                                    <button
+                                        type="button"
+                                        id="qty-minus"
+                                        class="flex size-8 items-center justify-center rounded-lg bg-white border border-burgundy/15 text-burgundy font-bold hover:bg-burgundy hover:text-cream transition-colors cursor-pointer"
+                                    >
+                                        -
+                                    </button>
+                                    <span id="qty-display" class="font-heading text-base font-bold text-burgundy w-6 text-center">
+                                        1
+                                    </span>
+                                    <button
+                                        type="button"
+                                        id="qty-plus"
+                                        class="flex size-8 items-center justify-center rounded-lg bg-white border border-burgundy/15 text-burgundy font-bold hover:bg-burgundy hover:text-cream transition-colors cursor-pointer"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Add to Cart Button -->
+                            <button
+                                type="button"
+                                id="detail-add-cart-btn"
+                                class="flex-1 inline-flex items-center justify-center gap-2 rounded-2xl bg-burgundy px-6 py-4 font-heading text-sm font-bold text-cream shadow-md transition-all hover:bg-burgundy/90 hover:scale-[1.02] cursor-pointer"
+                            >
+                                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                    <path d="M3 6h18"></path>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                                <span>Añadir a mi Lista</span>
+                            </button>
+                        </div>
+
+                        <!-- Direct Instant WhatsApp consultation for this single product -->
+                        <div class="pt-2 text-center sm:text-left">
+                            <a
+                                id="direct-whatsapp-link"
+                                href={`https://wa.me/584247605859?text=${encodeURIComponent(`Hola A-Comer C.A., estoy interesado(a) en el producto del catálogo: *${product.name}* (Marca: ${product.brand}). ¿Tienen disponibilidad actual y formas de pago?`)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 text-xs font-heading font-semibold text-olive hover:text-burgundy transition-colors"
+                            >
+                                <svg class="size-4 fill-current text-[#25D366]" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                </svg>
+                                <span>¿Prefieres consultar sólo este producto directamente por WhatsApp? Haz clic aquí</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products Section -->
+            {relatedProducts.length > 0 && (
+                <div class="mt-20 border-t border-burgundy/15 pt-12">
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <span class="font-heading text-xs font-semibold uppercase tracking-wider text-olive">Sugerencias</span>
+                            <h2 class="font-heading text-2xl font-bold text-burgundy">Productos Relacionados</h2>
+                        </div>
+                        <a href="/catalogo" class="font-heading text-xs font-bold text-burgundy hover:text-copper transition-colors">
+                            Ver todo el catálogo &rarr;
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {relatedProducts.map((rel) => (
+                            <a
+                                href={`/catalogo/${rel.id}`}
+                                class="group flex flex-col justify-between overflow-hidden rounded-3xl border border-burgundy/10 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-burgundy/25"
+                            >
+                                <div class="relative h-44 w-full overflow-hidden rounded-2xl bg-cream/50 p-4 flex items-center justify-center">
+                                    <img
+                                        src={rel.image}
+                                        alt={rel.name}
+                                        class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                    <span class="absolute top-2 left-2 rounded-full bg-cream/90 px-2 py-0.5 font-heading text-[10px] font-bold text-burgundy">
+                                        {rel.brand}
+                                    </span>
+                                </div>
+                                <div class="mt-3">
+                                    <h3 class="font-heading text-sm font-bold text-burgundy group-hover:text-copper transition-colors truncate">
+                                        {rel.name}
+                                    </h3>
+                                    <p class="mt-1 font-sans text-xs text-grey/60 line-clamp-2">
+                                        {rel.description}
+                                    </p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    </section>
+
+    <!-- Floating Cart Drawer Component -->
+    <FloatingCartDrawer />
+</MainLayout>
+
+<script is:inline define:vars={{ product }}>
+    let currentQty = 1;
+    const qtyDisplay = document.getElementById("qty-display");
+    const qtyPlus = document.getElementById("qty-plus");
+    const qtyMinus = document.getElementById("qty-minus");
+    const addToCartBtn = document.getElementById("detail-add-cart-btn");
+
+    qtyPlus?.addEventListener("click", () => {
+        currentQty++;
+        if (qtyDisplay) qtyDisplay.textContent = currentQty;
+    });
+
+    qtyMinus?.addEventListener("click", () => {
+        if (currentQty > 1) {
+            currentQty--;
+            if (qtyDisplay) qtyDisplay.textContent = currentQty;
+        }
+    });
+
+    addToCartBtn?.addEventListener("click", () => {
+        if (window.addToCatalogCart) {
+            window.addToCatalogCart(product, currentQty);
+        }
+    });
+</script>

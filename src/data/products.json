@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "horno-a-gas-coldelec-4-bandejas",
+    "name": "Horno a Gas Coldelec 4 Bandejas",
+    "brand": "Coldelec",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/horno-a-gas-coldelec-4-bandejas.webp",
+    "features": [
+      "Capacidad para 4 bandejas",
+      "Funcionamiento a gas de alta eficiencia",
+      "Estructura robusta para panadería y gastronomía"
+    ],
+    "presentation": "Unidad industrial",
+    "usage": "Cocción comercial de panes, pizzas y pastelería."
+  },
+  {
+    "id": "horno-industrial-a-gas-coldelec-5-camaras",
+    "name": "Horno Industrial a Gas Coldelec 5 Cámaras",
+    "brand": "Coldelec",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/horno-industrial-a-gas-coldelec-5-camaras.webp",
+    "features": [
+      "5 cámaras / Capacidad para 10 bandejas",
+      "Dimensiones: 1.81 x 1.25 x 0.97 m",
+      "Funcionamiento a gas continuo de alto volumen"
+    ],
+    "presentation": "Unidad industrial",
+    "usage": "Alta producción continua en panaderías y plantas gastronómicas."
+  },
+  {
+    "id": "batidora-planetaria-senzani-10lt",
+    "name": "Batidora Planetaria Senzani 10L",
+    "brand": "Senzani",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/batidora-planetaria-senzani-10lt.webp",
+    "features": [
+      "Capacidad de 10 Litros",
+      "Voltaje 110V",
+      "3 accesorios (gancho, paleta y globo) y 3 velocidades"
+    ],
+    "presentation": "Unidad con tazón en acero inox y 3 accesorios",
+    "usage": "Mezclas de repostería, batidos livianos y masas suaves."
+  },
+  {
+    "id": "batidora-planetaria-senzani-30lt",
+    "name": "Batidora Planetaria Senzani 30L",
+    "brand": "Senzani",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/batidora-planetaria-senzani-10lt.webp",
+    "features": [
+      "Capacidad de 30 Litros",
+      "Voltaje 110V",
+      "3 accesorios (gancho, paleta y globo) y 3 velocidades"
+    ],
+    "presentation": "Unidad industrial con tazón reforzado y 3 accesorios",
+    "usage": "Producción industrial de masas, tortas y cremas."
+  },
+  {
+    "id": "batidora-manual-doble-aspa",
+    "name": "Batidora Manual Doble Aspa",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/batidora-manual-doble-aspa.webp",
+    "features": [
+      "Sistema de doble aspa en acero inoxidable",
+      "Capacidad recomendada 300ml",
+      "Diseño manual ergonómico de fácil limpieza"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Batidos rápidos, emulsiones y preparaciones de barra y cocina."
+  },
+  {
+    "id": "fregadero-industrial-start-acero-inox",
+    "name": "Fregadero Industrial en Acero Inoxidable Start",
+    "brand": "Start",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/fregadero-industrial-start-acero-inox.webp",
+    "features": [
+      "Fabricado íntegramente en acero inoxidable resistente",
+      "Medidas generales: 70 x 90 cm",
+      "1 ponchera profunda de alta capacidad"
+    ],
+    "presentation": "Unidad con estructura de soporte",
+    "usage": "Lavado y desinfección de ollas, bandejas y vajilla gastronómica."
+  },
+  {
+    "id": "molino-industrial-carne-senzani-1hp-220v",
+    "name": "Molino Industrial para Carne Senzani 1HP (220V)",
+    "brand": "Senzani",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/molino-industrial-carne-senzani-1hp-220v.webp",
+    "features": [
+      "Modelo de sobremesa de alta potencia 1 HP",
+      "Voltaje 220V para trabajo continuo",
+      "Cabezal y tolva en acero inoxidable de grado alimenticio"
+    ],
+    "presentation": "Unidad de sobremesa con bandeja y mazo empujador",
+    "usage": "Molienda continua en carnicerías, charcuterías y restaurantes."
+  },
+  {
+    "id": "molino-industrial-carne-senzani-110v",
+    "name": "Molino Industrial para Carne Senzani (110V)",
+    "brand": "Senzani",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/molino-industrial-carne-senzani-110v.webp",
+    "features": [
+      "Potencia 1.1 / 1.5 HP de alto torque",
+      "Voltaje 110V adaptable a cualquier cocina comercial",
+      "Transmisión reforzada para carnes de todo tipo"
+    ],
+    "presentation": "Unidad industrial de sobremesa con accesorios",
+    "usage": "Procesamiento rápido de carne fresca y molidos especiales."
+  },
+  {
+    "id": "molino-industrial-queso-american-1hp",
+    "name": "Molino Industrial para Queso American 1HP",
+    "brand": "American",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/molino-industrial-queso-american-1hp.webp",
+    "features": [
+      "Motor de alta potencia 1 HP",
+      "Rallado y molido uniforme de quesos duros y semiduros",
+      "Cuerpo robusto de fácil sanitización"
+    ],
+    "presentation": "Unidad comercial de sobremesa",
+    "usage": "Rallado continuo para pizzerías, panaderías y procesadoras de lácteos."
+  },
+  {
+    "id": "molino-cafe-grano-bezzera",
+    "name": "Molino para Café en Grano Bezzera",
+    "brand": "Bezzera",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/molino-cafe-grano.webp",
+    "features": [
+      "Rendimiento de molienda: 1 kg / hora",
+      "Voltaje 110V",
+      "Calibración micrométrica para café espresso y filtrado"
+    ],
+    "presentation": "Unidad profesional con tolva de grano",
+    "usage": "Molienda fresca en cafeterías, panaderías y barras de café."
+  },
+  {
+    "id": "plancha-industrial-4-hornillas",
+    "name": "Plancha Industrial 4 Hornillas",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/plancha-industrial-4-hornillas.webp",
+    "features": [
+      "Superficie de plancha lisa de alta retención térmica",
+      "4 quemadores / hornillas",
+      "Ideal para hoteles y posadas"
+    ],
+    "presentation": "Módulo industrial de cocción",
+    "usage": "Cocción simultánea de carnes, hamburguesas, salteados y desayunos."
+  },
+  {
+    "id": "plancha-sandwichera-comercial",
+    "name": "Plancha Sandwichera Comercial",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/plancha-sandwichera-comercial.webp",
+    "features": [
+      "Placas acanaladas de contacto con calor uniforme",
+      "Calentamiento rápido de alta recuperación térmica",
+      "Ideal para sandwiches, paninis y prensados"
+    ],
+    "presentation": "Unidad compacta para mostrador",
+    "usage": "Tostado y prensado rápido en cafeterías, fuentes de soda y luncherías."
+  },
+  {
+    "id": "rebanadora-de-mesa-weston",
+    "name": "Rebanadora de Mesa Weston",
+    "brand": "Weston",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/rebanadora-mesa-weston.webp",
+    "features": [
+      "Cuchilla de corte preciso en acero inoxidable",
+      "Ajuste regulable de grosor de rebanado",
+      "Protector de seguridad y carro deslizante suave"
+    ],
+    "presentation": "Unidad de mesa compacta",
+    "usage": "Rebanado de fiambres, jamones, quesos y embutidos."
+  },
+  {
+    "id": "chefandish-electrico-acero-inox",
+    "name": "Chefandish Eléctrico en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/chefanddish-electrico.webp",
+    "features": [
+      "Sistema de calefacción eléctrica integrada sin alcohol",
+      "Cuerpo y depósito gastronómico en acero inoxidable brillante",
+      "Control térmico para mantener alimentos a temperatura óptima"
+    ],
+    "presentation": "Unidad completa con bandeja gastronorm y tapa",
+    "usage": "Buffets, caterings, hoteles y banquetes de autoservicio."
+  },
+  {
+    "id": "chefandish-para-mariscos",
+    "name": "Chefandish para Mariscos",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/chefandish-para-mariscos.webp",
+    "features": [
+      "Diseño especializado para pescados, mariscos y paellas",
+      "Fabricado en acero inoxidable de alto brillo",
+      "Mantiene la humedad y temperatura sin resecar los alimentos"
+    ],
+    "presentation": "Chafing dish con bandeja marina y soporte para quemador",
+    "usage": "Servicio elegante y exhibición de mariscos en buffets y eventos."
+  },
+  {
+    "id": "tapa-chefandish-grande-52x32",
+    "name": "Tapa para Chefandish Grande (52x32 cm)",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/tapa-chefanddish-grande.webp",
+    "features": [
+      "Medidas estándar: 52 x 32 cm para inserto grande GN 1/1",
+      "Acero inoxidable pulido sanitario",
+      "Asa ergonómica aislante de calor"
+    ],
+    "presentation": "Unidad de repuesto / accesorio",
+    "usage": "Protección térmica e higiene en chafing dishes y mesas de vapor."
+  },
+  {
+    "id": "tapa-self-service-bisagra-acero-inox",
+    "name": "Tapa Self Service con Bisagra en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/tapa-self-service-bisagra-acero-inox.webp",
+    "features": [
+      "Sistema de bisagra de apertura cómoda para autoservicio",
+      "Acero inoxidable higiénico y de fácil limpieza",
+      "Conserva la frescura y temperatura de los alimentos"
+    ],
+    "presentation": "Unidad adaptable a bandejas estándar",
+    "usage": "Líneas de buffet, barras de ensaladas y mostradores de autoservicio."
+  },
+  {
+    "id": "tapa-self-service-policarbonato-transparente",
+    "name": "Tapa Self Service en Policarbonato Transparente",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/tapa-self-service-policarbonato.webp",
+    "features": [
+      "Policarbonato transparente irrompible de alto impacto",
+      "Permite visibilidad completa del producto sin destapar",
+      "Ranura frontal o bisagra de acceso rápido"
+    ],
+    "presentation": "Unidad en policarbonato cristal",
+    "usage": "Exhibición higiénica de alimentos en barras frías y autoservicio."
+  },
+  {
+    "id": "tapa-self-service-acero-inox-medidas",
+    "name": "Tapas Self Service en Acero Inoxidable (Medidas Variadas)",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/tapa-selfservice-ainox.webp",
+    "features": [
+      "Disponibles en medidas: 17x17 cm, 27x17 cm y 32x27 cm",
+      "Construcción en acero inoxidable resistente",
+      "Encaje preciso sobre recipientes gastronorm"
+    ],
+    "presentation": "Por medida requerida",
+    "usage": "Cubierta sanitaria para recipientes de preparación y exhibición."
+  },
+  {
+    "id": "porta-alcohol-chefandish",
+    "name": "Porta Alcohol para Chefandish",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/porta-alcohol-chefanddish.webp",
+    "features": [
+      "Acero inoxidable con tapa reguladora de llama",
+      "Compatible con alcohol sólido en lata o pasta",
+      "Asa prolongada para manipulación segura sin quemaduras"
+    ],
+    "presentation": "Unidad con copa, tapa y regulador",
+    "usage": "Suministro de calor bajo chafing dishes y fuentes de baño maría."
+  },
+  {
+    "id": "balanza-electronica-mesa-30kg",
+    "name": "Balanza Electrónica de Mesa 30kg",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/balanza-electronica-mesa-30kg.webp",
+    "features": [
+      "Capacidad máxima de 30 kg con alta precisión",
+      "Bandeja superior en acero inoxidable higiénica",
+      "Doble pantalla digital frontal y posterior con función tara"
+    ],
+    "presentation": "Unidad con batería recargable y cargador",
+    "usage": "Pesaje comercial en panaderías, charcuterías, carnicerías y abastos."
+  },
+  {
+    "id": "engranaje-abrelatas-industrial",
+    "name": "Engranaje para Abrelatas Industrial (Grande / Pequeño)",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/engranaje-abrelatas-industrial.webp",
+    "features": [
+      "Repuesto de alta dureza y precisión mecánica",
+      "Disponible en medidas Grande y Pequeño",
+      "Dientes templados para tracción firme y sin deslizamiento"
+    ],
+    "presentation": "Pieza de recambio individual",
+    "usage": "Mantenimiento y reparación de abrelatas industriales de palanca."
+  },
+  {
+    "id": "cafetera-greka-electrica",
+    "name": "Cafetera Greka Eléctrica (30 y 120 Tazas)",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/cafetera-greka.webp",
+    "features": [
+      "Capacidades disponibles: Eléctrica 30 tazas y Eléctrica 120 tazas",
+      "Cuerpo en acero inoxidable de alto rendimiento y fácil limpieza",
+      "Grifo dispensador antigoteo y visor de nivel de café",
+      "Función de mantenimiento automático de temperatura en caliente"
+    ],
+    "presentation": "Unidad eléctrica con filtro interno y cable de alimentación",
+    "usage": "Servicio continuo de café en buffets, oficinas, hoteles, panaderías y eventos."
+  },
+  {
+    "id": "exprimidor-naranja-extractor-manual",
+    "name": "Extractor Exprimidor de Jugo de Naranja Manual",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/extractor.webp",
+    "features": [
+      "Mecanismo de palanca mecánica de gran potencia de prensado",
+      "Cuerpo de hierro fundido esmaltado y base sólida antivuelco",
+      "Cono exprimidor y embudo colador en acero inoxidable desmontables",
+      "Extracción máxima de zumo sin amargar con el hollejo"
+    ],
+    "presentation": "Unidad industrial de sobremesa con cono y filtro",
+    "usage": "Extracción rápida de zumo de naranja, limón, toronja y cítricos en fuentes de soda y cafeterías."
+  },
+  {
+    "id": "maquina-para-hacer-pan-1kg",
+    "name": "Máquina para Hacer Pan 1kg",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/maquina-hacer-pan.webp",
+    "features": [
+      "Capacidad de horneado y amasado de hasta 1 kg",
+      "Programas automáticos para mezcla, fermentado y horneado",
+      "Cuba antiadherente con paleta amasadora de fácil extracción",
+      "Panel digital con control de tiempo y nivel de tostado de la corteza"
+    ],
+    "presentation": "Unidad eléctrica completa con cuba y accesorios de medición",
+    "usage": "Elaboración artesanal y rápida de panes de molde, masas dulces y panadería casera o de autor."
+  },
+  {
+    "id": "cuchilla-para-licuadora-industrial-4lt-8lt",
+    "name": "Cuchilla para Licuadora Industrial (4L / 8L)",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/cuchilla-licuadora-industrial.webp",
+    "features": [
+      "Hélices reforzadas en acero inoxidable de máxima resistencia",
+      "Compatible con vasos de licuadoras industriales de 4 y 8 Litros",
+      "Eje y rodamiento sellado para alto régimen de giro continuo",
+      "Corte homogéneo de hielo, pulpas densas, salsas y vegetales"
+    ],
+    "presentation": "Conjunto de hélices/cuchilla con empaque y tuerca de acople",
+    "usage": "Repuesto y mantenimiento de licuadoras comerciales e industriales de alta capacidad."
+  },
+  {
+    "id": "cuchillo-chef-mundial-acero-inox",
+    "name": "Cuchillo Chef Mundial Acero Inoxidable",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-chef-mundial-acero-inox.webp",
+    "features": [
+      "Mango ergonómico disponible en color blanco y negro",
+      "Medidas disponibles: 8\", 10\", 12\" y 14\"",
+      "Hoja de acero inoxidable de alta retención de filo"
+    ],
+    "presentation": "Unidad individual por medida",
+    "usage": "Cortes profesionales en cocina caliente, carnes y vegetales."
+  },
+  {
+    "id": "cuchillo-deshuesador-mundial",
+    "name": "Cuchillo Deshuesador Mundial Acero Inox",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-deshuesador-mundial.webp",
+    "features": [
+      "Hoja estrecha y flexible para desposte preciso",
+      "Medidas disponibles: 6\" y 7\"",
+      "Acero inoxidable sanitario con mango antideslizante"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Deshuese y limpieza de carnes rojas, aves y pescados."
+  },
+  {
+    "id": "cuchillo-fruta-verdura-mundial",
+    "name": "Cuchillo para Fruta y Verdura Mundial",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-fruta-verdura-mundial.webp",
+    "features": [
+      "Punta de precisión para pelado y torneado",
+      "Medidas disponibles: 3\" y 4\"",
+      "Cuchilla liviana de acero inoxidable"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Pelado, recorte y detalle fino en frutas y vegetales."
+  },
+  {
+    "id": "cuchillo-panaderia-mundial-10",
+    "name": "Cuchillo para Panadería Mundial 10\"",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-panaderia-mundial-10.webp",
+    "features": [
+      "Filo dentado / aserrado especial para panadería",
+      "Longitud de hoja: 10\" (25 cm)",
+      "Corte limpio en cortezas duras y migas suaves sin aplastar"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Rebanado de hogazas de pan, bizcochos y tortas."
+  },
+  {
+    "id": "cuchillo-despellejar-mundial-6",
+    "name": "Cuchillo para Despellejar Mundial 6\"",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-despellejar-mundial-6.webp",
+    "features": [
+      "Hoja curva diseñada para cuereado y despiece",
+      "Longitud de hoja: 6\" (15 cm)",
+      "Acero inoxidable de grado profesional"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Separación de piel, grasa y pellejos en carnicerías."
+  },
+  {
+    "id": "cuchillo-dynasty-set-5-piezas",
+    "name": "Juego de Cuchillos Dynasty 5 Piezas Acero Inox",
+    "brand": "Dynasty",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-dynasty-set-5-piezas.webp",
+    "features": [
+      "Set completo de 5 cuchillos esenciales",
+      "Acero inoxidable de alta resistencia",
+      "Mangos ergonómicos balanceados"
+    ],
+    "presentation": "Caja / Set de 5 piezas",
+    "usage": "Equipamiento integral para cocinas comerciales y estaciones de preparación."
+  },
+  {
+    "id": "cuchillo-dynasty-pan-8",
+    "name": "Cuchillo para Pan Dynasty Classic 8\" Acero Inox",
+    "brand": "Dynasty",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-dynasty-pan-8.webp",
+    "features": [
+      "Largo de hoja: 8\" (20 cm)",
+      "Filo serrado para panes, bollería y masas horneadas",
+      "Acero inoxidable con mango remachado"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Corte y porcionado de panes y pasteles."
+  },
+  {
+    "id": "cuchillo-cocina-madera-futuro-tools-6",
+    "name": "Cuchillo de Cocina Futuro Tools 6\" Mango de Madera",
+    "brand": "Futuro Tools",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-cocina-madera-futuro-tools-6.webp",
+    "features": [
+      "Hoja de 6\" en acero resistente",
+      "Cabo tradicional en madera tratada con remaches",
+      "Excelente agarre y balance para uso diario"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Cortes generales y picado en cocina."
+  },
+  {
+    "id": "cuchillo-recortar-bizcocho",
+    "name": "Cuchillo para Recortar Bizcocho",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchillo-recortar-bizcocho.webp",
+    "features": [
+      "Hoja larga y recta para nivelado de tortas",
+      "Filo liso y recto para corte horizontal uniforme",
+      "Acabado en acero inoxidable flexible"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Nivelado, rebanado en capas y recorte de bizcochuelos en repostería."
+  },
+  {
+    "id": "hachuela-mundial-madera-9",
+    "name": "Hachuela Mundial 9\" Mango de Madera Acero Inox",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/hachuela-mundial-madera-9.webp",
+    "features": [
+      "Hoja pesada de 9\" para golpe y corte de hueso",
+      "Acero inoxidable grueso de alto impacto",
+      "Mango ergonómico de madera remachado"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Despiece, trozado de carnes con hueso y carnicería pesada."
+  },
+  {
+    "id": "hachuela-ninja-mundial-7",
+    "name": "Hachuela Ninja Inca Mundial 7\" Mango de Madera",
+    "brand": "Mundial",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/hachuela-ninja-mundial-7.webp",
+    "features": [
+      "Formato compacto de 7\" tipo hacha asiática y corte rápido",
+      "Hoja ancha para corte y traslado de ingredientes",
+      "Mango de madera clásico reforzado"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Picar vegetales duros, aves y trocear carnes sin esfuerzo."
+  },
+  {
+    "id": "cuchara-de-palo-madera-medidas",
+    "name": "Cuchara de Palo en Madera (Varias Medidas)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchara-de-palo-madera-medidas.webp",
+    "features": [
+      "Madera natural seleccionada que no raya fondos de ollas",
+      "Medidas disponibles: 20cm, 25cm, 30cm, 35cm, 40cm, 50cm y 60cm",
+      "Mango resistente a altas temperaturas"
+    ],
+    "presentation": "Por unidad según longitud requerida",
+    "usage": "Revolver caldos, guisos, mermeladas y salsas en cocción lenta."
+  },
+  {
+    "id": "bandeja-panadera-aluminio-acero-inox",
+    "name": "Bandeja Panadera de Aluminio y Acero Inox",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/bandeja-panadera-aluminio-acero-inox.webp",
+    "features": [
+      "Materiales de alta durabilidad: aluminio pesado y acero inox",
+      "Medidas: 33x45cm, 65x45cm, 70x45x9cm y 80x50x8cm",
+      "Bordes reforzados para evitar deformación por calor continuo"
+    ],
+    "presentation": "Por unidad según dimensión",
+    "usage": "Horneado y fermentación de masas en panaderías y pastelerías."
+  },
+  {
+    "id": "bandeja-panadera-acanalada-senorita",
+    "name": "Bandeja Panadera Acanalada Señorita",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/bandeja-panadera-acanalada-senorita.webp",
+    "features": [
+      "Canales longitudinales que mantienen la forma cilíndrica del pan",
+      "Distribución uniforme del calor para cortezas crujientes",
+      "Estructura liviana de alta resistencia térmica"
+    ],
+    "presentation": "Unidad estándar",
+    "usage": "Cocción de baguettes, canillas y panes alargados."
+  },
+  {
+    "id": "bandeja-panadera-acanalada-perforada-senorita",
+    "name": "Bandeja Panadera Acanalada Perforada Señorita",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/bandeja-panadera-acanalada-perforada-senorita.webp",
+    "features": [
+      "Micro-perforaciones para máxima circulación de aire y calor",
+      "Acabado ondulado especial para baguettes",
+      "Evita acumulación de humedad en la base del pan"
+    ],
+    "presentation": "Unidad estándar",
+    "usage": "Horneado de baguettes francesas y panes rústicos crujientes."
+  },
+  {
+    "id": "bandeja-panadera-aluminio-perforada",
+    "name": "Bandeja Panadera de Aluminio Perforada",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/bandeja-panadera-aluminio-perforada.webp",
+    "features": [
+      "Perforaciones para horneado homogéneo por convección",
+      "Medidas disponibles: 33 x 45 cm y 65 x 45 cm",
+      "Aluminio sanitario de rápida transmisión térmica"
+    ],
+    "presentation": "Por unidad según medida",
+    "usage": "Cocción en hornos de convección y rotativos de panadería."
+  },
+  {
+    "id": "bandeja-para-ponquesitos",
+    "name": "Bandeja para Ponquesitos y Cupcakes",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/bandeja-para-ponquesitos.webp",
+    "features": [
+      "Cavidades moldeadas para horneado simultáneo",
+      "Capacidades disponibles: 8, 12, 24 y 35 unidades",
+      "Estructura metálica resistente al calor"
+    ],
+    "presentation": "Por unidad según cantidad de cavidades",
+    "usage": "Horneado de cupcakes, muffins, ponqués y magdalenas."
+  },
+  {
+    "id": "olla-aluminio-tapa-hotelera",
+    "name": "Olla de Aluminio con Tapa Hotelera",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/olla-aluminio-tapa-hotelera.webp",
+    "features": [
+      "Aluminio de calibre grueso para cocción a gran escala",
+      "Capacidades: 34cm (27 Litros) y 38cm (36 Litros)",
+      "Asas laterales remachadas para manipulación segura con peso"
+    ],
+    "presentation": "Unidad con tapa incluida",
+    "usage": "Cocción de fondos, sopas, sancochos y pastas en restaurantes y hoteles."
+  },
+  {
+    "id": "olla-de-presion-magefesa",
+    "name": "Olla de Presión Magefesa",
+    "brand": "Magefesa",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/olla-de-presion-magefesa.webp",
+    "features": [
+      "Sistema de cierre hermético de máxima seguridad",
+      "Válvula reguladora de presión y descompresión rápida",
+      "Reduce hasta un 70% el tiempo de cocción tradicional"
+    ],
+    "presentation": "Unidad completa con empaque y válvula",
+    "usage": "Cocción acelerada de granos, carnes duras y estofados."
+  },
+  {
+    "id": "olla-freidora-acero-inox-termometro",
+    "name": "Olla Freidora en Acero Inoxidable con Termómetro",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/olla-freidora-acero-inox-termometro.webp",
+    "features": [
+      "Capacidades: 3.4L, 9.5L, 13.25L, 18.25L, 20L y 26L",
+      "Termómetro incorporado para control preciso de la temperatura del aceite",
+      "Cuerpo en acero inoxidable sanitario con cestillo escurridor"
+    ],
+    "presentation": "Unidad con termómetro y cesta coladora",
+    "usage": "Frituras controladas de papas, empanadas, tequeños y pescados."
+  },
+  {
+    "id": "bateria-ollas-victoria-5-piezas",
+    "name": "Batería de Ollas con Tapa Victoria 5 Piezas",
+    "brand": "Victoria",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/bateria-ollas-victoria-5-piezas.webp",
+    "features": [
+      "Juego completo de 5 piezas graduadas en tamaños",
+      "Tapas individuales ajustadas",
+      "Distribución de calor rápida y homogénea"
+    ],
+    "presentation": "Caja con 5 piezas completas",
+    "usage": "Preparaciones múltiples y versátiles en cocinas de posadas y restaurantes."
+  },
+  {
+    "id": "cacerola-aluminio-con-tapa",
+    "name": "Cacerola de Aluminio con Tapa (15L / 22L)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cacerola-aluminio-con-tapa.webp",
+    "features": [
+      "Capacidades disponibles: 15 Litros y 22 Litros",
+      "Aluminio gastronómico de pared reforzada",
+      "Diseño bajo y ancho para reducciones y sofritos"
+    ],
+    "presentation": "Unidad con tapa",
+    "usage": "Guisos, reducciones de salsas, arroces y sofritos gastronómicos."
+  },
+  {
+    "id": "sopera-industrial-tapa-acero-inox",
+    "name": "Sopera Industrial con Tapa en Acero Inoxidable (4L)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/sopera-industrial-tapa-acero-inox.webp",
+    "features": [
+      "Capacidad: 4 Litros (128 oz)",
+      "Acero inoxidable higiénico con perilla y asas aislantes",
+      "Mantiene la temperatura ideal de caldos y consomés"
+    ],
+    "presentation": "Unidad completa con tapa",
+    "usage": "Servicio y conservación de sopas, cremas y caldos en buffet o cocina."
+  },
+  {
+    "id": "pinza-para-hielo-acero-inox",
+    "name": "Pinza para Hielo en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/pinza-para-hielo-acero-inox.webp",
+    "features": [
+      "Dientes de agarre firme para cubos de hielo",
+      "Acero inoxidable pulido resistente a la corrosión",
+      "Muelle elástico de retorno suave"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de cubos de hielo en bares, coctelería y eventos."
+  },
+  {
+    "id": "pinza-para-pan-acero-inox",
+    "name": "Pinzas para Pan en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/pinza-para-pan-acero-inox.webp",
+    "features": [
+      "Palas anchas para sujeción delicada sin aplastar masas",
+      "Fabricada en acero inoxidable grado alimenticio",
+      "Ideal para autoservicio higiénico en panaderías"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Manipulación y despacho de panes, pastelería y bollería recién horneada."
+  },
+  {
+    "id": "cuchara-lisa-enteriza-acero-inox",
+    "name": "Cuchara Lisa Enteriza en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchara-lisa-enteriza-acero-inox.webp",
+    "features": [
+      "Fabricada en una sola pieza enteriza de acero (sin uniones débiles)",
+      "Medidas disponibles: 12\", 15\" y 21\" de longitud",
+      "Mango largo para alcanzar el fondo de ollas hondas sin quemarse"
+    ],
+    "presentation": "Por unidad según longitud",
+    "usage": "Servicio y remoción de caldos, arroces y salsas en alta producción."
+  },
+  {
+    "id": "cuchara-con-ranura-acero-inox",
+    "name": "Cuchara con Ranuras para Servir en Acero Inox",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cuchara-con-ranura-acero-inox.webp",
+    "features": [
+      "Ranuras de drenaje rápido para servir sólidos sin exceso de líquido",
+      "Estructura de acero inoxidable sanitario de calibre grueso",
+      "Mango resistente al esfuerzo con orificio para colgar"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de vegetales cocidos, pastas, carnes y guisos escurridos."
+  },
+  {
+    "id": "cucharon-servir-acero-inox",
+    "name": "Cucharón para Servir en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/utensilios/cucharon-servir-acero-inox.webp",
+    "features": [
+      "Capacidades disponibles: 23 oz, 60 oz y 80 oz",
+      "Acero inoxidable enterizo de alta resistencia al calor",
+      "Cuenco profundo calibrado para porcionado exacto"
+    ],
+    "presentation": "Por unidad según volumen",
+    "usage": "Porcionado y servicio de caldos, consomés, salsas y bebidas calientes."
+  },
+  {
+    "id": "sacacorchos-camping-casa",
+    "name": "Sacacorchos Camping / Casa",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "",
+    "image": "/uploads/equipos/sacacorchos.webp",
+    "features": [
+      "Espiral helicoidal de alta dureza para descorche suave sin romper el corcho",
+      "Diseño compacto y plegable versátil para servicio de mesa, casa y camping",
+      "Incluye destapador de botellas y navaja corta-cápsulas integrada",
+      "Fabricación duradera con articulación reforzada"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Apertura profesional de botellas de vino y bebidas en barras, restaurantes y uso cotidiano."
+  },
+  {
+    "id": "vaso-vidrio-high-class",
+    "name": "Vaso de Vidrio High Class",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vaso-vidrio-high-class.webp",
+    "features": [
+      "Vidrio templado transparente de alta claridad",
+      "Diseño estilizado y elegante para barra y mesa",
+      "Base pesada estable resistente a roturas"
+    ],
+    "presentation": "Cajas de 6 / 12 unidades",
+    "usage": "Servicio de coctelería, refrescos, bebidas gaseosas y agua."
+  },
+  {
+    "id": "vaso-vidrio-durable-10-5oz-7-5oz",
+    "name": "Vaso de Vidrio Durable (10.5oz / 7.5oz)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vaso-vidrio-durable-10-5oz-7-5oz.webp",
+    "features": [
+      "Disponibles en modelo estándar A018 (10.5 oz) y pequeño A028 (7.5 oz)",
+      "Vidrio grueso de alto impacto para uso diario rudo",
+      "Apto para lavado en lavavajillas industriales"
+    ],
+    "presentation": "Caja institucional por unidad / docena",
+    "usage": "Restaurantes, luncherías, comedores y cafeterías de alta rotación."
+  },
+  {
+    "id": "vaso-vidrio-old-fashion-whisky",
+    "name": "Vaso de Vidrio Old Fashion",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vaso-vidrio-old-fashion-whisky.webp",
+    "features": [
+      "Formato bajo con fondo grueso facetado",
+      "Ideal para bebidas a las rocas",
+      "Excelente agarre y balance ergonómico"
+    ],
+    "presentation": "Set / Caja de 6 y 12 unidades",
+    "usage": "Servicio de whisky, tragos cortos, destilados en las rocas y agua."
+  },
+  {
+    "id": "vaso-vidrio-familiar-11oz-6-5oz",
+    "name": "Vaso de Vidrio Familiar (11oz / 6.5oz)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vaso-vidrio-familiar-11oz-6-5oz.webp",
+    "features": [
+      "Modelos disponibles: A039 (11 oz) y A038 (6.5 oz)",
+      "Diseño tradicional cilíndrico de fácil apilado",
+      "Cristal de alta durabilidad y brillo permanente"
+    ],
+    "presentation": "Caja de 12 unidades",
+    "usage": "Servicio de jugos naturales, desayunos y mesa en restaurantes."
+  },
+  {
+    "id": "vaso-vidrio-triana-300ml-10oz",
+    "name": "Vaso de Vidrio Triana (300ml / 10oz)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vaso-vidrio-triana-300ml-10oz.webp",
+    "features": [
+      "Capacidad: 300 ml / 10 oz (Ref. A027)",
+      "Silueta acampanada clásica con borde pulido",
+      "Vidrio templado resistente al choque térmico"
+    ],
+    "presentation": "Caja por docena",
+    "usage": "Servicio de té frío, cócteles, cervezas y gaseosas."
+  },
+  {
+    "id": "vaso-vidrio-liso-redondo",
+    "name": "Vaso de Vidrio Liso Redondo",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vaso-vidrio-liso-redondo.webp",
+    "features": [
+      "Acabado completamente liso de pared delgada templada",
+      "Cuerpo redondeado minimalista",
+      "Máxima transparencia para lucir el color de las bebidas"
+    ],
+    "presentation": "Por unidad y caja de 12 unidades",
+    "usage": "Bebidas frías, cocteles de autor y servicio de mesa gourmet."
+  },
+  {
+    "id": "copa-de-vidrio-flauta",
+    "name": "Copa de Vidrio Tipo Flauta",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/copa-de-vidrio-flauta.webp",
+    "features": [
+      "Cáliz estrecho y alargado que conserva la efervescencia",
+      "Tallo estilizado con pie perfectamente nivelado",
+      "Cristal pulido de máxima pureza acústica y visual"
+    ],
+    "presentation": "Caja de 6 unidades",
+    "usage": "Servicio de champán, espumantes, prosecco y cócteles mimosa."
+  },
+  {
+    "id": "copa-de-vidrio-margarita-12oz",
+    "name": "Copa de Vidrio para Margarita (12oz)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/copa-de-vidrio-margarita-12oz.webp",
+    "features": [
+      "Capacidad: 12 oz con boca ancha para escarchar con sal",
+      "Tazón doble escalonado clásico para coctelería mexicana",
+      "Base robusta antideslizante"
+    ],
+    "presentation": "Caja de 6 unidades",
+    "usage": "Servicio de margaritas clásicas, daiquiris frozen y cocteles tropicales."
+  },
+  {
+    "id": "jarra-vidrio-agua-globo-lisa",
+    "name": "Jarra de Vidrio para Agua Globo Lisa (1.5L)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/jarra-vidrio-agua-globo-lisa.webp",
+    "features": [
+      "Capacidad: 1.5 Litros con cuerpo globoso transparente",
+      "Asa ergonómica de vidrio grueso para agarre seguro",
+      "Pico vertedor antigoteo integrado"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de agua, limonadas, jugos naturales y sangría en mesa."
+  },
+  {
+    "id": "jarra-vidrio-agua-globo-torneada",
+    "name": "Jarra de Vidrio para Agua Globo Torneada (1.5L)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/jarra-vidrio-agua-globo-torneada.webp",
+    "features": [
+      "Capacidad: 1.5 Litros con relieve torneado en espiral",
+      "Diseño labrado decorativo que oculta marcas de dedos",
+      "Vidrio grueso resistente al uso continuo en sala"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de bebidas frías en eventos, banquetes y restaurantes."
+  },
+  {
+    "id": "jarra-vidrio-agua-cilindrica-torneada",
+    "name": "Jarra de Vidrio Cilíndrica Torneada (1.5L)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/jarra-vidrio-agua-cilindrica-torneada.webp",
+    "features": [
+      "Capacidad: 1.5 Litros con silueta cilíndrica vertical",
+      "Acanalado torneado de textura elegante",
+      "Ahorra espacio en mesas y bandejas de servicio"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de agua fresca, jugos de estación e infusiones heladas."
+  },
+  {
+    "id": "jarra-vidrio-agua-cilindrica-lisa",
+    "name": "Jarra de Vidrio Cilíndrica Lisa (0.5L / 1.5L)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/jarra-vidrio-agua-cilindrica-lisa.webp",
+    "features": [
+      "Capacidades disponibles: 0.5 Litros (individual/pareja) y 1.5 Litros",
+      "Vidrio liso de máxima transparencia y fácil desinfección",
+      "Pico vertedor de flujo continuo sin derrames"
+    ],
+    "presentation": "Por unidad según capacidad",
+    "usage": "Servicio de agua, té frío y jugos en comedores y terrazas."
+  },
+  {
+    "id": "hielera-vidrio-sin-asa",
+    "name": "Hielera de Vidrio para Mesa Sin Asa",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/hielera-vidrio-sin-asa.webp",
+    "features": [
+      "Vidrio grueso aislante que retrasa el descongelamiento del hielo",
+      "Formato de mesa elegante sin asas que ahorra espacio",
+      "Boca ancha accesible para pinzas de hielo"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de cubos de hielo en mesas, barras y suites."
+  },
+  {
+    "id": "cenicero-vidrio-portofino-facetado",
+    "name": "Cenicero de Vidrio Portofino Facetado",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/cenicero-vidrio-portofino-facetado.webp",
+    "features": [
+      "Vidrio macizo pesado con ranuras facetadas de descanso",
+      "Resistente a cenizas calientes y caídas leves",
+      "Fácil limpieza e inodoro tras lavado"
+    ],
+    "presentation": "Por unidad y cajas de 6 unidades",
+    "usage": "Áreas exteriores, terrazas, salones y zonas de fumadores."
+  },
+  {
+    "id": "bandeja-ovalada-acero-inox-servicio",
+    "name": "Bandeja Ovalada de Servicio en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/bandeja-ovalada-acero-inox-servicio.webp",
+    "features": [
+      "Medidas disponibles: 20cm, 30cm, 35cm, 45cm, 55cm, 60cm y 70cm",
+      "Acero inoxidable brillante con reborde perimetral para transporte seguro",
+      "Superficie higiénica y resistente a manchas ácidas y grasas"
+    ],
+    "presentation": "Por unidad según tamaño",
+    "usage": "Servicio de carnes, pescados enteros, entremeses y mozos en sala."
+  },
+  {
+    "id": "bandeja-menaje-6-compartimientos-acero-inox",
+    "name": "Bandeja de Menaje 6 Compartimientos en Acero Inox",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/bandeja-menaje-6-compartimientos-acero-inox.webp",
+    "features": [
+      "6 divisiones profundas para separar alimentos, sopa y postre",
+      "Acero inoxidable sanitario indeformable e inoxidable",
+      "Apilamiento compacto de fácil secado y almacenaje"
+    ],
+    "presentation": "Unidad individual y paquetes institucionales",
+    "usage": "Comedores industriales, colegios, clínicas, campamentos y buffets."
+  },
+  {
+    "id": "bandeja-rectangular-acero-inox-servicio",
+    "name": "Bandeja Rectangular de Servicio en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/bandeja-rectangular-acero-inox-servicio.webp",
+    "features": [
+      "Medidas estándar GN: 27x17, 32x17, 32x27 y 52x32 cm (profundidades 6, 10 y 15 cm)",
+      "Bordes reforzados para agarre cómodo y firmeza estructural",
+      "Acero inoxidable pulido apto para frío y calor"
+    ],
+    "presentation": "Por unidad según dimensión y profundidad",
+    "usage": "Exhibición en vitrinas calientes/frías, baños de maría y servicio de salón."
+  },
+  {
+    "id": "bandeja-redonda-acero-inox-camarero",
+    "name": "Bandeja Redonda en Acero Inoxidable para Camarero",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/bandeja-redonda-acero-inox-camarero.webp",
+    "features": [
+      "Diámetros disponibles: 30cm y 35cm",
+      "Reborde levantado de seguridad antivuelco de copas y platos",
+      "Acero inoxidable liviano de fácil maniobrabilidad con una mano"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de copas, cafés, cócteles y postres en salón y eventos."
+  },
+  {
+    "id": "salsero-de-pico-acero-inox-14cm",
+    "name": "Salsero de Pico en Acero Inoxidable (14cm)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/salsero-de-pico-acero-inox-14cm.webp",
+    "features": [
+      "Longitud: 14 cm con pico alargado vertedor antigoteo",
+      "Asa ergonómica de una sola pieza en acero inoxidable",
+      "Base con pedestal que aporta elegancia a la mesa"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de salsas calientes, jugos de carne, aderezos y gravy."
+  },
+  {
+    "id": "bol-para-salsa-acero-inox-2-puestos",
+    "name": "Bol para Salsa 2 Puestos en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/bol-para-salsa-acero-inox-2-puestos.webp",
+    "features": [
+      "2 cavidades independientes unidas para dos aderezos simultáneos",
+      "Acero inoxidable sanitario con acabado brillante",
+      "No absorbe olores ni se mancha con salsas ácidas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio en mesa de guasacaca, picante, tártara o aderezos para compartir."
+  },
+  {
+    "id": "bol-para-salsa-acero-inox-3-puestos",
+    "name": "Bol para Salsa 3 Puestos en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/bol-para-salsa-acero-inox-3-puestos.webp",
+    "features": [
+      "3 cavidades integradas en una sola pieza de acero inoxidable",
+      "Asa central vertical para traslado cómodo y seguro entre mesas",
+      "Base plana estable antivuelco"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de salsas y contornos en mesas de hamburgueserías y asadores."
+  },
+  {
+    "id": "tobo-para-champana-acero-inox",
+    "name": "Tobo para Champaña en Acero Inoxidable (Champañera)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/tobo-para-champana-acero-inox.webp",
+    "features": [
+      "Acero inoxidable doble pared / pulido espejo de gran elegancia",
+      "Asas laterales anulares para fácil manipulación",
+      "Capacidad para botellas de champaña o vino estándar con hielo abundante"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Enfriamiento y presentación de botellas de champán y vino en mesa VIP."
+  },
+  {
+    "id": "tobo-hielo-aluminio-acero",
+    "name": "Tobo para Hielo en Aluminio y Acero Inox",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/tobo-hielo-aluminio-acero.webp",
+    "features": [
+      "Estructura metálica resistente al abollamiento",
+      "Asa superior pivotante para transporte rápido de hielo",
+      "Capacidad generosa para abastecimiento de mesas y barras"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Suministro de hielo en bares, mesas familiares, discotecas y salones."
+  },
+  {
+    "id": "copa-coctel-camarones-acero-inox",
+    "name": "Copa Cóctel de Camarones en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/copa-coctel-camarones-acero-inox.webp",
+    "features": [
+      "Diseño térmico con tazón superior y base para cama de hielo",
+      "Acero inoxidable brillante que mantiene los mariscos a temperatura gélida",
+      "Presentación clásica de alta categoría para cevicherías y marisquerías"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio gourmet de cóctel de camarones, ceviches y frutos del mar."
+  },
+  {
+    "id": "copa-para-helado-acero-inox",
+    "name": "Copa para Helado en Acero Inoxidable (Grande / Pequeña)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/copa-para-helado-acero-inox.webp",
+    "features": [
+      "Disponible en medidas Grande y Pequeña",
+      "Pedestal clásico y copa acampanada en acero pulido",
+      "Inquebrantable, ideal para heladerías y restaurantes familiares"
+    ],
+    "presentation": "Por unidad según tamaño",
+    "usage": "Servicio de helados, copas sundae, ensaladas de fruta y postres fríos."
+  },
+  {
+    "id": "servilletero-acero-inox",
+    "name": "Servilletero en Acero Inoxidable de Mesa",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/servilletero-acero-inox.webp",
+    "features": [
+      "Acero inoxidable higiénico de fácil reposición",
+      "Sujeción firme de servilletas para evitar dispersión por viento",
+      "Diseño compacto para mesas de alto tránsito"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Mesas de restaurantes, cafeterías, panaderías y food trucks."
+  },
+  {
+    "id": "panera-tropical-acero-inox",
+    "name": "Panera Tropical en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/panera-tropical-acero-inox.webp",
+    "features": [
+      "Calado decorativo tropical que ventila el pan recién tostado",
+      "Acero inoxidable pulido de alta presentación en mesa",
+      "Fácil de limpiar y desinfectar entre servicios"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de panes calientes, arepitas, tostadas y bollos en mesa."
+  },
+  {
+    "id": "panera-primavera-acero-inox",
+    "name": "Panera Primavera en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/panera-primavera-acero-inox.webp",
+    "features": [
+      "Diseño estilizado calado modelo Primavera",
+      "Formato ovalado amplio para variedad de panecillos",
+      "Acero inoxidable resistente a la corrosión"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Presentación de panadería gourmet en mesas de banquetes y restaurantes."
+  },
+  {
+    "id": "plato-mantequillero-acero-inox",
+    "name": "Plato Mantequillero en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/plato-mantequillero-acero-inox.webp",
+    "features": [
+      "Diámetro estándar con borde elevado antiderrame",
+      "Acero inoxidable higiénico que conserva la temperatura",
+      "No altera el sabor de lácteos ni aderezos grasos"
+    ],
+    "presentation": "Unidad individual y paquetes por docena",
+    "usage": "Servicio individual de mantequilla, quesos untables y mermeladas."
+  },
+  {
+    "id": "candelabro-acero-inox-mesa",
+    "name": "Candelabro en Acero Inoxidable (Grande / Pequeño)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero",
+    "image": "/uploads/menajes/candelabro-acero-inox-mesa.webp",
+    "features": [
+      "Disponible en alturas Grande y Pequeño",
+      "Base circular pesada de máxima estabilidad antivuelco de velas",
+      "Acabado en acero inoxidable brillante elegante"
+    ],
+    "presentation": "Por unidad según altura",
+    "usage": "Ambientación de mesas, cenas románticas, eventos nocturnos y salones."
+  }
+]

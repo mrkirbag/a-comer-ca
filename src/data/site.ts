@@ -59,8 +59,9 @@ export const site = {
 
     nav: [
         { href: "#inicio", label: "Inicio" },
+        { href: "/catalogo", label: "Catálogo" },
         { href: "#sobre-nosotros", label: "Sobre Nosotros" },
-        { href: "#catalogo", label: "Catálogo" },
+        { href: "#marcas-aliadas", label: "Marcas Aliadas" },
         { href: "#servicios", label: "Servicios" },
         { href: "#opiniones", label: "Opiniones" },
         { href: "#contacto", label: "Contacto" },
@@ -70,7 +71,7 @@ export const site = {
         title: "Andina de Comercialización C.A.",
         subtitle: "Líderes en el occidente del país en suministros e insumos para las empresas del mundo de la gastronomía",
         ctaBtn: "Ver catálogo",
-        ctaHref: "#catalogo",
+        ctaHref: "/catalogo",
         contactBtn: "Contactar",
         imageDesktop: "/brand/hero-desktop.webp",
         imageMobile: "/brand/hero-mobile.webp",

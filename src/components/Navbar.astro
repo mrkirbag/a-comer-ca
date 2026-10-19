@@ -22,13 +22,13 @@ const links = site.nav.map((link) => ({
             />
         </a>
 
-        <ul class="hidden items-center gap-7 lg:flex">
+        <ul class="hidden items-center gap-5 xl:gap-7 lg:flex">
             {
                 links.map((link) => (
                     <li>
                         <a
                             href={link.href}
-                            class="font-heading text-base font-bold tracking-normal text-cream transition-colors hover:text-copper"
+                            class="font-heading text-xs xl:text-sm font-semibold tracking-normal text-cream transition-colors hover:text-copper"
                         >
                             {link.label}
                         </a>
@@ -74,7 +74,7 @@ const links = site.nav.map((link) => ({
                     >
                         <a
                             href={link.href}
-                            class="flex items-baseline gap-4 py-2 font-heading text-3xl font-bold text-cream transition-colors hover:text-copper"
+                            class="flex items-baseline gap-4 py-2 font-heading text-2xl font-bold text-cream transition-colors hover:text-copper"
                             data-nav-link
                         >
                             <span class="font-sans text-xs tracking-[0.2em] text-copper/80">

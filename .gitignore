@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Large binaries and temporary assets
+public/catalogo acomer.pdf
+scratch_*.png

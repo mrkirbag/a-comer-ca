@@ -1,0 +1,653 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import FloatingCartDrawer from "../../components/FloatingCartDrawer.astro";
+import productsData from "../../data/products.json";
+import { catalogCategories, type Product } from "../../data/catalogTypes";
+
+const products: Product[] = productsData as Product[];
+
+// Subcategories calculation
+const subCategories = Array.from(new Set(products.map((p) => p.subCategory).filter(Boolean)));
+---
+
+<MainLayout
+    title="Catálogo & Revista Gastronómica | A-Comer C.A."
+    description="Explora nuestro catálogo tipo revista con insumos de repostería, equipos industriales, utensilios y cristalería en San Cristóbal, Táchira."
+>
+    <!-- Magazine-style Premium Cream/Beige Hero Banner -->
+    <section class="relative min-h-[100dvh] w-full flex flex-col justify-center items-center bg-gradient-to-b from-[#f7eedb] via-cream to-[#f3e7ce] text-burgundy pt-16 pb-12 lg:pt-20 lg:pb-16 overflow-hidden border-b border-burgundy/10">
+        <!-- Ambient light glows with copper and olive on beige -->
+        <div class="absolute -top-24 -left-20 size-[28rem] rounded-full bg-copper/15 blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-1/4 -right-20 size-[24rem] rounded-full bg-olive/15 blur-[90px] pointer-events-none"></div>
+        <div class="absolute -bottom-20 left-1/3 size-[22rem] rounded-full bg-burgundy/5 blur-[80px] pointer-events-none"></div>
+
+        <!-- Pattern overlay tailored for cream/beige -->
+        <div class="absolute inset-0 opacity-25 bg-[radial-gradient(#8f1d2c_1.5px,transparent_1.5px)] [background-size:26px_26px] pointer-events-none"></div>
+
+        <div class="relative mx-auto w-full max-w-6xl px-5 lg:px-8 my-auto">
+            <div class="mx-auto max-w-2xl text-center">
+                <!-- Badges Header -->
+                <div class="inline-flex items-center gap-2 rounded-full border border-burgundy/25 bg-white/95 px-3.5 py-1 backdrop-blur-md shadow-xs">
+                    <span class="flex size-2 rounded-full bg-burgundy animate-ping"></span>
+                    <span class="font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-burgundy">
+                         Revista • San Cristóbal
+                    </span>
+                    <span class="rounded-full bg-olive px-2 py-0.5 font-heading text-[10px] font-extrabold text-cream uppercase shadow-xs">
+                        Táchira
+                    </span>
+                </div>
+
+                <!-- Title & Calligraphy with Color Contrast -->
+                <h1 class="mt-4 font-accent text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-wide text-burgundy drop-shadow-sm font-bold leading-tight">
+                    <span>Catálogo de</span>
+                    <span class="text-[#8f1d2c] italic block sm:inline sm:ml-2.5">Productos</span>
+                </h1>
+
+                <!-- Elegant separator line with Copper & Olive accents -->
+                <div class="mx-auto mt-3.5 flex items-center justify-center gap-2" aria-hidden="true">
+                    <span class="h-0.5 w-10 bg-gradient-to-r from-transparent via-burgundy/60 to-burgundy/80"></span>
+                    <span class="size-2 rotate-45 bg-burgundy shadow-xs"></span>
+                    <span class="size-1.5 rounded-full bg-olive"></span>
+                    <span class="size-2 rotate-45 bg-burgundy shadow-xs"></span>
+                    <span class="h-0.5 w-10 bg-gradient-to-l from-transparent via-burgundy/60 to-burgundy/80"></span>
+                </div>
+
+                <!-- Subtitle with readable contrast on beige -->
+                <p class="mx-auto mt-4 max-w-xl font-heading text-sm sm:text-base text-burgundy font-semibold leading-relaxed">
+                    Selecciona las maquinarias, equipos, utensilios, menajes e insumos que sea de tu interés y forma tu pedido con nosotros!
+                </p>
+
+                <!-- Value Highlights Cards on Beige Background -->
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto text-left">
+                    <!-- Card 1: Copper Accent -->
+                    <div class="flex items-center gap-2.5 rounded-2xl bg-white/95 p-3 backdrop-blur-md border border-burgundy/20 shadow-xs transition-all hover:border-burgundy/50 hover:shadow-md hover:-translate-y-0.5">
+                        <div class="flex size-9 shrink-0 items-center justify-center rounded-xl bg-burgundy/10 text-burgundy border border-burgundy/15">
+                            <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <p class="font-heading text-xs font-bold text-burgundy leading-snug">Marcas Líderes</p>
+                            <p class="font-sans text-[11px] text-[#8f1d2c] font-semibold">100% Originales</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Olive Accent -->
+                    <div class="flex items-center gap-2.5 rounded-2xl bg-white/95 p-3 backdrop-blur-md border border-olive/30 shadow-xs transition-all hover:border-olive hover:shadow-md hover:-translate-y-0.5">
+                        <div class="flex size-9 shrink-0 items-center justify-center rounded-xl bg-olive/20 text-olive border border-olive/30">
+                            <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div>
+                            <p class="font-heading text-xs font-bold text-burgundy leading-snug">Atención Directa</p>
+                            <p class="font-sans text-[11px] text-olive font-semibold">Ventas y Asesoría</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Burgundy Accent -->
+                    <div class="flex items-center gap-2.5 rounded-2xl bg-white/95 p-3 backdrop-blur-md border border-burgundy/20 shadow-xs transition-all hover:border-burgundy hover:shadow-md hover:-translate-y-0.5">
+                        <div class="flex size-9 shrink-0 items-center justify-center rounded-xl bg-burgundy/15 text-burgundy border border-burgundy/20">
+                            <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <div>
+                            <p class="font-heading text-xs font-bold text-burgundy leading-snug">Modalidad Revista</p>
+                            <p class="font-sans text-[11px] text-burgundy/90 font-semibold">Escríbenos por WhatssApp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Category Highlight Cards (Editorial Style) -->
+    <section class="relative z-20 -mt-10 px-5 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {catalogCategories.map((cat) => (
+                <button
+                    type="button"
+                    data-category-card-btn={cat.id}
+                    class="group relative overflow-hidden rounded-3xl border border-burgundy/10 bg-white p-5 text-left shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-burgundy/30 cursor-pointer"
+                >
+                    <div class="relative h-28 w-full overflow-hidden rounded-2xl bg-cream/60 mb-4 p-3 flex items-center justify-center border border-burgundy/5">
+                        <img
+                            src={cat.image}
+                            alt={cat.name}
+                            class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                        />
+                        <span class="absolute top-2 right-2 rounded-full bg-olive px-2.5 py-0.5 font-heading text-[10px] font-bold tracking-wider text-cream uppercase shadow-sm">
+                            {cat.badge}
+                        </span>
+                    </div>
+                    <h3 class="font-heading text-sm sm:text-base font-bold text-burgundy group-hover:text-copper transition-colors">
+                        {cat.name}
+                    </h3>
+                    <p class="font-sans text-xs text-grey/70 line-clamp-2 mt-1 leading-relaxed">
+                        {cat.description}
+                    </p>
+                </button>
+            ))}
+        </div>
+    </section>
+
+    <!-- Catalog Explorer & Filter Section -->
+    <section id="catalog-section" class="py-14 lg:py-20 bg-cream scroll-mt-24">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <!-- Filter Bar & Search -->
+            <div class="mb-10 space-y-6">
+                <!-- Search and Stats Row -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="relative flex-1 max-w-lg">
+                        <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Buscar por producto, marca o ingrediente..."
+                            class="w-full rounded-2xl border border-burgundy/15 bg-white px-5 py-3.5 pl-12 font-sans text-sm sm:text-base text-burgundy placeholder:text-grey/50 shadow-sm focus:border-burgundy focus:outline-none focus:ring-2 focus:ring-burgundy/10 transition-all"
+                        />
+                        <svg
+                            class="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-burgundy/50"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span id="results-count" class="font-heading text-xs sm:text-sm font-semibold text-burgundy/70">
+                            Mostrando {products.length} productos
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Main Categories Pills -->
+                <div class="flex flex-wrap gap-2 items-center" id="category-filters">
+                    <span class="font-heading text-xs font-bold uppercase tracking-wider text-burgundy/60 mr-1">
+                        Categoría:
+                    </span>
+                    <button
+                        data-filter-category="all"
+                        class="cat-filter-btn px-4 py-2 rounded-full font-heading text-xs sm:text-sm font-bold transition-all border border-burgundy/15 bg-burgundy text-cream shadow-sm cursor-pointer"
+                    >
+                        Todos ({products.length})
+                    </button>
+                    {catalogCategories.map((cat) => {
+                        const count = products.filter((p) => p.category === cat.id).length;
+                        return (
+                            <button
+                                data-filter-category={cat.id}
+                                class="cat-filter-btn px-4 py-2 rounded-full font-heading text-xs sm:text-sm font-semibold transition-all border border-burgundy/15 bg-white text-burgundy/80 hover:border-burgundy/40 hover:bg-white hover:text-burgundy cursor-pointer"
+                            >
+                                {cat.name} ({count})
+                            </button>
+                        );
+                    })}
+                </div>
+
+                <!-- Subcategories Filters (Dynamic / Horizontal scroll) -->
+                <div class="hidden items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none pt-1" id="subcategories-bar">
+                    <span class="font-heading text-xs sm:text-sm font-bold text-burgundy tracking-wide whitespace-nowrap uppercase">
+                        Subcategorías:
+                    </span>
+                    <button
+                        data-filter-subcategory="all"
+                        class="subcat-btn shrink-0 rounded-lg px-3.5 py-1.5 font-sans text-xs font-bold bg-olive text-cream transition-colors cursor-pointer shadow-sm"
+                    >
+                        Todas
+                    </button>
+                    {subCategories.map((sub) => {
+                        const parentCat = products.find((p) => p.subCategory === sub)?.category || "all";
+                        return (
+                            <button
+                                data-filter-subcategory={sub}
+                                data-parent-category={parentCat}
+                                class="subcat-btn shrink-0 rounded-lg px-3.5 py-1.5 font-sans text-xs font-semibold bg-white text-grey/90 border border-burgundy/15 hover:border-burgundy/35 transition-colors cursor-pointer shadow-sm"
+                            >
+                                {sub}
+                            </button>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div
+                id="products-grid"
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
+                {products.map((product) => (
+                    <article
+                        data-product-card
+                        data-id={product.id}
+                        data-category={product.category}
+                        data-subcategory={product.subCategory || ""}
+                        data-name={product.name.toLowerCase()}
+                        data-brand={product.brand.toLowerCase()}
+                        data-desc={(product.description || (product.features ? product.features.join(" ") : "")).toLowerCase()}
+                        class="group flex flex-col justify-between overflow-hidden rounded-3xl border border-burgundy/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-burgundy/25"
+                    >
+                        <div>
+                            <!-- Card Image & Badge -->
+                            <div class="relative h-56 w-full overflow-hidden bg-gradient-to-b from-cream/40 to-cream/80 p-6 flex items-center justify-center border-b border-burgundy/5">
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                                    loading="lazy"
+                                />
+                                <span class="absolute top-3 left-3 rounded-full bg-cream/90 backdrop-blur-sm border border-burgundy/10 px-3 py-1 font-heading text-[11px] font-bold uppercase tracking-wider text-burgundy">
+                                    {product.brand}
+                                </span>
+                                {product.subCategory && (
+                                    <span class="absolute bottom-3 right-3 rounded-lg bg-olive/15 px-2.5 py-0.5 font-sans text-[11px] font-semibold text-olive">
+                                        {product.subCategory}
+                                    </span>
+                                )}
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="p-5">
+                                <h3 class="font-heading text-base sm:text-lg font-bold text-burgundy group-hover:text-copper transition-colors leading-snug line-clamp-2">
+                                    <a href={`/catalogo/${product.id}`} class="focus:outline-none">
+                                        {product.name}
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Actions -->
+                        <div class="p-6 pt-0 border-t border-burgundy/5 flex items-center gap-2 mt-2">
+                            <a
+                                href={`/catalogo/${product.id}`}
+                                class="flex-1 inline-flex items-center justify-center rounded-xl border border-burgundy/15 bg-white py-2.5 px-3 font-heading text-xs font-bold text-burgundy transition-all hover:bg-burgundy/5 hover:border-burgundy/30"
+                            >
+                                Ver Detalle
+                            </a>
+
+                            <button
+                                type="button"
+                                data-add-to-cart={JSON.stringify({
+                                    id: product.id,
+                                    name: product.name,
+                                    brand: product.brand,
+                                    category: product.category,
+                                    subCategory: product.subCategory,
+                                    image: product.image,
+                                    presentation: product.presentation
+                                })}
+                                class="inline-flex items-center justify-center gap-1.5 rounded-xl bg-burgundy px-4 py-2.5 font-heading text-xs font-bold text-cream shadow-sm transition-all hover:bg-burgundy/90 hover:scale-[1.02] cursor-pointer"
+                                title="Añadir a lista de cotización"
+                            >
+                                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                                <span>Añadir</span>
+                            </button>
+                        </div>
+                    </article>
+                ))}
+            </div>
+
+            <!-- Pagination Bar -->
+            <div id="catalog-pagination" class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-burgundy/10 pt-8">
+                <span id="pagination-info" class="font-heading text-xs font-semibold text-grey/70">
+                    Página 1 de 1
+                </span>
+
+                <div class="flex items-center gap-2">
+                    <button
+                        type="button"
+                        id="pagination-prev"
+                        class="flex items-center gap-1.5 rounded-full border border-burgundy/20 bg-white px-4 py-2 font-heading text-xs font-bold text-burgundy shadow-sm transition-all hover:bg-burgundy hover:text-cream disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
+                        disabled
+                    >
+                        <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <span>Anterior</span>
+                    </button>
+
+                    <div id="pagination-pages" class="flex items-center gap-1.5">
+                        <!-- Numeric buttons created dynamically -->
+                    </div>
+
+                    <button
+                        type="button"
+                        id="pagination-next"
+                        class="flex items-center gap-1.5 rounded-full border border-burgundy/20 bg-white px-4 py-2 font-heading text-xs font-bold text-burgundy shadow-sm transition-all hover:bg-burgundy hover:text-cream disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
+                    >
+                        <span>Siguiente</span>
+                        <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- No Results Found -->
+            <div id="no-results" class="hidden text-center py-20">
+                <div class="mx-auto flex size-20 items-center justify-center rounded-full bg-burgundy/10 text-burgundy mb-4">
+                    <svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <h3 class="font-heading text-xl font-bold text-burgundy">No encontramos productos</h3>
+                <p class="mt-2 font-sans text-sm text-grey/60 max-w-md mx-auto">
+                    Intenta con otra palabra clave o selecciona otra categoría para ver más insumos y equipos.
+                </p>
+                <button
+                    type="button"
+                    id="reset-filters-btn"
+                    class="mt-6 rounded-full bg-burgundy px-6 py-2.5 font-heading text-xs font-bold uppercase tracking-wider text-cream hover:bg-burgundy/90 transition-all cursor-pointer"
+                >
+                    Restablecer filtros
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Magazine Info Footer Section -->
+    <section class="bg-white border-t border-burgundy/10 py-16">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start gap-4">
+                    <div class="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-burgundy/10 text-burgundy font-accent text-2xl font-bold">
+                        1
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-base font-bold text-burgundy">Selecciona tus productos</h4>
+                        <p class="font-sans text-xs text-grey/70 mt-1 leading-relaxed">
+                            Explora todas las marcas e insumos que tenemos disponibles en nuestro catálogo interactivo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-copper/20 text-burgundy font-accent text-2xl font-bold">
+                        2
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-base font-bold text-burgundy">Envía tu lista de consulta</h4>
+                        <p class="font-sans text-xs text-grey/70 mt-1 leading-relaxed">
+                            Con un solo clic por WhatsApp, nuestro sistema estructura tu pedido sin compromiso alguno.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-olive/20 text-olive font-accent text-2xl font-bold">
+                        3
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-base font-bold text-burgundy">Confirmamos y coordinamos</h4>
+                        <p class="font-sans text-xs text-grey/70 mt-1 leading-relaxed">
+                            Te confirmamos existencia al momento, presentaciones ideales para tu negocio y opciones de pago y despacho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Cart Drawer Component -->
+    <FloatingCartDrawer />
+</MainLayout>
+
+<script is:inline>
+    // Configuration & State
+    const ITEMS_PER_PAGE = 16;
+    let currentPage = 1;
+    let currentCategory = "all";
+    let currentSubCategory = "all";
+    let searchKeyword = "";
+
+    const searchInput = document.getElementById("search-input");
+    const categoryBtns = document.querySelectorAll("[data-filter-category]");
+    const categoryCardBtns = document.querySelectorAll("[data-category-card-btn]");
+    const subCatBtns = document.querySelectorAll("[data-filter-subcategory]");
+    const productCards = Array.from(document.querySelectorAll("[data-product-card]"));
+    const resultsCount = document.getElementById("results-count");
+    const noResults = document.getElementById("no-results");
+    const resetFiltersBtn = document.getElementById("reset-filters-btn");
+    const paginationContainer = document.getElementById("catalog-pagination");
+    const paginationPages = document.getElementById("pagination-pages");
+    const paginationInfo = document.getElementById("pagination-info");
+    const paginationPrev = document.getElementById("pagination-prev");
+    const paginationNext = document.getElementById("pagination-next");
+
+    function getFilteredProducts() {
+        return productCards.filter((card) => {
+            const cardCat = card.dataset.category;
+            const cardSubCat = card.dataset.subcategory;
+            const cardName = card.dataset.name || "";
+            const cardBrand = card.dataset.brand || "";
+            const cardDesc = card.dataset.desc || "";
+
+            const matchesCategory = currentCategory === "all" || cardCat === currentCategory;
+            const matchesSubCategory = currentSubCategory === "all" || cardSubCat === currentSubCategory;
+            const matchesSearch = !searchKeyword || 
+                cardName.includes(searchKeyword) || 
+                cardBrand.includes(searchKeyword) || 
+                cardDesc.includes(searchKeyword);
+
+            return matchesCategory && matchesSubCategory && matchesSearch;
+        });
+    }
+
+    function renderPagination() {
+        const filtered = getFilteredProducts();
+        const totalItems = filtered.length;
+        const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE) || 1;
+
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (currentPage < 1) currentPage = 1;
+
+        // Hide all cards first
+        productCards.forEach((card) => card.classList.add("hidden"));
+
+        // Display cards of current page
+        const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+        const endIdx = startIdx + ITEMS_PER_PAGE;
+        const pageItems = filtered.slice(startIdx, endIdx);
+        pageItems.forEach((card) => card.classList.remove("hidden"));
+
+        // Update counts
+        if (resultsCount) {
+            resultsCount.textContent = `Mostrando ${totalItems} ${totalItems === 1 ? 'producto' : 'productos'}`;
+        }
+
+        // Show/hide no results
+        if (noResults) {
+            if (totalItems === 0) {
+                noResults.classList.remove("hidden");
+                paginationContainer?.classList.add("hidden");
+            } else {
+                noResults.classList.add("hidden");
+                paginationContainer?.classList.remove("hidden");
+            }
+        }
+
+        // Update pagination controls
+        if (paginationInfo) {
+            paginationInfo.textContent = `Página ${currentPage} de ${totalPages} (${totalItems} productos)`;
+        }
+
+        if (paginationPrev) {
+            paginationPrev.disabled = currentPage <= 1;
+        }
+
+        if (paginationNext) {
+            paginationNext.disabled = currentPage >= totalPages;
+        }
+
+        // Numeric buttons
+        if (paginationPages) {
+            paginationPages.innerHTML = "";
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.textContent = String(i);
+                btn.className = `flex size-9 items-center justify-center rounded-full font-heading text-xs font-bold transition-all cursor-pointer ${
+                    i === currentPage
+                        ? "bg-burgundy text-cream shadow-md"
+                        : "border border-burgundy/15 bg-white text-burgundy hover:bg-cream hover:border-burgundy/30"
+                }`;
+                btn.addEventListener("click", () => {
+                    currentPage = i;
+                    renderPagination();
+                    scrollToCatalog();
+                });
+                paginationPages.appendChild(btn);
+            }
+        }
+    }
+
+    function scrollToCatalog() {
+        const target = document.getElementById("catalog-section");
+        target?.scrollIntoView({ behavior: "smooth" });
+    }
+
+    paginationPrev?.addEventListener("click", () => {
+        if (currentPage > 1) {
+            currentPage--;
+            renderPagination();
+            scrollToCatalog();
+        }
+    });
+
+    paginationNext?.addEventListener("click", () => {
+        const filtered = getFilteredProducts();
+        const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderPagination();
+            scrollToCatalog();
+        }
+    });
+
+    // Category button click
+    function setCategory(catId) {
+        currentCategory = catId;
+        currentSubCategory = "all";
+        currentPage = 1;
+
+        categoryBtns.forEach((btn) => {
+            if (btn.dataset.filterCategory === catId) {
+                btn.classList.remove("bg-white", "text-burgundy/80");
+                btn.classList.add("bg-burgundy", "text-cream");
+            } else {
+                btn.classList.remove("bg-burgundy", "text-cream");
+                btn.classList.add("bg-white", "text-burgundy/80");
+            }
+        });
+
+        const subcategoriesBar = document.getElementById("subcategories-bar");
+
+        if (catId === "all") {
+            // Cuando "Todos" está marcado, NO se ven subcategorías
+            if (subcategoriesBar) {
+                subcategoriesBar.classList.add("hidden");
+                subcategoriesBar.classList.remove("flex");
+                subcategoriesBar.style.display = "none";
+            }
+        } else {
+            // Si se selecciona una categoría específica, mostramos sus subcategorías si las tiene
+            let hasVisibleSubcats = false;
+            subCatBtns.forEach((btn) => {
+                const parentCat = btn.dataset.parentCategory;
+                const sub = btn.dataset.filterSubcategory;
+
+                if (sub === "all") {
+                    btn.style.display = "";
+                    btn.classList.remove("bg-white", "text-grey/90", "border");
+                    btn.classList.add("bg-olive", "text-cream");
+                } else if (parentCat === catId) {
+                    btn.style.display = "";
+                    btn.classList.remove("bg-olive", "text-cream");
+                    btn.classList.add("bg-white", "text-grey/90", "border");
+                    hasVisibleSubcats = true;
+                } else {
+                    btn.style.display = "none";
+                    btn.classList.remove("bg-olive", "text-cream");
+                    btn.classList.add("bg-white", "text-grey/90", "border");
+                }
+            });
+
+            if (subcategoriesBar) {
+                if (hasVisibleSubcats) {
+                    subcategoriesBar.classList.remove("hidden");
+                    subcategoriesBar.classList.add("flex");
+                    subcategoriesBar.style.display = "flex";
+                } else {
+                    subcategoriesBar.classList.add("hidden");
+                    subcategoriesBar.classList.remove("flex");
+                    subcategoriesBar.style.display = "none";
+                }
+            }
+        }
+
+        renderPagination();
+    }
+
+    categoryBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            setCategory(btn.dataset.filterCategory || "all");
+        });
+    });
+
+    categoryCardBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const cat = btn.dataset.categoryCardBtn;
+            setCategory(cat);
+            scrollToCatalog();
+        });
+    });
+
+    subCatBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const sub = btn.dataset.filterSubcategory || "all";
+            currentSubCategory = sub;
+            currentPage = 1;
+
+            subCatBtns.forEach((b) => {
+                if (b.dataset.filterSubcategory === sub) {
+                    b.classList.remove("bg-white", "text-grey/80", "border");
+                    b.classList.add("bg-olive", "text-cream");
+                } else {
+                    b.classList.remove("bg-olive", "text-cream");
+                    b.classList.add("bg-white", "text-grey/80", "border");
+                }
+            });
+
+            renderPagination();
+        });
+    });
+
+    searchInput?.addEventListener("input", (e) => {
+        searchKeyword = e.target.value.toLowerCase().trim();
+        currentPage = 1;
+        renderPagination();
+    });
+
+    resetFiltersBtn?.addEventListener("click", () => {
+        if (searchInput) searchInput.value = "";
+        searchKeyword = "";
+        setCategory("all");
+    });
+
+    // Add to cart click
+    document.querySelectorAll("[data-add-to-cart]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            try {
+                const product = JSON.parse(btn.dataset.addToCart);
+                if (window.addToCatalogCart) {
+                    window.addToCatalogCart(product, 1);
+                }
+            } catch (err) {
+                console.error("Error adding to cart", err);
+            }
+        });
+    });
+
+    // Initial render
+    renderPagination();
+</script>
