@@ -1,14 +1,31 @@
+export interface ProductColorOption {
+    name: string;
+    hex: string;
+    code?: string;
+    brand?: string;
+}
+
+export interface ProductFlavorOption {
+    name: string;
+    image?: string;
+}
+
 export interface Product {
     id: string;
     name: string;
     brand: string;
     category: string;
     subCategory: string;
+    subSubCategory?: string;
     image: string;
     description?: string;
     features?: string[];
     presentation?: string;
     usage?: string;
+    colors?: ProductColorOption[];
+    flavors?: string[];
+    flavorOptions?: ProductFlavorOption[];
+    presentations?: string[];
 }
 
 export interface CatalogCategory {
@@ -40,5 +57,20 @@ export const catalogCategories: CatalogCategory[] = [
         description: "Cristalería de vidrio templado, copas, jarras, bandejas de servicio, salseras, tobos y accesorios de mesa en acero inoxidable.",
         image: "/imagenes-proveedores/vidosa.webp",
         badge: "Menaje"
+    },
+    {
+        id: "insumos",
+        name: "Insumos y Materia Prima",
+        description: "Colorantes vegetales, pigmentos metalizados comestibles y esencias saborizantes concentradas para repostería y panadería.",
+        image: "/imagenes-proveedores/indelma.webp",
+        badge: "Insumos"
+    },
+    {
+        id: "limpieza",
+        name: "Mantenimiento y Limpieza",
+        description: "Dispensadores institucionales, carros de limpieza, secadores de manos, alcohol sólido y señalización de seguridad para hostelería y cocina.",
+        image: "/uploads/limpieza/carro-multiuso-deluxe.webp",
+        badge: "Limpieza"
     }
 ];
+

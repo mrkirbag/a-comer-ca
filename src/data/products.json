@@ -394,12 +394,42 @@
     "usage": "Repuesto y mantenimiento de licuadoras comerciales e industriales de alta capacidad."
   },
   {
+    "id": "resistencia-para-selladora-de-empaque",
+    "name": "Resistencia para Selladora de Empaque",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/resistencia.webp",
+    "features": [
+      "Elemento térmico de alta durabilidad para selladoras de bolsas y empaques plásticos",
+      "Calentamiento instantáneo y sellado térmico hermético y uniforme",
+      "Repuesto estándar de fácil instalación con terminales de conexión reforzados"
+    ],
+    "presentation": "Unidad individual / Set de resistencia con teflón",
+    "usage": "Mantenimiento y repuesto de selladoras manuales y de pedal para empaque de alimentos y productos."
+  },
+  {
+    "id": "temporizador-para-cocina-excelhouse",
+    "name": "Temporizador para Cocina Excelhouse",
+    "brand": "Excelhouse",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/temporizador.webp",
+    "features": [
+      "Mecanismo de cuenta regresiva de alta precisión para control de tiempos de cocción",
+      "Alarma sonora clara y audible en entornos ruidosos de cocina comercial",
+      "Diseño compacto con soporte de mesa o fijación magnética para colocar en hornos y campanas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Control de tiempos exactos de horneado, fermentación, frituras y cocciones en repostería y cocina."
+  },
+  {
     "id": "cuchillo-chef-mundial-acero-inox",
     "name": "Cuchillo Chef Mundial Acero Inoxidable",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-chef-mundial-acero-inox.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-chef-mundial-acero-inox.webp",
     "features": [
       "Mango ergonómico disponible en color blanco y negro",
       "Medidas disponibles: 8\", 10\", 12\" y 14\"",
@@ -413,8 +443,8 @@
     "name": "Cuchillo Deshuesador Mundial Acero Inox",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-deshuesador-mundial.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-deshuesador-mundial.webp",
     "features": [
       "Hoja estrecha y flexible para desposte preciso",
       "Medidas disponibles: 6\" y 7\"",
@@ -428,8 +458,8 @@
     "name": "Cuchillo para Fruta y Verdura Mundial",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-fruta-verdura-mundial.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-fruta-verdura-mundial.webp",
     "features": [
       "Punta de precisión para pelado y torneado",
       "Medidas disponibles: 3\" y 4\"",
@@ -443,8 +473,8 @@
     "name": "Cuchillo para Panadería Mundial 10\"",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-panaderia-mundial-10.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-panaderia-mundial-10.webp",
     "features": [
       "Filo dentado / aserrado especial para panadería",
       "Longitud de hoja: 10\" (25 cm)",
@@ -458,8 +488,8 @@
     "name": "Cuchillo para Despellejar Mundial 6\"",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-despellejar-mundial-6.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-despellejar-mundial-6.webp",
     "features": [
       "Hoja curva diseñada para cuereado y despiece",
       "Longitud de hoja: 6\" (15 cm)",
@@ -473,8 +503,8 @@
     "name": "Juego de Cuchillos Dynasty 5 Piezas Acero Inox",
     "brand": "Dynasty",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-dynasty-set-5-piezas.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-dynasty-set-5-piezas.webp",
     "features": [
       "Set completo de 5 cuchillos esenciales",
       "Acero inoxidable de alta resistencia",
@@ -488,8 +518,8 @@
     "name": "Cuchillo para Pan Dynasty Classic 8\" Acero Inox",
     "brand": "Dynasty",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-dynasty-pan-8.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-dynasty-pan-8.webp",
     "features": [
       "Largo de hoja: 8\" (20 cm)",
       "Filo serrado para panes, bollería y masas horneadas",
@@ -503,8 +533,8 @@
     "name": "Cuchillo de Cocina Futuro Tools 6\" Mango de Madera",
     "brand": "Futuro Tools",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-cocina-madera-futuro-tools-6.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-cocina-madera-futuro-tools-6.webp",
     "features": [
       "Hoja de 6\" en acero resistente",
       "Cabo tradicional en madera tratada con remaches",
@@ -518,8 +548,8 @@
     "name": "Cuchillo para Recortar Bizcocho",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchillo-recortar-bizcocho.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/cuchillo-recortar-bizcocho.webp",
     "features": [
       "Hoja larga y recta para nivelado de tortas",
       "Filo liso y recto para corte horizontal uniforme",
@@ -533,8 +563,8 @@
     "name": "Hachuela Mundial 9\" Mango de Madera Acero Inox",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/hachuela-mundial-madera-9.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/hachuela-mangom-mundial.webp",
     "features": [
       "Hoja pesada de 9\" para golpe y corte de hueso",
       "Acero inoxidable grueso de alto impacto",
@@ -548,8 +578,8 @@
     "name": "Hachuela Ninja Inca Mundial 7\" Mango de Madera",
     "brand": "Mundial",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/hachuela-ninja-mundial-7.webp",
+    "subCategory": "Cuchillos",
+    "image": "/uploads/utensilios/cuchillos/hachuela-ninja.webp",
     "features": [
       "Formato compacto de 7\" tipo hacha asiática y corte rápido",
       "Hoja ancha para corte y traslado de ingredientes",
@@ -559,27 +589,12 @@
     "usage": "Picar vegetales duros, aves y trocear carnes sin esfuerzo."
   },
   {
-    "id": "cuchara-de-palo-madera-medidas",
-    "name": "Cuchara de Palo en Madera (Varias Medidas)",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchara-de-palo-madera-medidas.webp",
-    "features": [
-      "Madera natural seleccionada que no raya fondos de ollas",
-      "Medidas disponibles: 20cm, 25cm, 30cm, 35cm, 40cm, 50cm y 60cm",
-      "Mango resistente a altas temperaturas"
-    ],
-    "presentation": "Por unidad según longitud requerida",
-    "usage": "Revolver caldos, guisos, mermeladas y salsas en cocción lenta."
-  },
-  {
     "id": "bandeja-panadera-aluminio-acero-inox",
     "name": "Bandeja Panadera de Aluminio y Acero Inox",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/bandeja-panadera-aluminio-acero-inox.webp",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-panadera-aluminio.webp",
     "features": [
       "Materiales de alta durabilidad: aluminio pesado y acero inox",
       "Medidas: 33x45cm, 65x45cm, 70x45x9cm y 80x50x8cm",
@@ -593,8 +608,8 @@
     "name": "Bandeja Panadera Acanalada Señorita",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/bandeja-panadera-acanalada-senorita.webp",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-panadera-acan.webp",
     "features": [
       "Canales longitudinales que mantienen la forma cilíndrica del pan",
       "Distribución uniforme del calor para cortezas crujientes",
@@ -608,8 +623,8 @@
     "name": "Bandeja Panadera Acanalada Perforada Señorita",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/bandeja-panadera-acanalada-perforada-senorita.webp",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-panadera-acan-perf.webp",
     "features": [
       "Micro-perforaciones para máxima circulación de aire y calor",
       "Acabado ondulado especial para baguettes",
@@ -623,8 +638,8 @@
     "name": "Bandeja Panadera de Aluminio Perforada",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/bandeja-panadera-aluminio-perforada.webp",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-panadera-perf.webp",
     "features": [
       "Perforaciones para horneado homogéneo por convección",
       "Medidas disponibles: 33 x 45 cm y 65 x 45 cm",
@@ -638,8 +653,8 @@
     "name": "Bandeja para Ponquesitos y Cupcakes",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/bandeja-para-ponquesitos.webp",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-ponquesitos.webp",
     "features": [
       "Cavidades moldeadas para horneado simultáneo",
       "Capacidades disponibles: 8, 12, 24 y 35 unidades",
@@ -649,12 +664,57 @@
     "usage": "Horneado de cupcakes, muffins, ponqués y magdalenas."
   },
   {
+    "id": "bandeja-ovalada-ainox",
+    "name": "Bandeja Ovalada de Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-ovalada-ainox.webp",
+    "features": [
+      "Medidas: 20cm, 30cm, 35cm, 45cm, 55cm, 60cm y 70cm",
+      "Acabado en acero inoxidable de alta calidad",
+      "Bordes amplios para fácil manipulación"
+    ],
+    "presentation": "Por unidad según medida",
+    "usage": "Servicio y presentación de tortas, carnes y acompañamientos."
+  },
+  {
+    "id": "bandeja-rectangular-ainox",
+    "name": "Bandeja Rectangular de Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-rectangular-ainox.webp",
+    "features": [
+      "Medidas: 27x17x10, 32x17x6, 32x17x10, 32x27x10, 52x32x6x 52x32x10, x52x32x15",
+      "Acabado en acero inoxidable de alta calidad",
+      "Ideal para carnes, pescados y vegetales."
+    ],
+    "presentation": "Por unidad según medida",
+    "usage": "Servicio y presentación de tortas, carnes y acompañamientos."
+  },
+  {
+    "id": "bandeja-redonda-ainox",
+    "name": "Bandeja Redonda de Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-redonda-ainox.webp",
+    "features": [
+      "Medidas: 30cm y 35cm",
+      "Acabado en acero inoxidable de alta calidad",
+      "Ideal para servicio y presentación de tortas, carnes y acompañamientos."
+    ],
+    "presentation": "Por unidad según medida",
+    "usage": "Servicio y presentación de tortas, carnes y acompañamientos."
+  },
+  {
     "id": "olla-aluminio-tapa-hotelera",
     "name": "Olla de Aluminio con Tapa Hotelera",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/olla-aluminio-tapa-hotelera.webp",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/olla-aluminio-ctapa-hotelera.webp",
     "features": [
       "Aluminio de calibre grueso para cocción a gran escala",
       "Capacidades: 34cm (27 Litros) y 38cm (36 Litros)",
@@ -668,8 +728,8 @@
     "name": "Olla de Presión Magefesa",
     "brand": "Magefesa",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/olla-de-presion-magefesa.webp",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/olla-presion-magefesa.webp",
     "features": [
       "Sistema de cierre hermético de máxima seguridad",
       "Válvula reguladora de presión y descompresión rápida",
@@ -683,8 +743,8 @@
     "name": "Olla Freidora en Acero Inoxidable con Termómetro",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/olla-freidora-acero-inox-termometro.webp",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/olla-freidora-ainox.webp",
     "features": [
       "Capacidades: 3.4L, 9.5L, 13.25L, 18.25L, 20L y 26L",
       "Termómetro incorporado para control preciso de la temperatura del aceite",
@@ -698,8 +758,8 @@
     "name": "Batería de Ollas con Tapa Victoria 5 Piezas",
     "brand": "Victoria",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/bateria-ollas-victoria-5-piezas.webp",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/bateria-ollas-victoria.webp",
     "features": [
       "Juego completo de 5 piezas graduadas en tamaños",
       "Tapas individuales ajustadas",
@@ -713,8 +773,8 @@
     "name": "Cacerola de Aluminio con Tapa (15L / 22L)",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cacerola-aluminio-con-tapa.webp",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/cacerola-aluminio-ctapa.webp",
     "features": [
       "Capacidades disponibles: 15 Litros y 22 Litros",
       "Aluminio gastronómico de pared reforzada",
@@ -724,12 +784,27 @@
     "usage": "Guisos, reducciones de salsas, arroces y sofritos gastronómicos."
   },
   {
+    "id": "paila-cvertedero-sin-tapa",
+    "name": "Paila con Vertedero sin Tapa",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/paila-cvertedero-stapa.webp",
+    "features": [
+      "Capacidad 1.5 Litros y 16cm de diámetro",
+      "Vertedero en el borde para servir sin derramar",
+      "Profundidad ideal para sopas y consomés."
+    ],
+    "presentation": "Unidad sin tapa",
+    "usage": "Ideal para servir sopas, consomés, salsas y cremas."
+  },
+  {
     "id": "sopera-industrial-tapa-acero-inox",
     "name": "Sopera Industrial con Tapa en Acero Inoxidable (4L)",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/sopera-industrial-tapa-acero-inox.webp",
+    "subCategory": "Ollas",
+    "image": "/uploads/utensilios/ollas/sopera-industrial.webp",
     "features": [
       "Capacidad: 4 Litros (128 oz)",
       "Acero inoxidable higiénico con perilla y asas aislantes",
@@ -739,42 +814,117 @@
     "usage": "Servicio y conservación de sopas, cremas y caldos en buffet o cocina."
   },
   {
-    "id": "pinza-para-hielo-acero-inox",
-    "name": "Pinza para Hielo en Acero Inoxidable",
+    "id": "molde-aluminio-redondo",
+    "name": "Molde de Aluminio Redondo",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/pinza-para-hielo-acero-inox.webp",
+    "subCategory": "Moldes",
+    "image": "/uploads/utensilios/moldes/molde-aluminio-redondo.webp",
     "features": [
-      "Dientes de agarre firme para cubos de hielo",
-      "Acero inoxidable pulido resistente a la corrosión",
-      "Muelle elástico de retorno suave"
+      "Medidas: 15cm, 22cm, 24cm, 26cm, 34cm y 36cm",
+      "Aluminio gastronómico de alta calidad",
+      "Diseño redondo para tortas y pasteles"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Servicio de cubos de hielo en bares, coctelería y eventos."
+    "presentation": "Unidad según medida",
+    "usage": "Ideal para tortas, pasteles, quesillos y postres horneados."
   },
   {
-    "id": "pinza-para-pan-acero-inox",
-    "name": "Pinzas para Pan en Acero Inoxidable",
+    "id": "molde-ppan-sandwich",
+    "name": "Molde para Pan de Sándwich",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/pinza-para-pan-acero-inox.webp",
+    "subCategory": "Moldes",
+    "image": "/uploads/utensilios/moldes/molde-ppan-sandwich.webp",
     "features": [
-      "Palas anchas para sujeción delicada sin aplastar masas",
-      "Fabricada en acero inoxidable grado alimenticio",
-      "Ideal para autoservicio higiénico en panaderías"
+      "Medidas: No.3 9.5x9x30 cm / No.5 10x10x40 cm / No.8 15x13x30 cm",
+      "Aluminio antiadherente de alta calidad",
+      "Diseño rectangular para panes de sandwich"
+    ],
+    "presentation": "Unidad completa con tapa",
+    "usage": "Ideal para la cocción de panes de sándwich y postres tipo budín."
+  },
+  {
+    "id": "molde-pie-fondo-removible",
+    "name": "Molde para Pie con Fondo Removible Antiadherente",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Moldes",
+    "image": "/uploads/utensilios/moldes/molde-ppie.webp",
+    "features": [
+      "Medidas: 20cm, 24cm y 28cm",
+      "Acero antiadherente de alta calidad",
+      "Fondo removible para desmoldar fácilmente"
+    ],
+    "presentation": "Unidad completa con fondo removible",
+    "usage": "Ideal para tortas, pasteles, quesillos y postres horneados."
+  },
+  {
+    "id": "molde-ppizza",
+    "name": "Molde para Pizza",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Moldes",
+    "image": "/uploads/utensilios/moldes/molde-ppizza.webp",
+    "features": [
+      "Medidas: 22cm, 24cm, 28cm, 36cm y 40cm",
+      "Acero antiadherente de alta calidad",
+      "Diseño redondo para pizzas"
+    ],
+    "presentation": "Unidad según medida",
+    "usage": "Ideal para pizzas artesanales y de cualquier estilo."
+  },
+  {
+    "id": "tijeras-de-cocina",
+    "name": "Tijeras de Cocina Multiuso en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/tijeras-cocina.webp",
+    "features": [
+      "Hojas resistentes en acero inoxidable de alto corte",
+      "Mangos ergonómicos antideslizantes para corte seguro",
+      "Diseño versátil para aves, hierbas, envases y cortes de precisión"
     ],
     "presentation": "Unidad individual",
-    "usage": "Manipulación y despacho de panes, pastelería y bollería recién horneada."
+    "usage": "Corte de alimentos, carnes blancas, verduras y empaques en cocina."
+  },
+  {
+    "id": "descorazonador-manzanas-frutas",
+    "name": "Descorazonador de Manzanas y Frutas",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/descorazonador.webp",
+    "features": [
+      "Cilindro dentado en acero inoxidable de penetración limpia",
+      "Extracción rápida del corazón y semillas sin romper la fruta",
+      "Mango anatómico de fácil agarre y torsión"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Descorazonado rápido de manzanas, peras y frutas en repostería y preparación."
+  },
+  {
+    "id": "tenedor-dos-puntas-ainox",
+    "name": "Tenedor de Dos Puntas en Acero Inoxidable (Trinchador)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/tenedor-dospuntas-ainox.webp",
+    "features": [
+      "Puntas largas y afiladas en acero inoxidable de gran calibre",
+      "Excelente sujeción de piezas grandes durante el corte y trinchado",
+      "Mango estilizado de gran firmeza y equilibrio"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Sujeción y trinchado de asados, pernil, aves y cortes de carne en estación."
   },
   {
     "id": "cuchara-lisa-enteriza-acero-inox",
     "name": "Cuchara Lisa Enteriza en Acero Inoxidable",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchara-lisa-enteriza-acero-inox.webp",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/cuchara-lisa.webp",
     "features": [
       "Fabricada en una sola pieza enteriza de acero (sin uniones débiles)",
       "Medidas disponibles: 12\", 15\" y 21\" de longitud",
@@ -788,8 +938,8 @@
     "name": "Cuchara con Ranuras para Servir en Acero Inox",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cuchara-con-ranura-acero-inox.webp",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/cuchara-cranura.webp",
     "features": [
       "Ranuras de drenaje rápido para servir sólidos sin exceso de líquido",
       "Estructura de acero inoxidable sanitario de calibre grueso",
@@ -799,27 +949,132 @@
     "usage": "Servicio de vegetales cocidos, pastas, carnes y guisos escurridos."
   },
   {
-    "id": "cucharon-servir-acero-inox",
-    "name": "Cucharón para Servir en Acero Inoxidable",
+    "id": "colador-industrial-aluminio-ainox",
+    "name": "Colador Industrial en Acero Inoxidable / Aluminio",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/utensilios/cucharon-servir-acero-inox.webp",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/colador-industrial-aluminio.webp",
     "features": [
-      "Capacidades disponibles: 23 oz, 60 oz y 80 oz",
-      "Acero inoxidable enterizo de alta resistencia al calor",
-      "Cuenco profundo calibrado para porcionado exacto"
+      "Malla reforzada de drenaje rápido y eficiente",
+      "Asas y estructura de alto soporte para peso de alimentos calientes",
+      "Material higiénico anticorrosivo de grado profesional"
     ],
-    "presentation": "Por unidad según volumen",
-    "usage": "Porcionado y servicio de caldos, consomés, salsas y bebidas calientes."
+    "presentation": "Por unidad según diámetro",
+    "usage": "Escurrido masivo de pastas, vegetales, tubérculos y frituras."
+  },
+  {
+    "id": "colador-para-pasta-con-mango",
+    "name": "Colador para Pasta con Mango en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/colador-pasta.webp",
+    "features": [
+      "Diseño cónico profundo con perforaciones de drenaje instantáneo",
+      "Mango largo tubular para manipular en agua hirviendo con seguridad",
+      "Gancho lateral para reposar en el borde de ollas o marmitas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Cocción y porcionado individual o en serie de pastas, fideos y blanqueado de vegetales."
+  },
+  {
+    "id": "flanera-con-tapa-aluminio",
+    "name": "Flanera con Tapa en Aluminio / Acero",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/flanera.webp",
+    "features": [
+      "Tapa hermética con broche o calce de seguridad para baño maría",
+      "Transmisión homogénea del calor para cocción uniforme del caramelo y cuajado",
+      "Fácil desmoldado y superficie antiadherente al caramelo líquido"
+    ],
+    "presentation": "Unidad con tapa",
+    "usage": "Preparación al baño maría de quesillos, flanes, pudines y cremas volteadas."
+  },
+  {
+    "id": "escudilla-bowl-acero-inox",
+    "name": "Escudilla / Bol Mezclador en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/escudilla-redonda.webp",
+    "features": [
+      "Varios diámetros disponibles para preparación, batido y reposo",
+      "Borde perimetral enrollado que facilita el agarre firme durante el batido",
+      "Base plana estable antivuelco apta para baño maría frío o caliente"
+    ],
+    "presentation": "Por unidad según diámetro",
+    "usage": "Mezclado de masas, batido de cremas, marinados de carnes y ensaladas."
+  },
+  {
+    "id": "pala-para-cocina-ainox",
+    "name": "Pala Espátula para Cocina en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/pala-cocina.webp",
+    "features": [
+      "Hoja flexible y resistente de bisel afilado para despegar alimentos",
+      "Disponible en versión lisa y ranurada para escurrir grasas",
+      "Mango atérmico de alto impacto remachado"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Volteo y manejo en planchas, sartenes y parrillas de hamburguesas, huevos y carnes."
+  },
+  {
+    "id": "rallo-para-quesos-duros",
+    "name": "Rallo para Quesos Duros y Cítricos en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/rallo-quesos.webp",
+    "features": [
+      "Dientes grabados al ácido de ultra filo para corte sin desgarre",
+      "Hoja de acero inoxidable indeformable con superficie de gran rendimiento",
+      "Mango ergonómico con base de apoyo antideslizante"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Rallado fino de queso parmesano, pecorino, nuez moscada, jengibre y cítricos."
+  },
+  {
+    "id": "portacuchillos-magnetico-mesa-ainox",
+    "name": "Portacuchillos en Acero Inoxidable (Barra / Bloque)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/porta-cuchillos.webp",
+    "features": [
+      "Construcción en acero inoxidable sanitario de fácil desinfección",
+      "Ranuras y soporte seguro que protegen el filo de los cuchillos",
+      "Estructura sólida para mesón o pared según modelo"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Almacenaje organizado, seguro e higiénico de cuchillería profesional."
+  },
+  {
+    "id": "portavajillas-secador-ainox",
+    "name": "Portavajillas y Escurridor en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/porta-vajillas.webp",
+    "features": [
+      "Estructura reforzada en varilla de acero inoxidable resistente a la humedad",
+      "Ranuras divisorias para platos y bandeja inferior recolectora de agua",
+      "Alta capacidad de carga y ventilación para secado rápido"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Escurrido, secado y organización higiénica de vajilla en áreas de lavado."
   },
   {
     "id": "sacacorchos-camping-casa",
     "name": "Sacacorchos Camping / Casa",
     "brand": "A-Comer",
     "category": "utensilios",
-    "subCategory": "",
-    "image": "/uploads/equipos/sacacorchos.webp",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/sacacorchos.webp",
     "features": [
       "Espiral helicoidal de alta dureza para descorche suave sin romper el corcho",
       "Diseño compacto y plegable versátil para servicio de mesa, casa y camping",
@@ -830,184 +1085,964 @@
     "usage": "Apertura profesional de botellas de vino y bebidas en barras, restaurantes y uso cotidiano."
   },
   {
-    "id": "vaso-vidrio-high-class",
-    "name": "Vaso de Vidrio High Class",
+    "id": "picahielo-acero-inox",
+    "name": "Picahielo en Acero Inoxidable con Mango Reforzado",
     "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/vaso-vidrio-high-class.webp",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/picahielo.webp",
     "features": [
-      "Vidrio templado transparente de alta claridad",
-      "Diseño estilizado y elegante para barra y mesa",
-      "Base pesada estable resistente a roturas"
-    ],
-    "presentation": "Cajas de 6 / 12 unidades",
-    "usage": "Servicio de coctelería, refrescos, bebidas gaseosas y agua."
-  },
-  {
-    "id": "vaso-vidrio-durable-10-5oz-7-5oz",
-    "name": "Vaso de Vidrio Durable (10.5oz / 7.5oz)",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/vaso-vidrio-durable-10-5oz-7-5oz.webp",
-    "features": [
-      "Disponibles en modelo estándar A018 (10.5 oz) y pequeño A028 (7.5 oz)",
-      "Vidrio grueso de alto impacto para uso diario rudo",
-      "Apto para lavado en lavavajillas industriales"
-    ],
-    "presentation": "Caja institucional por unidad / docena",
-    "usage": "Restaurantes, luncherías, comedores y cafeterías de alta rotación."
-  },
-  {
-    "id": "vaso-vidrio-old-fashion-whisky",
-    "name": "Vaso de Vidrio Old Fashion",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/vaso-vidrio-old-fashion-whisky.webp",
-    "features": [
-      "Formato bajo con fondo grueso facetado",
-      "Ideal para bebidas a las rocas",
-      "Excelente agarre y balance ergonómico"
-    ],
-    "presentation": "Set / Caja de 6 y 12 unidades",
-    "usage": "Servicio de whisky, tragos cortos, destilados en las rocas y agua."
-  },
-  {
-    "id": "vaso-vidrio-familiar-11oz-6-5oz",
-    "name": "Vaso de Vidrio Familiar (11oz / 6.5oz)",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/vaso-vidrio-familiar-11oz-6-5oz.webp",
-    "features": [
-      "Modelos disponibles: A039 (11 oz) y A038 (6.5 oz)",
-      "Diseño tradicional cilíndrico de fácil apilado",
-      "Cristal de alta durabilidad y brillo permanente"
-    ],
-    "presentation": "Caja de 12 unidades",
-    "usage": "Servicio de jugos naturales, desayunos y mesa en restaurantes."
-  },
-  {
-    "id": "vaso-vidrio-triana-300ml-10oz",
-    "name": "Vaso de Vidrio Triana (300ml / 10oz)",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/vaso-vidrio-triana-300ml-10oz.webp",
-    "features": [
-      "Capacidad: 300 ml / 10 oz (Ref. A027)",
-      "Silueta acampanada clásica con borde pulido",
-      "Vidrio templado resistente al choque térmico"
-    ],
-    "presentation": "Caja por docena",
-    "usage": "Servicio de té frío, cócteles, cervezas y gaseosas."
-  },
-  {
-    "id": "vaso-vidrio-liso-redondo",
-    "name": "Vaso de Vidrio Liso Redondo",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/vaso-vidrio-liso-redondo.webp",
-    "features": [
-      "Acabado completamente liso de pared delgada templada",
-      "Cuerpo redondeado minimalista",
-      "Máxima transparencia para lucir el color de las bebidas"
-    ],
-    "presentation": "Por unidad y caja de 12 unidades",
-    "usage": "Bebidas frías, cocteles de autor y servicio de mesa gourmet."
-  },
-  {
-    "id": "copa-de-vidrio-flauta",
-    "name": "Copa de Vidrio Tipo Flauta",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/copa-de-vidrio-flauta.webp",
-    "features": [
-      "Cáliz estrecho y alargado que conserva la efervescencia",
-      "Tallo estilizado con pie perfectamente nivelado",
-      "Cristal pulido de máxima pureza acústica y visual"
-    ],
-    "presentation": "Caja de 6 unidades",
-    "usage": "Servicio de champán, espumantes, prosecco y cócteles mimosa."
-  },
-  {
-    "id": "copa-de-vidrio-margarita-12oz",
-    "name": "Copa de Vidrio para Margarita (12oz)",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/copa-de-vidrio-margarita-12oz.webp",
-    "features": [
-      "Capacidad: 12 oz con boca ancha para escarchar con sal",
-      "Tazón doble escalonado clásico para coctelería mexicana",
-      "Base robusta antideslizante"
-    ],
-    "presentation": "Caja de 6 unidades",
-    "usage": "Servicio de margaritas clásicas, daiquiris frozen y cocteles tropicales."
-  },
-  {
-    "id": "jarra-vidrio-agua-globo-lisa",
-    "name": "Jarra de Vidrio para Agua Globo Lisa (1.5L)",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/jarra-vidrio-agua-globo-lisa.webp",
-    "features": [
-      "Capacidad: 1.5 Litros con cuerpo globoso transparente",
-      "Asa ergonómica de vidrio grueso para agarre seguro",
-      "Pico vertedor antigoteo integrado"
+      "Punta cónica de acero forjado de alta penetración en bloques de hielo",
+      "Mango ergonómico macizo con tope de seguridad para impacto firme",
+      "Resistencia extrema al uso continuo en barras"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio de agua, limonadas, jugos naturales y sangría en mesa."
+    "usage": "Fragmentación y picado de bloques de hielo en coctelería y carnicería."
   },
   {
-    "id": "jarra-vidrio-agua-globo-torneada",
-    "name": "Jarra de Vidrio para Agua Globo Torneada (1.5L)",
+    "id": "mandolina-cortadora-vegetales-ainox",
+    "name": "Mandolina Cortadora de Vegetales en Acero Inoxidable",
     "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/jarra-vidrio-agua-globo-torneada.webp",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/mandolina.webp",
     "features": [
-      "Capacidad: 1.5 Litros con relieve torneado en espiral",
-      "Diseño labrado decorativo que oculta marcas de dedos",
-      "Vidrio grueso resistente al uso continuo en sala"
+      "Cuchillas intercambiables para corte liso, ondulado, juliana y bastones",
+      "Regulador de grosor milimétrico de alta precisión",
+      "Carro protector de empuje de seguridad para resguardar las manos"
+    ],
+    "presentation": "Unidad completa con juego de cuchillas y empujador",
+    "usage": "Corte uniforme y ultra rápido de papas, zanahorias, cebollas y vegetales."
+  },
+  {
+    "id": "chaira-estriada-afilar-ainox",
+    "name": "Chaira Estriada para Afilar Cuchillos en Acero Inox",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/chaira.webp",
+    "features": [
+      "Vástago de acero magnetizado con estrías finas de alineación de filo",
+      "Guarda de seguridad amplia para protección de manos durante el asentado",
+      "Anilla superior para colgar en cinturón o estación de trabajo"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio de bebidas frías en eventos, banquetes y restaurantes."
+    "usage": "Asentado y alineación continua del filo de cuchillos en carnicerías y cocinas."
   },
   {
-    "id": "jarra-vidrio-agua-cilindrica-torneada",
-    "name": "Jarra de Vidrio Cilíndrica Torneada (1.5L)",
+    "id": "pinza-para-pan-acero-inox",
+    "name": "Pinzas para Pan en Acero Inoxidable",
     "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/jarra-vidrio-agua-cilindrica-torneada.webp",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/pinza-ppan.webp",
     "features": [
-      "Capacidad: 1.5 Litros con silueta cilíndrica vertical",
-      "Acanalado torneado de textura elegante",
-      "Ahorra espacio en mesas y bandejas de servicio"
+      "Palas anchas para sujeción delicada sin aplastar masas",
+      "Fabricada en acero inoxidable grado alimenticio",
+      "Ideal para autoservicio higiénico en panaderías"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio de agua fresca, jugos de estación e infusiones heladas."
+    "usage": "Manipulación y despacho de panes, pastelería y bollería recién horneada."
   },
   {
-    "id": "jarra-vidrio-agua-cilindrica-lisa",
-    "name": "Jarra de Vidrio Cilíndrica Lisa (0.5L / 1.5L)",
+    "id": "espumadera-alambre-acero-inox",
+    "name": "Espumadera de Malla / Alambre en Acero Inoxidable",
     "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Vidrio",
-    "image": "/uploads/menajes/jarra-vidrio-agua-cilindrica-lisa.webp",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/espumadera.webp",
     "features": [
-      "Capacidades disponibles: 0.5 Litros (individual/pareja) y 1.5 Litros",
-      "Vidrio liso de máxima transparencia y fácil desinfección",
-      "Pico vertedor de flujo continuo sin derrames"
+      "Disco perforado / tejido de alambre para drenaje veloz de aceite y caldo",
+      "Mango largo atérmico con gancho para colgar",
+      "Acero inoxidable sanitario apto para altas temperaturas de fritura"
+    ],
+    "presentation": "Por unidad según diámetro",
+    "usage": "Retiro y escurrido de frituras, espumado de caldos y retiro de impurezas."
+  },
+  {
+    "id": "cucharon-servir-acero-inox",
+    "name": "Cucharón para Servir en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/cucharon.webp",
+    "features": [
+      "Capacidades disponibles: 23 oz, 60 oz y 80 oz",
+      "Acero inoxidable enterizo de alta resistencia al calor",
+      "Cuenco profundo calibrado para porcionado exacto"
+    ],
+    "presentation": "Por unidad según volumen",
+    "usage": "Porcionado y servicio de caldos, consomés, salsas y bebidas calientes."
+  },
+  {
+    "id": "jarra-cremera-leche-ainox",
+    "name": "Jarra Barista para Leche en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/jarras-leche.webp",
+    "features": [
+      "Pico vertedor de precisión ideal para latte art y espumado",
+      "Acero inoxidable de excelente transmisión térmica para controlar temperatura al tacto",
+      "Asa ergonómica de agarre seguro durante el vertido"
     ],
     "presentation": "Por unidad según capacidad",
-    "usage": "Servicio de agua, té frío y jugos en comedores y terrazas."
+    "usage": "Cremado y vaporizado de leche en cafeteras express y servicio de café."
+  },
+  {
+    "id": "pala-para-pizza-aluminio",
+    "name": "Pala para Pizza en Aluminio con Mango",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "uploads/utensilios/aluminio-ainox/pala-pizza.webp",
+    "features": [
+      "Lámina delgada y biselada de aluminio para deslizar bajo la masa sin deformarla",
+      "Mango largo tubular para operar en hornos de leña o industriales a altas temperaturas",
+      "Remaches reforzados para máxima solidez al cargar pizzas grandes"
+    ],
+    "presentation": "Por unidad según dimensión de pala y longitud de mango",
+    "usage": "Introducción, giro y extracción de pizzas, panes y empanadas en hornos de alta temperatura."
+  },
+  {
+    "id": "tabla-de-picar",
+    "name": "Tabla para Picar de Cocina",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/tabla-cocina.webp",
+    "features": [
+      "Material seleccionado tratado para uso gastronómico",
+      "Superficie sólida que cuida y protege el filo de los cuchillos",
+      "Ranura perimetral para retención de jugos y líquidos"
+    ],
+    "presentation": "Por unidad según dimensión",
+    "usage": "Corte, picado y preparación diaria de vegetales, carnes y frutas."
+  },
+  {
+    "id": "tabla-churrasco-madera",
+    "name": "Tabla para Churrasco en Madera",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/tabla-madera.webp",
+    "features": [
+      "Madera maciza resistente a cortes continuos y calor",
+      "Canal profundo antiderrame para jugos de cocción",
+      "Acabado curado apto para alimentos y presentación rústica"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Corte, trinchado y servicio de carnes asadas y parrillas."
+  },
+  {
+    "id": "tabla-churrasco-con-plancha",
+    "name": "Tabla para Churrasco con Plancha de Hierro / Aluminio",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/tabla-churrasco-plancha.webp",
+    "features": [
+      "Base de madera tallada a la medida con asas de agarre seguro",
+      "Bandeja/plancha metálica para mantener el calor de las brasas",
+      "Protege la mesa del calor directo mientras mantiene las carnes calientes"
+    ],
+    "presentation": "Set de tabla de madera con plancha metálica",
+    "usage": "Servicio de churrascos, cortes a la parrilla, fajitas y carnes humeantes en mesa."
+  },
+  {
+    "id": "tabla-redonda-madera",
+    "name": "Tabla Redonda en Madera (Pizzera / Quesera)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/tabla-redonda.webp",
+    "features": [
+      "Diseño circular pulido en madera de alta dureza",
+      "Borde con canal antiderrames o reborde de servicio",
+      "Excelente presentación para compartir en mesa"
+    ],
+    "presentation": "Por unidad según diámetro",
+    "usage": "Servicio y corte de pizzas, tablas de quesos, charcutería y tapas."
+  },
+  {
+    "id": "rodillo-de-madera",
+    "name": "Rodillo para Amasar en Madera",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/rodillo-madera.webp",
+    "features": [
+      "Cilindro de madera maciza lisa de rotación equilibrada",
+      "Mangos ergonómicos laterales para presión uniforme sobre la masa",
+      "Superficie antiadherente al enharinar"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Estirado y nivelado de masas para pan, pizzas, hojaldre, galletas y pastas."
+  },
+  {
+    "id": "cuchara-de-palo-madera",
+    "name": "Cuchara de Palo en Madera (Varias Medidas)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/cucharas-palo.webp",
+    "features": [
+      "Madera natural seleccionada que no raya fondos de ollas ni sartenes",
+      "Medidas disponibles: 20cm, 25cm, 30cm, 35cm, 40cm, 50cm y 60cm",
+      "Mango resistente a altas temperaturas y mezclas densas"
+    ],
+    "presentation": "Por unidad según longitud requerida",
+    "usage": "Revolver caldos, guisos, mermeladas, polenta y salsas en cocción lenta."
+  },
+  {
+    "id": "espatula-de-madera",
+    "name": "Espátula de Madera para Cocina",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "uploads/utensilios/madera/espatula-madera.webp",
+    "features": [
+      "Borde plano biselado para raspar y desglasar fondos sin dañar teflón",
+      "Madera tratada resistente a la humedad y grasas calientes",
+      "Mango cómodo y atérmico que no transmite calor a la mano"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Sofritos, salteados, repostería y despegado suave en recipientes antiadherentes."
+  },
+  {
+    "id": "espatula-chef-lisa",
+    "name": "Espátula de Chef Lisa en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-lisa.webp",
+    "features": [
+      "Hoja recta lisa en acero inoxidable de alta flexibilidad y resistencia",
+      "Borde biselado para voltear y manipular hamburguesas, filetes y huevos",
+      "Mango ergonómico remachado de sujeción firme"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Manejo en plancha, grill y sartenes comerciales."
+  },
+  {
+    "id": "espatula-chef-perforada",
+    "name": "Espátula de Chef Perforada en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-perf.webp",
+    "features": [
+      "Ranuras y perforaciones longitudinales para drenaje rápido de grasas y aceites",
+      "Hoja ancha y biselada en acero inoxidable grado gastronómico",
+      "Mango resistente a altas temperaturas con excelente balance"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Volteo de pescados, carnes, hamburguesas y alimentos fritos en plancha."
+  },
+  {
+    "id": "espatula-pastelera-escalonada",
+    "name": "Espátula Pastelera Escalonada (Codo) Acero Inox",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-pasteleria-supp.webp",
+    "features": [
+      "Diseño en ángulo / codo que mantiene los dedos alejados del glaseado",
+      "Hoja flexible de acero inoxidable para esparcir cremas uniformemente",
+      "Acabado pulido sanitario de fácil limpieza"
+    ],
+    "presentation": "Unidad individual por medida",
+    "usage": "Alisado, relleno y cobertura de tortas, pasteles y postres."
+  },
+  {
+    "id": "espatula-picar-servir-torta",
+    "name": "Espátula para Picar y Servir Torta",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-picar.webp",
+    "features": [
+      "Pala triangular en acero inoxidable con borde serrado cortante",
+      "Permite cortar porciones limpias y levantarlas en un solo movimiento",
+      "Mango ergonómico antideslizante de servicio seguro"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Corte y servicio en mesa de pasteles, tartas, pizzas y quiches."
+  },
+  {
+    "id": "espatula-pastelera-mango-madera",
+    "name": "Espátula Pastelera con Mango de Madera",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-mmadera.webp",
+    "features": [
+      "Hoja recta y flexible en acero inoxidable de precisión",
+      "Cabo clásico en madera tratada con remaches sólidos",
+      "Excelente tacto y balance para decoración fina"
+    ],
+    "presentation": "Por unidad según longitud",
+    "usage": "Coberturas de fondant, crema chantilly, buttercream y ganache."
+  },
+  {
+    "id": "espatula-pastelera-mango-plastico",
+    "name": "Espátula Pastelera con Mango Plástico Sanitario",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-mplastico.webp",
+    "features": [
+      "Hoja delgada y flexible de acero inoxidable",
+      "Mango de polipropileno sanitario antideslizante apto para lavavajillas",
+      "Disponible en medidas estándar para pastelería y repostería"
+    ],
+    "presentation": "Por unidad según medida",
+    "usage": "Esparcido, alisado y trabajo detallado en repostería profesional."
+  },
+  {
+    "id": "espatulas-de-silicon-miserables",
+    "name": "Espátulas de Silicón Termorresistente (Miserables)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/espatula-silicon.webp",
+    "features": [
+      "Cabezal de silicón flexible de grado alimenticio resistente al calor",
+      "Bordes curvos y rectos que limpian hasta la última gota de tazones y ollas",
+      "No raya superficies de teflón, cerámica ni acero pulido"
+    ],
+    "presentation": "Por unidad según tamaño y juego",
+    "usage": "Rebañado de mezclas, salsas, chocolate fundido y cocción al sartén."
+  },
+  {
+    "id": "espatulas-peine-reposteria-scrapers",
+    "name": "Peines y Raspadores para Repostería (Scrapers)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Espátulas",
+    "image": "uploads/utensilios/espatulas/rascador.webp",
+    "features": [
+      "Juego de bordes decorativos lisos, dentados y ondulados",
+      "Diseño ergonómico para textura y alisado perfecto de laterales de tortas",
+      "Material resistente apto para corte de masa y manipulación"
+    ],
+    "presentation": "Set de peines / raspadores",
+    "usage": "Texturizado de bordes, alisado de buttercream y corte de masas en mesa."
+  },
+  {
+    "id": "cuchara-plastica-medidora-supplies",
+    "name": "Cucharas Plásticas Medidoras Supplies",
+    "brand": "Supplies",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/cucharas-plastico.webp",
+    "features": [
+      "Juego de cucharas con medidas grabadas de alta legibilidad",
+      "Plástico alimentario resistente a ingredientes secos y líquidos",
+      "Anilla organizadora para mantener el set ordenado y accesible"
+    ],
+    "presentation": "Set de cucharas medidoras",
+    "usage": "Dosificación precisa de levadura, sal, esencias y polvos de hornear."
+  },
+  {
+    "id": "manga-pastelera-con-boquillas",
+    "name": "Manga Pastelera con Juego de Boquillas",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/manga-pastelera.webp",
+    "features": [
+      "Manga flexible y resistente a la presión sin riesgo de rotura",
+      "Juego surtido de boquillas para estrellas, flores, pétalos y cordones",
+      "Adaptador de boquilla seguro para cambio rápido de diseño"
+    ],
+    "presentation": "Set completo con manga y boquillas",
+    "usage": "Decoración de tortas, cupcakes, galletas y porcionado de rellenos."
+  },
+  {
+    "id": "posacucharas-cook-concept",
+    "name": "Posacucharas Cook Concept",
+    "brand": "Cook Concept",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/posa-cuchara.webp",
+    "features": [
+      "Diseño ergonómico para reposar cucharas, espátulas y cucharones calientes",
+      "Mantiene la mesada limpia libre de grasa y gotas de salsas",
+      "Material lavable de fácil higiene apto para lavavajillas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Apoyo de utensilios durante la preparación y cocción de alimentos."
+  },
+  {
+    "id": "taza-medidora-silicon",
+    "name": "Taza Medidora de Silicón Flexible",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/taza-medidora-silicon.webp",
+    "features": [
+      "Cuerpo de silicón flexible con escala milimetrada grabada",
+      "Pico vertedor maleable para verter en moldes estrechos sin derrames",
+      "Apto para microondas, baño maría y lavavajillas"
+    ],
+    "presentation": "Unidad individual por capacidad",
+    "usage": "Medición y vertido preciso de líquidos, chocolate fundido y mezclas."
+  },
+  {
+    "id": "salseros-plasticos-squeeze",
+    "name": "Salseros Plásticos Tipo Squeeze (Biberón)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/salseros-plastico.webp",
+    "features": [
+      "Polietileno suave y flexible de fácil compresión",
+      "Pico dispensador de flujo continuo con tapa protectora",
+      "Apto para salsas frías, aderezos, mayonesa y mostaza"
+    ],
+    "presentation": "Por unidad según capacidad",
+    "usage": "Dispensado rápido en estaciones de hamburguesas, perros calientes y cocina."
+  },
+  {
+    "id": "tarocos-plasticos-pequenos",
+    "name": "Tarocos / Envases Plásticos Pequeños",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/tarocos.webp",
+    "features": [
+      "Formato compacto ideal para almacenamiento de insumos y porciones",
+      "Tapa de ajuste seguro que conserva la frescura",
+      "Material plástico higiénico, reutilizable y apilable"
+    ],
+    "presentation": "Por unidad y paquetes",
+    "usage": "Guardado de colorantes, frutos secos, toppings y aderezos individuales."
+  },
+  {
+    "id": "cortador-de-plastico-moldes",
+    "name": "Juego de Cortadores de Plástico para Galletas y Masa",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/cortador-plastic.webp",
+    "features": [
+      "Borde cortante seguro sin filo cortante peligroso para las manos",
+      "Variedad de formas y tamaños graduados para figuras creativas",
+      "Fácil desprendimiento de masas sin pegarse"
+    ],
+    "presentation": "Set de cortadores graduados",
+    "usage": "Corte de galletas, fondant, mazapán y figuras decorativas en repostería."
+  },
+  {
+    "id": "cortador-decorar-fruta",
+    "name": "Cortador / Vaciador para Decorar Fruta",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/corrtador-fruta.webp",
+    "features": [
+      "Herramienta de precisión para calado y tallado decorativo",
+      "Mango plástico ergonómico de control preciso",
+      "Ideal para crear esferas, canales y espirales en frutas frescas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Tallado de piñas, melones, sandías y decoración de buffets de frutas."
+  },
+  {
+    "id": "cesta-plastica-amarilla-comida-rapida",
+    "name": "Cesta Plástica Amarilla para Comida Rápida",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/cesta-amarilla.webp",
+    "features": [
+      "Diseño calado clásico americano para ventilación de alimentos crujientes",
+      "Plástico resistente a grasas y calor moderado, apto para papel antigrasa",
+      "Apilamiento ultracompacto para servicio rápido"
+    ],
+    "presentation": "Por unidad y paquetes institucionales",
+    "usage": "Servicio de hamburguesas, papas fritas, alitas, empanadas y snacks en mesa."
+  },
+  {
+    "id": "cesta-plastica-negra-comida-rapida",
+    "name": "Cesta Plástica Negra para Comida Rápida",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/cesta-negra.webp",
+    "features": [
+      "Acabado negro mate moderno de alta resistencia",
+      "Estructura perforada que evita que el vapor ablande los fritos",
+      "Fácil de lavar, higienizar y desinfectar entre servicios"
+    ],
+    "presentation": "Por unidad y paquetes",
+    "usage": "Presentación moderna de comida rápida, tequeños, sándwiches y aperitivos."
+  },
+  {
+    "id": "canasta-plastica-1x4",
+    "name": "Canasta Plástica Organizadora 1x4 Compartimientos",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/canasta.webp",
+    "features": [
+      "4 compartimientos profundos para clasificar cubiertos, aderezos o utensilios",
+      "Asa ergonómica central para transporte rápido",
+      "Estructura plástica rígida de alto impacto para uso intensivo"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Organización de cubiertos, servilletas y salsas en mesas y buffets."
+  },
+  {
+    "id": "canastilla-plastica-multiuso",
+    "name": "Canastilla Plástica Multiuso para Cocina",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/canastilla.webp",
+    "features": [
+      "Rejilla ventilada para lavado, escurrido y transporte de ingredientes",
+      "Bordes reforzados para sujeción cómoda con peso",
+      "Material sanitario lavable y resistente a químicos de limpieza"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Lavado de frutas, escurrido de hortalizas y almacenamiento de insumos."
+  },
+  {
+    "id": "botella-decorar-con-boquillas",
+    "name": "Botella Plástica para Decorar con Boquillas",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/botella-decorar.webp",
+    "features": [
+      "Botella translúcida flexible que permite ver el nivel de contenido",
+      "Tapa con rosca compatible con boquillas pasteleras estándar",
+      "Control de dosificación fino con suave presión manual"
+    ],
+    "presentation": "Unidad con juego de boquillas",
+    "usage": "Decoración de platos, líneas finas de salsa, chocolate líquido y glaseados."
+  },
+  {
+    "id": "jeringa-para-decoracion-reposteria",
+    "name": "Jeringa Plástica para Decoración de Repostería",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "uploads/utensilios/plasticos/jeringa-decorar.webp",
+    "features": [
+      "Mecanismo de émbolo con empuje suave y control milimétrico de crema",
+      "Cilindro transparente graduado fácil de rellenar y desmontar",
+      "Incluye boquillas intercambiables para variedad de trazos y flores"
+    ],
+    "presentation": "Set de jeringa decoradora con accesorios",
+    "usage": "Relleno de bombas, donas, profiteroles y decoración precisa de pasteles."
+  },
+  {
+    "id": "cazuela-acero-inoxidable-ovalada-20cm",
+    "name": "Cazuela Ovalada de Acero Inoxidable (20.5 cm)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cazuela-ovalada-ainox.webp",
+    "features": [
+      "Fabricación en acero inoxidable de grado alimenticio resistente al calor directo",
+      "Formato ovalado de 20.5 cm ideal para porciones individuales generosas o para compartir",
+      "Asas laterales remachadas para manipulación y servicio seguro de platos calientes"
+    ],
+    "presentation": "Unidad individual (20.5 cm)",
+    "usage": "Servicio de mariscos, pescados enteros, carnes al horno, gratines y arroces."
+  },
+  {
+    "id": "cazuela-refractaria-redonda",
+    "name": "Cazuela Refractaria Redonda",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cazuela-refractaria-redonda.webp",
+    "features": [
+      "Cuerpo refractario de gran espesor resistente a altas temperaturas de horno",
+      "Diseño redondo clásico con reborde exterior para manipulación segura",
+      "Excelente retención térmica que mantiene los alimentos calientes hasta la mesa"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Horneado y servicio directo de pastichos, gratines de verduras, cremas y guisos."
+  },
+  {
+    "id": "cazuela-ovalada-acero-inoxidable",
+    "name": "Cazuela Ovalada en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cazuela-ovalada.webp",
+    "features": [
+      "Estructura embutida de acero inoxidable con pulido sanitario brillante",
+      "Dimensión de 20.5 cm con profundidad para guisados y carnes en jugo",
+      "Resistente a abolladuras, corrosión y choque térmico moderado"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Presentación y servicio de platos principales en mesa, guisados y mariscos al ajillo."
+  },
+  {
+    "id": "bandeja-menaje-6-compartimientos-acero-inoxidable",
+    "name": "Bandeja de Menaje 6 Compartimientos en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/bandeja-menaje-ainox.webp",
+    "features": [
+      "6 divisiones embutidas independientes para plato principal, guarniciones, sopa y postre",
+      "Acero inoxidable sanitario indeformable y resistente a químicos de lavado",
+      "Apilamiento compacto y eficiente para secado rápido y almacenaje masivo"
+    ],
+    "presentation": "Unidad individual y paquetes institucionales",
+    "usage": "Servicio de raciones completas en comedores industriales, clínicas, colegios y campamentos."
+  },
+  {
+    "id": "pocillo-acero-inoxidable",
+    "name": "Pocillo en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/pocillo-ainox.webp",
+    "features": [
+      "Construcción en acero inoxidable de calibre resistente a caídas y uso rudo",
+      "Asa ergonómica firme soldada por puntos para sujeción cómoda sin calentamiento",
+      "Borde redondeado que brinda confort al beber"
+    ],
+    "presentation": "Por unidad y paquetes",
+    "usage": "Servicio tradicional de café campesino, consomé, chocolate caliente y té."
+  },
+  {
+    "id": "plato-postre-acero-inoxidable",
+    "name": "Plato de Postre en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/plato-postre-ainox.webp",
+    "features": [
+      "Diámetro adecuado para postres, entradas y guarniciones individuales",
+      "Acero inoxidable irrompible con acabado pulido brillante de larga duración",
+      "Apilamiento perfecto para servicio rápido en eventos y comedores"
+    ],
+    "presentation": "Por unidad y docenas",
+    "usage": "Presentación de tortas, dulces criollos, quesillos, frutas y tapas."
+  },
+  {
+    "id": "cuchillo-de-mesa-acero-inoxidable",
+    "name": "Cuchillo de Mesa en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cuchillo-mesa.webp",
+    "features": [
+      "Sierra microdentada de alta eficiencia para corte suave sin esfuerzo",
+      "Modelos disponibles: Capri, Ibiza (caja x12) y Royal",
+      "Acero inoxidable macizo equilibrado resistente a manchas y lavavajillas"
+    ],
+    "presentation": "Por unidad y cajas de 12 unidades",
+    "usage": "Corte de carnes preparadas, aves, sándwiches y servicio diario de mesa."
+  },
+  {
+    "id": "cuchara-de-mesa-acero-inoxidable",
+    "name": "Cuchara de Mesa en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cuchara-mesa.webp",
+    "features": [
+      "Cazo cóncavo amplio con bordes lisos no filosos para degustación placentera",
+      "Modelos disponibles: Capri, Provenzal e Ibiza",
+      "Estructura rígida indeformable con pulido espejo sanitario"
+    ],
+    "presentation": "Por unidad y docenas",
+    "usage": "Servicio de sopas, cremas, consomés, caldos, arroces y platos hondos."
+  },
+  {
+    "id": "cucharita-de-cafe-acero-inoxidable",
+    "name": "Cucharita de Café en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cucharita-cafe.webp",
+    "features": [
+      "Formato pequeño estilizado para tazas de café espresso, pocillos y té",
+      "Modelos surtidos: Capri, Provenzal, Dani y Royal",
+      "Acero inoxidable pulido resistente a la acidez del café y lácteos"
+    ],
+    "presentation": "Por unidad y cajas por docena",
+    "usage": "Remover café, infusiones, degustación de postres y copas de helado."
+  },
+  {
+    "id": "tenedor-de-mesa-acero-inoxidable",
+    "name": "Tenedor de Mesa en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/tenedor-mesa.webp",
+    "features": [
+      "4 dientes alineados con precisión para ensartar con seguridad carnes y ensaladas",
+      "Líneas disponibles: Capri, Royal e Ibiza",
+      "Peso balanceado y empuñadura ergonómica de tacto confortable"
+    ],
+    "presentation": "Por unidad y docenas",
+    "usage": "Servicio principal de pastas, carnes, vegetales y ensaladas en salón."
+  },
+  {
+    "id": "panera-tropical-acero-inoxidable",
+    "name": "Panera Tropical en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/panera-trop.webp",
+    "features": [
+      "Estructura calada motivo Tropical que permite circular el aire y mantener el pan crocante",
+      "Acero inoxidable brillante con borde suave de manipulación cómoda",
+      "Higiénica, fácil de limpiar con paño húmedo o en lavavajillas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de panes calientes, arepas, tostadas, bollos y medialunas en mesa."
+  },
+  {
+    "id": "panera-primavera-acero-inoxidable",
+    "name": "Panera Primavera en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/panera-primavera.webp",
+    "features": [
+      "Diseño calado artístico modelo Primavera de finos trazos entrelazados",
+      "Formato amplio ovalado para surtido variado de panadería y bollería",
+      "Acero inoxidable de calidad superior resistente al uso diario continuo"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Presentación de panes gourmet en mesas de banquetes, hoteles y restaurantes."
+  },
+  {
+    "id": "bol-para-salsa-2-puestos-acero-inoxidable",
+    "name": "Bol para Salsa 2 Puestos en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/bol-salsa-2p.webp",
+    "features": [
+      "2 pocillos embutidos fusionados en una sola estructura metálica sólida",
+      "Material no poroso que evita la transferencia de olores o sabores picantes",
+      "Base con apoyo estable que previene volcaduras accidentales"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio en mesa de guasacaca y picante, kétchup y mayonesa o aderezos para compartir."
+  },
+  {
+    "id": "bol-para-salsa-3-puestos-acero-inoxidable",
+    "name": "Bol para Salsa 3 Puestos en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/bol-salsa-3p.webp",
+    "features": [
+      "3 compartimientos redondos para tríos de salsas y aderezos",
+      "Asa vertical central elevada que facilita el pase entre comensales y camareros",
+      "Acero inoxidable sanitario pulido fácil de higienizar"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de salsas variadas en asadores, hamburgueserías y taquerías."
+  },
+  {
+    "id": "salsero-de-pico-acero-inoxidable-14cm",
+    "name": "Salsero de Pico en Acero Inoxidable (14 cm)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/salsero-pico.webp",
+    "features": [
+      "Longitud de 14 cm con pico alargado de vertido fluido y sin goteo",
+      "Asa ergonómica amplia en arco para control preciso al dosificar salsas calientes",
+      "Base con pedestal elegante que decora la mesa"
+    ],
+    "presentation": "Unidad individual (14 cm)",
+    "usage": "Servicio de jugos de asado, salsas gravy, cremas calientes y almíbares."
+  },
+  {
+    "id": "servilletero-acero-inoxidable",
+    "name": "Servilletero en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/servilletero.webp",
+    "features": [
+      "Estructura de acero inoxidable con soporte lateral vertical firme",
+      "Mantiene las servilletas ordenadas y protegidas contra el viento",
+      "Perfil estrecho que ahorra espacio valioso en la mesa de comensales"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Mesas de restaurantes, cafeterías, panaderías y áreas al aire libre."
+  },
+  {
+    "id": "pinza-para-hielo-acero-inoxidable",
+    "name": "Pinza para Hielo en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/pinzas-phielo.webp",
+    "features": [
+      "Extremos dentados en forma de garra que aprisionan los cubos sin resbalar",
+      "Arco elástico con tensión calibrada para uso rápido continuo del bartender",
+      "Acero inoxidable resistente a la humedad constante sin oxidarse"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio higiénico de hielo en cubetas, cocteleras, vasos y poncheras."
+  },
+  {
+    "id": "tobo-para-champana-acero-inoxidable",
+    "name": "Tobo para Champaña en Acero Inoxidable (Champañera)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/tobo-champana.webp",
+    "features": [
+      "Cuerpo de acero inoxidable con pulido espejo de gran distinción y elegancia",
+      "Asas anulares laterales remachadas para traslado firme y cómodo",
+      "Capacidad amplia para botellas magnum o estándar con hielo abundante"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio de champán, vino espumante y vino blanco en mesas VIP y eventos."
+  },
+  {
+    "id": "candelabro-acero-inoxidable",
+    "name": "Candelabro en Acero Inoxidable (Grande / Pequeño)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/candelabro-ainox.webp",
+    "features": [
+      "Disponible en presentaciones Grande y Pequeño para composición decorativa",
+      "Base redonda pesada que garantiza absoluta estabilidad de las velas",
+      "Copa receptora con platillo atrapacera para proteger manteles y mesas"
+    ],
+    "presentation": "Por unidad según tamaño (Grande / Pequeño)",
+    "usage": "Ambientación elegante de mesas en cenas formales, bodas y banquetes."
+  },
+  {
+    "id": "tobo-de-hielo-aluminio",
+    "name": "Tobo para Hielo en Aluminio",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/tobo-hielo.webp",
+    "features": [
+      "Cuerpo metálico de aluminio de gran durabilidad e insensibilidad al óxido",
+      "Asa superior pivotante reforzada para transporte ágil de hielo",
+      "Capacidad óptima para mantener varias rondas de bebidas frías"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Suministro de hielo en barras, licorerías, discotecas, terrazas y eventos."
+  },
+  {
+    "id": "plato-mantequillero-acero-inoxidable",
+    "name": "Plato Mantequillero en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/plato-mantequillero.webp",
+    "features": [
+      "Tamaño compacto con pestaña perimetral levantada antiderrame",
+      "Superficie higiénica que no absorbe olores ni grasas lácteas",
+      "Fácil de lavar, esterilizar y apilar en la estación de meseros"
+    ],
+    "presentation": "Por unidad y paquetes por docena",
+    "usage": "Servicio de mantequilla individual, quesos untables, patés y mermeladas."
+  },
+  {
+    "id": "plato-de-propina-acero-inoxidable",
+    "name": "Plato de Propina en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/plato-propina.webp",
+    "features": [
+      "Formato pulido de alta presentación para cobro elegante del ticket",
+      "Reborde curvado que permite levantar monedas y billetes sin dificultad",
+      "Material inoxidable que resiste el roce constante sin descascararse"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Presentación de cuentas, cambio y recepción de propinas en salón y barra."
+  },
+  {
+    "id": "copa-coctel-camarones-acero-inoxidable",
+    "name": "Copa Cóctel de Camarones en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/copa-camarones.webp",
+    "features": [
+      "Diseño especializado de dos piezas con base para hielo frappé y copa suspendida",
+      "Garantiza temperatura gélida durante toda la degustación de mariscos",
+      "Acero pulido de porte sobrio y sofisticado para cevicherías y marisquerías"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio gourmet de cóctel de camarones, ceviches, salpicón de mariscos y tartares."
+  },
+  {
+    "id": "copa-para-helado-acero-inoxidable",
+    "name": "Copa para Helado en Acero Inoxidable (Grande / Pequeña)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/copa-helado.webp",
+    "features": [
+      "Disponible en tamaños Grande y Pequeña",
+      "Silueta acampanada con pedestal sólido antivuelco",
+      "Acero inoxidable irrompible que ayuda a mantener el frío por más tiempo"
+    ],
+    "presentation": "Por unidad según tamaño (Grande / Pequeña)",
+    "usage": "Servicio de helados artesanales, sundaes, ensaladas de fruta y mousses."
+  },
+  {
+    "id": "cenicero-acero-inoxidable",
+    "name": "Cenicero en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/cenicero-ainox.webp",
+    "features": [
+      "Hendiduras estampadas para reposar cigarrillos con estabilidad",
+      "Material incombustible seguro que no retiene olores a humo tras el lavado",
+      "Resistente al viento en espacios abiertos y terrazas de alta circulación"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Mesas de terrazas, salones de fumadores, barras exteriores y eventos."
+  },
+  {
+    "id": "colgador-de-copas-bar-acero-inoxidable",
+    "name": "Colgador de Copas para Bar en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/colgador-copas.webp",
+    "features": [
+      "Riel de acero inoxidable para suspensión invertida de copas por la base",
+      "Protege el interior de las copas del polvo y acelera el escurrido natural",
+      "Instalación fácil bajo techo, alacena o estantería sobre la barra"
+    ],
+    "presentation": "Unidad por tramo / riel con anclajes",
+    "usage": "Organización y exhibición aérea de copas de vino, champaña y martinis en barras."
+  },
+  {
+    "id": "capsulas-de-cafe-reutilizables-cook-concept",
+    "name": "Cápsulas de Café Reutilizables Cook Concept en Acero Inoxidable",
+    "brand": "Cook Concept",
+    "category": "menajes",
+    "subCategory": "Acero Inoxidable",
+    "image": "/uploads/menajes/acero/capsulas-cafe.webp",
+    "features": [
+      "Cápsula ecológica recargable de acero inoxidable grado alimenticio 100% reutilizable",
+      "Filtro de micromalla de precisión que logra extracción rica en crema y aroma",
+      "Ahorro considerable y reducción de residuos frente a cápsulas desechables"
+    ],
+    "presentation": "Set de cápsula con accesorios de llenado y limpieza",
+    "usage": "Preparación sustentable de espresso con café recién molido en máquinas de cápsulas."
   },
   {
     "id": "hielera-vidrio-sin-asa",
@@ -1015,14 +2050,44 @@
     "brand": "A-Comer",
     "category": "menajes",
     "subCategory": "Vidrio",
-    "image": "/uploads/menajes/hielera-vidrio-sin-asa.webp",
+    "image": "/uploads/menajes/vidrio/hielera-vidrio.webp",
     "features": [
-      "Vidrio grueso aislante que retrasa el descongelamiento del hielo",
-      "Formato de mesa elegante sin asas que ahorra espacio",
-      "Boca ancha accesible para pinzas de hielo"
+      "Vidrio grueso aislante de alta transparencia que retrasa el descongelamiento del hielo",
+      "Formato de mesa elegante sin asas que ahorra espacio en mesas concurridas",
+      "Boca ancha accesible para pinzas de hielo y servicio cómodo"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio de cubos de hielo en mesas, barras y suites."
+    "usage": "Servicio de cubos de hielo en mesas, barras, licorerías y salones VIP."
+  },
+  {
+    "id": "copa-de-vidrio-margarita-12oz",
+    "name": "Copa de Vidrio para Margarita (12oz)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/copa-margarita.webp",
+    "features": [
+      "Capacidad de 12 oz con boca ancha para escarchar sal o azúcar",
+      "Tazón doble escalonado clásico para coctelería mexicana y caribeña",
+      "Base pesada y tallo grueso que aportan balance y estabilidad"
+    ],
+    "presentation": "Caja de 6 unidades",
+    "usage": "Servicio de margaritas clásicas, daiquiris frozen, cócteles tropicales y postres."
+  },
+  {
+    "id": "copa-de-vidrio-flauta",
+    "name": "Copa de Vidrio Tipo Flauta",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/copa-flauta.webp",
+    "features": [
+      "Cáliz estrecho y alargado que concentra los aromas y conserva la efervescencia",
+      "Tallo estilizado con pie perfectamente nivelado antivuelco",
+      "Cristal transparente de alta claridad acústica y visual"
+    ],
+    "presentation": "Caja de 6 unidades",
+    "usage": "Brindis y servicio de champán, cava, prosecco, vinos espumosos y mimosas."
   },
   {
     "id": "cenicero-vidrio-portofino-facetado",
@@ -1030,253 +2095,1434 @@
     "brand": "A-Comer",
     "category": "menajes",
     "subCategory": "Vidrio",
-    "image": "/uploads/menajes/cenicero-vidrio-portofino-facetado.webp",
+    "image": "/uploads/menajes/vidrio/cenicero-vidrio.webp",
     "features": [
-      "Vidrio macizo pesado con ranuras facetadas de descanso",
-      "Resistente a cenizas calientes y caídas leves",
-      "Fácil limpieza e inodoro tras lavado"
+      "Vidrio macizo pesado con ranuras facetadas para descanso seguro de cigarrillos",
+      "Resistente a cenizas calientes, rayaduras y caídas leves",
+      "Fácil limpieza e inodoro tras el lavado diario"
     ],
     "presentation": "Por unidad y cajas de 6 unidades",
-    "usage": "Áreas exteriores, terrazas, salones y zonas de fumadores."
+    "usage": "Áreas exteriores, terrazas, salones de fumadores, barras y eventos al aire libre."
   },
   {
-    "id": "bandeja-ovalada-acero-inox-servicio",
-    "name": "Bandeja Ovalada de Servicio en Acero Inoxidable",
+    "id": "jarra-vidrio-agua-cilindrica-torneada",
+    "name": "Jarra de Vidrio Cilíndrica Torneada (1.5L)",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/bandeja-ovalada-acero-inox-servicio.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/jarra-torneada.webp",
     "features": [
-      "Medidas disponibles: 20cm, 30cm, 35cm, 45cm, 55cm, 60cm y 70cm",
-      "Acero inoxidable brillante con reborde perimetral para transporte seguro",
-      "Superficie higiénica y resistente a manchas ácidas y grasas"
-    ],
-    "presentation": "Por unidad según tamaño",
-    "usage": "Servicio de carnes, pescados enteros, entremeses y mozos en sala."
-  },
-  {
-    "id": "bandeja-menaje-6-compartimientos-acero-inox",
-    "name": "Bandeja de Menaje 6 Compartimientos en Acero Inox",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/bandeja-menaje-6-compartimientos-acero-inox.webp",
-    "features": [
-      "6 divisiones profundas para separar alimentos, sopa y postre",
-      "Acero inoxidable sanitario indeformable e inoxidable",
-      "Apilamiento compacto de fácil secado y almacenaje"
-    ],
-    "presentation": "Unidad individual y paquetes institucionales",
-    "usage": "Comedores industriales, colegios, clínicas, campamentos y buffets."
-  },
-  {
-    "id": "bandeja-rectangular-acero-inox-servicio",
-    "name": "Bandeja Rectangular de Servicio en Acero Inoxidable",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/bandeja-rectangular-acero-inox-servicio.webp",
-    "features": [
-      "Medidas estándar GN: 27x17, 32x17, 32x27 y 52x32 cm (profundidades 6, 10 y 15 cm)",
-      "Bordes reforzados para agarre cómodo y firmeza estructural",
-      "Acero inoxidable pulido apto para frío y calor"
-    ],
-    "presentation": "Por unidad según dimensión y profundidad",
-    "usage": "Exhibición en vitrinas calientes/frías, baños de maría y servicio de salón."
-  },
-  {
-    "id": "bandeja-redonda-acero-inox-camarero",
-    "name": "Bandeja Redonda en Acero Inoxidable para Camarero",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/bandeja-redonda-acero-inox-camarero.webp",
-    "features": [
-      "Diámetros disponibles: 30cm y 35cm",
-      "Reborde levantado de seguridad antivuelco de copas y platos",
-      "Acero inoxidable liviano de fácil maniobrabilidad con una mano"
+      "Capacidad de 1.5 Litros con silueta cilíndrica vertical",
+      "Acanalado torneado en relieve que brinda agarre seguro y oculta huellas",
+      "Pico vertedor integrado de vertido uniforme sin salpicaduras"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio de copas, cafés, cócteles y postres en salón y eventos."
+    "usage": "Servicio de agua fresca, jugos de estación, té frío e infusiones heladas en mesa."
   },
   {
-    "id": "salsero-de-pico-acero-inox-14cm",
-    "name": "Salsero de Pico en Acero Inoxidable (14cm)",
+    "id": "jarra-vidrio-agua-cilindrica-lisa",
+    "name": "Jarra de Vidrio Cilíndrica Lisa (0.5L / 1.5L)",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/salsero-de-pico-acero-inox-14cm.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/jarra-cilindro.webp",
     "features": [
-      "Longitud: 14 cm con pico alargado vertedor antigoteo",
-      "Asa ergonómica de una sola pieza en acero inoxidable",
-      "Base con pedestal que aporta elegancia a la mesa"
+      "Capacidades disponibles: 0.5 Litros (individual/pareja) y 1.5 Litros",
+      "Vidrio liso de máxima transparencia para lucir el color de las bebidas",
+      "Asa ergonómica reforzada y diseño estilizado que optimiza espacio en mesa"
+    ],
+    "presentation": "Por unidad según capacidad (0.5L / 1.5L)",
+    "usage": "Servicio de agua, jugos naturales, limonadas y bebidas frías en sala y terraza."
+  },
+  {
+    "id": "jarra-vidrio-agua-globo-torneada",
+    "name": "Jarra de Vidrio en Globo Torneada (1.5L)",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/jarra-globo-torneada.webp",
+    "features": [
+      "Capacidad de 1.5 Litros con cuerpo abombado en forma de globo",
+      "Relieve torneado en espiral que aporta un toque artesanal y elegante",
+      "Vidrio grueso resistente al uso continuo en restaurantes y banquetes"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio de salsas calientes, jugos de carne, aderezos y gravy."
+    "usage": "Presentación y servicio de sangría, aguas saborizadas, clericot y cócteles de jarra."
   },
   {
-    "id": "bol-para-salsa-acero-inox-2-puestos",
-    "name": "Bol para Salsa 2 Puestos en Acero Inoxidable",
+    "id": "jarra-vidrio-agua-globo-lisa",
+    "name": "Jarra de Vidrio en Globo Lisa (1.5L)",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/bol-para-salsa-acero-inox-2-puestos.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/jarra-globo.webp",
     "features": [
-      "2 cavidades independientes unidas para dos aderezos simultáneos",
-      "Acero inoxidable sanitario con acabado brillante",
-      "No absorbe olores ni se mancha con salsas ácidas"
+      "Capacidad de 1.5 Litros con cuerpo esférico de vidrio cristalino liso",
+      "Boca ancha que facilita la adición de cubos de hielo, rodajas de cítricos y frutas",
+      "Asa robusta de vidrio fundido para agarre firme y seguro al servir"
     ],
     "presentation": "Unidad individual",
-    "usage": "Servicio en mesa de guasacaca, picante, tártara o aderezos para compartir."
+    "usage": "Servicio familiar e institucional de agua, jugos frescos, té helado y ponches."
   },
   {
-    "id": "bol-para-salsa-acero-inox-3-puestos",
-    "name": "Bol para Salsa 3 Puestos en Acero Inoxidable",
+    "id": "vaso-vidrio-durable-10-5oz-7-5oz",
+    "name": "Vaso de Vidrio Durable (10.5oz / 7.5oz)",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/bol-para-salsa-acero-inox-3-puestos.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/vaso-durable.webp",
     "features": [
-      "3 cavidades integradas en una sola pieza de acero inoxidable",
-      "Asa central vertical para traslado cómodo y seguro entre mesas",
-      "Base plana estable antivuelco"
+      "Disponibles en modelo estándar A018 (10.5 oz) y pequeño A028 (7.5 oz)",
+      "Vidrio prensado grueso de alta resistencia al impacto y choque térmico",
+      "Base reforzada y diseño apilable ideal para cocinas de alto volumen"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Servicio de salsas y contornos en mesas de hamburgueserías y asadores."
+    "presentation": "Por unidad y cajas institucionales",
+    "usage": "Restaurantes, luncherías, comedores industriales, cafeterías y fuentes de soda."
   },
   {
-    "id": "tobo-para-champana-acero-inox",
-    "name": "Tobo para Champaña en Acero Inoxidable (Champañera)",
+    "id": "vaso-vidrio-familiar-11oz-6-5oz",
+    "name": "Vaso de Vidrio Familiar (11oz / 6.5oz)",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/tobo-para-champana-acero-inox.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/vaso-familiar.webp",
     "features": [
-      "Acero inoxidable doble pared / pulido espejo de gran elegancia",
-      "Asas laterales anulares para fácil manipulación",
-      "Capacidad para botellas de champaña o vino estándar con hielo abundante"
+      "Modelos disponibles: A039 (11 oz) y A038 (6.5 oz)",
+      "Diseño cilíndrico clásico de fácil agarre para toda la familia",
+      "Cristal brillante inalterable al lavado repetido en lavavajillas"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Enfriamiento y presentación de botellas de champán y vino en mesa VIP."
+    "presentation": "Por unidad y cajas de 12 unidades",
+    "usage": "Servicio de jugos matutinos, desayunos, agua y bebidas en mesas familiares y restaurantes."
   },
   {
-    "id": "tobo-hielo-aluminio-acero",
-    "name": "Tobo para Hielo en Aluminio y Acero Inox",
+    "id": "vaso-vidrio-high-class",
+    "name": "Vaso de Vidrio High Class",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/tobo-hielo-aluminio-acero.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/vaso-highclass.webp",
     "features": [
-      "Estructura metálica resistente al abollamiento",
-      "Asa superior pivotante para transporte rápido de hielo",
-      "Capacidad generosa para abastecimiento de mesas y barras"
+      "Vidrio templado extra transparente de silueta estilizada y moderna",
+      "Pared fina con borde pulido que mejora la experiencia de degustación",
+      "Base pesada sólida que proporciona balance y presencia premium en mesa"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Suministro de hielo en bares, mesas familiares, discotecas y salones."
+    "presentation": "Cajas de 6 y 12 unidades",
+    "usage": "Coctelería de autor, tragos largos, refrescos gourmet, mocktails y agua premium."
   },
   {
-    "id": "copa-coctel-camarones-acero-inox",
-    "name": "Copa Cóctel de Camarones en Acero Inoxidable",
+    "id": "vaso-vidrio-old-fashion-whisky",
+    "name": "Vaso de Vidrio Old Fashion",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/copa-coctel-camarones-acero-inox.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/vaso-oldf.webp",
     "features": [
-      "Diseño térmico con tazón superior y base para cama de hielo",
-      "Acero inoxidable brillante que mantiene los mariscos a temperatura gélida",
-      "Presentación clásica de alta categoría para cevicherías y marisquerías"
+      "Formato bajo ancho con fondo grueso característico para whisky en las rocas",
+      "Excelente peso y centro de gravedad para manipulación confortable",
+      "Resistente a la fricción de hielo y macerado de ingredientes en barra"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Servicio gourmet de cóctel de camarones, ceviches y frutos del mar."
+    "presentation": "Por unidad y cajas de 6 y 12 unidades",
+    "usage": "Servicio de whisky, tragos cortos, destilados en las rocas, negroni y cócteles clásicos."
   },
   {
-    "id": "copa-para-helado-acero-inox",
-    "name": "Copa para Helado en Acero Inoxidable (Grande / Pequeña)",
+    "id": "vaso-vidrio-triana-300ml-10oz",
+    "name": "Vaso de Vidrio Triana (300ml / 10oz)",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/copa-para-helado-acero-inox.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/vaso-triana.webp",
     "features": [
-      "Disponible en medidas Grande y Pequeña",
-      "Pedestal clásico y copa acampanada en acero pulido",
-      "Inquebrantable, ideal para heladerías y restaurantes familiares"
+      "Capacidad: 300 ml / 10 oz (Referencia A027)",
+      "Silueta ligeramente acampanada con curvatura anatómica de fácil agarre",
+      "Vidrio templado resistente al calor y al uso diario continuo"
     ],
-    "presentation": "Por unidad según tamaño",
-    "usage": "Servicio de helados, copas sundae, ensaladas de fruta y postres fríos."
+    "presentation": "Cajas por docena (12 unidades)",
+    "usage": "Servicio de cervezas, té frío, gaseosas, cócteles refrescantes y jugos."
   },
   {
-    "id": "servilletero-acero-inox",
-    "name": "Servilletero en Acero Inoxidable de Mesa",
+    "id": "vaso-vidrio-liso-redondo",
+    "name": "Vaso de Vidrio Liso Redondo",
     "brand": "A-Comer",
     "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/servilletero-acero-inox.webp",
+    "subCategory": "Vidrio",
+    "image": "/uploads/menajes/vidrio/vaso-liso-redondo.webp",
     "features": [
-      "Acero inoxidable higiénico de fácil reposición",
-      "Sujeción firme de servilletas para evitar dispersión por viento",
-      "Diseño compacto para mesas de alto tránsito"
+      "Acabado completamente liso con líneas redondeadas de estilo contemporáneo",
+      "Pared templada de alta resistencia sin relieves para máxima limpieza visual",
+      "Realza el color y textura de cócteles, infusiones y bebidas artesanales"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Mesas de restaurantes, cafeterías, panaderías y food trucks."
+    "presentation": "Por unidad y cajas de 12 unidades",
+    "usage": "Bebidas frías, cocteles de autor, aperitivos y servicio de mesa en restaurantes gourmet."
   },
   {
-    "id": "panera-tropical-acero-inox",
-    "name": "Panera Tropical en Acero Inoxidable",
+    "id": "color-oro-en-polvo",
+    "name": "Color Oro en Polvo Comestible",
     "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/panera-tropical-acero-inox.webp",
+    "category": "insumos",
+    "subCategory": "Colores y Sabores",
+    "subSubCategory": "Colores Vegetales",
+    "image": "/uploads/insumos/colores-sabores/color-oro-indelma.webp",
     "features": [
-      "Calado decorativo tropical que ventila el pan recién tostado",
-      "Acero inoxidable pulido de alta presentación en mesa",
-      "Fácil de limpiar y desinfectar entre servicios"
+      "Pigmento dorado metalizado comestible de alto brillo reflectivo",
+      "Aplicación en seco con brocha o pincel para matizado de pétalos y figuras",
+      "Diluible en licor blanco o esencia para pintar con aerógrafo o a mano",
+      "Certificado de grado alimentario seguro para consumo en repostería fina"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Servicio de panes calientes, arepitas, tostadas y bollos en mesa."
+    "presentation": "Pote en polvo metalizado",
+    "usage": "Decoración brillante de fresas con chocolate, macarons, bombones, letras y detalles dorados en tortas de gala."
   },
   {
-    "id": "panera-primavera-acero-inox",
-    "name": "Panera Primavera en Acero Inoxidable",
+    "id": "color-plateado-en-polvo",
+    "name": "Color Plateado en Polvo Comestible",
     "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/panera-primavera-acero-inox.webp",
+    "category": "insumos",
+    "subCategory": "Colores y Sabores",
+    "subSubCategory": "Colores Vegetales",
+    "image": "/uploads/insumos/colores-sabores/color-plata-indelma.webp",
     "features": [
-      "Diseño estilizado calado modelo Primavera",
-      "Formato ovalado amplio para variedad de panecillos",
-      "Acero inoxidable resistente a la corrosión"
+      "Pigmento plateado nacarado con destellos brillantes de cobertura sedosa",
+      "Excelente adherencia sobre coberturas de chocolate, pasta de goma y fondant",
+      "Se puede aplicar en seco para veladuras suaves o líquido para acabados tipo espejo",
+      "Formulación especial no tóxica de uso gastronómico profesional"
     ],
-    "presentation": "Unidad individual",
-    "usage": "Presentación de panadería gourmet en mesas de banquetes y restaurantes."
+    "presentation": "Pote en polvo metalizado",
+    "usage": "Acabados perlados y plateados en pasteles de boda, galletas decoradas, perlas de azúcar y bombonería fina."
   },
   {
-    "id": "plato-mantequillero-acero-inox",
-    "name": "Plato Mantequillero en Acero Inoxidable",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/plato-mantequillero-acero-inox.webp",
+    "id": "color-caramelo-indelma",
+    "name": "Color Caramelo Concentrado Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Colores y Sabores",
+    "subSubCategory": "Colores Vegetales",
+    "image": "/uploads/insumos/colores-sabores/caramelina-indelma.webp",
     "features": [
-      "Diámetro estándar con borde elevado antiderrame",
-      "Acero inoxidable higiénico que conserva la temperatura",
-      "No altera el sabor de lácteos ni aderezos grasos"
+      "Tono caramelo tostado profundo de alto rendimiento y fijación homogénea",
+      "Resistente a temperaturas elevadas de horno sin degradarse ni alterar sabor",
+      "Ideal para lograr tonalidades doradas, bronce y marrón oscuro natural",
+      "Fácil disolución en formulaciones líquidas, semilíquidas o masas pesadas"
     ],
-    "presentation": "Unidad individual y paquetes por docena",
-    "usage": "Servicio individual de mantequilla, quesos untables y mermeladas."
+    "presentation": "Envase dosificador concentrado",
+    "presentations": [
+      "Paila 5kg",
+      "Arco 1123 tambor"
+    ],
+    "usage": "Coloración de panes de molde oscuros, ponqués de navidad, galletas, salsas de caramelo, jarabes y bebidas."
   },
   {
-    "id": "candelabro-acero-inox-mesa",
-    "name": "Candelabro en Acero Inoxidable (Grande / Pequeño)",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero",
-    "image": "/uploads/menajes/candelabro-acero-inox-mesa.webp",
+    "id": "colores-vegetales-en-polvo-frutalia",
+    "name": "Colores Vegetales en Polvo Frutalia (Paleta de Colores)",
+    "brand": "Frutalia",
+    "category": "insumos",
+    "subCategory": "Colores y Sabores",
+    "subSubCategory": "Colores Vegetales",
+    "image": "/uploads/insumos/colores-sabores/colores-frutalia.webp",
     "features": [
-      "Disponible en alturas Grande y Pequeño",
-      "Base circular pesada de máxima estabilidad antivuelco de velas",
-      "Acabado en acero inoxidable brillante elegante"
+      "Presentación en pote de 500 gramos en polvo concentrado y presentación Payasito 7 ml",
+      "Colorantes hidrosolubles de máxima intensidad que no amargan ni alteran consistencias",
+      "Disponibles en paleta de 14 tonos clásicos y de fantasía de alta cobertura",
+      "Certificación de grado alimenticio Frutalia hecho en Venezuela desde 1962"
     ],
-    "presentation": "Por unidad según altura",
-    "usage": "Ambientación de mesas, cenas románticas, eventos nocturnos y salones."
+    "presentation": "Pote de 500g (Polvo) / Payasito 7ml",
+    "usage": "Coloración de cremas chantilly, merengue italiano, pasta de goma, fondant, glaseados, macarrones y masas horneadas.",
+    "presentations": [
+      "Pote 500g (Polvo)"
+    ],
+    "colors": [
+      {
+        "name": "Anaranjado MDK",
+        "hex": "#FF8C00",
+        "code": "MDK"
+      },
+      {
+        "name": "Amarillo Limón MKG FR",
+        "hex": "#FFEB3B",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Amarillo Yema MDK",
+        "hex": "#FFC107",
+        "code": "MDK"
+      },
+      {
+        "name": "Verde Manzana MKG FR",
+        "hex": "#76FF03",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Verde Menta Brillante MKG FR",
+        "hex": "#00E676",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Rojo Puro MKG FR",
+        "hex": "#FF1744",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Rojo Fresa MKG FR",
+        "hex": "#D50000",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Rosado",
+        "hex": "#FF80AB",
+        "code": "7ML/POLVO"
+      },
+      {
+        "name": "Azul Brillante MKG FR",
+        "hex": "#0091EA",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Azul Puro MKG FR",
+        "hex": "#0D47A1",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Uva Morada MKG FR",
+        "hex": "#7B1FA2",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Marrón Chocolate MKG FR",
+        "hex": "#5D4037",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Negro MKG FR",
+        "hex": "#212121",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Verde Navidad",
+        "hex": "#1B5E20",
+        "code": "7ML/POLVO"
+      }
+    ]
+  },
+  {
+    "id": "esencias-sabores-liquidos-frutalia",
+    "name": "Esencias y Sabores Líquidos Concentrados Frutalia",
+    "brand": "Frutalia",
+    "category": "insumos",
+    "subCategory": "Colores y Sabores",
+    "subSubCategory": "Sabores Líquidos",
+    "image": "/uploads/insumos/colores-sabores/esencias-frutalia.webp",
+    "features": [
+      "Esencias y emulsiones líquidas de aroma penetrante y sabor auténtico",
+      "Presentaciones industriales y comerciales: 1/4 Litro (CTL), 1 Litro (LT) y 1 Galón (GL)",
+      "Fórmula termorresistente que no se evapora durante el horneado",
+      "Gama completa de 24 sabores frutales, lácteos, cítricos y tradicionales"
+    ],
+    "presentation": "1/4 de Litro (CTL), 1 Litro (LT) y 1 Galón (GL)",
+    "usage": "Aromatización y saborización de tortas, cupcakes, helados artesanales, gelatinas, bebidas, galletas y panes especiales.",
+    "presentations": [
+      "Cuarto de Litro (1/4 L - CTL)",
+      "1 Litro (LT)",
+      "1 Galón (GL)"
+    ],
+    "flavors": [
+      "Almendra (LT)",
+      "Anís (LT)",
+      "Aroma de Leche (LT, GL)",
+      "Arequipe - Emulsión (GL)",
+      "Banana (LT, GL)",
+      "Coco - Emulsión (LT, GL)",
+      "Fresa (LT)",
+      "Chiclets (LT)",
+      "Limón (GL, LT)",
+      "Mantequilla (GL, LT)",
+      "Mantecado (CTL, LT, GL)",
+      "Ron con Pasas (LT)",
+      "Naranja (GL, LT)",
+      "Piña (LT)",
+      "Ron Jamaica (LT)",
+      "Nata (GL, LT)",
+      "Queso (GL, LT)",
+      "Suave Pan (GL)",
+      "Panetone (GL)",
+      "Pistacho (LT)",
+      "Cereza (GL)",
+      "Tutti Frutti (LT)",
+      "Vainilla Blanca (GL, LT)",
+      "Vainilla Negra (LT)"
+    ]
+  },
+  {
+    "id": "fecula-yuca-nativa-artesanal",
+    "name": "Almidón Nativo de Yuca Artesanal",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Yuca",
+    "image": "/uploads/insumos/feculas/yuca-nativo.webp",
+    "features": [
+      "Fécula de yuca nativa 100% natural de elaboración artesanal y pureza superior",
+      "Alta capacidad de expansión en horneado que brinda volumen y alveolado perfecto",
+      "Aporta una textura crujiente y dorada por fuera con una miga elástica y suave por dentro",
+      "Excelente retención de humedad que mantiene la frescura del producto terminado por más tiempo",
+      "Naturalmente libre de gluten (gluten-free), ideal para dietas especiales y celíacos"
+    ],
+    "presentation": "Empaque de 5 kg",
+    "presentations": [
+      "5 kg"
+    ],
+    "usage": "Indispensable para pan de yuca, chipá, pandebono tradicional, buñuelos, almojábanas, galletas libres de gluten y como espesante natural en salsas y embutidos."
+  },
+  {
+    "id": "almidon-yuca-cyepalin-indelma",
+    "name": "Almidón Modificado de Yuca Cyepalin Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Yuca",
+    "image": "/uploads/insumos/feculas/yuca-indelma.webp",
+    "features": [
+      "Almidón de yuca modificado de grado industrial con tecnología Cyepalin de Indelma",
+      "Extraordinaria resistencia a esfuerzos mecánicos de amasado y cizallamiento en procesos continuos",
+      "Excelente estabilidad en ciclos de congelación y descongelación evitando la sinéresis (pérdida de agua)",
+      "Proporciona alta elasticidad, firmeza y una estructura uniforme y esponjosa a las masas",
+      "Optimiza el rendimiento en formulaciones industriales reduciendo costos sin sacrificar calidad"
+    ],
+    "presentation": "Saco de 25 kg y empaque de 5 kg",
+    "presentations": [
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Especialmente formulado para panadería congelada (pandebonos y panes de queso ultracongelados listos para hornear), pastas rellenas, quesos análogos, aderezos y embutidos cárnicos."
+  },
+  {
+    "id": "almidon-maiz-regular-arco-dist-indelma",
+    "name": "Almidón de Maíz Regular Arco Dist Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Maíz",
+    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "features": [
+      "Fécula / almidón regular de maíz nativo de máxima pureza (Línea Arco Dist)",
+      "Agente espesante clásico de alta eficacia con formación de gel firme y brillante al enfriar",
+      "Sabor completamente neutro que no enmascara ni altera los sabores propios de las preparaciones",
+      "Dispersión homogénea sin grumos que asegura una textura sedosa y uniforme en caliente",
+      "Ingrediente versátil indispensable tanto en pastelería fina como en cocina caliente"
+    ],
+    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentations": [
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Elaboración de crema pastelera, natillas, rellenos de tartas, salsas, bechameles, mezclas secas para repostería, alfajores y como agente antiaglomerante."
+  },
+  {
+    "id": "almidon-maiz-modificado-arco-film-rex-65-indelma",
+    "name": "Almidón Modificado de Maíz Arco Film Rex 65 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Maíz",
+    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "features": [
+      "Almidón de maíz químicamente modificado formador de película protectora (Arco Film Rex 65)",
+      "Crea una película crocante y uniforme que reduce significativamente la absorción de aceite en frituras",
+      "Baja viscosidad en caliente que facilita el bañado y recubrimiento uniforme sin sobrecargar la pieza",
+      "Mantiene el interior jugoso y húmedo mientras confiere un crujido excepcional y duradero al exterior",
+      "Aporta brillo y transparencia superior en coberturas, glaseados y aplicaciones de confitería"
+    ],
+    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentations": [
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Rebozados, apanados, frituras industriales, snacks crujientes, glaseados de frutos secos, gomas de confitería y recubrimientos de horneado."
+  },
+  {
+    "id": "almidon-maiz-modificado-arco-rex-8916-indelma",
+    "name": "Almidón Modificado de Maíz Arco Rex 8916 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Maíz",
+    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "features": [
+      "Almidón modificado con doble reticulación y estabilización de alto desempeño (Arco Rex 8916)",
+      "Resistencia extrema a procesos de cocción prolongada, alta temperatura y batido o cizallamiento intenso",
+      "Insuperable estabilidad frente a la acidez (bajo pH), ideal para preparaciones con frutas cítricas",
+      "Total resistencia a ciclos de congelación y descongelación sin soltar agua ni perder brillo ni textura",
+      "Aporta una textura cremosa de cuerpo corto, suave y aterciopelada sin aspecto gomoso"
+    ],
+    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentations": [
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Rellenos frutales horneables para pastelería y panadería, mermeladas industriales, aderezos y salsas ácidas (kétchup, BBQ, mayonesas), y platos precocinados congelados."
+  },
+  {
+    "id": "almidon-maiz-modificado-arco-rex-8416-indelma",
+    "name": "Almidón Modificado de Maíz Arco Rex 8416 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Maíz",
+    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "features": [
+      "Almidón modificado espesante y estabilizante de formulación equilibrada (Arco Rex 8416)",
+      "Viscosidad controlada y alta tolerancia al calentamiento en autoclaves y pasteurización",
+      "Excelente capacidad de suspensión que evita la precipitación de partículas sólidas en líquidos densos",
+      "Proporciona textura suave con excelente claridad visual y sensación placentera al paladar",
+      "Estabilidad duradera durante el almacenamiento prolongado a temperatura ambiente o refrigerada"
+    ],
+    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentations": [
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Rellenos pasteleros, cremas lácteas, sopas y caldos instantáneos, conservas enlatadas, productos cárnicos emulsionados y salsas para pastas."
+  },
+  {
+    "id": "almidon-maiz-arco-rex-2366-indelma",
+    "name": "Almidón de Maíz Arco Rex 2366 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Féculas",
+    "subSubCategory": "Maíz",
+    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "features": [
+      "Almidón de maíz especializado de textura delicada y fácil dispersión (Línea Arco Rex 2366)",
+      "Desarrolla consistencia uniforme y cuerpo estable tanto en frío como a temperatura ambiente",
+      "Retarda la retrogradación del almidón previniendo el endurecimiento y resecamiento en panificación",
+      "Aumenta la retención de agua y la frescura de masas horneadas mejorando notablemente su suavidad",
+      "Actúa como excelente ligante y estabilizador coloidal en emulsiones complejas"
+    ],
+    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentations": [
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Masas de repostería y bizcochería, panificación suave, coberturas para tortas, aderezos, mezclas emulsionadas y ligante para derivados cárnicos."
+  },
+  {
+    "id": "azucar-cafetin-sachets",
+    "name": "Azúcar para Cafetín en Sachets",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Endulzantes Naturales",
+    "image": "/uploads/insumos/endulzantes/azucar-sachet.webp",
+    "features": [
+      "Azúcar refinada blanca de alta pureza en porciones individuales higiénicas de disolución rápida",
+      "Presentación en sobres herméticos (sachets) que protegen el producto de la humedad y contaminación",
+      "Dosificación exacta por taza que optimiza costos y evita el desperdicio en barras y mesas",
+      "Empaque estético y funcional que garantiza una presentación pulcra y profesional al servicio de café"
+    ],
+    "presentation": "Caja de 200 sobres individuales (sachets)",
+    "presentations": [
+      "Caja x 200 sobres"
+    ],
+    "usage": "Servicio de mesa y barra en cafeterías, restaurantes, panaderías, hoteles, empresas y eventos gastronómicos."
+  },
+  {
+    "id": "maltodextrina-arco-sol-20-indelma",
+    "name": "Maltodextrina Arco Sol 20 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Endulzantes Naturales",
+    "image": "/uploads/insumos/endulzantes/maltodextrina.webp",
+    "features": [
+      "Carbohidrato complejo purificado obtenido por hidrólisis enzimática controlada de almidón de maíz (DE 20)",
+      "Polvo fino blanco de rápida dispersabilidad y excelente solubilidad tanto en frío como en caliente",
+      "Poder edulcorante suave que aporta cuerpo, viscosidad y textura sin saturar el dulzor de la preparación",
+      "Excelente agente de volumen, soporte de secado (spray drying) y estabilizador coloidal en emulsiones",
+      "Previene la cristalización de azúcares y mejora la retención de aromas y sensación en boca"
+    ],
+    "presentation": "Saco de 25 kg",
+    "presentations": [
+      "25 kg"
+    ],
+    "usage": "Bebidas deportivas y energéticas, mezclas en polvo para helados, repostería, confitería, coberturas, sopas deshidratadas y vehículo para esencias y aromas."
+  },
+  {
+    "id": "glucosa-arco-2314-indelma-paila",
+    "name": "Jarabe de Glucosa Arco 2314 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Endulzantes Naturales",
+    "subSubCategory": "Jarabes",
+    "image": "/uploads/insumos/endulzantes/glucosa.webp",
+    "features": [
+      "Jarabe de glucosa de maíz purificado de alta conversión y pureza cristalina (Línea Arco 2314)",
+      "Control eficaz de la cristalización de la sacarosa, aportando brillo, sedosidad y plasticidad",
+      "Presentación en paila plástica con asa y cierre hermético que facilita su manipulación y conservación",
+      "Excelente capacidad humectante que retrasa el endurecimiento y extiende la vida útil de los productos",
+      "Aporta viscosidad equilibrada y mordida elástica perfecta sin opacar colores ni aromas"
+    ],
+    "presentation": "Paila",
+    "presentations": [
+      "Paila"
+    ],
+    "usage": "Elaboración de fondant, pasta de goma, caramelos blandos y duros, gomitas, masmelos, brillo espejo para tortas y helados artesanales."
+  },
+  {
+    "id": "glucosa-arco-2414-indelma-paila",
+    "name": "Jarabe de Glucosa Arco 2414 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Endulzantes Naturales",
+    "subSubCategory": "Jarabes",
+    "image": "/uploads/insumos/endulzantes/glucosa.webp",
+    "features": [
+      "Jarabe de glucosa de maíz de media-alta viscosidad y gran poder anticristalizante (Línea Arco 2414)",
+      "Presentación en paila hermética ideal para obradores, pastelerías artesanales y talleres reposteros",
+      "Confiere firmeza estructural y elasticidad superior a masas de azúcar y confituras",
+      "Gran resistencia al pardeamiento térmico no deseado durante cocciones a altas temperaturas",
+      "Preserva la frescura y humedad de rellenos horneables y ganaches evitando cuarteaduras"
+    ],
+    "presentation": "Paila",
+    "presentations": [
+      "Paila"
+    ],
+    "usage": "Bombones, toffees, nougat, barras de cereal, turrones, jaleas de brillo para frutas y rellenos densos de pastelería."
+  },
+  {
+    "id": "glucosa-liviana-arco-2313-indelma-tambor",
+    "name": "Jarabe de Glucosa Liviana Arco 2313 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Endulzantes Naturales",
+    "subSubCategory": "Jarabes",
+    "image": "/uploads/insumos/endulzantes/glucosa.webp",
+    "features": [
+      "Jarabe de glucosa liviana de grado industrial formulado para procesos de alto volumen (Arco 2313)",
+      "Fluidez optimizada que facilita las operaciones de bombeo, transferencia y mezclado continuo",
+      "Aporta sólidos solubles controlando la presión osmótica y la actividad de agua (Aw) en formulaciones",
+      "Edulcoración moderada que respeta y resalta el perfil de sabor de frutas y esencias",
+      "Suministro industrial en tambor metálico de 280 kg para líneas de producción continuas"
+    ],
+    "presentation": "Tambor de 280 kg",
+    "presentations": [
+      "Tambor de 280 kg"
+    ],
+    "usage": "Fabricación industrial de bebidas, jarabes para sodas y raspados, frutas en almíbar, panificación masiva, salsas y mermeladas."
+  },
+  {
+    "id": "glucosa-pesada-arco-2413-indelma-tambor",
+    "name": "Jarabe de Glucosa Pesada Arco 2413 Indelma",
+    "brand": "Indelma",
+    "category": "insumos",
+    "subCategory": "Endulzantes Naturales",
+    "subSubCategory": "Jarabes",
+    "image": "/uploads/insumos/endulzantes/glucosa.webp",
+    "features": [
+      "Jarabe de glucosa pesada de máxima densidad, cuerpo y viscosidad industrial (Arco 2413)",
+      "Poder anticristalizante insuperable requerido en formulaciones de confitería de alto impacto térmico",
+      "Soporta temperaturas de cocción elevadas en pailas y cocinadores continuos al vacío sin descomponerse",
+      "Aporta textura gomosa, masticabilidad prolongada y cuerpo denso a golosinas y dulces típicos",
+      "Empaque industrial en tambor sellado de 280 kg con garantía y estándares de calidad Indelma"
+    ],
+    "presentation": "Tambor de 280 kg",
+    "presentations": [
+      "Tambor de 280 kg"
+    ],
+    "usage": "Caramelos duros, piruletas, gomas de mascar, masas de turrón, arequipe y dulce de leche industrial, gomas coladas y barritas energéticas."
+  },
+  {
+    "id": "ajinomoto-1kg",
+    "name": "Ajinomoto (Glutamato Monosódico)",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/ajinomoto.webp",
+    "features": [
+      "Potenciador de sabor puro (umami) que realza y profundiza las notas naturales de las comidas",
+      "Cristales finos de rápida disolución y distribución homogénea en caldos, adobos y masas",
+      "Permite reducir hasta un 30% el uso de sal común manteniendo una alta intensidad gustativa",
+      "Calidad gastronómica profesional indispensable en cocina oriental, internacional y tradicional"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Sazonado y realce de carnes, aves, mariscos, sopas, salsas, marinadas, arroces fritos, comida asiática y preparaciones de charcutería."
+  },
+  {
+    "id": "salsa-de-soya-china-1-6lt",
+    "name": "Salsa de Soya China Tradicional",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/salsa-soya.webp",
+    "features": [
+      "Salsa de soya oscura tradicional de cuerpo denso y color caramelo profundo",
+      "Perfil aromático intenso con el balance perfecto entre salinidad, notas tostadas y toques dulces",
+      "Excelente poder de fijación de color y brillo en salteados al wok y horneados",
+      "Presentación institucional económica de 1.6 litros de alto rendimiento para cocinas de alto tráfico"
+    ],
+    "presentation": "Botella de 1.6 Litros",
+    "presentations": [
+      "1.6 L"
+    ],
+    "usage": "Ideal para arroces chinos, chop suey, salteados al wok, marinados de carnes rojas y cerdo, glaseados teriyaki y aderezos."
+  },
+  {
+    "id": "propionato-de-calcio-1kg",
+    "name": "Propionato de Calcio Antimoho",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/propionato-calcio.webp",
+    "features": [
+      "Conservante e inhibidor de moho y bacterias filamentosas de máxima eficacia para panificación",
+      "No interfiere con la actividad de la levadura en masas fermentadas ni altera el sabor ni olor",
+      "Extiende significativamente la frescura y vida de anaquel de panes comerciales y artesanales",
+      "Fácil dispersión en seco junto con la harina o disuelto previamente en agua de amasado"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Panes de molde, panes de hamburguesa y perros calientes, bollería, masas fermentadas, tortillas de trigo y panes integrales."
+  },
+  {
+    "id": "benzoato-de-sodio-1kg",
+    "name": "Benzoato de Sodio Grado Alimenticio",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/benzoato-sodio.webp",
+    "features": [
+      "Potente agente antimicrobiano contra levaduras, hongos y bacterias en medios de pH ácido (< 4.5)",
+      "Polvo cristalino blanco inodoro de alta solubilidad en agua y formulaciones líquidas",
+      "Preserva la estabilidad organoléptica y microbiológica de productos a temperatura ambiente",
+      "Grado alimentario certificado de máxima pureza para la industria de bebidas y conservas"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Salsas ácidas (tomate, kétchup, mayonesa), mermeladas, almíbares, jugos y bebidas carbonatadas, encurtidos y aderezos para ensaladas."
+  },
+  {
+    "id": "polvo-de-hornear-fleischmann-1kg",
+    "name": "Polvo de Hornear Fleischmann",
+    "brand": "Fleischmann",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/polvo-hornear.webp",
+    "features": [
+      "Leudante químico de doble acción: primera reacción en frío durante el batido y segunda en horno",
+      "Aporta un crecimiento vertical uniforme, textura esponjosa y miga fina y sedosa a bizcochuelos",
+      "Fórmula balanceada que no deja sabor residual metálico ni alcalino en preparaciones delicadas",
+      "Calidad y respaldo Fleischmann líder en panificación y pastelería en Venezuela"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Bizcochos, ponqués, tortas, galletas, muffins, panquecas, waffles, polvorones y masas que no requieren fermentación biológica."
+  },
+  {
+    "id": "romonoff-fleischmann-1kg",
+    "name": "Mejorador y Conservante Romonoff Fleischmann",
+    "brand": "Fleischmann",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/romono.webp",
+    "features": [
+      "Conservante especializado anti-moho y anti-cuerda de acción prolongada de la línea Fleischmann",
+      "Previene el desmoronamiento y la aparición de hongos en panes en climas cálidos y húmedos",
+      "Optimiza la tolerancia al amasado y la retención de gas, logrando piezas de mayor volumen y simetría",
+      "Mantiene la corteza suave y la miga elástica durante semanas sin endurecerse"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Panadería industrial y artesanal: pan sobado, pan campesino, pan andino, pan de banquete, golfeados y bollería dulce y salada."
+  },
+  {
+    "id": "acido-citrico-1kg",
+    "name": "Ácido Cítrico Anhidro Grado Alimentario",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/acido-citrico.webp",
+    "features": [
+      "Acidulante, regulador de acidez (pH) y antioxidante natural de alta pureza cristalina",
+      "Aporta un sabor ácido fresco y limpio que equilibra el dulzor en postres, dulces y bebidas",
+      "Actúa como sinérgico con conservantes (benzoato y sorbato) potenciando su efectividad antimicrobiana",
+      "Previene la oxidación enzimática y el oscurecimiento de frutas peladas o procesadas"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Elaboración de mermeladas, gomitas, gelatinas, caramelos ácidos, bebidas, conservas de frutas, almíbares y fijador de colorantes."
+  },
+  {
+    "id": "cmc-carboximetilcelulosa-1kg",
+    "name": "CMC (Carboximetilcelulosa de Sodio)",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/cmc.webp",
+    "features": [
+      "Estabilizante, espesante y agente de elasticidad de grado alimentario de alto rendimiento",
+      "Otorga firmeza, maleabilidad y secado rápido a masas de azúcar (pastillaje y pasta de goma)",
+      "Evita la cristalización de hielo en helados artesanales y sorbetes brindando una cremosidad insuperable",
+      "Forma geles transparentes que aumentan la viscosidad sin alterar aroma ni coloración"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Modelado de figuras en fondant, flores de pasta de goma, estabilización de helados, cremas chantilly, rellenos y aderezos."
+  },
+  {
+    "id": "glicerina-usp-1lt",
+    "name": "Glicerina Pura USP Grado Alimenticio",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Preservantes / Conservantes",
+    "image": "/uploads/insumos/preservantes/glicerina.webp",
+    "features": [
+      "Humectante, emoliente y solvente natural de alta densidad y grado de pureza USP",
+      "Retiene la humedad interna evitando que coberturas, fondant y masas reposteras se resequen o quiebren",
+      "Devuelve la flexibilidad y elasticidad a colorantes en gel o pastas de azúcar resecas",
+      "Aporta brillo sedoso y textura aterciopelada a bombones, rellenos de trufa y glaseados"
+    ],
+    "presentation": "Botella de 1 Litro",
+    "presentations": [
+      "1 L"
+    ],
+    "usage": "Elaboración de fondant casero, pasta de goma, disolución de colorantes concentrados, brillo para bombones, repostería y helados."
+  },
+  {
+    "id": "nutcao-crema-avellana-cacao-4-6kg",
+    "name": "Nutcao Crema Untable de Avellanas y Cacao",
+    "brand": "Multikao",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "image": "/uploads/insumos/chocolates/nutcao.webp",
+    "features": [
+      "Crema untable premium formulada con auténtica pasta de avellanas tostadas y cacao seleccionado",
+      "Consistencia cremosa y homogénea de excelente untabilidad y textura sedosa a temperatura ambiente",
+      "Fórmula termorresistente apta para rellenos horneados sin perder cremosidad ni separarse en grasa",
+      "Presentación industrial en galón de 4.6 kg de alto rendimiento para pastelería y panadería"
+    ],
+    "presentation": "Galón de 4.6 kg",
+    "presentations": [
+      "4.6 kg"
+    ],
+    "usage": "Relleno y decoración de croissants, donas, churros, bombas, tartas, crepes, waffles, tortas y postres finos."
+  },
+  {
+    "id": "capita-magica-bitter-4kg",
+    "name": "Capita Mágica Bitter Cobertura Heladera",
+    "brand": "Multikao",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "image": "/uploads/insumos/chocolates/capita.webp",
+    "features": [
+      "Cobertura elaborada con manteca de cacao que garantiza solidificación ultra rápida en sólo 5 segundos en contacto con el frío",
+      "Aporta máxima crocancia exterior con sabor y textura auténtica a chocolate bitter al paladar",
+      "Capa suave y homogénea que no se quiebra de forma desordenada ni deja sensación grasosa en boca",
+      "Excelente rendimiento por inmersión que crea una película delgada, brillante y de secado instantáneo"
+    ],
+    "presentation": "Galón de 4 kg",
+    "presentations": [
+      "4 kg"
+    ],
+    "usage": "Bañado por inmersión de paletas de helado, barquillas, helados en cono, bombones helados, postres congelados y fresas frías."
+  },
+  {
+    "id": "granulado-chocolate-theobroma-1kg",
+    "name": "Granulado de Chocolate Theobroma",
+    "brand": "Theobroma",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Granulados",
+    "image": "/uploads/insumos/chocolates/granulado-theobroma.webp",
+    "features": [
+      "Granulado o lluvia de chocolate de sabor auténtico a cacao y brillo natural duradero",
+      "Resistente a la humedad y temperaturas de refrigeración sin desvanecerse ni decolorar",
+      "Formato uniforme de hebras finas que aportan volumen y acabado profesional a creaciones reposteras",
+      "Excelente palatabilidad con textura crujiente sin dejar residuos grasos en boca"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Decoración clásica de brigadeiros, trufas, donas, cupcakes, tortas de cumpleaños, helados y bebidas frías."
+  },
+  {
+    "id": "granulado-chocolate-st-moritz-1kg",
+    "name": "Granulado de Chocolate St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Granulados",
+    "image": "/uploads/insumos/chocolates/granulado-stmoritz.webp",
+    "features": [
+      "Lluvia de chocolate fino de repostería con la reconocida formulación y calidad de St. Moritz",
+      "Color chocolate oscuro brillante que resalta en coberturas de crema chantilly, arequipe y merengue",
+      "Sensación agradable en boca con derretido suave y sabor dulce achocolatado",
+      "Ideal para alta rotación en panaderías, pastelerías y heladerías artesanales"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Terminación y espolvoreado de tortas selva negra, postres individuales, merengadas, cafés especiales y bombonería."
+  },
+  {
+    "id": "gotas-chocolate-blanco-st-moritz-1kg",
+    "name": "Gotas de Chocolate Blanco Horneables St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Gotas",
+    "image": "/uploads/insumos/chocolates/gotas-stmoritz-blanco.webp",
+    "features": [
+      "Gotas de chocolate blanco termorresistentes diseñadas especialmente para resistir el horneado",
+      "Conservan su forma definida sin quemarse ni fundirse descontroladamente durante la cocción",
+      "Perfil aromático lácteo y avainillado con cremosa textura al morder",
+      "Tamaño calibrado perfecto para distribución homogénea en masas densas y batidos"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Cookies estilo americano, blondies, muffins, panes dulces, panettones, bizcochos y decoración en frío."
+  },
+  {
+    "id": "gotas-chocolate-bitter-st-moritz-1kg",
+    "name": "Gotas de Chocolate Bitter Horneables St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Gotas",
+    "image": "/uploads/insumos/chocolates/gotas-stmoritz-bitter.webp",
+    "features": [
+      "Gotas de chocolate oscuro semiamargo formuladas con alto contenido de sólidos de cacao",
+      "Resistencia térmica superior que mantiene el chispazo crocante en el interior de panes y galletas",
+      "Intensidad de cacao balanceada que contrasta armónicamente con masas dulces",
+      "Presentación profesional de 1 kg en empaque protegido contra la humedad y luz"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Galletas con chispas de chocolate, panettone de chocolate (chocottone), brownies, waffles y mezcla de frutos secos."
+  },
+  {
+    "id": "gotas-chocolate-leche-st-moritz-1kg",
+    "name": "Gotas de Chocolate con Leche Horneables St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Gotas",
+    "image": "/uploads/insumos/chocolates/gotas-stmoritz-leche.webp",
+    "features": [
+      "Gotas de chocolate con leche termorresistentes de suave sabor tradicional a cacao y crema",
+      "Excelente comportamiento ante el calor de horneado conservando textura tierna pero con cuerpo",
+      "Aroma achocolatado pronunciado y color tostado cálido",
+      "Formato versátil para uso tanto dentro de horneados como en decoración superficial"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Panadería dulce, galletas artesanales, muffins infantiles, panquecas, granola gourmet y topping de helados."
+  },
+  {
+    "id": "cobertura-chocolate-blanco-st-moritz-250g",
+    "name": "Cobertura de Chocolate Blanco St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Coberturas",
+    "image": "/uploads/insumos/chocolates/cobertura-stmoritz-blanco.webp",
+    "features": [
+      "Cobertura sucedánea de chocolate blanco de fácil fundido y excelente fluidez en baño de María o microondas",
+      "No requiere temperado complejo para lograr un desmolde limpio y un brillo satinado superior",
+      "Sabor suave a vainilla y leche que admite colorantes liposolubles para teñir en repostería artística",
+      "Presentación práctica en barra de 250 g fraccionable para formulaciones exactas"
+    ],
+    "presentation": "Barra de 250 g",
+    "presentations": [
+      "250 g"
+    ],
+    "usage": "Moldeo de figuras huecas, bombones, paletas de pastel (cakesicles), cake pops, bañado de galletas y ganaches claros."
+  },
+  {
+    "id": "cobertura-chocolate-bitter-st-moritz-250g",
+    "name": "Cobertura de Chocolate Bitter St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Coberturas",
+    "image": "/uploads/insumos/chocolates/cobertura-stmoritz-bitter.webp",
+    "features": [
+      "Cobertura de chocolate semiamargo bitter de alto rendimiento y secado rápido a temperatura ambiente",
+      "Aporta un color ébano profundo, brillo de espejo y quiebre sonoro (snap) perfecto al partir",
+      "Sabor pronunciado a cacao con elegante equilibrio entre amargor y dulzor",
+      "Fácil manipulación sin complicaciones de atemperado, ideal para producción ágil"
+    ],
+    "presentation": "Barra de 250 g",
+    "presentations": [
+      "250 g"
+    ],
+    "usage": "Bañado de tortas, alfajores, trufas, fresas con chocolate, donas gourmet, barquillas y decoración con filigranas."
+  },
+  {
+    "id": "cobertura-chocolate-leche-st-moritz-250g",
+    "name": "Cobertura de Chocolate con Leche St. Moritz",
+    "brand": "St. Moritz",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Coberturas",
+    "image": "/uploads/insumos/chocolates/cobertura-stmoritz-leche.webp",
+    "features": [
+      "Cobertura de chocolate con leche de fusión suave, tersa y magnífico brillo natural",
+      "Excelente viscosidad para capas uniformes sin grumos ni exceso de grosor",
+      "Sabor clásico y cremoso favorito en pastelería tradicional",
+      "Formato en barra de 250 g con divisiones para corte rápido y pesado preciso"
+    ],
+    "presentation": "Barra de 250 g",
+    "presentations": [
+      "250 g"
+    ],
+    "usage": "Bañado de ponqués, alfajores, galletas decoradas, chocolatería artesanal, rellenos cremosos y ganaches de cobertura."
+  },
+  {
+    "id": "naranja-picada-confitada-inpa-5kg",
+    "name": "Naranja Confitada Picada en Cubitos Inpa",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/naranja.webp",
+    "features": [
+      "Cáscara y pulpa de naranja seleccionada confitada en almíbar denso cortada en cubos uniformes",
+      "Brillo traslúcido, aroma cítrico intenso y textura firme que no se deshace durante el horneo",
+      "Resistente a altas temperaturas de cocción, manteniendo su humedad y jugosidad interna",
+      "Presentación económica y rendidora de 5 kg para panadería, pastelería y repostería profesional"
+    ],
+    "presentation": "Bolsa / Balde de 5 kg",
+    "presentations": [
+      "5 kg"
+    ],
+    "usage": "Ingrediente imprescindible en panettone tradicional, roscas de reyes, tortas negras navideñas, ponqués de frutas y galletas."
+  },
+  {
+    "id": "lechosa-picada-confitada-inpa-5kg",
+    "name": "Lechosa (Papaya) Confitada Picada en Cubitos Inpa",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/lechosa.webp",
+    "features": [
+      "Cubos de lechosa verde confitada en almíbar espeso con textura crujiente y mordida firme",
+      "Coloración brillante y homogénea que aporta contraste visual y dulzura equilibrada",
+      "Ideal para mezclas de frutos confitados (tutti frutti) de alta durabilidad sin fermentar",
+      "Formato a granel de 5 kg listo para incorporar directamente en masas y batidos"
+    ],
+    "presentation": "Bolsa / Balde de 5 kg",
+    "presentations": [
+      "5 kg"
+    ],
+    "usage": "Elaboración de panettone, pan de pasas y frutas, queques navideños, torta de navidad, panes dulces y heladería."
+  },
+  {
+    "id": "cidra-en-cubo-inpa-5kg",
+    "name": "Cidra Confitada en Cubos Inpa",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/cidra.webp",
+    "features": [
+      "Fruta de cidra de naranja agria genuina confitada cortada en cubitos regulares de brillo esmeralda traslúcido",
+      "Textura tierna y elástica con notas cítricas suaves y dulce almibarado",
+      "Conserva su consistencia y color vivo tanto en horneado como en refrigeración",
+      "Suministro comercial de 5 kg indispensable en la temporada de panadería navideña y festiva"
+    ],
+    "presentation": "Bolsa / Balde de 5 kg",
+    "presentations": [
+      "5 kg"
+    ],
+    "usage": "Panettone tradicional milanés, roscas trenzadas de pascua, pan dulce festivo, budines ingleses y turrones."
+  },
+  {
+    "id": "pinas-en-almibar-inpa-3-1kg",
+    "name": "Piñas en Rodajas en Almíbar Inpa",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/pina.webp",
+    "features": [
+      "Rodajas selectas de piña madura sumergidas en almíbar ligero de dulzor perfectamente balanceado",
+      "Corte uniforme, color amarillo dorado natural y textura jugosa, firme y sin fibras duras",
+      "Lata institucional de 3.1 kg con alto contenido de fruta drenada de gran rendimiento",
+      "Lista para servir o usar como ingrediente principal en repostería y cocina caliente"
+    ],
+    "presentation": "Lata de 3.1 kg",
+    "presentations": [
+      "Lata 3.1 kg"
+    ],
+    "usage": "Torta invertida de piña (volteado de piña), pizzas hawaianas, ensaladas agridulces, cócteles, tartaletas y postres fríos."
+  },
+  {
+    "id": "cerezas-en-almibar-inpa-3-1kg",
+    "name": "Cerezas Marrasquino en Almíbar Inpa (Rojas y Verdes)",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/cerezas.webp",
+    "features": [
+      "Cerezas marrasquino enteras sin hueso disponibles en vibrantes colores rojo rubí y verde esmeralda",
+      "Consistencia turgente y carnosa en almíbar aromatizado con el clásico perfil marrasquino",
+      "Brillo deslumbrante que realza de forma instantánea cualquier creación dulce o coctelería",
+      "Lata de 3.1 kg de alto rendimiento con tapa hermética para máxima conservación"
+    ],
+    "presentation": "Lata de 3.1 kg",
+    "presentations": [
+      "Lata 3.1 kg (Rojas)",
+      "Lata 3.1 kg (Verdes)"
+    ],
+    "usage": "Decoración de tortas de cumpleaños, selva negra, copas de helado, cócteles, postres individuales y panettone."
+  },
+  {
+    "id": "higos-en-almibar-inpa-3-1kg",
+    "name": "Higos Enteros en Almíbar Inpa",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/higos.webp",
+    "features": [
+      "Higos verdes y maduros enteros cocidos artesanalmente en almíbar espeso tradicional",
+      "Textura melosa y suave con piel tierna y semillas crujientes características del fruto",
+      "Sabor dulce profundo y aromático que evoca los dulces tradicionales andinos",
+      "Lata gastronómica de 3.1 kg con piezas enteras calibradas de presentación impecable"
+    ],
+    "presentation": "Lata de 3.1 kg",
+    "presentations": [
+      "Lata 3.1 kg"
+    ],
+    "usage": "Postre tradicional con arequipe o queso blanco, tablas de quesos madurados, rellenos de tartas y pastelería gourmet."
+  },
+  {
+    "id": "mermeladas-reposteras-inpa-3kg",
+    "name": "Mermeladas Reposteras Horneables Inpa",
+    "brand": "Inpa",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Mermeladas",
+    "image": "/uploads/insumos/frutas/mpina.webp",
+    "features": [
+      "Línea completa de mermeladas de grado repostero elaboradas con pulpa de fruta seleccionada",
+      "Consistencia densa y gelificada termorresistente que no hierve, desborda ni se quema al hornear",
+      "Brillo translúcido y sabor a fruta auténtica con acidez y dulzor perfectamente equilibrados",
+      "Presentación industrial en lata de 3 kg disponible en 7 deliciosos sabores frutales tradicionales"
+    ],
+    "presentation": "Lata de 3 kg",
+    "presentations": [
+      "Lata 3 kg"
+    ],
+    "flavors": [
+      "Piña",
+      "Guayaba",
+      "Manzana",
+      "Fresa",
+      "Albaricoque",
+      "Ciruela",
+      "Guanábana"
+    ],
+    "flavorOptions": [
+      {
+        "name": "Mermelada de Piña",
+        "image": "/uploads/insumos/frutas/mpina.webp"
+      },
+      {
+        "name": "Mermelada de Guayaba",
+        "image": "/uploads/insumos/frutas/mguayaba.webp"
+      },
+      {
+        "name": "Mermelada de Manzana",
+        "image": "/uploads/insumos/frutas/mmanzana.webp"
+      },
+      {
+        "name": "Mermelada de Fresa",
+        "image": "/uploads/insumos/frutas/mfresa.webp"
+      },
+      {
+        "name": "Mermelada de Albaricoque",
+        "image": "/uploads/insumos/frutas/malbaricoque.webp"
+      },
+      {
+        "name": "Mermelada de Ciruela",
+        "image": "/uploads/insumos/frutas/mciruela.webp"
+      },
+      {
+        "name": "Mermelada de Guanábana",
+        "image": "/uploads/insumos/frutas/mguanabana.webp"
+      }
+    ],
+    "usage": "Relleno horneable para pastelitos, empanadas dulces, donas, brazos gitanos, tartaletas, galletas pepas, bizcochuelos y brillo superficial para tartas."
+  },
+  {
+    "id": "alcohol-solido-lata-carton",
+    "name": "Alcohol Sólido en Lata para Calientaplatos",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Seguridad y Mantenimiento",
+    "image": "/uploads/limpieza/alcohol-solido.webp",
+    "features": [
+      "Combustible en gel de alta pureza diseñado para calentadores de buffet, chafing dishes y fondues",
+      "Llama azul constante y uniforme sin emisión de humo, olores desagradables ni residuos de hollín",
+      "Combustión segura que no chisporrotea ni derrama en caso de movimiento accidental",
+      "Presentación versátil disponible por lata individual y bulto en caja o cartón para servicios de catering"
+    ],
+    "presentation": "Lata individual y caja / cartón institucional",
+    "presentations": [
+      "Lata individual",
+      "Caja / Cartón"
+    ],
+    "usage": "Buffets de hoteles, servicios de catering, banquetes, mantenimiento de calor en bandejas de comida y servicio a la mesa."
+  },
+  {
+    "id": "cono-senalizador-piso-mojado",
+    "name": "Cono Señalizador de Precaución Piso Mojado",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Seguridad y Mantenimiento",
+    "image": "/uploads/limpieza/cono-piso-mojado.webp",
+    "features": [
+      "Cono piramidal de seguridad en color amarillo de alta visibilidad con advertencia multilingüe e ícono gráfico",
+      "Fabricado en polímero flexible de alta durabilidad resistente a impactos y pisadas",
+      "Base amplia que evita volcamientos accidentales por corrientes de aire o tráfico de personas",
+      "Apilable para almacenamiento compacto y transporte eficiente en carros de limpieza"
+    ],
+    "presentation": "Unidad (Cono de alta visibilidad)",
+    "presentations": [
+      "Unidad"
+    ],
+    "usage": "Señalización de pisos húmedos o recién encerados en pasillos, restaurantes, cocinas industriales, centros comerciales y lobbies."
+  },
+  {
+    "id": "carro-de-lavanderia-industrial",
+    "name": "Carro de Lavandería con Bolsa de Lona Reforzada",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Carros y Aseo",
+    "image": "/uploads/limpieza/carro-lavanderia.webp",
+    "features": [
+      "Estructura metálica tubular robusta con tratamiento anticorrosivo de gran estabilidad",
+      "Bolsa de lona impermeable de alta resistencia desmontable y lavable para fácil higiene",
+      "Ruedas giratorias multidireccionales silenciosas de rodamiento suave que no rayan el piso",
+      "Gran capacidad volumétrica diseñada para transporte eficiente de mantelería, uniformes y ropa de cama"
+    ],
+    "presentation": "Estructura con bolsa de lona y ruedas",
+    "presentations": [
+      "Unidad completa"
+    ],
+    "usage": "Hotelería, restaurantes de gran volumen, servicios de banquetes, lavanderías comerciales y centros de convenciones."
+  },
+  {
+    "id": "carro-multiuso-limpieza-deluxe",
+    "name": "Carro Multiuso de Limpieza Profesional Deluxe",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Carros y Aseo",
+    "image": "/uploads/limpieza/carro-multiuso-deluxe.webp",
+    "features": [
+      "Estación móvil de limpieza ergonómica fabricada en polipropileno de alta densidad no poroso",
+      "Tres niveles de bandejas espaciosas para químicos, paños, atomizadores y suministros de recambio",
+      "Bolsa de vinil frontal con cremallera para recolección de residuos o lencería usada",
+      "Soportes integrados para fijar mopas, escobas y señalizadores durante el recorrido",
+      "Ruedas traseras neumáticas y ruedas delanteras giratorias para maniobrabilidad sin esfuerzo"
+    ],
+    "presentation": "Carro completo con bolsa de vinil y bandejas organizadoras",
+    "presentations": [
+      "Unidad completa"
+    ],
+    "usage": "Mantenimiento diario en hoteles, hospitales, universidades, complejos corporativos, restaurantes y centros de eventos."
+  },
+  {
+    "id": "dispensador-papel-plastico-blanco-negro",
+    "name": "Dispensador Institucional de Papel Higiénico en Plástico",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Dispensadores y Baño",
+    "image": "/uploads/limpieza/dispensador-papel-plastico.webp",
+    "features": [
+      "Gabinete en plástico ABS de alto impacto con visor frontal para control rápido del nivel de papel",
+      "Sistema de cerradura con llave de seguridad que previene aperturas no autorizadas y robos",
+      "Dientes de corte bidireccionales integrados para un rasgado de papel fácil y sin desperdicios",
+      "Disponible en acabado blanco clásico de 9 pulgadas y moderno acabado negro de 12 pulgadas de gran capacidad"
+    ],
+    "presentation": "Blanco 9 pulgadas y Negro 12 pulgadas",
+    "presentations": [
+      "Blanco 9 pulgadas",
+      "Negro 12 pulgadas"
+    ],
+    "usage": "Baños públicos y comerciales en restaurantes, cafeterías, oficinas, centros comerciales e instituciones educativas."
+  },
+  {
+    "id": "dispensador-papel-acero-inoxidable-jumbo",
+    "name": "Dispensador de Papel Higiénico en Acero Inoxidable (9\" y 12\")",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Dispensadores y Baño",
+    "image": "/uploads/limpieza/dispensador-papel-inox.webp",
+    "features": [
+      "Cuerpo íntegramente fabricado en acero inoxidable de acabado satinado anti-huella y anti-corrosión",
+      "Diseño antivandálico de máxima durabilidad con cerradura de seguridad frontal con llave",
+      "Visor vertical de nivel que permite monitorear el agotamiento del rollo sin abrir la unidad",
+      "Compatible con rollos jumbo institucionales estándar de alto rendimiento"
+    ],
+    "presentation": "Jumbo 9 pulgadas y Estándar 12 pulgadas",
+    "presentations": [
+      "Jumbo 9 pulgadas",
+      "12 pulgadas"
+    ],
+    "usage": "Baños de alto tráfico y zonas gourmet en restaurantes, hoteles, aeropuertos, clínicas y clubes sociales."
+  },
+  {
+    "id": "dispensador-toallas-rollo-negro-7",
+    "name": "Dispensador de Toallas en Rollo Negro 7 Pulgadas",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Dispensadores y Baño",
+    "image": "/uploads/limpieza/dispensador-toallas-rollo.webp",
+    "features": [
+      "Dispensador mecánico de toallas de papel en rollo continuo con corte asistido",
+      "Elegante diseño moderno en color negro mate que combina estética contemporánea y funcionalidad",
+      "Mecanismo interno suave de tracción que garantiza la salida hoja a hoja sin atascos",
+      "Chasis robusto en polímero reforzado a prueba de salpicaduras y humedad ambiental"
+    ],
+    "presentation": "Dispensador para rollo de 7 pulgadas",
+    "presentations": [
+      "Rollo 7 pulgadas"
+    ],
+    "usage": "Estaciones de lavado de manos en cocinas profesionales, barras, áreas de servicio y salas de baño."
+  },
+  {
+    "id": "dispensador-vaso-conico",
+    "name": "Dispensador Tubular para Vasos Cónicos y Plásticos",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Dispensadores y Baño",
+    "image": "/uploads/limpieza/dispensador-vaso-conico.webp",
+    "features": [
+      "Tubo dispensador vertical transparente que protege los vasos del polvo y permite ver el nivel restante",
+      "Dientes de sujeción autoajustables que dosifican un solo vaso a la vez para máxima higiene",
+      "Tapa superior abatible hermética para recargas rápidas y limpias",
+      "Fácil instalación en pared, dispensadores de agua o módulos de servicio mediante soporte integrado"
+    ],
+    "presentation": "Tubo dispensador con soporte de pared",
+    "presentations": [
+      "Unidad"
+    ],
+    "usage": "Dispensadores de agua potable, consultorios, oficinas, comedores corporativos, gimnasios y salas de espera."
+  },
+  {
+    "id": "secador-de-manos-manual-alto-trafico",
+    "name": "Secador de Manos Automático de Alto Tráfico",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Dispensadores y Baño",
+    "image": "/uploads/limpieza/secador-manos-manual.webp",
+    "features": [
+      "Motor de alta potencia y bajo consumo diseñado para secado de manos rápido en menos de 15 segundos",
+      "Sensor infrarrojo inteligente de encendido sin contacto (touchless) para óptima higiene sanitaria",
+      "Carcasa antivandálica de máxima resistencia con boquilla direccional de flujo de aire cálido",
+      "Reduce drásticamente el consumo y gasto constante en toallas de papel descartables"
+    ],
+    "presentation": "Unidad eléctrica de pared",
+    "presentations": [
+      "Unidad eléctrica"
+    ],
+    "usage": "Baños públicos de alto tránsito en centros comerciales, restaurantes, cines, terminales y hoteles."
+  },
+  {
+    "id": "senalizador-piso-mojado-plegable",
+    "name": "Señalizador de Piso Mojado Plegable Tipo Tijera",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Seguridad y Mantenimiento",
+    "image": "/uploads/limpieza/senalizador-piso-mojado.webp",
+    "features": [
+      "Letrero de advertencia tipo caballete / tijera con mensaje 'Precaución Piso Mojado' e ícono universal en ambas caras",
+      "Estructura plegable extra liviana con asa superior que facilita su traslado inmediato y guardado plano",
+      "Fabricado en plástico virgen color amarillo vibrante con serigrafía resistente al agua y químicos de limpieza",
+      "Estabilidad triangular abierta que cubre un amplio ángulo visual para prevención de caídas"
+    ],
+    "presentation": "Caballete plegable doble cara",
+    "presentations": [
+      "Unidad"
+    ],
+    "usage": "Delimitación rápida de áreas de limpieza, derrames accidentales y zonas de mantenimiento en todo tipo de locales comerciales."
+  },
+  {
+    "id": "set-recolector-de-basura-mango",
+    "name": "Set Recolector de Basura Vertical con Mango Largo",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Carros y Aseo",
+    "image": "/uploads/limpieza/set-recolector-basura.webp",
+    "features": [
+      "Pala recolectora vertical con depósito basculante que encierra los residuos y evita que se dispersen con el viento",
+      "Mango ergonómico largo que permite barrer y recoger sin necesidad de agacharse, cuidando la postura",
+      "Labio de goma flexible en el borde de la pala que asegura un contacto perfecto con el piso sin dejar residuos atrás",
+      "Incluye cepillo / escobillón con cerdas resistentes y clip de acople al mango para almacenamiento compacto"
+    ],
+    "presentation": "Pala basculante con mango y escobillón / cepillo",
+    "presentations": [
+      "Set completo"
+    ],
+    "usage": "Barrido continuo de salones de eventos, restaurantes, terrazas, centros comerciales y áreas de recepción."
+  },
+  {
+    "id": "spray-plastico-atomizador-1000ml",
+    "name": "Atomizador Spray Plástico Graduado 1000 ml",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Carros y Aseo",
+    "image": "/uploads/limpieza/spray-plastico.webp",
+    "features": [
+      "Botella pulverizadora de polietileno de alta resistencia química con escala medidora graduada en relieve",
+      "Gatillo profesional ergonómico de bombeo suave con boquilla regulable de chorro directo a niebla fina",
+      "Tubo de inmersión con filtro que aprovecha hasta la última gota de líquido en el fondo",
+      "Ideal para disolución y aplicación precisa de desinfectantes, desengrasantes, alcohol y limpiadores multiuso"
+    ],
+    "presentation": "Botella de 1000 ml con pistola pulverizadora",
+    "presentations": [
+      "1000 ml (1 L)"
+    ],
+    "usage": "Limpieza y desinfección de mesones gastronómicos, vidrios, sanitarios, áreas de preparación y desinfección general."
+  },
+  {
+    "id": "jabonera-plastica-gris-550cc",
+    "name": "Dispensador de Jabón Líquido Plástico Gris 550 cc",
+    "brand": "A-Comer",
+    "category": "limpieza",
+    "subCategory": "Dispensadores y Baño",
+    "image": "/uploads/limpieza/jabonera-plastica-gris.webp",
+    "features": [
+      "Dispensador manual de pared para jabón líquido o gel antibacterial con capacidad óptima de 550 cc",
+      "Válvula antigoteo dosificadora de accionamiento suave que previene derrames y desperdicio",
+      "Elegante carcasa en tono gris contemporáneo con ventana transparente de control de nivel",
+      "Depósito interno de boca ancha para recarga fácil y tapa superior con cerradura de seguridad"
+    ],
+    "presentation": "Dispensador de pared de 550 cc",
+    "presentations": [
+      "550 cc"
+    ],
+    "usage": "Lavamanos en restaurantes, cocinas, consultorios, oficinas, comedores y servicios sanitarios de clientes."
   }
 ]

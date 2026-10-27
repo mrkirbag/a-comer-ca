@@ -12,11 +12,7 @@ export function getStaticPaths() {
     }));
 }
 
-interface Props {
-    product: Product;
-}
-
-const { product } = Astro.props;
+const { product } = Astro.props as { product: Product };
 
 // Related products in the same category or brand
 const allProducts: Product[] = productsData as Product[];
@@ -33,7 +29,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
     image={product.image}
 >
     <!-- Breadcrumb & Back Navigation -->
-    <nav class="bg-white border-b border-burgundy/10 pt-28 pb-4">
+    <nav class="bg-white border-b border-burgundy/10 pt-28 pb-4 lg:pt-24 lg:pb-2">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
             <div class="flex flex-wrap items-center gap-2 font-sans text-xs text-grey/70">
                 <a href="/" class="hover:text-burgundy transition-colors">Inicio</a>
@@ -48,19 +44,31 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                         <span>/</span>
                     </>
                 )}
+                {product.subCategory && (
+                    <>
+                        <span class="text-grey/80">{product.subCategory}</span>
+                        <span>/</span>
+                    </>
+                )}
+                {product.subSubCategory && (
+                    <>
+                        <span class="text-grey/80">{product.subSubCategory}</span>
+                        <span>/</span>
+                    </>
+                )}
                 <span class="font-bold text-burgundy truncate max-w-xs sm:max-w-md">{product.name}</span>
             </div>
         </div>
     </nav>
 
     <!-- Product Detail Section -->
-    <section class="py-10 lg:py-16 bg-cream min-h-[calc(100vh-280px)]">
+    <section class="py-10 lg:py-5 bg-cream min-h-[calc(100vh-280px)]">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
             <!-- Back Button -->
-            <div class="mb-8">
+            <div class="mb-8 lg:mb-3">
                 <a
                     href="/catalogo"
-                    class="inline-flex items-center gap-2 rounded-full border border-burgundy/20 bg-white/70 px-4 py-2 font-heading text-xs font-bold text-burgundy shadow-sm transition-all hover:bg-white hover:border-burgundy/40 hover:-translate-x-1"
+                    class="inline-flex items-center gap-2 rounded-full border border-burgundy/20 bg-white/70 px-4 py-2 lg:px-3 lg:py-1 lg:text-[11px] font-heading text-xs font-bold text-burgundy shadow-sm transition-all hover:bg-white hover:border-burgundy/40 hover:-translate-x-1"
                 >
                     <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                         <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -70,33 +78,50 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-start">
                 <!-- Product Gallery / Visual Column (5 Cols) -->
-                <div class="lg:col-span-5">
-                    <div class="sticky top-28 overflow-hidden rounded-3xl border border-burgundy/15 bg-white p-8 shadow-xl">
-                        <!-- Brand Badge -->
-                        <div class="flex items-center justify-between mb-4">
+                <div class="lg:col-span-5 lg:sticky lg:top-24 lg:self-start">
+                    <div class="sticky top-28 lg:static overflow-hidden rounded-3xl border border-burgundy/15 bg-white p-8 shadow-xl lg:p-4 lg:rounded-2xl lg:h-[calc(100vh-8rem)] lg:flex lg:flex-col">
+                        <!-- Brand & Categories Badges -->
+                        <div class="flex items-center justify-between mb-4 lg:mb-3 lg:shrink-0 flex-wrap gap-2">
                             <span class="inline-flex items-center gap-1.5 rounded-full bg-burgundy/10 px-3.5 py-1 font-heading text-xs font-bold uppercase tracking-wider text-burgundy">
                                 {product.brand}
                             </span>
-                            {product.subCategory && (
-                                <span class="rounded-lg bg-olive/15 px-3 py-1 font-sans text-xs font-semibold text-olive">
-                                    {product.subCategory}
-                                </span>
-                            )}
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                {product.subCategory && (
+                                    <span class="rounded-lg bg-olive/15 px-3 py-1 font-sans text-xs font-semibold text-olive">
+                                        {product.subCategory}
+                                    </span>
+                                )}
+                                {product.subSubCategory && (
+                                    <span class="rounded-lg bg-copper/20 px-2.5 py-1 font-sans text-xs font-semibold text-burgundy">
+                                        {product.subSubCategory}
+                                    </span>
+                                )}
+                            </div>
                         </div>
 
                         <!-- Main Image Display -->
-                        <div class="relative flex h-80 sm:h-96 w-full items-center justify-center rounded-2xl bg-gradient-to-b from-cream/40 to-cream/90 p-6">
-                            <img
-                                src={product.image}
-                                alt={product.name}
-                                class="max-h-full max-w-full object-contain transition-transform duration-500 hover:scale-105"
-                            />
+                        <div class="relative flex h-80 sm:h-96 lg:h-auto lg:flex-1 lg:min-h-0 w-full items-center justify-center rounded-2xl bg-gradient-to-b from-cream/40 to-cream/90 p-6 lg:p-3">
+                            {product.image ? (
+                                <img
+                                    id="main-product-image"
+                                    src={product.image}
+                                    alt={product.name}
+                                    class="max-h-full max-w-full lg:h-full lg:w-full object-contain transition-transform duration-500 hover:scale-105"
+                                />
+                            ) : (
+                                <div class="flex flex-col items-center justify-center text-burgundy/30 gap-3">
+                                    <svg class="size-16 stroke-[1.5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                    </svg>
+                                    <span class="font-heading text-xs font-bold uppercase tracking-wider text-burgundy/40">Imagen pendiente de carga</span>
+                                </div>
+                            )}
                         </div>
 
                         <!-- Editorial Disclaimer -->
-                        <div class="mt-6 flex items-center gap-3 rounded-2xl bg-cream/70 p-4 border border-burgundy/10 text-xs text-grey/80 font-sans">
+                        <div class="mt-6 lg:mt-3 lg:shrink-0 lg:p-2.5 lg:text-[11px] flex items-center gap-3 rounded-2xl bg-cream/70 p-4 border border-burgundy/10 text-xs text-grey/80 font-sans">
                             <svg class="size-5 text-copper shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <line x1="12" y1="16" x2="12" y2="12"></line>
@@ -110,23 +135,192 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                 </div>
 
                 <!-- Product Content / Specification Column (7 Cols) -->
-                <div class="lg:col-span-7 space-y-8">
+                <div class="lg:col-span-7 space-y-8 lg:space-y-5">
                     <!-- Heading Area -->
-                    <div class="space-y-3 border-b border-burgundy/15 pb-6">
+                    <div class="space-y-3 lg:space-y-2 border-b border-burgundy/15 pb-6 lg:pb-4">
                         <div class="flex items-center gap-2">
                             <span class="font-heading text-xs font-bold uppercase tracking-[0.2em] text-copper">
                                 {categoryInfo?.name || "Catálogo A-Comer"}
                             </span>
+                            {product.subSubCategory && (
+                                <>
+                                    <span class="text-copper/40">•</span>
+                                    <span class="font-heading text-xs font-bold uppercase tracking-wider text-olive">
+                                        {product.subSubCategory}
+                                    </span>
+                                </>
+                            )}
                         </div>
-                        <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-burgundy leading-tight">
+                        <h1 class="font-heading text-3xl sm:text-4xl lg:text-3xl font-extrabold text-burgundy leading-tight">
                             {product.name}
                         </h1>
                         {product.description && (
-                            <p class="font-sans text-base sm:text-lg text-grey/80 leading-relaxed">
+                            <p class="font-sans text-base sm:text-lg lg:text-sm text-grey/80 leading-relaxed">
                                 {product.description}
                             </p>
                         )}
                     </div>
+
+                    <!-- Interactive Palette Selection (If product has colors) -->
+                    {product.colors && product.colors.length > 0 && (
+                        <div class="rounded-3xl border border-burgundy/15 bg-white p-6 sm:p-8 lg:p-5 shadow-sm space-y-5 lg:space-y-3">
+                            <div class="flex items-center justify-between border-b border-burgundy/10 pb-4">
+                                <div>
+                                    <span class="font-heading text-xs font-bold uppercase tracking-wider text-copper">
+                                        Paleta de Colores
+                                    </span>
+                                    <h3 class="font-heading text-xl lg:text-base font-bold text-burgundy">
+                                        Selecciona tu Color ({product.colors.length} Tonos Disponibles)
+                                    </h3>
+                                </div>
+                                <span class="rounded-full bg-olive/15 px-3 py-1 font-sans text-xs font-semibold text-olive">
+                                    Grado Alimentario
+                                </span>
+                            </div>
+
+                            <p class="font-sans text-xs sm:text-sm text-grey/80">
+                                Haz clic sobre un tono de la paleta para previsualizarlo e incluirlo en tu pedido o cotización:
+                            </p>
+
+                            <!-- Selected Color Active Indicator Card -->
+                            <div id="active-color-card" class="flex items-center gap-4 rounded-2xl bg-cream/70 p-4 border border-burgundy/15 transition-all">
+                                <div id="active-color-dot" class="size-11 rounded-full border-2 border-white shadow-md shrink-0" style={`background-color: ${product.colors[0].hex};`}></div>
+                                <div class="flex-1 min-w-0">
+                                    <span class="block font-heading text-[11px] font-bold uppercase tracking-wider text-burgundy/60">Tono Seleccionado</span>
+                                    <h4 id="active-color-name" class="font-heading text-base font-bold text-burgundy truncate">{product.colors[0].name}</h4>
+                                    <p id="active-color-code" class="font-sans text-xs text-grey/70">Código catálogo: {product.colors[0].code || 'Frutalia'}</p>
+                                </div>
+                                <span class="rounded-lg bg-burgundy/10 px-2.5 py-1 font-heading text-xs font-bold text-burgundy">
+                                    Frutalia
+                                </span>
+                            </div>
+
+                            <!-- Color Swatches Grid -->
+                            <div class="grid grid-cols-4 sm:grid-cols-7 gap-3 pt-1">
+                                {product.colors.map((color, idx) => (
+                                    <button
+                                        type="button"
+                                        data-color-btn
+                                        data-color-name={color.name}
+                                        data-color-hex={color.hex}
+                                        data-color-code={color.code || ""}
+                                        class={`group flex flex-col items-center gap-1.5 p-2 rounded-2xl border transition-all cursor-pointer ${idx === 0 ? 'border-burgundy bg-burgundy/5 ring-2 ring-burgundy/30' : 'border-burgundy/10 bg-white hover:border-burgundy/40 hover:bg-cream/40'}`}
+                                        title={`${color.name} (${color.code || ''})`}
+                                    >
+                                        <span
+                                            class="size-9 rounded-full border border-black/15 shadow-xs transition-transform group-hover:scale-110"
+                                            style={`background-color: ${color.hex};`}
+                                        ></span>
+                                        <span class="font-heading text-[10px] font-bold text-burgundy text-center leading-tight line-clamp-1 w-full">
+                                            {color.name}
+                                        </span>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    <!-- Interactive Presentation Picker (If product has presentations) -->
+                    {product.presentations && product.presentations.length > 0 && (
+                        <div class="rounded-3xl border border-burgundy/15 bg-white p-6 sm:p-8 lg:p-5 shadow-sm space-y-4 lg:space-y-3">
+                            <div>
+                                <span class="font-heading text-xs font-bold uppercase tracking-wider text-copper">
+                                    Formato de Suministro
+                                </span>
+                                <h3 class="font-heading text-xl lg:text-base font-bold text-burgundy">
+                                    Presentaciones Disponibles
+                                </h3>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2.5 pt-1">
+                                {product.presentations.map((pres, idx) => (
+                                    <button
+                                        type="button"
+                                        data-presentation-btn
+                                        data-presentation-name={pres}
+                                        class={`px-4 py-2.5 lg:px-3 lg:py-1.5 lg:text-xs rounded-xl font-heading text-xs sm:text-sm font-bold border transition-all cursor-pointer ${idx === 0 ? 'bg-burgundy text-cream border-burgundy shadow-sm' : 'bg-white text-burgundy/80 border-burgundy/15 hover:border-burgundy/40 hover:bg-cream/40'}`}
+                                    >
+                                        {pres}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    <!-- Interactive Flavor Catalog (If product has flavors or flavorOptions) -->
+                    {((product.flavors && product.flavors.length > 0) || (product.flavorOptions && product.flavorOptions.length > 0)) && (
+                        <div class="rounded-3xl border border-burgundy/15 bg-white p-6 sm:p-8 lg:p-5 shadow-sm space-y-4 lg:space-y-3">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-burgundy/10 pb-4">
+                                <div>
+                                    <span class="font-heading text-xs font-bold uppercase tracking-wider text-copper">
+                                        {product.subCategory === "Colores y Sabores" ? "Aromas y Emulsiones" : "Variedad de Sabores"}
+                                    </span>
+                                    <h3 class="font-heading text-xl lg:text-base font-bold text-burgundy">
+                                        Catálogo de {product.flavorOptions ? product.flavorOptions.length : product.flavors?.length} Variantes
+                                    </h3>
+                                </div>
+                                <span class="rounded-full bg-olive/15 px-3 py-1 font-sans text-xs font-semibold text-olive">
+                                    {product.subCategory === "Colores y Sabores" ? "Resistentes al Horno" : "100% Calidad Garantizada"}
+                                </span>
+                            </div>
+
+                            <p class="font-sans text-xs sm:text-sm text-grey/80">
+                                Selecciona el sabor que deseas cotizar (puedes agregar los sabores que necesites a tu lista):
+                            </p>
+
+                            <!-- Active Flavor indicator -->
+                            <div id="active-flavor-card" class="flex items-center gap-3 rounded-2xl bg-cream/70 p-3.5 border border-burgundy/15">
+                                <div class="size-8 rounded-xl bg-olive/20 text-olive flex items-center justify-center shrink-0">
+                                    <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <span class="block font-heading text-[10px] font-bold uppercase tracking-wider text-burgundy/60">Sabor Seleccionado</span>
+                                    <h4 id="active-flavor-name" class="font-heading text-sm font-bold text-burgundy truncate">{product.flavorOptions ? product.flavorOptions[0].name : (product.flavors ? product.flavors[0] : '')}</h4>
+                                </div>
+                            </div>
+
+                            <!-- Flavor Options with photo if available, or text pill buttons -->
+                            {product.flavorOptions && product.flavorOptions.length > 0 ? (
+                                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-h-96 lg:max-h-72 overflow-y-auto pr-1">
+                                    {product.flavorOptions.map((opt, idx) => (
+                                        <button
+                                            type="button"
+                                            data-flavor-btn
+                                            data-flavor-name={opt.name}
+                                            data-flavor-image={opt.image || ""}
+                                            class={`group flex flex-col items-center gap-2 p-2.5 rounded-2xl border text-center transition-all cursor-pointer ${idx === 0 ? 'bg-olive/10 border-olive ring-2 ring-olive/30 shadow-xs' : 'bg-white border-burgundy/10 hover:border-burgundy/30 hover:bg-cream/40'}`}
+                                        >
+                                            <div class="size-16 lg:size-12 rounded-xl overflow-hidden bg-cream/70 border border-burgundy/5 flex items-center justify-center shrink-0">
+                                                {opt.image ? (
+                                                    <img src={opt.image} alt={opt.name} class="size-full object-contain transition-transform group-hover:scale-105" />
+                                                ) : (
+                                                    <svg class="size-7 text-burgundy/25 stroke-[1.5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                                    </svg>
+                                                )}
+                                            </div>
+                                            <span class="font-heading text-xs font-bold text-burgundy line-clamp-2 leading-tight">
+                                                {opt.name}
+                                            </span>
+                                        </button>
+                                    ))}
+                                </div>
+                            ) : (
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-72 overflow-y-auto pr-1">
+                                    {product.flavors?.map((flavor, idx) => (
+                                        <button
+                                            type="button"
+                                            data-flavor-btn
+                                            data-flavor-name={flavor}
+                                            class={`p-2.5 rounded-xl font-sans text-xs font-semibold border text-left transition-all cursor-pointer truncate ${idx === 0 ? 'bg-olive text-cream border-olive shadow-xs' : 'bg-white text-grey/90 border-burgundy/10 hover:border-burgundy/30 hover:bg-cream/40'}`}
+                                        >
+                                            {flavor}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    )}
 
                     <!-- Features & Key Bullets -->
                     {product.features && product.features.length > 0 && (
@@ -148,7 +342,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                     )}
 
                     <!-- Details Table (Presentation & Usage) -->
-                    <div class="rounded-2xl border border-burgundy/15 bg-white p-6 shadow-sm space-y-4">
+                    <div class="rounded-2xl border border-burgundy/15 bg-white p-6 lg:p-4 shadow-sm space-y-4 lg:space-y-3">
                         <h3 class="font-heading text-base font-bold text-burgundy">
                             Ficha de Suministro
                         </h3>
@@ -190,13 +384,13 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                     </div>
 
                     <!-- Action Box: Quantity selector + Add to List + Direct WhatsApp -->
-                    <div class="rounded-3xl border-2 border-burgundy/20 bg-white p-6 sm:p-8 shadow-xl space-y-5">
+                    <div class="rounded-3xl border-2 border-burgundy/20 bg-white p-6 sm:p-8 lg:p-5 shadow-xl space-y-5 lg:space-y-3">
                         <div class="flex items-center justify-between">
                             <div>
                                 <span class="font-heading text-xs font-semibold text-olive uppercase tracking-wider">
                                     Disponibilidad & Cotización
                                 </span>
-                                <h4 class="font-heading text-xl font-bold text-burgundy">
+                                <h4 class="font-heading text-xl lg:text-base font-bold text-burgundy">
                                     Agregar a tu Lista de Revista
                                 </h4>
                             </div>
@@ -237,14 +431,14 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                             <button
                                 type="button"
                                 id="detail-add-cart-btn"
-                                class="flex-1 inline-flex items-center justify-center gap-2 rounded-2xl bg-burgundy px-6 py-4 font-heading text-sm font-bold text-cream shadow-md transition-all hover:bg-burgundy/90 hover:scale-[1.02] cursor-pointer"
+                                class="flex-1 inline-flex items-center justify-center gap-2 rounded-2xl bg-burgundy px-6 py-4 lg:py-3 font-heading text-sm font-bold text-cream shadow-md transition-all hover:bg-burgundy/90 hover:scale-[1.02] cursor-pointer"
                             >
                                 <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
                                     <path d="M3 6h18"></path>
                                     <path d="M16 10a4 4 0 0 1-8 0"></path>
                                 </svg>
-                                <span>Añadir a mi Lista</span>
+                                <span id="add-btn-text">Añadir a mi Lista</span>
                             </button>
                         </div>
 
@@ -260,7 +454,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                                 <svg class="size-4 fill-current text-[#25D366]" viewBox="0 0 24 24">
                                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                                 </svg>
-                                <span>¿Prefieres consultar sólo este producto directamente por WhatsApp? Haz clic aquí</span>
+                                <span id="whatsapp-link-text">¿Prefieres consultar sólo este producto directamente por WhatsApp? Haz clic aquí</span>
                             </a>
                         </div>
                     </div>
@@ -269,7 +463,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
 
             <!-- Related Products Section -->
             {relatedProducts.length > 0 && (
-                <div class="mt-20 border-t border-burgundy/15 pt-12">
+                <div class="mt-20 lg:mt-10 border-t border-burgundy/15 pt-12 lg:pt-8">
                     <div class="flex items-center justify-between mb-8">
                         <div>
                             <span class="font-heading text-xs font-semibold uppercase tracking-wider text-olive">Sugerencias</span>
@@ -319,11 +513,110 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
 
 <script is:inline define:vars={{ product }}>
     let currentQty = 1;
+    let selectedColor = product.colors && product.colors.length > 0 ? product.colors[0] : null;
+    let selectedPresentation = product.presentations && product.presentations.length > 0 ? product.presentations[0] : (product.presentation || null);
+    let selectedFlavor = product.flavors && product.flavors.length > 0 ? product.flavors[0] : null;
+
     const qtyDisplay = document.getElementById("qty-display");
     const qtyPlus = document.getElementById("qty-plus");
     const qtyMinus = document.getElementById("qty-minus");
     const addToCartBtn = document.getElementById("detail-add-cart-btn");
+    const directWhatsappLink = document.getElementById("direct-whatsapp-link");
 
+    function updateActionLinks() {
+        let details = [];
+        if (selectedColor) details.push(`Tono: *${selectedColor.name}*`);
+        if (selectedPresentation) details.push(`Presentación: *${selectedPresentation}*`);
+        if (selectedFlavor) details.push(`Sabor: *${selectedFlavor}*`);
+
+        let detailStr = details.length > 0 ? ` (${details.join(", ")})` : "";
+        let text = `Hola A-Comer C.A., estoy interesado(a) en el producto del catálogo: *${product.name}*${detailStr} (Marca: ${product.brand}). ¿Tienen disponibilidad actual y precio?`;
+
+        if (directWhatsappLink) {
+            directWhatsappLink.href = `https://wa.me/584247605859?text=${encodeURIComponent(text)}`;
+        }
+    }
+
+    // Color buttons listener
+    const colorBtns = document.querySelectorAll("[data-color-btn]");
+    const activeColorDot = document.getElementById("active-color-dot");
+    const activeColorName = document.getElementById("active-color-name");
+    const activeColorCode = document.getElementById("active-color-code");
+
+    colorBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const name = btn.dataset.colorName;
+            const hex = btn.dataset.colorHex;
+            const code = btn.dataset.colorCode;
+
+            selectedColor = { name, hex, code };
+
+            colorBtns.forEach(b => {
+                b.classList.remove("border-burgundy", "bg-burgundy/5", "ring-2", "ring-burgundy/30");
+                b.classList.add("border-burgundy/10", "bg-white");
+            });
+            btn.classList.remove("border-burgundy/10", "bg-white");
+            btn.classList.add("border-burgundy", "bg-burgundy/5", "ring-2", "ring-burgundy/30");
+
+            if (activeColorDot) activeColorDot.style.backgroundColor = hex;
+            if (activeColorName) activeColorName.textContent = name;
+            if (activeColorCode) activeColorCode.textContent = `Código catálogo: ${code || 'Frutalia'}`;
+
+            updateActionLinks();
+        });
+    });
+
+    // Presentation buttons listener
+    const presentationBtns = document.querySelectorAll("[data-presentation-btn]");
+    presentationBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            selectedPresentation = btn.dataset.presentationName;
+
+            presentationBtns.forEach(b => {
+                b.classList.remove("bg-burgundy", "text-cream", "border-burgundy", "shadow-sm");
+                b.classList.add("bg-white", "text-burgundy/80", "border-burgundy/15");
+            });
+            btn.classList.remove("bg-white", "text-burgundy/80", "border-burgundy/15");
+            btn.classList.add("bg-burgundy", "text-cream", "border-burgundy", "shadow-sm");
+
+            updateActionLinks();
+        });
+    });
+
+    // Flavor buttons listener
+    const flavorBtns = document.querySelectorAll("[data-flavor-btn]");
+    const activeFlavorName = document.getElementById("active-flavor-name");
+    const mainProductImg = document.getElementById("main-product-image");
+
+    flavorBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            selectedFlavor = btn.dataset.flavorName;
+            const flavorImg = btn.dataset.flavorImage;
+
+            flavorBtns.forEach(b => {
+                b.classList.remove("bg-olive", "text-cream", "border-olive", "shadow-xs", "bg-olive/10", "ring-2", "ring-olive/30");
+                b.classList.add("bg-white", "border-burgundy/10");
+                if (!b.dataset.flavorImage) {
+                    b.classList.add("text-grey/90");
+                }
+            });
+            btn.classList.remove("bg-white", "text-grey/90", "border-burgundy/10");
+            if (btn.dataset.flavorImage !== undefined) {
+                btn.classList.add("bg-olive/10", "border-olive", "ring-2", "ring-olive/30", "shadow-xs");
+            } else {
+                btn.classList.add("bg-olive", "text-cream", "border-olive", "shadow-xs");
+            }
+
+            if (activeFlavorName) activeFlavorName.textContent = selectedFlavor;
+            if (mainProductImg && flavorImg) {
+                mainProductImg.src = flavorImg;
+            }
+
+            updateActionLinks();
+        });
+    });
+
+    // Quantity buttons
     qtyPlus?.addEventListener("click", () => {
         currentQty++;
         if (qtyDisplay) qtyDisplay.textContent = currentQty;
@@ -336,9 +629,39 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
         }
     });
 
+    // Add to cart click
     addToCartBtn?.addEventListener("click", () => {
         if (window.addToCatalogCart) {
-            window.addToCatalogCart(product, currentQty);
+            let itemId = product.id;
+            let itemName = product.name;
+            let itemPres = selectedPresentation || product.presentation || "";
+
+            if (selectedColor) {
+                const slug = selectedColor.name.toLowerCase().replace(/[^a-z0-9]/g, "-");
+                itemId += `-${slug}`;
+                itemName += ` — ${selectedColor.name}`;
+                itemPres += ` (Tono: ${selectedColor.name})`;
+            }
+
+            if (selectedFlavor) {
+                const slug = selectedFlavor.toLowerCase().replace(/[^a-z0-9]/g, "-");
+                itemId += `-${slug}`;
+                itemName += ` — Sabor ${selectedFlavor}`;
+                itemPres += ` (Sabor: ${selectedFlavor})`;
+            }
+
+            window.addToCatalogCart({
+                id: itemId,
+                name: itemName,
+                brand: product.brand,
+                category: product.category,
+                subCategory: product.subCategory,
+                image: product.image,
+                presentation: itemPres
+            }, currentQty);
         }
     });
+
+    // Initialize links
+    updateActionLinks();
 </script>
