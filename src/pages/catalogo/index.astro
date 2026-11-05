@@ -117,7 +117,7 @@ const subSubList = Array.from(subSubMap.values());
 
     <!-- Visual Category Highlight Cards (Editorial Style) - desktop only -->
     <section class="hidden lg:block relative z-20 -mt-10 px-5 lg:px-8 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
             {catalogCategories.map((cat) => (
                 <button
                     type="button"
@@ -289,6 +289,23 @@ const subSubList = Array.from(subSubMap.values());
                                 <span class="absolute top-2 left-2 sm:top-3 sm:left-3 rounded-full bg-cream/90 backdrop-blur-sm border border-burgundy/10 px-2 sm:px-3 py-0.5 sm:py-1 font-heading text-[9px] sm:text-[11px] font-bold uppercase tracking-wider text-burgundy">
                                     {product.brand}
                                 </span>
+                                <!-- Mobile Tap/Click Hand Indicator in Corner -->
+                                <span
+                                    class="sm:hidden absolute top-2 right-2 flex size-6.5 items-center justify-center rounded-full bg-white/95 backdrop-blur-sm border border-burgundy/20 text-burgundy shadow-xs pointer-events-none"
+                                    aria-hidden="true"
+                                    title="Toca para ver detalles"
+                                >
+                                    <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M8 13V4.5a1.5 1.5 0 0 1 3 0V12" />
+                                        <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0V12" />
+                                        <path d="M14 10.5a1.5 1.5 0 0 1 3 0V12" />
+                                        <path d="M17 11.5a1.5 1.5 0 0 1 3 0V16a6 6 0 0 1-6 6h-2 .208a6 6 0 0 1-5.012-2.7L7 19c-.312-.479-1.407-2.388-3.286-5.728a1.5 1.5 0 0 1 .536-2.022a1.867 1.867 0 0 1 2.28.28L8 13" />
+                                        <path d="M5 3l-1 -1" />
+                                        <path d="M4 7h-1" />
+                                        <path d="M14 3l1 -1" />
+                                        <path d="M15 6h1" />
+                                    </svg>
+                                </span>
                                 {product.subCategory && (
                                     <span class="hidden sm:block absolute bottom-3 right-3 rounded-lg bg-olive/15 px-2.5 py-0.5 font-sans text-[11px] font-semibold text-olive">
                                         {product.subCategory}
@@ -345,7 +362,7 @@ const subSubList = Array.from(subSubMap.values());
                         <div class="p-3 sm:p-6 pt-3 sm:pt-0 border-t border-burgundy/5 flex items-center gap-2 mt-2">
                             <a
                                 href={`/catalogo/${product.id}`}
-                                class="hidden sm:inline-flex flex-1 inline-flex items-center justify-center rounded-xl border border-burgundy/15 bg-white py-2.5 px-3 font-heading text-xs font-bold text-burgundy transition-all hover:bg-burgundy/5 hover:border-burgundy/30"
+                                class="hidden sm:inline-flex flex-1 items-center justify-center rounded-xl border border-burgundy/15 bg-white py-2.5 px-3 font-heading text-xs font-bold text-burgundy transition-all hover:bg-burgundy/5 hover:border-burgundy/30"
                             >
                                 Ver Detalle
                             </a>
@@ -600,6 +617,7 @@ const subSubList = Array.from(subSubMap.values());
                 btn.addEventListener("click", () => {
                     currentPage = p;
                     renderPagination();
+                    saveCatalogState();
                     scrollToCatalog();
                 });
                 paginationPages.appendChild(btn);
@@ -616,6 +634,7 @@ const subSubList = Array.from(subSubMap.values());
         if (currentPage > 1) {
             currentPage--;
             renderPagination();
+            saveCatalogState();
             scrollToCatalog();
         }
     });
@@ -626,6 +645,7 @@ const subSubList = Array.from(subSubMap.values());
         if (currentPage < totalPages) {
             currentPage++;
             renderPagination();
+            saveCatalogState();
             scrollToCatalog();
         }
     });
@@ -650,15 +670,43 @@ const subSubList = Array.from(subSubMap.values());
         btn.classList.add("bg-white", "text-burgundy", "border-burgundy/30", "font-semibold");
     }
 
-    // Category button click
-    function setCategory(catId) {
-        currentCategory = catId;
-        currentSubCategory = "all";
-        updateSubSubBar();
-        currentPage = 1;
+    const STORAGE_KEY = "acomer_catalog_state";
+    const RETURN_FLAG_KEY = "acomer_returning_to_catalog";
 
+    function saveCatalogState() {
+        try {
+            const state = {
+                category: currentCategory,
+                subCategory: currentSubCategory,
+                subSub: currentSubSub,
+                page: currentPage,
+                search: searchKeyword,
+                scrollY: window.scrollY
+            };
+            sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+
+            const params = new URLSearchParams();
+            if (currentCategory && currentCategory !== "all") params.set("cat", currentCategory);
+            if (currentSubCategory && currentSubCategory !== "all") params.set("sub", currentSubCategory);
+            if (currentSubSub && currentSubSub !== "all") params.set("subsub", currentSubSub);
+            if (currentPage > 1) params.set("page", String(currentPage));
+            if (searchKeyword) params.set("q", searchKeyword);
+
+            const newUrl = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+            window.history.replaceState(state, "", newUrl);
+        } catch (e) {
+            // Ignore storage errors
+        }
+    }
+
+    function applyFilterUI(catId, subId = "all", subSubId = "all") {
+        currentCategory = catId || "all";
+        currentSubCategory = subId || "all";
+        currentSubSub = subSubId || "all";
+
+        // 1. Update Category Buttons
         categoryBtns.forEach((btn) => {
-            if (btn.dataset.filterCategory === catId) {
+            if (btn.dataset.filterCategory === currentCategory) {
                 btn.classList.remove("bg-white", "text-burgundy/80");
                 btn.classList.add("bg-burgundy", "text-cream");
             } else {
@@ -667,17 +715,15 @@ const subSubList = Array.from(subSubMap.values());
             }
         });
 
+        // 2. Update Subcategory Bar & Buttons
         const subcategoriesBar = document.getElementById("subcategories-bar");
-
-        if (catId === "all") {
-            // Cuando "Todos" está marcado, NO se ven subcategorías
+        if (currentCategory === "all") {
             if (subcategoriesBar) {
                 subcategoriesBar.classList.add("hidden");
                 subcategoriesBar.classList.remove("flex");
                 subcategoriesBar.style.display = "none";
             }
         } else {
-            // Si se selecciona una categoría específica, mostramos sus subcategorías si las tiene
             let hasVisibleSubcats = false;
             subCatBtns.forEach((btn) => {
                 const parentCat = btn.dataset.parentCategory;
@@ -685,13 +731,16 @@ const subSubList = Array.from(subSubMap.values());
 
                 if (sub === "all") {
                     btn.style.display = "";
-                    activateSubCatBtn(btn);
-                } else if (parentCat === catId) {
+                } else if (parentCat === currentCategory) {
                     btn.style.display = "";
-                    deactivateSubCatBtn(btn);
                     hasVisibleSubcats = true;
                 } else {
                     btn.style.display = "none";
+                }
+
+                if (sub === currentSubCategory) {
+                    activateSubCatBtn(btn);
+                } else {
                     deactivateSubCatBtn(btn);
                 }
             });
@@ -709,7 +758,40 @@ const subSubList = Array.from(subSubMap.values());
             }
         }
 
+        // 3. Update Sub-Subcategory (Divisions) Bar & Buttons
+        let hasAnySubSub = false;
+        subSubBtns.forEach((b) => {
+            const subSubName = b.dataset.filterSubsub;
+            const isAll = subSubName === "all";
+            if (!isAll) {
+                const show =
+                    currentCategory !== "all" &&
+                    currentSubCategory !== "all" &&
+                    b.dataset.parentSub === currentSubCategory &&
+                    b.dataset.parentCategory === currentCategory;
+                b.style.display = show ? "" : "none";
+                if (show) hasAnySubSub = true;
+            }
+            if (subSubName === currentSubSub) {
+                activateSubSubBtn(b);
+            } else {
+                deactivateSubSubBtn(b);
+            }
+        });
+
+        if (subSubBar) {
+            subSubBar.style.display = hasAnySubSub ? "flex" : "none";
+            subSubBar.classList.toggle("hidden", !hasAnySubSub);
+            subSubBar.classList.toggle("flex", hasAnySubSub);
+        }
+    }
+
+    // Category button click
+    function setCategory(catId) {
+        currentPage = 1;
+        applyFilterUI(catId, "all", "all");
         renderPagination();
+        saveCatalogState();
     }
 
     categoryBtns.forEach((btn) => {
@@ -726,60 +808,23 @@ const subSubList = Array.from(subSubMap.values());
         });
     });
 
-    function updateSubSubBar() {
-        currentSubSub = "all";
-        let hasAny = false;
-        subSubBtns.forEach((b) => {
-            const isAll = b.dataset.filterSubsub === "all";
-            if (isAll) {
-                activateSubSubBtn(b);
-                return;
-            }
-            const show = currentSubCategory !== "all" &&
-                b.dataset.parentSub === currentSubCategory &&
-                b.dataset.parentCategory === currentCategory;
-            b.style.display = show ? "" : "none";
-            deactivateSubSubBtn(b);
-            if (show) hasAny = true;
-        });
-        if (subSubBar) {
-            subSubBar.style.display = hasAny ? "flex" : "none";
-            subSubBar.classList.toggle("hidden", !hasAny);
-            subSubBar.classList.toggle("flex", hasAny);
-        }
-    }
-
     subSubBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
-            currentSubSub = btn.dataset.filterSubsub || "all";
+            const subSub = btn.dataset.filterSubsub || "all";
             currentPage = 1;
-            subSubBtns.forEach((b) => {
-                if (b.dataset.filterSubsub === currentSubSub) {
-                    activateSubSubBtn(b);
-                } else {
-                    deactivateSubSubBtn(b);
-                }
-            });
+            applyFilterUI(currentCategory, currentSubCategory, subSub);
             renderPagination();
+            saveCatalogState();
         });
     });
 
     subCatBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
             const sub = btn.dataset.filterSubcategory || "all";
-            currentSubCategory = sub;
             currentPage = 1;
-            updateSubSubBar();
-
-            subCatBtns.forEach((b) => {
-                if (b.dataset.filterSubcategory === sub) {
-                    activateSubCatBtn(b);
-                } else {
-                    deactivateSubCatBtn(b);
-                }
-            });
-
+            applyFilterUI(currentCategory, sub, "all");
             renderPagination();
+            saveCatalogState();
         });
     });
 
@@ -787,6 +832,7 @@ const subSubList = Array.from(subSubMap.values());
         searchKeyword = e.target.value.toLowerCase().trim();
         currentPage = 1;
         renderPagination();
+        saveCatalogState();
     });
 
     resetFiltersBtn?.addEventListener("click", () => {
@@ -795,12 +841,28 @@ const subSubList = Array.from(subSubMap.values());
         setCategory("all");
     });
 
+    // Save state & mark return flag right before navigating to a product detail
+    function markNavigatingToProduct() {
+        saveCatalogState();
+        try {
+            sessionStorage.setItem(RETURN_FLAG_KEY, "1");
+        } catch (e) {}
+    }
+
     // Whole-card click opens detail
     productCards.forEach((card) => {
         card.addEventListener("click", (e) => {
-            if (e.target.closest("button, a")) return;
+            const link = e.target.closest("a");
+            if (link) {
+                markNavigatingToProduct();
+                return;
+            }
+            if (e.target.closest("button")) return;
             const href = card.dataset.href;
-            if (href) window.location.href = href;
+            if (href) {
+                markNavigatingToProduct();
+                window.location.href = href;
+            }
         });
     });
 
@@ -819,6 +881,60 @@ const subSubList = Array.from(subSubMap.values());
         });
     });
 
-    // Initial render
-    renderPagination();
+    // Restore state from URL query params or sessionStorage
+    function restoreCatalogState() {
+        const params = new URLSearchParams(window.location.search);
+        const hasUrlParams = params.has("cat") || params.has("sub") || params.has("subsub") || params.has("page") || params.has("q");
+        const isReturning = sessionStorage.getItem(RETURN_FLAG_KEY) === "1";
+
+        let restored = null;
+
+        if (hasUrlParams) {
+            restored = {
+                category: params.get("cat") || "all",
+                subCategory: params.get("sub") || "all",
+                subSub: params.get("subsub") || "all",
+                page: parseInt(params.get("page") || "1", 10) || 1,
+                search: params.get("q") || "",
+                scrollY: null
+            };
+        } else {
+            try {
+                const raw = sessionStorage.getItem(STORAGE_KEY);
+                if (raw) {
+                    restored = JSON.parse(raw);
+                }
+            } catch (e) {}
+        }
+
+        if (restored) {
+            currentPage = restored.page || 1;
+            searchKeyword = (restored.search || "").toLowerCase().trim();
+            if (searchInput) searchInput.value = restored.search || "";
+            applyFilterUI(restored.category || "all", restored.subCategory || "all", restored.subSub || "all");
+            renderPagination();
+            saveCatalogState();
+
+            if (isReturning) {
+                try {
+                    sessionStorage.removeItem(RETURN_FLAG_KEY);
+                } catch (e) {}
+                requestAnimationFrame(() => {
+                    if (typeof restored.scrollY === "number" && restored.scrollY > 100) {
+                        window.scrollTo({ top: restored.scrollY, behavior: "instant" });
+                    } else {
+                        scrollToCatalog();
+                    }
+                });
+            } else if (hasUrlParams) {
+                requestAnimationFrame(() => {
+                    scrollToCatalog();
+                });
+            }
+        } else {
+            renderPagination();
+        }
+    }
+
+    restoreCatalogState();
 </script>

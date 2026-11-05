@@ -3,6 +3,9 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import FloatingCartDrawer from "../../components/FloatingCartDrawer.astro";
 import productsData from "../../data/products.json";
 import { catalogCategories, type Product } from "../../data/catalogTypes";
+import { site } from "../../data/site";
+
+const catalogWhatsapp = site.catalog?.whatsapp || "584247978932";
 
 export function getStaticPaths() {
     const products: Product[] = productsData as Product[];
@@ -38,7 +41,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                 <span>/</span>
                 {categoryInfo && (
                     <>
-                        <a href="/catalogo" class="hover:text-burgundy transition-colors capitalize">
+                        <a href={`/catalogo?cat=${encodeURIComponent(product.category)}`} class="hover:text-burgundy transition-colors capitalize">
                             {categoryInfo.name}
                         </a>
                         <span>/</span>
@@ -46,13 +49,17 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                 )}
                 {product.subCategory && (
                     <>
-                        <span class="text-grey/80">{product.subCategory}</span>
+                        <a href={`/catalogo?cat=${encodeURIComponent(product.category)}&sub=${encodeURIComponent(product.subCategory)}`} class="hover:text-burgundy transition-colors text-grey/80">
+                            {product.subCategory}
+                        </a>
                         <span>/</span>
                     </>
                 )}
                 {product.subSubCategory && (
                     <>
-                        <span class="text-grey/80">{product.subSubCategory}</span>
+                        <a href={`/catalogo?cat=${encodeURIComponent(product.category)}&sub=${encodeURIComponent(product.subCategory || "")}&subsub=${encodeURIComponent(product.subSubCategory)}`} class="hover:text-burgundy transition-colors text-grey/80">
+                            {product.subSubCategory}
+                        </a>
                         <span>/</span>
                     </>
                 )}
@@ -446,7 +453,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
                         <div class="pt-2 text-center sm:text-left">
                             <a
                                 id="direct-whatsapp-link"
-                                href={`https://wa.me/584247605859?text=${encodeURIComponent(`Hola A-Comer C.A., estoy interesado(a) en el producto del catálogo: *${product.name}* (Marca: ${product.brand}). ¿Tienen disponibilidad actual y formas de pago?`)}`}
+                                href={`https://wa.me/${catalogWhatsapp}?text=${encodeURIComponent(`Hola A-Comer C.A., estoy interesado(a) en el producto del catálogo: *${product.name}* (Marca: ${product.brand}). ¿Tienen disponibilidad actual y formas de pago?`)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="inline-flex items-center gap-2 text-xs font-heading font-semibold text-olive hover:text-burgundy transition-colors"
@@ -511,7 +518,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
     <FloatingCartDrawer />
 </MainLayout>
 
-<script is:inline define:vars={{ product }}>
+<script is:inline define:vars={{ product, catalogWhatsapp }}>
     let currentQty = 1;
     let selectedColor = product.colors && product.colors.length > 0 ? product.colors[0] : null;
     let selectedPresentation = product.presentations && product.presentations.length > 0 ? product.presentations[0] : (product.presentation || null);
@@ -533,7 +540,7 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
         let text = `Hola A-Comer C.A., estoy interesado(a) en el producto del catálogo: *${product.name}*${detailStr} (Marca: ${product.brand}). ¿Tienen disponibilidad actual y precio?`;
 
         if (directWhatsappLink) {
-            directWhatsappLink.href = `https://wa.me/584247605859?text=${encodeURIComponent(text)}`;
+            directWhatsappLink.href = `https://wa.me/${catalogWhatsapp}?text=${encodeURIComponent(text)}`;
         }
     }
 
@@ -664,4 +671,22 @@ const categoryInfo = catalogCategories.find((c) => c.id === product.category);
 
     // Initialize links
     updateActionLinks();
+
+    // Ensure returning to /catalogo keeps the open category/subcategory and scrolls to catalog
+    try {
+        sessionStorage.setItem("acomer_returning_to_catalog", "1");
+        if (!sessionStorage.getItem("acomer_catalog_state")) {
+            sessionStorage.setItem(
+                "acomer_catalog_state",
+                JSON.stringify({
+                    category: product.category || "all",
+                    subCategory: product.subCategory || "all",
+                    subSub: product.subSubCategory || "all",
+                    page: 1,
+                    search: "",
+                    scrollY: null
+                })
+            );
+        }
+    } catch (e) {}
 </script>

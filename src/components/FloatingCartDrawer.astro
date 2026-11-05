@@ -5,7 +5,7 @@ interface Props {
     whatsappNumber?: string;
 }
 
-const { whatsappNumber = site.contact.whatsapp.raw } = Astro.props;
+const { whatsappNumber = site.catalog?.whatsapp || "584247978932" } = Astro.props;
 ---
 
 <!-- Floating Cart Trigger Button -->

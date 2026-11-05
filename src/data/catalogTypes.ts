@@ -66,6 +66,13 @@ export const catalogCategories: CatalogCategory[] = [
         badge: "Insumos"
     },
     {
+        id: "desechables",
+        name: "Desechables",
+        description: "Loncheros térmicos, envases plásticos y de aluminio, bandejas de anime, platos, vasos, tapas, pitillos y papeles para cocina y repostería.",
+        image: "/uploads/desechables/envases/base-domo-cristal.webp",
+        badge: "Desechables"
+    },
+    {
         id: "limpieza",
         name: "Mantenimiento y Limpieza",
         description: "Dispensadores institucionales, carros de limpieza, secadores de manos, alcohol sólido y señalización de seguridad para hostelería y cocina.",

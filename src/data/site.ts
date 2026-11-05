@@ -9,18 +9,18 @@ export const site = {
     contact: {
         phones: [
             {
-                label: "Administración",
+                label: "Ventas",
                 display: "0424-7978932",
                 raw: "584247978932",
             },
             {
-                label: "Ventas",
+                label: "Administración",
                 display: "0424-7605859",
                 raw: "584247605859",
             },
         ],
         whatsapp: {
-            raw: "584247605859",
+            raw: "584247978932",
             message: "Hola, quiero más información sobre A-Comer C.A.",
         },
         emails: [
@@ -150,6 +150,8 @@ export const site = {
     },
 
     catalog: {
+        whatsapp: "584247978932",
+        phoneDisplay: "0424-7978932",
         kicker: "Catálogo",
         title: "Marcas Aliadas",
         subtitle:

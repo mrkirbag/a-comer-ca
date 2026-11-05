@@ -6,7 +6,7 @@ import { site, telHref, waHref } from "../data/site";
 const copy = site.contacto;
 const form = copy.form;
 const address = `${site.contact.address.line}, ${site.contact.address.city}, ${site.contact.address.state}`;
-const mapsEmbed = `https://www.google.com/maps?q=${site.contact.address.lat},${site.contact.address.lng}&hl=es&z=18&output=embed`;
+const mapsEmbed = `https://maps.google.com/maps?q=${site.contact.address.lat},${site.contact.address.lng}&hl=es&z=18&t=m&ie=UTF8&iwloc=Near&output=embed`;
 const whatsappHref = waHref(site.contact.whatsapp.raw, site.contact.whatsapp.message);
 const stars = [5, 4, 3, 2, 1] as const;
 ---
@@ -37,7 +37,7 @@ const stars = [5, 4, 3, 2, 1] as const;
         </header>
 
         <div class="mt-8 grid items-stretch gap-5 lg:grid-cols-2 lg:gap-6">
-            <div data-contacto-info class="flex h-full min-h-0 flex-col gap-3">
+            <div data-contacto-info class="flex flex-col gap-3 lg:h-full lg:min-h-0">
                 <div class="grid shrink-0 grid-cols-2 gap-3">
                     <a
                         data-contacto-social
@@ -63,14 +63,13 @@ const stars = [5, 4, 3, 2, 1] as const;
 
                 <figure
                     data-contacto-map
-                    class="relative min-h-56 flex-1 overflow-hidden rounded-2xl border border-cream/15 bg-cream/8"
+                    class="relative h-64 sm:h-72 lg:h-auto lg:min-h-60 lg:flex-1 overflow-hidden rounded-2xl border border-cream/15 bg-cream/8"
                 >
                     <iframe
                         title={`Ubicación de ${site.company.name}: ${address}`}
                         src={mapsEmbed}
-                        class="absolute inset-0 h-full w-full border-0"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        class="absolute inset-0 block h-full min-h-64 w-full border-0 lg:min-h-60"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen
                     ></iframe>
                     <a
@@ -230,11 +229,14 @@ const stars = [5, 4, 3, 2, 1] as const;
     [data-contacto]:not([data-ready]) :is(
         [data-contacto-copy],
         [data-contacto-social],
-        [data-contacto-map],
         [data-contacto-phone],
         [data-contacto-form]
     ) {
         visibility: hidden;
+    }
+
+    [data-contacto]:not([data-ready]) [data-contacto-map] {
+        opacity: 0;
     }
 
     .contacto-glow {
@@ -281,7 +283,7 @@ const stars = [5, 4, 3, 2, 1] as const;
         const setFrom = (dir: number) => {
             gsap.set(copy, { y: 24 * dir, opacity: 0 });
             gsap.set(socials, { y: 20 * dir, opacity: 0, scale: 0.92 });
-            gsap.set(map, { y: 28 * dir, opacity: 0, scale: 0.97 });
+            gsap.set(map, { y: 20 * dir, opacity: 0 });
             gsap.set(phones, { y: 20 * dir, opacity: 0 });
             gsap.set(formCard, { x: 32 * dir, opacity: 0 });
         };
@@ -293,7 +295,7 @@ const stars = [5, 4, 3, 2, 1] as const;
 
         tl.to(copy, { y: 0, opacity: 1, duration: 0.65, stagger: 0.08 }, 0)
             .to(socials, { y: 0, opacity: 1, scale: 1, duration: 0.55, stagger: 0.08, ease: "back.out(1.5)" }, 0.12)
-            .to(map, { y: 0, opacity: 1, scale: 1, duration: 0.8 }, 0.22)
+            .to(map, { y: 0, opacity: 1, duration: 0.8, clearProps: "transform" }, 0.22)
             .to(phones, { y: 0, opacity: 1, duration: 0.55, stagger: 0.08 }, 0.32)
             .to(formCard, { x: 0, opacity: 1, duration: 0.85 }, 0.18);
 

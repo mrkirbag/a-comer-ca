@@ -150,19 +150,19 @@
     "usage": "Molienda fresca en cafeterías, panaderías y barras de café."
   },
   {
-    "id": "plancha-industrial-4-hornillas",
-    "name": "Plancha Industrial 4 Hornillas",
+    "id": "prensa-planchado-a-vapor",
+    "name": "Prensa de Planchado a Vapor de Ropaje",
     "brand": "A-Comer",
     "category": "equipos",
     "subCategory": "",
-    "image": "/uploads/equipos/plancha-industrial-4-hornillas.webp",
+    "image": "/uploads/equipos/prensa-planchado.webp",
     "features": [
-      "Superficie de plancha lisa de alta retención térmica",
-      "4 quemadores / hornillas",
+      "3 ajustes de temperatura para todo tipo de telas",
+      "Incluye cojín de prensado",
       "Ideal para hoteles y posadas"
     ],
-    "presentation": "Módulo industrial de cocción",
-    "usage": "Cocción simultánea de carnes, hamburguesas, salteados y desayunos."
+    "presentation": "Unidad individual",
+    "usage": "Planchado y prensado de ropa en hoteles, lavanderías, tintorerías y uso comercial."
   },
   {
     "id": "plancha-sandwichera-comercial",
@@ -193,111 +193,6 @@
     ],
     "presentation": "Unidad de mesa compacta",
     "usage": "Rebanado de fiambres, jamones, quesos y embutidos."
-  },
-  {
-    "id": "chefandish-electrico-acero-inox",
-    "name": "Chefandish Eléctrico en Acero Inoxidable",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/chefanddish-electrico.webp",
-    "features": [
-      "Sistema de calefacción eléctrica integrada sin alcohol",
-      "Cuerpo y depósito gastronómico en acero inoxidable brillante",
-      "Control térmico para mantener alimentos a temperatura óptima"
-    ],
-    "presentation": "Unidad completa con bandeja gastronorm y tapa",
-    "usage": "Buffets, caterings, hoteles y banquetes de autoservicio."
-  },
-  {
-    "id": "chefandish-para-mariscos",
-    "name": "Chefandish para Mariscos",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/chefandish-para-mariscos.webp",
-    "features": [
-      "Diseño especializado para pescados, mariscos y paellas",
-      "Fabricado en acero inoxidable de alto brillo",
-      "Mantiene la humedad y temperatura sin resecar los alimentos"
-    ],
-    "presentation": "Chafing dish con bandeja marina y soporte para quemador",
-    "usage": "Servicio elegante y exhibición de mariscos en buffets y eventos."
-  },
-  {
-    "id": "tapa-chefandish-grande-52x32",
-    "name": "Tapa para Chefandish Grande (52x32 cm)",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/tapa-chefanddish-grande.webp",
-    "features": [
-      "Medidas estándar: 52 x 32 cm para inserto grande GN 1/1",
-      "Acero inoxidable pulido sanitario",
-      "Asa ergonómica aislante de calor"
-    ],
-    "presentation": "Unidad de repuesto / accesorio",
-    "usage": "Protección térmica e higiene en chafing dishes y mesas de vapor."
-  },
-  {
-    "id": "tapa-self-service-bisagra-acero-inox",
-    "name": "Tapa Self Service con Bisagra en Acero Inoxidable",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/tapa-self-service-bisagra-acero-inox.webp",
-    "features": [
-      "Sistema de bisagra de apertura cómoda para autoservicio",
-      "Acero inoxidable higiénico y de fácil limpieza",
-      "Conserva la frescura y temperatura de los alimentos"
-    ],
-    "presentation": "Unidad adaptable a bandejas estándar",
-    "usage": "Líneas de buffet, barras de ensaladas y mostradores de autoservicio."
-  },
-  {
-    "id": "tapa-self-service-policarbonato-transparente",
-    "name": "Tapa Self Service en Policarbonato Transparente",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/tapa-self-service-policarbonato.webp",
-    "features": [
-      "Policarbonato transparente irrompible de alto impacto",
-      "Permite visibilidad completa del producto sin destapar",
-      "Ranura frontal o bisagra de acceso rápido"
-    ],
-    "presentation": "Unidad en policarbonato cristal",
-    "usage": "Exhibición higiénica de alimentos en barras frías y autoservicio."
-  },
-  {
-    "id": "tapa-self-service-acero-inox-medidas",
-    "name": "Tapas Self Service en Acero Inoxidable (Medidas Variadas)",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/tapa-selfservice-ainox.webp",
-    "features": [
-      "Disponibles en medidas: 17x17 cm, 27x17 cm y 32x27 cm",
-      "Construcción en acero inoxidable resistente",
-      "Encaje preciso sobre recipientes gastronorm"
-    ],
-    "presentation": "Por medida requerida",
-    "usage": "Cubierta sanitaria para recipientes de preparación y exhibición."
-  },
-  {
-    "id": "porta-alcohol-chefandish",
-    "name": "Porta Alcohol para Chefandish",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/porta-alcohol-chefanddish.webp",
-    "features": [
-      "Acero inoxidable con tapa reguladora de llama",
-      "Compatible con alcohol sólido en lata o pasta",
-      "Asa prolongada para manipulación segura sin quemaduras"
-    ],
-    "presentation": "Unidad con copa, tapa y regulador",
-    "usage": "Suministro de calor bajo chafing dishes y fuentes de baño maría."
   },
   {
     "id": "balanza-electronica-mesa-30kg",
@@ -392,21 +287,6 @@
     ],
     "presentation": "Conjunto de hélices/cuchilla con empaque y tuerca de acople",
     "usage": "Repuesto y mantenimiento de licuadoras comerciales e industriales de alta capacidad."
-  },
-  {
-    "id": "resistencia-para-selladora-de-empaque",
-    "name": "Resistencia para Selladora de Empaque",
-    "brand": "A-Comer",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/resistencia.webp",
-    "features": [
-      "Elemento térmico de alta durabilidad para selladoras de bolsas y empaques plásticos",
-      "Calentamiento instantáneo y sellado térmico hermético y uniforme",
-      "Repuesto estándar de fácil instalación con terminales de conexión reforzados"
-    ],
-    "presentation": "Unidad individual / Set de resistencia con teflón",
-    "usage": "Mantenimiento y repuesto de selladoras manuales y de pedal para empaque de alimentos y productos."
   },
   {
     "id": "temporizador-para-cocina-excelhouse",
@@ -597,30 +477,15 @@
     "image": "/uploads/utensilios/bandejas/bandeja-panadera-aluminio.webp",
     "features": [
       "Materiales de alta durabilidad: aluminio pesado y acero inox",
-      "Medidas: 33x45cm, 65x45cm, 70x45x9cm y 80x50x8cm",
+      "Medidas: 33x45 cm y 65x45 cm",
       "Bordes reforzados para evitar deformación por calor continuo"
     ],
     "presentation": "Por unidad según dimensión",
     "usage": "Horneado y fermentación de masas en panaderías y pastelerías."
   },
   {
-    "id": "bandeja-panadera-acanalada-senorita",
-    "name": "Bandeja Panadera Acanalada Señorita",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Bandejas",
-    "image": "/uploads/utensilios/bandejas/bandeja-panadera-acan.webp",
-    "features": [
-      "Canales longitudinales que mantienen la forma cilíndrica del pan",
-      "Distribución uniforme del calor para cortezas crujientes",
-      "Estructura liviana de alta resistencia térmica"
-    ],
-    "presentation": "Unidad estándar",
-    "usage": "Cocción de baguettes, canillas y panes alargados."
-  },
-  {
-    "id": "bandeja-panadera-acanalada-perforada-senorita",
-    "name": "Bandeja Panadera Acanalada Perforada Señorita",
+    "id": "bandeja-panadera-acanalada-perforada",
+    "name": "Bandeja Panadera Acanalada Perforada",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Bandejas",
@@ -628,9 +493,9 @@
     "features": [
       "Micro-perforaciones para máxima circulación de aire y calor",
       "Acabado ondulado especial para baguettes",
-      "Evita acumulación de humedad en la base del pan"
+      "Medidas: 33x45 cm"
     ],
-    "presentation": "Unidad estándar",
+    "presentation": "Por unidad según medida",
     "usage": "Horneado de baguettes francesas y panes rústicos crujientes."
   },
   {
@@ -642,11 +507,26 @@
     "image": "/uploads/utensilios/bandejas/bandeja-panadera-perf.webp",
     "features": [
       "Perforaciones para horneado homogéneo por convección",
-      "Medidas disponibles: 33 x 45 cm y 65 x 45 cm",
+      "Medidas disponibles: 33x45 cm y 65x45 cm",
       "Aluminio sanitario de rápida transmisión térmica"
     ],
     "presentation": "Por unidad según medida",
     "usage": "Cocción en hornos de convección y rotativos de panadería."
+  },
+  {
+    "id": "bandeja-acanalada-para-grisini",
+    "name": "Bandeja Acanalada para Grisini",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-grisini.webp",
+    "features": [
+      "Canales moldeados especiales para grisini o palitos de pan",
+      "Medidas: 70x41 cm",
+      "Distribución térmica uniforme para un horneado crujiente y parejo"
+    ],
+    "presentation": "Unidad (70x41 cm)",
+    "usage": "Elaboración y horneado de grisinis, señoritas y palitos de pan en panadería."
   },
   {
     "id": "bandeja-para-ponquesitos",
@@ -657,7 +537,7 @@
     "image": "/uploads/utensilios/bandejas/bandeja-ponquesitos.webp",
     "features": [
       "Cavidades moldeadas para horneado simultáneo",
-      "Capacidades disponibles: 8, 12, 24 y 35 unidades",
+      "Sirve para hasta 35 unidades",
       "Estructura metálica resistente al calor"
     ],
     "presentation": "Por unidad según cantidad de cavidades",
@@ -680,15 +560,15 @@
   },
   {
     "id": "bandeja-rectangular-ainox",
-    "name": "Bandeja Rectangular de Acero Inoxidable",
+    "name": "Bandeja Rectangular de A Inox para Buffet",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-rectangular-ainox.webp",
     "features": [
-      "Medidas: 27x17x10, 32x17x6, 32x17x10, 32x27x10, 52x32x6x 52x32x10, x52x32x15",
+      "Medidas disponibles: 27x17x10, 32x17x6, 32x17x10, 32x27x10, 52x32x6x 52x32x10, x52x32x15",
       "Acabado en acero inoxidable de alta calidad",
-      "Ideal para carnes, pescados y vegetales."
+      "Ideal para cualquier tipo de comida servida en buffet"
     ],
     "presentation": "Por unidad según medida",
     "usage": "Servicio y presentación de tortas, carnes y acompañamientos."
@@ -739,21 +619,6 @@
     "usage": "Cocción acelerada de granos, carnes duras y estofados."
   },
   {
-    "id": "olla-freidora-acero-inox-termometro",
-    "name": "Olla Freidora en Acero Inoxidable con Termómetro",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Ollas",
-    "image": "/uploads/utensilios/ollas/olla-freidora-ainox.webp",
-    "features": [
-      "Capacidades: 3.4L, 9.5L, 13.25L, 18.25L, 20L y 26L",
-      "Termómetro incorporado para control preciso de la temperatura del aceite",
-      "Cuerpo en acero inoxidable sanitario con cestillo escurridor"
-    ],
-    "presentation": "Unidad con termómetro y cesta coladora",
-    "usage": "Frituras controladas de papas, empanadas, tequeños y pescados."
-  },
-  {
     "id": "bateria-ollas-victoria-5-piezas",
     "name": "Batería de Ollas con Tapa Victoria 5 Piezas",
     "brand": "Victoria",
@@ -770,13 +635,13 @@
   },
   {
     "id": "cacerola-aluminio-con-tapa",
-    "name": "Cacerola de Aluminio con Tapa (15L / 22L)",
+    "name": "Cacerola de Aluminio con Tapa",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Ollas",
     "image": "/uploads/utensilios/ollas/cacerola-aluminio-ctapa.webp",
     "features": [
-      "Capacidades disponibles: 15 Litros y 22 Litros",
+      "Capacidades disponibles: 13.25L, 18.25L, 20L, 26L, 47.25L y 50L",
       "Aluminio gastronómico de pared reforzada",
       "Diseño bajo y ancho para reducciones y sofritos"
     ],
@@ -797,21 +662,6 @@
     ],
     "presentation": "Unidad sin tapa",
     "usage": "Ideal para servir sopas, consomés, salsas y cremas."
-  },
-  {
-    "id": "sopera-industrial-tapa-acero-inox",
-    "name": "Sopera Industrial con Tapa en Acero Inoxidable (4L)",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Ollas",
-    "image": "/uploads/utensilios/ollas/sopera-industrial.webp",
-    "features": [
-      "Capacidad: 4 Litros (128 oz)",
-      "Acero inoxidable higiénico con perilla y asas aislantes",
-      "Mantiene la temperatura ideal de caldos y consomés"
-    ],
-    "presentation": "Unidad completa con tapa",
-    "usage": "Servicio y conservación de sopas, cremas y caldos en buffet o cocina."
   },
   {
     "id": "molde-aluminio-redondo",
@@ -954,7 +804,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/colador-industrial-aluminio.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/colador-industrial-aluminio.webp",
     "features": [
       "Malla reforzada de drenaje rápido y eficiente",
       "Asas y estructura de alto soporte para peso de alimentos calientes",
@@ -969,7 +819,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/colador-pasta.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/colador-pasta.webp",
     "features": [
       "Diseño cónico profundo con perforaciones de drenaje instantáneo",
       "Mango largo tubular para manipular en agua hirviendo con seguridad",
@@ -984,7 +834,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/flanera.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/flanera.webp",
     "features": [
       "Tapa hermética con broche o calce de seguridad para baño maría",
       "Transmisión homogénea del calor para cocción uniforme del caramelo y cuajado",
@@ -999,7 +849,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/escudilla-redonda.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/escudilla-redonda.webp",
     "features": [
       "Varios diámetros disponibles para preparación, batido y reposo",
       "Borde perimetral enrollado que facilita el agarre firme durante el batido",
@@ -1014,7 +864,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/pala-cocina.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/pala-cocina.webp",
     "features": [
       "Hoja flexible y resistente de bisel afilado para despegar alimentos",
       "Disponible en versión lisa y ranurada para escurrir grasas",
@@ -1029,7 +879,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/rallo-quesos.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/rallo-quesos.webp",
     "features": [
       "Dientes grabados al ácido de ultra filo para corte sin desgarre",
       "Hoja de acero inoxidable indeformable con superficie de gran rendimiento",
@@ -1044,7 +894,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/porta-cuchillos.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/porta-cuchillos.webp",
     "features": [
       "Construcción en acero inoxidable sanitario de fácil desinfección",
       "Ranuras y soporte seguro que protegen el filo de los cuchillos",
@@ -1059,7 +909,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/porta-vajillas.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/porta-vajillas.webp",
     "features": [
       "Estructura reforzada en varilla de acero inoxidable resistente a la humedad",
       "Ranuras divisorias para platos y bandeja inferior recolectora de agua",
@@ -1074,7 +924,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/sacacorchos.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/sacacorchos.webp",
     "features": [
       "Espiral helicoidal de alta dureza para descorche suave sin romper el corcho",
       "Diseño compacto y plegable versátil para servicio de mesa, casa y camping",
@@ -1090,7 +940,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/picahielo.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/picahielo.webp",
     "features": [
       "Punta cónica de acero forjado de alta penetración en bloques de hielo",
       "Mango ergonómico macizo con tope de seguridad para impacto firme",
@@ -1105,7 +955,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/mandolina.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/mandolina.webp",
     "features": [
       "Cuchillas intercambiables para corte liso, ondulado, juliana y bastones",
       "Regulador de grosor milimétrico de alta precisión",
@@ -1120,7 +970,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/chaira.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/chaira.webp",
     "features": [
       "Vástago de acero magnetizado con estrías finas de alineación de filo",
       "Guarda de seguridad amplia para protección de manos durante el asentado",
@@ -1135,7 +985,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/pinza-ppan.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/pinza-ppan.webp",
     "features": [
       "Palas anchas para sujeción delicada sin aplastar masas",
       "Fabricada en acero inoxidable grado alimenticio",
@@ -1150,7 +1000,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/espumadera.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/espumadera.webp",
     "features": [
       "Disco perforado / tejido de alambre para drenaje veloz de aceite y caldo",
       "Mango largo atérmico con gancho para colgar",
@@ -1165,7 +1015,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/cucharon.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/cucharon.webp",
     "features": [
       "Capacidades disponibles: 23 oz, 60 oz y 80 oz",
       "Acero inoxidable enterizo de alta resistencia al calor",
@@ -1180,7 +1030,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/jarras-leche.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/jarras-leche.webp",
     "features": [
       "Pico vertedor de precisión ideal para latte art y espumado",
       "Acero inoxidable de excelente transmisión térmica para controlar temperatura al tacto",
@@ -1195,7 +1045,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
-    "image": "uploads/utensilios/aluminio-ainox/pala-pizza.webp",
+    "image": "/uploads/utensilios/aluminio-ainox/pala-pizza.webp",
     "features": [
       "Lámina delgada y biselada de aluminio para deslizar bajo la masa sin deformarla",
       "Mango largo tubular para operar en hornos de leña o industriales a altas temperaturas",
@@ -1205,12 +1055,102 @@
     "usage": "Introducción, giro y extracción de pizzas, panes y empanadas en hornos de alta temperatura."
   },
   {
+    "id": "pocillo-acero-inoxidable",
+    "name": "Pocillo en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/pocillo-ainox.webp",
+    "features": [
+      "Construcción en acero inoxidable de calibre resistente a caídas y uso rudo",
+      "Asa ergonómica firme soldada por puntos para sujeción cómoda sin calentamiento",
+      "Borde redondeado que brinda confort al beber"
+    ],
+    "presentation": "Por unidad y paquetes",
+    "usage": "Servicio tradicional de café campesino, consomé, chocolate caliente y té."
+  },
+  {
+    "id": "cuchara-de-cocina-perforada",
+    "name": "Cuchara de Cocina Perforada en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/cuchara-perforada.webp",
+    "features": [
+      "Cuenco perforado en acero inoxidable para escurrir líquidos y aceites al servir",
+      "Estructura enteriza resistente a altas temperaturas y uso intensivo en cocina",
+      "Mango ergonómico de sujeción firme con perforación para colgar"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servido y escurrido de vegetales, carnes en su jugo, frituras y guarniciones."
+  },
+  {
+    "id": "cortador-de-masa-doble",
+    "name": "Cortador de Masa Doble",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/cortador-masa.webp",
+    "features": [
+      "Doble rueda de corte (lisa y acanalada/ondulada) en un solo utensilio",
+      "Ruedas giratorias de precisión para cortes limpios sin arrastrar la masa",
+      "Mango balanceado y resistente para trabajo continuo en pastelería y panadería"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Corte y decoración de masas para pastelitos, empanadas, ravioles, hojaldre y galletas."
+  },
+  {
+    "id": "cortador-de-pizza",
+    "name": "Cortador de Pizza",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/cortador-pizza.webp",
+    "features": [
+      "Rueda circular afilada en acero inoxidable para corte rápido de una sola pasada",
+      "Protector de dedos integrado y mango antideslizante ergonómico",
+      "Eje firme que no se traba con quesos fundidos ni masas gruesas"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Porcionado rápido de pizzas, focaccias, tartas saladas, quesadillas y masas planas."
+  },
+  {
+    "id": "pelador-de-verduras-sacapuntas",
+    "name": "Pelador de Verduras Tipo Sacapuntas",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/pelador-sacapuntas.webp",
+    "features": [
+      "Cuchilla afilada en acero inoxidable con diseño cónico tipo sacapuntas",
+      "Permite pelar y crear cintas, espirales o flores decorativas de vegetales",
+      "Compacto, seguro y fácil de lavar"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Pelado y decoración en espiral de zanahorias, calabacines, pepinos y rábanos para ensaladas y emplatados."
+  },
+  {
+    "id": "tapa-tobo-bano-maria-ainox",
+    "name": "Tapa para Tobo Baño María en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Aluminio / A-Inox",
+    "image": "/uploads/utensilios/aluminio-ainox/tapa-tobo-bano-maria.webp",
+    "features": [
+      "Disponibles para tobos de: 2L, 3L, 4L, 6L y 12L",
+      "Acero inoxidable sanitario de alta durabilidad con asa embutida central",
+      "Borde moldeado de ajuste preciso para conservar temperatura e higiene"
+    ],
+    "presentation": "Por unidad según capacidad (2L, 3L, 4L, 6L, 12L)",
+    "usage": "Cubierta térmica y sanitaria para tobos de baño maría, sopas, salsas y cremas en líneas de servicio."
+  },
+  {
     "id": "tabla-de-picar",
     "name": "Tabla para Picar de Cocina",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/tabla-cocina.webp",
+    "image": "/uploads/utensilios/madera/tabla-cocina.webp",
     "features": [
       "Material seleccionado tratado para uso gastronómico",
       "Superficie sólida que cuida y protege el filo de los cuchillos",
@@ -1225,7 +1165,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/tabla-madera.webp",
+    "image": "/uploads/utensilios/madera/tabla-madera.webp",
     "features": [
       "Madera maciza resistente a cortes continuos y calor",
       "Canal profundo antiderrame para jugos de cocción",
@@ -1240,7 +1180,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/tabla-churrasco-plancha.webp",
+    "image": "/uploads/utensilios/madera/tabla-churrasco-plancha.webp",
     "features": [
       "Base de madera tallada a la medida con asas de agarre seguro",
       "Bandeja/plancha metálica para mantener el calor de las brasas",
@@ -1255,7 +1195,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/tabla-redonda.webp",
+    "image": "/uploads/utensilios/madera/tabla-redonda.webp",
     "features": [
       "Diseño circular pulido en madera de alta dureza",
       "Borde con canal antiderrames o reborde de servicio",
@@ -1270,7 +1210,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/rodillo-madera.webp",
+    "image": "/uploads/utensilios/madera/rodillo-madera.webp",
     "features": [
       "Cilindro de madera maciza lisa de rotación equilibrada",
       "Mangos ergonómicos laterales para presión uniforme sobre la masa",
@@ -1285,7 +1225,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/cucharas-palo.webp",
+    "image": "/uploads/utensilios/madera/cucharas-palo.webp",
     "features": [
       "Madera natural seleccionada que no raya fondos de ollas ni sartenes",
       "Medidas disponibles: 20cm, 25cm, 30cm, 35cm, 40cm, 50cm y 60cm",
@@ -1300,7 +1240,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
-    "image": "uploads/utensilios/madera/espatula-madera.webp",
+    "image": "/uploads/utensilios/madera/espatula-madera.webp",
     "features": [
       "Borde plano biselado para raspar y desglasar fondos sin dañar teflón",
       "Madera tratada resistente a la humedad y grasas calientes",
@@ -1310,12 +1250,27 @@
     "usage": "Sofritos, salteados, repostería y despegado suave en recipientes antiadherentes."
   },
   {
+    "id": "palillos-para-brochetas",
+    "name": "Palillos de Madera para Brochetas",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Madera",
+    "image": "/uploads/utensilios/madera/palillos-madera.webp",
+    "features": [
+      "Madera / bambú grado alimenticio liso y libre de astillas",
+      "Punta afilada que facilita el ensartado de carnes, vegetales y frutas",
+      "Alta resistencia al calor en parrillas, planchas y freidoras"
+    ],
+    "presentation": "Paquete comercial",
+    "usage": "Preparación de brochetas, pinchos a la parrilla, chocobananas, fresas con chocolate, pasapalos y cake pops."
+  },
+  {
     "id": "espatula-chef-lisa",
     "name": "Espátula de Chef Lisa en Acero Inoxidable",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-lisa.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-lisa.webp",
     "features": [
       "Hoja recta lisa en acero inoxidable de alta flexibilidad y resistencia",
       "Borde biselado para voltear y manipular hamburguesas, filetes y huevos",
@@ -1330,7 +1285,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-perf.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-perf.webp",
     "features": [
       "Ranuras y perforaciones longitudinales para drenaje rápido de grasas y aceites",
       "Hoja ancha y biselada en acero inoxidable grado gastronómico",
@@ -1345,7 +1300,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-pasteleria-supp.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-pasteleria-supp.webp",
     "features": [
       "Diseño en ángulo / codo que mantiene los dedos alejados del glaseado",
       "Hoja flexible de acero inoxidable para esparcir cremas uniformemente",
@@ -1360,7 +1315,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-picar.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-picar.webp",
     "features": [
       "Pala triangular en acero inoxidable con borde serrado cortante",
       "Permite cortar porciones limpias y levantarlas en un solo movimiento",
@@ -1375,7 +1330,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-mmadera.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-mmadera.webp",
     "features": [
       "Hoja recta y flexible en acero inoxidable de precisión",
       "Cabo clásico en madera tratada con remaches sólidos",
@@ -1390,7 +1345,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-mplastico.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-mplastico.webp",
     "features": [
       "Hoja delgada y flexible de acero inoxidable",
       "Mango de polipropileno sanitario antideslizante apto para lavavajillas",
@@ -1405,7 +1360,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/espatula-silicon.webp",
+    "image": "/uploads/utensilios/espatulas/espatula-silicon.webp",
     "features": [
       "Cabezal de silicón flexible de grado alimenticio resistente al calor",
       "Bordes curvos y rectos que limpian hasta la última gota de tazones y ollas",
@@ -1420,7 +1375,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Espátulas",
-    "image": "uploads/utensilios/espatulas/rascador.webp",
+    "image": "/uploads/utensilios/espatulas/rascador.webp",
     "features": [
       "Juego de bordes decorativos lisos, dentados y ondulados",
       "Diseño ergonómico para textura y alisado perfecto de laterales de tortas",
@@ -1435,7 +1390,7 @@
     "brand": "Supplies",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/cucharas-plastico.webp",
+    "image": "/uploads/utensilios/plasticos/cucharas-plastico.webp",
     "features": [
       "Juego de cucharas con medidas grabadas de alta legibilidad",
       "Plástico alimentario resistente a ingredientes secos y líquidos",
@@ -1450,7 +1405,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/manga-pastelera.webp",
+    "image": "/uploads/utensilios/plasticos/manga-pastelera.webp",
     "features": [
       "Manga flexible y resistente a la presión sin riesgo de rotura",
       "Juego surtido de boquillas para estrellas, flores, pétalos y cordones",
@@ -1465,7 +1420,7 @@
     "brand": "Cook Concept",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/posa-cuchara.webp",
+    "image": "/uploads/utensilios/plasticos/posa-cuchara.webp",
     "features": [
       "Diseño ergonómico para reposar cucharas, espátulas y cucharones calientes",
       "Mantiene la mesada limpia libre de grasa y gotas de salsas",
@@ -1480,7 +1435,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/taza-medidora-silicon.webp",
+    "image": "/uploads/utensilios/plasticos/taza-medidora-silicon.webp",
     "features": [
       "Cuerpo de silicón flexible con escala milimetrada grabada",
       "Pico vertedor maleable para verter en moldes estrechos sin derrames",
@@ -1495,7 +1450,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/salseros-plastico.webp",
+    "image": "/uploads/utensilios/plasticos/salseros-plastico.webp",
     "features": [
       "Polietileno suave y flexible de fácil compresión",
       "Pico dispensador de flujo continuo con tapa protectora",
@@ -1510,7 +1465,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/tarocos.webp",
+    "image": "/uploads/utensilios/plasticos/tarocos.webp",
     "features": [
       "Formato compacto ideal para almacenamiento de insumos y porciones",
       "Tapa de ajuste seguro que conserva la frescura",
@@ -1525,7 +1480,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/cortador-plastic.webp",
+    "image": "/uploads/utensilios/plasticos/cortador-plastic.webp",
     "features": [
       "Borde cortante seguro sin filo cortante peligroso para las manos",
       "Variedad de formas y tamaños graduados para figuras creativas",
@@ -1540,7 +1495,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/corrtador-fruta.webp",
+    "image": "/uploads/utensilios/plasticos/corrtador-fruta.webp",
     "features": [
       "Herramienta de precisión para calado y tallado decorativo",
       "Mango plástico ergonómico de control preciso",
@@ -1555,7 +1510,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/cesta-amarilla.webp",
+    "image": "/uploads/utensilios/plasticos/cesta-amarilla.webp",
     "features": [
       "Diseño calado clásico americano para ventilación de alimentos crujientes",
       "Plástico resistente a grasas y calor moderado, apto para papel antigrasa",
@@ -1570,7 +1525,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/cesta-negra.webp",
+    "image": "/uploads/utensilios/plasticos/cesta-negra.webp",
     "features": [
       "Acabado negro mate moderno de alta resistencia",
       "Estructura perforada que evita que el vapor ablande los fritos",
@@ -1585,7 +1540,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/canasta.webp",
+    "image": "/uploads/utensilios/plasticos/canasta.webp",
     "features": [
       "4 compartimientos profundos para clasificar cubiertos, aderezos o utensilios",
       "Asa ergonómica central para transporte rápido",
@@ -1600,7 +1555,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/canastilla.webp",
+    "image": "/uploads/utensilios/plasticos/canastilla.webp",
     "features": [
       "Rejilla ventilada para lavado, escurrido y transporte de ingredientes",
       "Bordes reforzados para sujeción cómoda con peso",
@@ -1615,7 +1570,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/botella-decorar.webp",
+    "image": "/uploads/utensilios/plasticos/botella-decorar.webp",
     "features": [
       "Botella translúcida flexible que permite ver el nivel de contenido",
       "Tapa con rosca compatible con boquillas pasteleras estándar",
@@ -1630,7 +1585,7 @@
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
-    "image": "uploads/utensilios/plasticos/jeringa-decorar.webp",
+    "image": "/uploads/utensilios/plasticos/jeringa-decorar.webp",
     "features": [
       "Mecanismo de émbolo con empuje suave y control milimétrico de crema",
       "Cilindro transparente graduado fácil de rellenar y desmontar",
@@ -1638,6 +1593,231 @@
     ],
     "presentation": "Set de jeringa decoradora con accesorios",
     "usage": "Relleno de bombas, donas, profiteroles y decoración precisa de pasteles."
+  },
+  {
+    "id": "gotero-con-cepillo",
+    "name": "Gotero con Cepillo para Cocina y Repostería",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/gotero.webp",
+    "features": [
+      "Bulbo succionador dosificador con tubo graduado y brocha de silicón integrada",
+      "Permite absorber jugos, almíbares o mantequilla derretida y barnizar de forma uniforme",
+      "Resistente al calor, desmontable y de fácil higienización"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Barnizado de panes, humectación de bizcochos con almíbar y glaseado de carnes o aves al horno."
+  },
+  {
+    "id": "utensilios-para-decorar-reposteria",
+    "name": "Utensilios para Decorar Repostería",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/decoradores.webp",
+    "features": [
+      "Juego de estecas y herramientas de modelado con puntas dobles de distintas formas",
+      "Plástico sanitario antiadherente de fácil manejo y precisión en detalles",
+      "Diseño ligero y ergonómico para trabajo artístico prolongado"
+    ],
+    "presentation": "Set de utensilios decoradores",
+    "usage": "Modelado y texturizado de fondant, pasta de goma, mazapán, flores de azúcar y decoración de tortas."
+  },
+  {
+    "id": "embudos-de-silicon",
+    "name": "Embudos de Silicón",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/embudos-silicon.webp",
+    "features": [
+      "Silicón flexible de grado alimenticio resistente a líquidos fríos y calientes",
+      "Diseño plegable o apilable que ahorra espacio de almacenamiento en cocina",
+      "No retiene olores ni manchas y es muy fácil de lavar"
+    ],
+    "presentation": "Por unidad / Set",
+    "usage": "Trasvase limpio de aceites, esencias, jarabes, salsas, cremas y polvos hacia envases o botellas."
+  },
+  {
+    "id": "chefandish-electrico-acero-inox",
+    "name": "Chefandish Eléctrico en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/chefanddish-electrico.webp",
+    "features": [
+      "Sistema de calefacción eléctrica integrada sin alcohol",
+      "Cuerpo y depósito gastronómico en acero inoxidable brillante",
+      "Control térmico para mantener alimentos a temperatura óptima"
+    ],
+    "presentation": "Unidad completa con bandeja gastronorm y tapa",
+    "usage": "Buffets, caterings, hoteles y banquetes de autoservicio."
+  },
+  {
+    "id": "chefandish-para-mariscos",
+    "name": "Chefandish para Mariscos",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/chefandish-para-mariscos.webp",
+    "features": [
+      "Diseño especializado para pescados, mariscos y paellas",
+      "Fabricado en acero inoxidable de alto brillo",
+      "Mantiene la humedad y temperatura sin resecar los alimentos"
+    ],
+    "presentation": "Chafing dish con bandeja marina y soporte para quemador",
+    "usage": "Servicio elegante y exhibición de mariscos en buffets y eventos."
+  },
+  {
+    "id": "tapa-chefandish-grande-52x32",
+    "name": "Tapa para Chefandish Grande (52x32 cm)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/tapa-chefanddish-grande.webp",
+    "features": [
+      "Medidas estándar: 52 x 32 cm para inserto grande GN 1/1",
+      "Acero inoxidable pulido sanitario",
+      "Asa ergonómica aislante de calor"
+    ],
+    "presentation": "Unidad de repuesto / accesorio",
+    "usage": "Protección térmica e higiene en chafing dishes y mesas de vapor."
+  },
+  {
+    "id": "tapa-self-service-bisagra-acero-inox",
+    "name": "Tapa Self Service con Bisagra en Acero Inoxidable",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/tapa-self-service-bisagra-acero-inox.webp",
+    "features": [
+      "Sistema de bisagra de apertura cómoda para autoservicio",
+      "Acero inoxidable higiénico y de fácil limpieza",
+      "Conserva la frescura y temperatura de los alimentos"
+    ],
+    "presentation": "Unidad adaptable a bandejas estándar",
+    "usage": "Líneas de buffet, barras de ensaladas y mostradores de autoservicio."
+  },
+  {
+    "id": "tapa-self-service-policarbonato-transparente",
+    "name": "Tapa Self Service en Policarbonato Transparente",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/tapa-self-service-policarbonato.webp",
+    "features": [
+      "Policarbonato transparente irrompible de alto impacto",
+      "Permite visibilidad completa del producto sin destapar",
+      "Ranura frontal o bisagra de acceso rápido"
+    ],
+    "presentation": "Unidad en policarbonato cristal",
+    "usage": "Exhibición higiénica de alimentos en barras frías y autoservicio."
+  },
+  {
+    "id": "tapa-self-service-acero-inox-medidas",
+    "name": "Tapas Self Service en Acero Inoxidable (Medidas Variadas)",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/tapa-selfservice-ainox.webp",
+    "features": [
+      "Disponibles en medidas: 17x17 cm, 27x17 cm y 32x27 cm",
+      "Construcción en acero inoxidable resistente",
+      "Encaje preciso sobre recipientes gastronorm"
+    ],
+    "presentation": "Por medida requerida",
+    "usage": "Cubierta sanitaria para recipientes de preparación y exhibición."
+  },
+  {
+    "id": "porta-alcohol-chefandish",
+    "name": "Porta Alcohol para Chefandish",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Servicios",
+    "image": "/uploads/utensilios/servicios/porta-alcohol-chefanddish.webp",
+    "features": [
+      "Acero inoxidable con tapa reguladora de llama",
+      "Compatible con alcohol sólido en lata o pasta",
+      "Asa prolongada para manipulación segura sin quemaduras"
+    ],
+    "presentation": "Unidad con copa, tapa y regulador",
+    "usage": "Suministro de calor bajo chafing dishes y fuentes de baño maría."
+  },
+  {
+    "id": "delantal-de-cuero",
+    "name": "Delantal de Cuero",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Seguridad",
+    "image": "/uploads/utensilios/seguridad/delantal-cuero.webp",
+    "features": [
+      "Cuero carnaza seleccionado de alta resistencia térmica y mecánica",
+      "Correas ajustables en cuello y cintura para sujeción firme y ergonómica",
+      "Protección integral del torso frente a calor radiante, salpicaduras y rozaduras"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Protección personal en hornos de panadería, parrillas, asadores, carnicerías y trabajo pesado de cocina."
+  },
+  {
+    "id": "guantes-de-carnaza-hornos-panaderia",
+    "name": "Guantes de Carnaza para Hornos y Panadería",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Seguridad",
+    "image": "/uploads/utensilios/seguridad/guantes-carnaza.webp",
+    "features": [
+      "Fabricados en cuero carnaza grueso con aislamiento térmico para altas temperaturas",
+      "Diseño de manga larga que protege manos, muñecas y antebrazos al operar hornos",
+      "Costuras reforzadas de alta durabilidad para manipulación continua de bandejas y moldes calientes"
+    ],
+    "presentation": "Par de guantes",
+    "usage": "Extracción y manejo seguro de bandejas panaderas, moldes, ollas y rejillas en hornos industriales y rotativos."
+  },
+  {
+    "id": "guantes-malla-metalica-anticortes",
+    "name": "Guantes de Malla Metálica Anticortes",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Seguridad",
+    "image": "/uploads/utensilios/seguridad/guantes-malla-metalica.webp",
+    "features": [
+      "Tejido de anillos de acero inoxidable de alta resistencia contra cortes y punzadas",
+      "Diseño ambidiestro flexible y ergonómico que permite total movilidad de los dedos",
+      "Material sanitario anticorrosivo de fácil lavado y desinfección"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Protección anticorte en carnicerías, desposte de carnes, fileteado de pescado, rebanadoras y manejo de cuchillos."
+  },
+  {
+    "id": "resistencia-para-selladora-de-empaque",
+    "name": "Resistencia para Selladora de Empaque",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Seguridad",
+    "image": "/uploads/utensilios/seguridad/resistencia.webp",
+    "features": [
+      "Medidas disponibles: 15 cm, 20 cm, 25 cm, 30 cm y 40 cm",
+      "Elemento térmico con cinta de teflón de alta durabilidad para selladoras de bolsas",
+      "Calentamiento instantáneo y sellado térmico hermético con terminales reforzados"
+    ],
+    "presentation": "Por unidad según medida (15cm, 20cm, 25cm, 30cm, 40cm)",
+    "usage": "Repuesto y mantenimiento de selladoras manuales y de pedal para empaque seguro de alimentos e insumos."
+  },
+  {
+    "id": "cierres-de-bolsa",
+    "name": "Cierres de Bolsa Cook Concept",
+    "brand": "Cook Concept",
+    "category": "utensilios",
+    "subCategory": "Seguridad",
+    "image": "/uploads/utensilios/seguridad/cierre-bolsa.webp",
+    "features": [
+      "Cierres herméticos flexibles reutilizables para sellar bolsas y empaques abiertos",
+      "Sistema de ajuste rápido que preserva la frescura y evita derrames o contaminación",
+      "Blíster de 3 unidades (Attache Sachet) de material resistente y lavable"
+    ],
+    "presentation": "Empaque x 3 unidades",
+    "usage": "Cierre seguro y conservación higiénica de bolsas de insumos, harinas, granos, panadería y alimentos refrigerados."
   },
   {
     "id": "cazuela-acero-inoxidable-ovalada-20cm",
@@ -1700,19 +1880,19 @@
     "usage": "Servicio de raciones completas en comedores industriales, clínicas, colegios y campamentos."
   },
   {
-    "id": "pocillo-acero-inoxidable",
-    "name": "Pocillo en Acero Inoxidable",
+    "id": "sopera-industrial-tapa-acero-inox",
+    "name": "Sopera Industrial con Tapa en Acero Inoxidable (4L)",
     "brand": "A-Comer",
     "category": "menajes",
     "subCategory": "Acero Inoxidable",
-    "image": "/uploads/menajes/acero/pocillo-ainox.webp",
+    "image": "/uploads/menajes/acero/sopera-industrial.webp",
     "features": [
-      "Construcción en acero inoxidable de calibre resistente a caídas y uso rudo",
-      "Asa ergonómica firme soldada por puntos para sujeción cómoda sin calentamiento",
-      "Borde redondeado que brinda confort al beber"
+      "Capacidad: 4 Litros (128 oz)",
+      "Acero inoxidable higiénico con perilla y asas aislantes",
+      "Mantiene la temperatura ideal de caldos y consomés"
     ],
-    "presentation": "Por unidad y paquetes",
-    "usage": "Servicio tradicional de café campesino, consomé, chocolate caliente y té."
+    "presentation": "Unidad completa con tapa",
+    "usage": "Servicio y conservación de sopas, cremas y caldos en buffet o cocina."
   },
   {
     "id": "plato-postre-acero-inoxidable",
@@ -2295,17 +2475,18 @@
     "category": "insumos",
     "subCategory": "Colores y Sabores",
     "subSubCategory": "Colores Vegetales",
-    "image": "/uploads/insumos/colores-sabores/caramelina-indelma.webp",
+    "image": "/uploads/insumos/colores-sabores/caramelina.webp",
     "features": [
       "Tono caramelo tostado profundo de alto rendimiento y fijación homogénea",
       "Resistente a temperaturas elevadas de horno sin degradarse ni alterar sabor",
       "Ideal para lograr tonalidades doradas, bronce y marrón oscuro natural",
       "Fácil disolución en formulaciones líquidas, semilíquidas o masas pesadas"
     ],
-    "presentation": "Envase dosificador concentrado",
+    "presentation": "Galón, 25 kg y 200 kg",
     "presentations": [
-      "Paila 5kg",
-      "Arco 1123 tambor"
+      "Galón",
+      "25 kg",
+      "200 kg"
     ],
     "usage": "Coloración de panes de molde oscuros, ponqués de navidad, galletas, salsas de caramelo, jarabes y bebidas."
   },
@@ -2347,6 +2528,11 @@
       {
         "name": "Verde Manzana MKG FR",
         "hex": "#76FF03",
+        "code": "MKG FR"
+      },
+      {
+        "name": "Verde Menta MKG FR",
+        "hex": "#00E676",
         "code": "MKG FR"
       },
       {
@@ -2393,11 +2579,6 @@
         "name": "Negro MKG FR",
         "hex": "#212121",
         "code": "MKG FR"
-      },
-      {
-        "name": "Verde Navidad",
-        "hex": "#1B5E20",
-        "code": "7ML/POLVO"
       }
     ]
   },
@@ -2423,30 +2604,43 @@
       "1 Galón (GL)"
     ],
     "flavors": [
-      "Almendra (LT)",
-      "Anís (LT)",
-      "Aroma de Leche (LT, GL)",
-      "Arequipe - Emulsión (GL)",
-      "Banana (LT, GL)",
-      "Coco - Emulsión (LT, GL)",
-      "Fresa (LT)",
-      "Chiclets (LT)",
-      "Limón (GL, LT)",
-      "Mantequilla (GL, LT)",
-      "Mantecado (CTL, LT, GL)",
-      "Ron con Pasas (LT)",
-      "Naranja (GL, LT)",
-      "Piña (LT)",
-      "Ron Jamaica (LT)",
-      "Nata (GL, LT)",
-      "Queso (GL, LT)",
-      "Suave Pan (GL)",
-      "Panetone (GL)",
-      "Pistacho (LT)",
-      "Cereza (GL)",
-      "Tutti Frutti (LT)",
-      "Vainilla Blanca (GL, LT)",
-      "Vainilla Negra (LT)"
+      "Almendra",
+      "Anís",
+      "Aroma de Leche",
+      "Arequipe - Emulsión",
+      "Banana",
+      "Coco - Emulsión",
+      "Fresa",
+      "Chiclets",
+      "Limón",
+      "Mantequilla",
+      "Mantecado",
+      "Ron con Pasas",
+      "Naranja",
+      "Piña",
+      "Ron Jamaica",
+      "Nata",
+      "Queso",
+      "Suave Pan",
+      "Panetone",
+      "Pistacho",
+      "Cereza",
+      "Tutti Frutti",
+      "Vainilla Blanca",
+      "Vainilla Negra",
+      "Mandarina",
+      "Humo",
+      "Maní",
+      "Parchita",
+      "Guanábana",
+      "Canela",
+      "Cola Champagne",
+      "Cacao",
+      "Manzana",
+      "Menta",
+      "Uva Morada",
+      "Frambuesa",
+      "Café Mocca"
     ]
   },
   {
@@ -2464,9 +2658,10 @@
       "Excelente retención de humedad que mantiene la frescura del producto terminado por más tiempo",
       "Naturalmente libre de gluten (gluten-free), ideal para dietas especiales y celíacos"
     ],
-    "presentation": "Empaque de 5 kg",
+    "presentation": "Saco de 25 kg y empaque de 5 kg",
     "presentations": [
-      "5 kg"
+      "5 kg",
+      "25 kg"
     ],
     "usage": "Indispensable para pan de yuca, chipá, pandebono tradicional, buñuelos, almojábanas, galletas libres de gluten y como espesante natural en salsas y embutidos."
   },
@@ -2485,9 +2680,8 @@
       "Proporciona alta elasticidad, firmeza y una estructura uniforme y esponjosa a las masas",
       "Optimiza el rendimiento en formulaciones industriales reduciendo costos sin sacrificar calidad"
     ],
-    "presentation": "Saco de 25 kg y empaque de 5 kg",
+    "presentation": "Saco de 25 kg",
     "presentations": [
-      "5 kg",
       "25 kg"
     ],
     "usage": "Especialmente formulado para panadería congelada (pandebonos y panes de queso ultracongelados listos para hornear), pastas rellenas, quesos análogos, aderezos y embutidos cárnicos."
@@ -2521,7 +2715,7 @@
     "category": "insumos",
     "subCategory": "Féculas",
     "subSubCategory": "Maíz",
-    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "image": "/uploads/insumos/feculas/film65.webp",
     "features": [
       "Almidón de maíz químicamente modificado formador de película protectora (Arco Film Rex 65)",
       "Crea una película crocante y uniforme que reduce significativamente la absorción de aceite en frituras",
@@ -2529,9 +2723,8 @@
       "Mantiene el interior jugoso y húmedo mientras confiere un crujido excepcional y duradero al exterior",
       "Aporta brillo y transparencia superior en coberturas, glaseados y aplicaciones de confitería"
     ],
-    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentation": "Sacos de 25 kg",
     "presentations": [
-      "5 kg",
       "25 kg"
     ],
     "usage": "Rebozados, apanados, frituras industriales, snacks crujientes, glaseados de frutos secos, gomas de confitería y recubrimientos de horneado."
@@ -2543,7 +2736,7 @@
     "category": "insumos",
     "subCategory": "Féculas",
     "subSubCategory": "Maíz",
-    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "image": "/uploads/insumos/feculas/8916.webp",
     "features": [
       "Almidón modificado con doble reticulación y estabilización de alto desempeño (Arco Rex 8916)",
       "Resistencia extrema a procesos de cocción prolongada, alta temperatura y batido o cizallamiento intenso",
@@ -2551,9 +2744,8 @@
       "Total resistencia a ciclos de congelación y descongelación sin soltar agua ni perder brillo ni textura",
       "Aporta una textura cremosa de cuerpo corto, suave y aterciopelada sin aspecto gomoso"
     ],
-    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentation": "Sacos de 25 kg",
     "presentations": [
-      "5 kg",
       "25 kg"
     ],
     "usage": "Rellenos frutales horneables para pastelería y panadería, mermeladas industriales, aderezos y salsas ácidas (kétchup, BBQ, mayonesas), y platos precocinados congelados."
@@ -2565,7 +2757,7 @@
     "category": "insumos",
     "subCategory": "Féculas",
     "subSubCategory": "Maíz",
-    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "image": "/uploads/insumos/feculas/8416.webp",
     "features": [
       "Almidón modificado espesante y estabilizante de formulación equilibrada (Arco Rex 8416)",
       "Viscosidad controlada y alta tolerancia al calentamiento en autoclaves y pasteurización",
@@ -2573,9 +2765,8 @@
       "Proporciona textura suave con excelente claridad visual y sensación placentera al paladar",
       "Estabilidad duradera durante el almacenamiento prolongado a temperatura ambiente o refrigerada"
     ],
-    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentation": "Sacos de 25 kg",
     "presentations": [
-      "5 kg",
       "25 kg"
     ],
     "usage": "Rellenos pasteleros, cremas lácteas, sopas y caldos instantáneos, conservas enlatadas, productos cárnicos emulsionados y salsas para pastas."
@@ -2587,7 +2778,7 @@
     "category": "insumos",
     "subCategory": "Féculas",
     "subSubCategory": "Maíz",
-    "image": "/uploads/insumos/feculas/maiz-indelma.webp",
+    "image": "/uploads/insumos/feculas/2366.webp",
     "features": [
       "Almidón de maíz especializado de textura delicada y fácil dispersión (Línea Arco Rex 2366)",
       "Desarrolla consistencia uniforme y cuerpo estable tanto en frío como a temperatura ambiente",
@@ -2595,31 +2786,11 @@
       "Aumenta la retención de agua y la frescura de masas horneadas mejorando notablemente su suavidad",
       "Actúa como excelente ligante y estabilizador coloidal en emulsiones complejas"
     ],
-    "presentation": "Sacos de 5 kg y 25 kg",
+    "presentation": "Sacos de 25 kg",
     "presentations": [
-      "5 kg",
       "25 kg"
     ],
     "usage": "Masas de repostería y bizcochería, panificación suave, coberturas para tortas, aderezos, mezclas emulsionadas y ligante para derivados cárnicos."
-  },
-  {
-    "id": "azucar-cafetin-sachets",
-    "name": "Azúcar para Cafetín en Sachets",
-    "brand": "A-Comer",
-    "category": "insumos",
-    "subCategory": "Endulzantes Naturales",
-    "image": "/uploads/insumos/endulzantes/azucar-sachet.webp",
-    "features": [
-      "Azúcar refinada blanca de alta pureza en porciones individuales higiénicas de disolución rápida",
-      "Presentación en sobres herméticos (sachets) que protegen el producto de la humedad y contaminación",
-      "Dosificación exacta por taza que optimiza costos y evita el desperdicio en barras y mesas",
-      "Empaque estético y funcional que garantiza una presentación pulcra y profesional al servicio de café"
-    ],
-    "presentation": "Caja de 200 sobres individuales (sachets)",
-    "presentations": [
-      "Caja x 200 sobres"
-    ],
-    "usage": "Servicio de mesa y barra en cafeterías, restaurantes, panaderías, hoteles, empresas y eventos gastronómicos."
   },
   {
     "id": "maltodextrina-arco-sol-20-indelma",
@@ -2643,7 +2814,7 @@
   },
   {
     "id": "glucosa-arco-2314-indelma-paila",
-    "name": "Jarabe de Glucosa Arco 2314 Indelma",
+    "name": "Jarabe de Glucosa Arco 2314 Liviana Indelma",
     "brand": "Indelma",
     "category": "insumos",
     "subCategory": "Endulzantes Naturales",
@@ -2656,15 +2827,17 @@
       "Excelente capacidad humectante que retrasa el endurecimiento y extiende la vida útil de los productos",
       "Aporta viscosidad equilibrada y mordida elástica perfecta sin opacar colores ni aromas"
     ],
-    "presentation": "Paila",
+    "presentation": "5 kg, 25 kg y 280 kg",
     "presentations": [
-      "Paila"
+      "5 kg",
+      "25 kg",
+      "280 kg"
     ],
     "usage": "Elaboración de fondant, pasta de goma, caramelos blandos y duros, gomitas, masmelos, brillo espejo para tortas y helados artesanales."
   },
   {
     "id": "glucosa-arco-2414-indelma-paila",
-    "name": "Jarabe de Glucosa Arco 2414 Indelma",
+    "name": "Jarabe de Glucosa Arco 2414 Pesada Indelma",
     "brand": "Indelma",
     "category": "insumos",
     "subCategory": "Endulzantes Naturales",
@@ -2677,9 +2850,11 @@
       "Gran resistencia al pardeamiento térmico no deseado durante cocciones a altas temperaturas",
       "Preserva la frescura y humedad de rellenos horneables y ganaches evitando cuarteaduras"
     ],
-    "presentation": "Paila",
+    "presentation": "5 kg, 25 kg y 280 kg",
     "presentations": [
-      "Paila"
+      "5 kg",
+      "25 kg",
+      "280 kg"
     ],
     "usage": "Bombones, toffees, nougat, barras de cereal, turrones, jaleas de brillo para frutas y rellenos densos de pastelería."
   },
@@ -2698,9 +2873,11 @@
       "Edulcoración moderada que respeta y resalta el perfil de sabor de frutas y esencias",
       "Suministro industrial en tambor metálico de 280 kg para líneas de producción continuas"
     ],
-    "presentation": "Tambor de 280 kg",
+    "presentation": "5 kg, 25 kg y 280 kg",
     "presentations": [
-      "Tambor de 280 kg"
+      "5 kg",
+      "25 kg",
+      "280 kg"
     ],
     "usage": "Fabricación industrial de bebidas, jarabes para sodas y raspados, frutas en almíbar, panificación masiva, salsas y mermeladas."
   },
@@ -2719,9 +2896,11 @@
       "Aporta textura gomosa, masticabilidad prolongada y cuerpo denso a golosinas y dulces típicos",
       "Empaque industrial en tambor sellado de 280 kg con garantía y estándares de calidad Indelma"
     ],
-    "presentation": "Tambor de 280 kg",
+    "presentation": "5 kg, 25 kg y 280 kg",
     "presentations": [
-      "Tambor de 280 kg"
+      "5 kg",
+      "25 kg",
+      "280 kg"
     ],
     "usage": "Caramelos duros, piruletas, gomas de mascar, masas de turrón, arequipe y dulce de leche industrial, gomas coladas y barritas energéticas."
   },
@@ -2738,30 +2917,221 @@
       "Permite reducir hasta un 30% el uso de sal común manteniendo una alta intensidad gustativa",
       "Calidad gastronómica profesional indispensable en cocina oriental, internacional y tradicional"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 25 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "25 kg"
     ],
     "usage": "Sazonado y realce de carnes, aves, mariscos, sopas, salsas, marinadas, arroces fritos, comida asiática y preparaciones de charcutería."
   },
   {
-    "id": "salsa-de-soya-china-1-6lt",
-    "name": "Salsa de Soya China Tradicional",
+    "id": "azucar-cafetin-sachets",
+    "name": "Azúcar para Cafetín en Sachets",
     "brand": "A-Comer",
     "category": "insumos",
     "subCategory": "Ingredientes",
-    "image": "/uploads/insumos/ingredientes/salsa-soya.webp",
+    "image": "/uploads/insumos/ingredientes/azucar-sachet.webp",
     "features": [
-      "Salsa de soya oscura tradicional de cuerpo denso y color caramelo profundo",
-      "Perfil aromático intenso con el balance perfecto entre salinidad, notas tostadas y toques dulces",
-      "Excelente poder de fijación de color y brillo en salteados al wok y horneados",
-      "Presentación institucional económica de 1.6 litros de alto rendimiento para cocinas de alto tráfico"
+      "Azúcar refinada blanca de alta pureza en porciones individuales higiénicas de disolución rápida",
+      "Presentación en sobres herméticos (sachets) que protegen el producto de la humedad y contaminación",
+      "Dosificación exacta por taza que optimiza costos y evita el desperdicio en barras y mesas",
+      "Empaque estético y funcional que garantiza una presentación pulcra y profesional al servicio de café"
     ],
-    "presentation": "Botella de 1.6 Litros",
+    "presentation": "Caja de 200 sobres individuales (sachets)",
     "presentations": [
-      "1.6 L"
+      "Caja x 200 sobres"
     ],
-    "usage": "Ideal para arroces chinos, chop suey, salteados al wok, marinados de carnes rojas y cerdo, glaseados teriyaki y aderezos."
+    "usage": "Servicio de mesa y barra en cafeterías, restaurantes, panaderías, hoteles, empresas y eventos gastronómicos."
+  },
+  {
+    "id": "levadura-fresca-fleischmann-500g",
+    "name": "Levadura Fresca Fleischmann",
+    "brand": "Fleischmann",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/levadura.webp",
+    "features": [
+      "Levadura biológica fresca en pasta de alto poder fermentativo y rápida activación",
+      "Proporciona un desarrollo de volumen superior, miga alveolada suave y aroma tradicional de panadería",
+      "Excelente tolerancia en masas dulces y saladas tanto en procesos directos como de fermentación controlada",
+      "Presentación profesional en bloque de 500 g de fácil desmoronado y disolución homogénea"
+    ],
+    "presentation": "Pasta / Bloque de 500 g",
+    "presentations": [
+      "500 g"
+    ],
+    "usage": "Panificación artesanal e industrial, pan francés, canilla, pan sobado, masas de pizza, bollería dulce, golfeados y pan de jamón."
+  },
+  {
+    "id": "polvo-de-hornear-fleischmann",
+    "name": "Polvo de Hornear Fleischmann",
+    "brand": "Fleischmann",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/polvohornear.webp",
+    "features": [
+      "Polvo leudante químico de doble acción que actúa durante el batido en frío y con el calor del horno",
+      "Garantiza un crecimiento uniforme, esponjosidad óptima y miga fina en todo tipo de batidos",
+      "Fórmula balanceada de alta pureza que no deja sabores residuales ni altera el color de las masas",
+      "Presentación práctica de 500 g ideal para pastelerías, cafeterías y repostería profesional"
+    ],
+    "presentation": "Empaque de 2.5 kg",
+    "presentations": [
+      "2.5 kg"
+    ],
+    "usage": "Elaboración de tortas, ponqués, bizcochuelos, cupcakes, galletas, panquecas, waffles y masas quebradas."
+  },
+  {
+    "id": "leche-en-polvo-entera-branzafoods-25kg",
+    "name": "Leche en Polvo Entera BranzaFoods",
+    "brand": "BranzaFoods",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/leche-entera.webp",
+    "features": [
+      "Leche entera en polvo de grado industrial con alto contenido de sólidos lácteos y grasa butírica natural",
+      "Excelente solubilidad e instantaneidad sin formación de grumos en mezclas frías o calientes",
+      "Aporta cremosidad, cuerpo, color dorado en horneado y un perfil lácteo rico y auténtico",
+      "Saco multipliego de 25 kg con barrera protectora contra la humedad para máxima conservación"
+    ],
+    "presentation": "Saco de 25 kg",
+    "presentations": [
+      "25 kg"
+    ],
+    "usage": "Heladería artesanal e industrial, chocolatería, panificación enriquecida, pastelería, cremas pasteleras, dulces de leche y bebidas lácteas."
+  },
+  {
+    "id": "leche-en-polvo-descremada-branzafoods-25kg",
+    "name": "Leche en Polvo Descremada BranzaFoods",
+    "brand": "BranzaFoods",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/leche-descremada.webp",
+    "features": [
+      "Leche descremada en polvo de bajo tenor graso y alta concentración de proteínas lácteas de calidad",
+      "Rápida dispersión y excelente capacidad emulsionante, espumante y de retención de humedad",
+      "Mejora la estructura, el valor nutricional y el dorado de la corteza sin añadir grasa adicional a la fórmula",
+      "Presentación industrial en saco de 25 kg de alto rendimiento para líneas de producción alimentaria"
+    ],
+    "presentation": "Saco de 25 kg",
+    "presentations": [
+      "25 kg"
+    ],
+    "usage": "Formulaciones de helados, yogures, panificación industrial, repostería ligera, salsas blancas, embutidos y mezclas en polvo."
+  },
+  {
+    "id": "polviazucar-azucar-glass-1kg",
+    "name": "Polviazúcar (Azúcar Glass / Nevazúcar)",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/polviazucar.webp",
+    "features": [
+      "Azúcar refinada pulverizada de granulometría ultrafina e impalpable con antiaglomerante grado alimenticio",
+      "Se incorpora y funde instantáneamente en batidos en frío sin dejar sensación arenosa en boca",
+      "Blancura intensa y pureza superior ideal para acabados estéticos impecables y glaseados sedosos",
+      "Empaque de 1 kg protegido contra la humedad que evita el apelmazamiento"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Preparación de buttercream, glaseado real (royal icing), fondant, merengues, macarrones, suspiros y espolvoreado decorativo de postres."
+  },
+  {
+    "id": "crema-vegetal-fleischmann-1lt",
+    "name": "Crema Vegetal Tipo Chantilly Fleischmann",
+    "brand": "Fleischmann",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/crema-vegetal.webp",
+    "features": [
+      "Crema vegetal líquida UHT lista para batir de altísimo rendimiento (cuadruplica su volumen inicial)",
+      "Textura firme, sedosa y aireada de excelente estabilidad que no se agrieta, reseca ni pierde suero",
+      "Admite fácilmente la incorporación de colorantes, esencias, licores, cacao o pulpas de frutas ácidas",
+      "Color blanco brillante y sabor suave lácteo-avainillado que realza la decoración de cualquier postre"
+    ],
+    "presentation": "Envase Tetra Pak de 1 Litro",
+    "presentations": [
+      "1 L"
+    ],
+    "usage": "Cobertura, alisado y decoración con boquilla de tortas, relleno de brazos gitanos, torta tres leches, mousses, fresas con crema y cafés especiales."
+  },
+  {
+    "id": "cacao-en-polvo-1kg",
+    "name": "Cacao en Polvo Repostero",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/cacao.webp",
+    "features": [
+      "Cacao en polvo seleccionado de intenso aroma achocolatado, color oscuro profundo y sabor auténtico",
+      "Molienda fina de fácil tamizado e integración homogénea tanto en mezclas secas como en líquidos calientes",
+      "Excelente rendimiento en horneado aportando humedad, cuerpo y carácter a las preparaciones",
+      "Presentación profesional en bolsa de 1 kg para repostería, chocolatería y cafetería"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Tortas de chocolate, brownies, trufas, galletas, cremas y ganaches, bebidas achocolatadas, helados y espolvoreado de tiramisú."
+  },
+  {
+    "id": "flan-de-vainilla-1kg",
+    "name": "Mezcla en Polvo para Flan de Vainilla",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/flan.webp",
+    "features": [
+      "Premezcla completa de preparación rápida para elaborar flan con textura firme, lisa y cremosa",
+      "Delicado aroma y sabor clásico a vainilla con excelente desmolde y corte limpio sin sinéresis",
+      "Estandariza la producción garantizando resultados consistentes en cada lote con un alto rendimiento por kilo",
+      "Presentación institucional en bolsa de 1 kg ideal para comedores, restaurantes y pastelerías"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Elaboración de flanes individuales o familiares, quesillos comerciales, postres en vasito, rellenos de tartas y mesas de dulces."
+  },
+  {
+    "id": "mejorador-de-pan-maxipan-fleischmann-1kg",
+    "name": "Mejorador de Pan Maxipan Fleischmann",
+    "brand": "Fleischmann",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/maxipan.webp",
+    "features": [
+      "Acondicionador y mejorador completo de masas de acción integral desarrollado por Fleischmann",
+      "Fortalece la red de gluten aumentando la retención de gas durante la fermentación y el salto de horno",
+      "Proporciona piezas de mayor volumen, corteza dorada y crujiente, y una miga más blanca, suave y uniforme",
+      "Mejora la maquinabilidad de la masa y prolonga la frescura y suavidad del pan terminado por más días"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Todo tipo de panes de sal y de dulce: pan francés, canilla, campesino, pan de molde, pan de perro caliente y hamburgues."
+  },
+  {
+    "id": "abrillantador-neutro-frutalia-5kg",
+    "name": "Abrillantador / Brillo Pastelero Frutalia",
+    "brand": "Frutalia",
+    "category": "insumos",
+    "subCategory": "Ingredientes",
+    "image": "/uploads/insumos/ingredientes/abrillantador.webp",
+    "features": [
+      "Gel abrillantador de grado repostero que confiere un acabado espejo cristalino de alto impacto visual",
+      "Sella y protege las frutas frescas y decoraciones evitando su oxidación, oscurecimiento y deshidratación",
+      "Textura suave de fácil aplicación con brocha o espátula que no escurre y resiste la refrigeración",
+      "Admite la adición de colorantes y esencias para crear glaseados espejo personalizados de cualquier tono y sabor"
+    ],
+    "presentation": "Envase / Cuñete de 5 kg",
+    "presentations": [
+      "5 kg"
+    ],
+    "usage": "Abrillantado de tartaletas de frutas, tortas frías, cheesecakes, milhojas, pastelitos hojaldrados y cobertura espejo para pastelería fina."
   },
   {
     "id": "propionato-de-calcio-1kg",
@@ -2776,9 +3146,10 @@
       "Extiende significativamente la frescura y vida de anaquel de panes comerciales y artesanales",
       "Fácil dispersión en seco junto con la harina o disuelto previamente en agua de amasado"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "5 kg"
     ],
     "usage": "Panes de molde, panes de hamburguesa y perros calientes, bollería, masas fermentadas, tortillas de trigo y panes integrales."
   },
@@ -2795,30 +3166,32 @@
       "Preserva la estabilidad organoléptica y microbiológica de productos a temperatura ambiente",
       "Grado alimentario certificado de máxima pureza para la industria de bebidas y conservas"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "5 kg"
     ],
     "usage": "Salsas ácidas (tomate, kétchup, mayonesa), mermeladas, almíbares, jugos y bebidas carbonatadas, encurtidos y aderezos para ensaladas."
   },
   {
-    "id": "polvo-de-hornear-fleischmann-1kg",
-    "name": "Polvo de Hornear Fleischmann",
-    "brand": "Fleischmann",
+    "id": "sorbato-de-potasio-1kg",
+    "name": "Sorbato de Potasio Grado Alimenticio",
+    "brand": "A-Comer",
     "category": "insumos",
     "subCategory": "Preservantes / Conservantes",
-    "image": "/uploads/insumos/preservantes/polvo-hornear.webp",
+    "image": "/uploads/insumos/preservantes/sorbato-potasio.webp",
     "features": [
-      "Leudante químico de doble acción: primera reacción en frío durante el batido y segunda en horno",
-      "Aporta un crecimiento vertical uniforme, textura esponjosa y miga fina y sedosa a bizcochuelos",
-      "Fórmula balanceada que no deja sabor residual metálico ni alcalino en preparaciones delicadas",
-      "Calidad y respaldo Fleischmann líder en panificación y pastelería en Venezuela"
+      "Conservante antimicrobiano de amplio espectro altamente eficaz contra mohos, levaduras y bacterias aeróbicas",
+      "Granulado o polvo blanco de excelente solubilidad en agua sin alterar el sabor, color ni aroma de los alimentos",
+      "Efectivo en un rango de pH más amplio (hasta pH 6.5) en comparación con otros conservantes tradicionales",
+      "Prolonga notablemente la vida útil en anaquel y refrigeración de productos lácteos, panificados y salsas"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "5 kg"
     ],
-    "usage": "Bizcochos, ponqués, tortas, galletas, muffins, panquecas, waffles, polvorones y masas que no requieren fermentación biológica."
+    "usage": "Quesos, yogures, margarinas, rellenos pasteleros, mermeladas, salsas emulsionadas, vinos, jugos de frutas, tortas y masas refrigeradas."
   },
   {
     "id": "romonoff-fleischmann-1kg",
@@ -2833,9 +3206,10 @@
       "Optimiza la tolerancia al amasado y la retención de gas, logrando piezas de mayor volumen y simetría",
       "Mantiene la corteza suave y la miga elástica durante semanas sin endurecerse"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "5 kg"
     ],
     "usage": "Panadería industrial y artesanal: pan sobado, pan campesino, pan andino, pan de banquete, golfeados y bollería dulce y salada."
   },
@@ -2852,9 +3226,10 @@
       "Actúa como sinérgico con conservantes (benzoato y sorbato) potenciando su efectividad antimicrobiana",
       "Previene la oxidación enzimática y el oscurecimiento de frutas peladas o procesadas"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "5 kg"
     ],
     "usage": "Elaboración de mermeladas, gomitas, gelatinas, caramelos ácidos, bebidas, conservas de frutas, almíbares y fijador de colorantes."
   },
@@ -2871,9 +3246,10 @@
       "Evita la cristalización de hielo en helados artesanales y sorbetes brindando una cremosidad insuperable",
       "Forma geles transparentes que aumentan la viscosidad sin alterar aroma ni coloración"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 kg"
+      "1 kg",
+      "5 kg"
     ],
     "usage": "Modelado de figuras en fondant, flores de pasta de goma, estabilización de helados, cremas chantilly, rellenos y aderezos."
   },
@@ -2890,9 +3266,10 @@
       "Devuelve la flexibilidad y elasticidad a colorantes en gel o pastas de azúcar resecas",
       "Aporta brillo sedoso y textura aterciopelada a bombones, rellenos de trufa y glaseados"
     ],
-    "presentation": "Botella de 1 Litro",
+    "presentation": "1 kg y 5 kg",
     "presentations": [
-      "1 L"
+      "1 kg",
+      "5 kg"
     ],
     "usage": "Elaboración de fondant casero, pasta de goma, disolución de colorantes concentrados, brillo para bombones, repostería y helados."
   },
@@ -2973,6 +3350,26 @@
       "1 kg"
     ],
     "usage": "Terminación y espolvoreado de tortas selva negra, postres individuales, merengadas, cafés especiales y bombonería."
+  },
+  {
+    "id": "lluvia-grajeas-colores-1kg",
+    "name": "Lluvia de Colores (Grajeas / Carnaval)",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Chocolates",
+    "subSubCategory": "Granulados",
+    "image": "/uploads/insumos/chocolates/lluvia-colores.webp",
+    "features": [
+      "Lluvia azucarada o grajeas multicolores de tonos vivos y acabado brillante que alegran cualquier postre",
+      "Fijación de color estable que no destiñe ni mancha cremas blancas como chantilly, merengue o buttercream",
+      "Textura crujiente y sabor dulce agradable de disolución suave en el paladar",
+      "Presentación rendidora de 1 kg ideal para pastelerías, heladerías, donerías y mesas de dulces"
+    ],
+    "presentation": "Bolsa de 1 kg",
+    "presentations": [
+      "1 kg"
+    ],
+    "usage": "Decoración festiva de tortas infantiles y de cumpleaños, cupcakes, donas glaseadas, cake pops, galletas, suspiros y helados."
   },
   {
     "id": "gotas-chocolate-blanco-st-moritz-1kg",
@@ -3108,7 +3505,7 @@
       "Resistente a altas temperaturas de cocción, manteniendo su humedad y jugosidad interna",
       "Presentación económica y rendidora de 5 kg para panadería, pastelería y repostería profesional"
     ],
-    "presentation": "Bolsa / Balde de 5 kg",
+    "presentation": "Caja de 5 kg",
     "presentations": [
       "5 kg"
     ],
@@ -3128,7 +3525,7 @@
       "Ideal para mezclas de frutos confitados (tutti frutti) de alta durabilidad sin fermentar",
       "Formato a granel de 5 kg listo para incorporar directamente en masas y batidos"
     ],
-    "presentation": "Bolsa / Balde de 5 kg",
+    "presentation": "Caja de 5 kg",
     "presentations": [
       "5 kg"
     ],
@@ -3148,7 +3545,7 @@
       "Conserva su consistencia y color vivo tanto en horneado como en refrigeración",
       "Suministro comercial de 5 kg indispensable en la temporada de panadería navideña y festiva"
     ],
-    "presentation": "Bolsa / Balde de 5 kg",
+    "presentation": "Caja de 5 kg",
     "presentations": [
       "5 kg"
     ],
@@ -3176,15 +3573,15 @@
   },
   {
     "id": "cerezas-en-almibar-inpa-3-1kg",
-    "name": "Cerezas Marrasquino en Almíbar Inpa (Rojas y Verdes)",
+    "name": "Cerezas en Almíbar Inpa (Rojas y Verdes)",
     "brand": "Inpa",
     "category": "insumos",
     "subCategory": "Frutas",
     "subSubCategory": "Frutas en Conserva",
     "image": "/uploads/insumos/frutas/cerezas.webp",
     "features": [
-      "Cerezas marrasquino enteras sin hueso disponibles en vibrantes colores rojo rubí y verde esmeralda",
-      "Consistencia turgente y carnosa en almíbar aromatizado con el clásico perfil marrasquino",
+      "Cerezas enteras sin hueso disponibles en vibrantes colores rojo rubí y verde esmeralda",
+      "Consistencia turgente y carnosa en almíbar aromatizado con el clásico perfil",
       "Brillo deslumbrante que realza de forma instantánea cualquier creación dulce o coctelería",
       "Lata de 3.1 kg de alto rendimiento con tapa hermética para máxima conservación"
     ],
@@ -3214,6 +3611,68 @@
       "Lata 3.1 kg"
     ],
     "usage": "Postre tradicional con arequipe o queso blanco, tablas de quesos madurados, rellenos de tartas y pastelería gourmet."
+  },
+  {
+    "id": "duraznos-en-almibar-3kg",
+    "name": "Duraznos en Mitades en Almíbar",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/duraznos.webp",
+    "features": [
+      "Mitades de duraznos amarillos seleccionados de pulpa firme, carnosa y color dorado brillante",
+      "Conservados en almíbar de dulzor equilibrado que preserva la jugosidad y el aroma frutal natural",
+      "Piezas uniformes de corte limpio que mantienen su estructura tanto en decoración en frío como en horneado",
+      "Presentación institucional en lata de 3 kg de alto rendimiento para pastelerías, panaderías y restaurantes"
+    ],
+    "presentation": "Lata de 3 kg",
+    "presentations": [
+      "Lata 3 kg"
+    ],
+    "usage": "Decoración y relleno de tortas frías, tartaletas frutales, milhojas, brazos gitanos, ensaladas de frutas, postres en copa y coctelería."
+  },
+  {
+    "id": "coco-rallado-1kg-5kg",
+    "name": "Coco Rallado Deshidratado",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/coco-rallado.webp",
+    "features": [
+      "Pulpa de coco 100% natural seleccionada, rallada en hebras finas y deshidratada bajo procesos higiénicos",
+      "Conserva el aroma tropical intenso, sabor fresco y aceites esenciales propios del fruto recién rallado",
+      "Blancura inmaculada y textura tierna que se rehidrata fácilmente en batidos, cremas y masas horneadas",
+      "Disponible en bolsas herméticas de 1 kg y 5 kg que protegen el producto contra la humedad y oxidación"
+    ],
+    "presentation": "Bolsa de 1 kg y 5 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg"
+    ],
+    "usage": "Elaboración de besitos de coco, coquitos, conservas, tortas de coco, prestigio, trufas, rebozado de postres, panadería dulce y heladería."
+  },
+  {
+    "id": "mani-natural-1kg-5kg",
+    "name": "Maní Natural Seleccionado",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Frutas",
+    "subSubCategory": "Frutas en Conserva",
+    "image": "/uploads/insumos/frutas/mani.webp",
+    "features": [
+      "Granos de maní natural de primera calidad seleccionados por su tamaño uniforme y frescura superior",
+      "Textura sumamente crujiente e intenso sabor al tostar, libre de impurezas, granos partidos o rancidez",
+      "Fuente rica en proteínas y grasas saludables que aporta cuerpo, mordida y valor gastronómico a las recetas",
+      "Presentación comercial en bolsas de 1 kg y 5 kg adaptada al consumo de obradores, heladerías y cocinas"
+    ],
+    "presentation": "Bolsa de 1 kg y 5 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg"
+    ],
+    "usage": "Elaboración de mantequilla de maní, pralinés, turrones, garrapiñadas, galletas, brownies, toppings de heladería, chocolatería y cocina asiática."
   },
   {
     "id": "mermeladas-reposteras-inpa-3kg",
@@ -3273,6 +3732,420 @@
       }
     ],
     "usage": "Relleno horneable para pastelitos, empanadas dulces, donas, brazos gitanos, tartaletas, galletas pepas, bizcochuelos y brillo superficial para tartas."
+  },
+  {
+    "id": "lonchero-hamburguesa-alto-blanco",
+    "name": "Lonchero para Hamburguesa Alto Blanco",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Loncheros",
+    "image": "/uploads/desechables/loncheros/lonchero-hamburguesa.webp",
+    "features": [
+      "Diseño térmico de cúpula alta especial para hamburguesas gourmet y triples sin aplastar el pan",
+      "Fabricado en anime (poliestireno expandido) de color blanco higiénico que conserva el calor",
+      "Cierre de pestaña frontal seguro para transporte y delivery sin aperturas accidentales"
+    ],
+    "presentation": "Bulto / Paquete (Color Blanco)",
+    "usage": "Despacho y delivery de hamburguesas altas, sándwiches especiales, tortas individuales y comida rápida."
+  },
+  {
+    "id": "lonchero-ct2-numero-1-amarillo-blanco",
+    "name": "Lonchero Térmico CT2 N° 1 (Amarillo y Blanco)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Loncheros",
+    "image": "/uploads/desechables/loncheros/lonchero-ct2.webp",
+    "features": [
+      "Formato clásico CT2 Número 1 sin divisiones de excelente capacidad para raciones completas",
+      "Disponible en colores amarillo y blanco de alta resistencia térmica y estructural",
+      "Aísla la temperatura de alimentos calientes o fríos evitando filtraciones de grasa"
+    ],
+    "presentation": "Disponible en color Amarillo y Blanco",
+    "presentations": [
+      "CT2 N° 1 Amarillo",
+      "CT2 N° 1 Blanco"
+    ],
+    "usage": "Servicio para llevar de almuerzos, parrillas, pollo asado, raciones con contorno y pastelería."
+  },
+  {
+    "id": "lonchero-ct3-numero-1-y-medio-blanco",
+    "name": "Lonchero Térmico CT3 N° 1 1/2 Blanco",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Loncheros",
+    "image": "/uploads/desechables/loncheros/lonchero-ct3.webp",
+    "features": [
+      "Capacidad amplia formato CT3 Número 1 y medio en color blanco",
+      "Estructura reforzada que soporta porciones abundantes sin doblarse ni quebrarse",
+      "Tapa abisagrada con cierre hermético de pestaña para conservar el calor hasta el destino"
+    ],
+    "presentation": "Bulto / Paquete (CT3 N° 1 1/2 Blanco)",
+    "usage": "Empaque de comidas completas, almuerzos ejecutivos, raciones familiares, carnes con guarnición y combos."
+  },
+  {
+    "id": "lonchero-ct4-medio-blanco",
+    "name": "Lonchero Térmico CT4 de Medio Blanco",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Loncheros",
+    "image": "/uploads/desechables/loncheros/lonchero-ct4.webp",
+    "features": [
+      "Formato compacto CT4 de 1/2 en color blanco ideal para porciones individuales y contornos",
+      "Material térmico liviano e higiénico que mantiene la frescura y temperatura de la porción",
+      "Apilable para optimizar el espacio en áreas de despacho y empaque"
+    ],
+    "presentation": "Bulto / Paquete (CT4 de 1/2 Blanco)",
+    "usage": "Despacho de raciones medianas, tequeños, pastelitos, postres, ensaladas y acompañamientos."
+  },
+  {
+    "id": "bandejas-de-anime-varias-medidas",
+    "name": "Bandejas de Anime Llanas y Hondas (A, B, C, G, H y D de Postres)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/bandejas-anime.webp",
+    "features": [
+      "Modelos disponibles: A, B, C, G, H y bandeja D especial para postres",
+      "Disponibles en versiones llanas y hondas según el requerimiento del producto",
+      "Colores disponibles: Amarillo y Blanco en material sanitario absorbente de humedad"
+    ],
+    "presentation": "Modelos A, B, C, G, H y D Postres (Llanas u Hondas / Amarillas o Blancas)",
+    "presentations": [
+      "Bandeja A (Llana / Honda)",
+      "Bandeja B (Llana / Honda)",
+      "Bandeja C (Llana / Honda)",
+      "Bandeja D de Postres",
+      "Bandeja G (Llana / Honda)",
+      "Bandeja H (Llana / Honda)"
+    ],
+    "usage": "Exhibición y empaque con envoplast de postres, dulces de panadería, carnes, aves, charcutería, quesos y vegetales."
+  },
+  {
+    "id": "envases-de-aluminio-788-747-420",
+    "name": "Envases de Aluminio Desechables (788, 747 y 420)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/envase-aluminio.webp",
+    "features": [
+      "Disponibles en referencias comerciales: 788, 747 y 420",
+      "Aluminio grado alimenticio apto para horneado directo, congelación y recalentamiento",
+      "Bordes pestañados rígidos que brindan firmeza estructural en el traslado"
+    ],
+    "presentation": "Modelos 788, 747 y 420",
+    "presentations": [
+      "Envase 788",
+      "Envase 747",
+      "Envase 420"
+    ],
+    "usage": "Horneado y despacho de pastichos, lasañas, tortas, quesillos, almuerzos calientes y comida para llevar."
+  },
+  {
+    "id": "contenedor-plastico-selva-hc11",
+    "name": "Contenedor Plástico Bisagra Selva HC11",
+    "brand": "Selva",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/envase-hc11.webp",
+    "features": [
+      "Envase plástico transparente de alta claridad con tapa abisagrada integrada modelo HC11",
+      "Cierre a presión seguro que protege y exhibe el contenido con máxima visibilidad",
+      "Plástico PET grado alimenticio resistente al apilamiento en vitrinas y transporte"
+    ],
+    "presentation": "Modelo HC11",
+    "usage": "Exhibición y venta de tortas en porción, postres fríos, ensaladas, frutas picadas, galletas y pasapalos."
+  },
+  {
+    "id": "tina-plastica-con-tapa-selva",
+    "name": "Tinas Plásticas con Tapa Selva (8 oz y 26 oz)",
+    "brand": "Selva",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/tina-plastica-selva.webp",
+    "features": [
+      "Disponibles en capacidades: Tina Plástica 8 oz con tapa (x 25 und) y Tina Plástica T-26 de 26 oz (x 500 und)",
+      "Polipropileno translúcido resistente a bajas y altas temperaturas sin deformarse",
+      "Tapa de ajuste hermético antiderrame ideal para líquidos, cremas y alimentos húmedos"
+    ],
+    "presentation": "8 oz c/tapa (x25 und) y T-26 26 oz (x500 und)",
+    "presentations": [
+      "8 oz con Tapa (x25 und)",
+      "T-26 de 26 oz (x500 und)"
+    ],
+    "usage": "Envasado de sopas, consomés, helados, salsas, arequipe, cremas untables, postres tres leches y porciones."
+  },
+  {
+    "id": "contenedor-cupcake-y-mini-con-tapa",
+    "name": "Contenedor Transparente con Tapa para Cupcake y Mini Dulces",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/contenedor-cupcake.webp",
+    "features": [
+      "Disponibles en formato individual para Cupcake con tapa y Contenedor Redondo Mini con tapa",
+      "Domo alto transparente que protege el frosting, chantilly y decoraciones sin aplastarlos",
+      "Presentación práctica en paquetes de 10 unidades"
+    ],
+    "presentation": "Pack x 10 unidades (Cupcake / Redondo Mini)",
+    "presentations": [
+      "Contenedor Cupcake c/tapa (x10 und)",
+      "Contenedor Redondo Mini c/tapa (x10 und)"
+    ],
+    "usage": "Presentación individual y transporte seguro de cupcakes decorados, muffins, mini tortas y postres."
+  },
+  {
+    "id": "base-circular-negra-con-domo-cristal",
+    "name": "Base Circular Negra con Domo de Cristal (Varias Medidas)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/base-domo-cristal.webp",
+    "features": [
+      "Medidas disponibles: 18.5 cm (domo 8 cm), 25.5 cm (domo 12 cm) y 28 cm (domo 12 cm)",
+      "Base negra rígida con estrías antideslizantes y domo cristal de alta visibilidad",
+      "Encaje perimetral firme que conserva la frescura de tortas y postres en vitrina"
+    ],
+    "presentation": "Por unidad (18.5 cm, 25.5 cm y 28 cm)",
+    "presentations": [
+      "18.5 cm (Domo 8 cm)",
+      "25.5 cm (Domo 12 cm)",
+      "28 cm (Domo 12 cm)"
+    ],
+    "usage": "Exhibición y entrega de tortas completas, cheesecakes, brazos gitanos, tartas frutales y roscas."
+  },
+  {
+    "id": "platos-plasticos-desechables",
+    "name": "Platos Plásticos Desechables (N° 5, 6, 7 y 8)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Platos y Vasos",
+    "image": "/uploads/desechables/platos-vasos/platos-plastico.webp",
+    "features": [
+      "Disponibles en numeraciones: N° 5, N° 6, N° 7 y N° 8 para todo tipo de porciones",
+      "Borde reforzado que brinda rigidez al sostener tortas, pasapalos o comidas completas",
+      "Superficie sanitaria impermeable resistente a grasas, salsas y almíbares"
+    ],
+    "presentation": "Tamaños N° 5, N° 6, N° 7 y N° 8",
+    "presentations": [
+      "Plato N° 5",
+      "Plato N° 6",
+      "Plato N° 7",
+      "Plato N° 8"
+    ],
+    "usage": "Servicio de porciones de torta en cumpleaños, eventos, panaderías, degustaciones, pasapalos y comidas."
+  },
+  {
+    "id": "vasos-plasticos-desechables-zupla",
+    "name": "Vasos Plásticos Desechables Zupla",
+    "brand": "Zupla",
+    "category": "desechables",
+    "subCategory": "Platos y Vasos",
+    "image": "/uploads/desechables/platos-vasos/vaso-plastico-zupla.webp",
+    "features": [
+      "Vaso plástico 127SS de 12 oz Zupla en paquetes de 50 unidades y línea comercial de vasos",
+      "Pared estriada que proporciona agarre firme y resistencia estructural sin colapsar",
+      "Borde enrollado suave compatible con tapas plásticas herméticas"
+    ],
+    "presentation": "Paquete x 50 unidades / Bulto",
+    "presentations": [
+      "Vaso 127SS 12 oz (x50 und)"
+    ],
+    "usage": "Servicio de jugos naturales, refrescos, tizanas, merengadas, café frío, chicha y bebidas para llevar."
+  },
+  {
+    "id": "tapas-plasticas-para-vasos",
+    "name": "Tapas Plásticas para Vasos (Zupla y Universal 8oz a 32oz)",
+    "brand": "Zupla",
+    "category": "desechables",
+    "subCategory": "Platos y Vasos",
+    "image": "/uploads/desechables/platos-vasos/tapa-plastica-vaso.webp",
+    "features": [
+      "Tapas Zupla con ranura para pitillo: Z-12 (vaso 127SS 12oz x500 und), Z-16 (vaso 167SS 16oz x500 und) y Tapa Vaso 9cito T-10/12SS (x1000 und)",
+      "Tapas Plásticas Universales disponibles para vasos de 8 oz, 12 oz, 16 oz y 32 oz",
+      "Sellado a presión en el borde del vaso para evitar derrames durante el traslado"
+    ],
+    "presentation": "Por paquete / caja según modelo (8oz, 10oz, 12oz, 16oz, 32oz)",
+    "presentations": [
+      "Tapa Z-12 Vaso 12oz Zupla (x500 und)",
+      "Tapa Z-16 Vaso 16oz Zupla (x500 und)",
+      "Tapa Vaso 9cito T-10/12SS Zupla (x1000 und)",
+      "Tapa Universal 8 oz",
+      "Tapa Universal 12 oz",
+      "Tapa Universal 16 oz",
+      "Tapa Universal 32 oz"
+    ],
+    "usage": "Cierre higiénico antiderrame de vasos de bebidas frías, frappés, jugos, batidos y porciones líquidas."
+  },
+  {
+    "id": "pitillos-y-removedores-de-colores",
+    "name": "Pitillos y Removedores de Colores",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Platos y Vasos",
+    "image": "/uploads/desechables/platos-vasos/pitillos-colores.webp",
+    "features": [
+      "Disponibles en colores surtidos vibrantes y color negro elegante para coctelería y cafetería",
+      "Variedad de formatos: Pitillos de colores surtidos (x100 und), Frappé negros 7 1/2\" (x80 und) y Negros envueltos 10 1/2\" (x80 und)",
+      "Plástico flexible de grado alimenticio resistente para bebidas densas y agitadores"
+    ],
+    "presentation": "Paquetes por modelo (Colores surtidos y Negros)",
+    "presentations": [
+      "Colores Surtidos (x100 und)",
+      "Frappé Negros 7 1/2\" (x80 und)",
+      "Negro Envuelto 10 1/2\" (x80 und)",
+      "Removedores de Colores"
+    ],
+    "usage": "Servicio de frappés, merengadas, smoothies, cócteles, refrescos y agitación de bebidas en cafeterías."
+  },
+  {
+    "id": "pitillos-y-removedores-blancos",
+    "name": "Pitillos y Removedores Blancos",
+    "brand": "Zupla",
+    "category": "desechables",
+    "subCategory": "Platos y Vasos",
+    "image": "/uploads/desechables/platos-vasos/pitillos-blancos.webp",
+    "features": [
+      "Pitillos y removedores en color blanco clásico, incluyendo presentación envuelta individualmente para máxima higiene",
+      "Disponibles en medida estándar 7 3/4\" envuelto Zupla (paquete x 500 unidades) y removedores para café",
+      "Ideales para estaciones de autoservicio, cafeterías, panaderías y comedores"
+    ],
+    "presentation": "Paquete institucional (7 3/4\" Envuelto x500 und / Removedores)",
+    "presentations": [
+      "Pitillo Blanco Envuelto 7 3/4\" (x500 und)",
+      "Removedores Blancos"
+    ],
+    "usage": "Servicio higiénico de jugos, refrescos, agua, café e infusiones en panaderías, restaurantes y eventos."
+  },
+  {
+    "id": "discos-de-carton-para-tortas",
+    "name": "Discos de Cartón para Tortas (N° 9 al 18)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/discos-carton.webp",
+    "features": [
+      "Disponibles en medidas: N° 9, N° 10, N° 11, N° 12, N° 13, N° 14, N° 16 y N° 18",
+      "Cartón rígido laminado de alta resistencia que soporta el peso de tortas decoradas y húmedas",
+      "Superficie antigrasa apta para contacto directo con productos de pastelería y repostería"
+    ],
+    "presentation": "Medidas N° 9, 10, 11, 12, 13, 14, 16 y 18",
+    "presentations": [
+      "Disco N° 9",
+      "Disco N° 10",
+      "Disco N° 11",
+      "Disco N° 12",
+      "Disco N° 13",
+      "Disco N° 14",
+      "Disco N° 16",
+      "Disco N° 18"
+    ],
+    "usage": "Base firme para armado, decoración, exhibición y transporte de tortas, tartas, pies y postres."
+  },
+  {
+    "id": "papel-de-hornear-alumware-50m",
+    "name": "Papel de Hornear / Parafinado Alumware (50 metros)",
+    "brand": "Alumware",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/papel-parafinado.webp",
+    "features": [
+      "Rollo comercial de 50 metros de longitud con recubrimiento antiadherente",
+      "Evita que las masas, galletas y bizcochos se peguen a las bandejas o moldes sin necesidad de engrasar en exceso",
+      "Resistente al calor de hornos gastronómicos y a la humedad de los alimentos"
+    ],
+    "presentation": "Rollo de 50 metros",
+    "usage": "Forrado de bandejas panaderas y moldes de repostería, horneado de galletas, merengues, bizcochos y envoltura de alimentos."
+  },
+  {
+    "id": "papel-de-aluminio-alumware-80m",
+    "name": "Papel de Aluminio Gastronómico Alumware (80 metros)",
+    "brand": "Alumware",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/papel-aluminio.webp",
+    "features": [
+      "Rollo institucional de 80 metros de longitud de alto rendimiento para cocinas profesionales",
+      "Lámina de aluminio de excelente calibre resistente al rasgado, altas temperaturas de horno y congelación",
+      "Barrera total contra luz, oxígeno, humedad y olores para conservar la frescura y el calor"
+    ],
+    "presentation": "Rollo de 80 metros",
+    "usage": "Cocción al horno, cobertura de bandejas gastronorm y chafing dishes, empaque térmico y conservación de alimentos."
+  },
+  {
+    "id": "capacillos-blancos-reposteria",
+    "name": "Capacillos Blancos para Repostería (N° 6 al 12)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/capacillos.webp",
+    "features": [
+      "Disponibles en numeraciones completas: N° 6, N° 7, N° 8, N° 9, N° 10, N° 11 y N° 12",
+      "Papel antigrasa plisado blanco que mantiene su forma durante el horneado y se desprende con facilidad",
+      "Presentación comercial en paquetes de 1000 unidades para alto volumen de producción"
+    ],
+    "presentation": "Paquete x 1000 unidades (N° 6, 7, 8, 9, 10, 11 y 12)",
+    "presentations": [
+      "Capacillo N° 6 (x1000 und)",
+      "Capacillo N° 7 (x1000 und)",
+      "Capacillo N° 8 (x1000 und)",
+      "Capacillo N° 9 (x1000 und)",
+      "Capacillo N° 10 (x1000 und)",
+      "Capacillo N° 11 (x1000 und)",
+      "Capacillo N° 12 (x1000 und)"
+    ],
+    "usage": "Horneado y presentación de ponquesitos, cupcakes, magdalenas, trufas, bombones, polvorosas y dulces criollos."
+  },
+  {
+    "id": "blondas-de-papel-caladas",
+    "name": "Blondas de Papel Caladas Redondas y Rectangulares",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/blonda-redonda.webp",
+    "features": [
+      "Disponibles en formato Redondo (N° 12, N° 14, N° 16 y N° 20) y Rectangular (N° 8x12)",
+      "Borde troquelado tipo encaje que realza con elegancia la presentación de tortas y bandejas de pasapalos",
+      "Paquetes institucionales de 250 unidades en papel blanco grado alimenticio"
+    ],
+    "presentation": "Paquete x 250 unidades (Redondas N° 12, 14, 16, 20 y Rectangular N° 8x12)",
+    "presentations": [
+      "Redonda N° 12 (x250 und)",
+      "Redonda N° 14 (x250 und)",
+      "Redonda N° 16 (x250 und)",
+      "Redonda N° 20 (x250 und)",
+      "Rectangular N° 8x12 (x250 und)"
+    ],
+    "usage": "Decoración y base higiénica en bandejas de pastelería, cajas de tortas, brazos gitanos, galletas y servicio de mesa."
+  },
+  {
+    "id": "papel-envoplast-polifilm-1500m",
+    "name": "Papel Envoplast Polifilm (1500m x 34cm)",
+    "brand": "Polifilm",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/papel-envoplast.webp",
+    "features": [
+      "Bobina industrial de 1500 metros de longitud por 34 cm de ancho",
+      "Película plástica extensible autoadherente de alta transparencia y resistencia al estiramiento",
+      "Protege los alimentos de la resequedad, contaminación cruzada y olores en refrigeración"
+    ],
+    "presentation": "Rollo de 1500 metros x 34 cm",
+    "usage": "Sellado de bandejas de anime, envoltura de carnes, quesos, frutas, masas en reposo y recipientes de cocina."
+  },
+  {
+    "id": "papel-sulfito-por-kilo",
+    "name": "Papel Sulfito para Panadería y Envoltura (Kg)",
+    "brand": "A-Comer",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/papel-sulfito.webp",
+    "features": [
+      "Papel blanco limpio y ligero apto para contacto directo con alimentos",
+      "Excelente flexibilidad para envolver panes, sándwiches, hamburguesas y productos recién horneados",
+      "Comercializado por kilogramo (Kg) para abastecimiento de panaderías y locales de comida"
+    ],
+    "presentation": "Por Kilogramo (Kg)",
+    "usage": "Envoltura higiénica de pan caliente, pastelería, charcutería, forrado de cestas de comida rápida y despacho."
   },
   {
     "id": "alcohol-solido-lata-carton",
