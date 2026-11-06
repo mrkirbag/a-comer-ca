@@ -25,5 +25,6 @@ pnpm-debug.log*
 
 # Large binaries and temporary assets
 public/catalogo acomer.pdf
+public/catalogo-a-comer.pdf
 scratch_*.png
 scratch/

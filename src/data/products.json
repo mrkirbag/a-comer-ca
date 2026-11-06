@@ -24,7 +24,7 @@
     "features": [
       "5 cámaras / Capacidad para 10 bandejas",
       "Dimensiones: 1.81 x 1.25 x 0.97 m",
-      "Funcionamiento a gas continuo de alto volumen"
+      "Funcionamiento a gas continuo de alto volumen con su termostato"
     ],
     "presentation": "Unidad industrial",
     "usage": "Alta producción continua en panaderías y plantas gastronómicas."
@@ -43,21 +43,6 @@
     ],
     "presentation": "Unidad con tazón en acero inox y 3 accesorios",
     "usage": "Mezclas de repostería, batidos livianos y masas suaves."
-  },
-  {
-    "id": "batidora-planetaria-senzani-30lt",
-    "name": "Batidora Planetaria Senzani 30L",
-    "brand": "Senzani",
-    "category": "equipos",
-    "subCategory": "",
-    "image": "/uploads/equipos/batidora-planetaria-senzani-10lt.webp",
-    "features": [
-      "Capacidad de 30 Litros",
-      "Voltaje 110V",
-      "3 accesorios (gancho, paleta y globo) y 3 velocidades"
-    ],
-    "presentation": "Unidad industrial con tazón reforzado y 3 accesorios",
-    "usage": "Producción industrial de masas, tortas y cremas."
   },
   {
     "id": "batidora-manual-doble-aspa",
@@ -83,7 +68,7 @@
     "image": "/uploads/equipos/fregadero-industrial-start-acero-inox.webp",
     "features": [
       "Fabricado íntegramente en acero inoxidable resistente",
-      "Medidas generales: 70 x 90 cm",
+      "Medidas generales: 70 x 90 x 33 cm",
       "1 ponchera profunda de alta capacidad"
     ],
     "presentation": "Unidad con estructura de soporte",
@@ -121,8 +106,8 @@
   },
   {
     "id": "molino-industrial-queso-american-1hp",
-    "name": "Molino Industrial para Queso American 1HP",
-    "brand": "American",
+    "name": "Molino Industrial para Queso 1HP",
+    "brand": "Tritacarne",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/molino-industrial-queso-american-1hp.webp",
@@ -151,8 +136,8 @@
   },
   {
     "id": "prensa-planchado-a-vapor",
-    "name": "Prensa de Planchado a Vapor de Ropaje",
-    "brand": "A-Comer",
+    "name": "Prensa de Planchado a Vapor",
+    "brand": "Elnapress",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/prensa-planchado.webp",
@@ -167,7 +152,7 @@
   {
     "id": "plancha-sandwichera-comercial",
     "name": "Plancha Sandwichera Comercial",
-    "brand": "A-Comer",
+    "brand": "Spidocook",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/plancha-sandwichera-comercial.webp",
@@ -197,7 +182,7 @@
   {
     "id": "balanza-electronica-mesa-30kg",
     "name": "Balanza Electrónica de Mesa 30kg",
-    "brand": "A-Comer",
+    "brand": "ML Plus",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/balanza-electronica-mesa-30kg.webp",
@@ -227,7 +212,7 @@
   {
     "id": "cafetera-greka-electrica",
     "name": "Cafetera Greka Eléctrica (30 y 120 Tazas)",
-    "brand": "A-Comer",
+    "brand": "Universal",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/cafetera-greka.webp",
@@ -259,7 +244,7 @@
   {
     "id": "maquina-para-hacer-pan-1kg",
     "name": "Máquina para Hacer Pan 1kg",
-    "brand": "A-Comer",
+    "brand": "Amazon",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/maquina-hacer-pan.webp",
@@ -471,7 +456,7 @@
   {
     "id": "bandeja-panadera-aluminio-acero-inox",
     "name": "Bandeja Panadera de Aluminio y Acero Inox",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-panadera-aluminio.webp",
@@ -486,7 +471,7 @@
   {
     "id": "bandeja-panadera-acanalada-perforada",
     "name": "Bandeja Panadera Acanalada Perforada",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-panadera-acan-perf.webp",
@@ -501,7 +486,7 @@
   {
     "id": "bandeja-panadera-aluminio-perforada",
     "name": "Bandeja Panadera de Aluminio Perforada",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-panadera-perf.webp",
@@ -516,7 +501,7 @@
   {
     "id": "bandeja-acanalada-para-grisini",
     "name": "Bandeja Acanalada para Grisini",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-grisini.webp",
@@ -531,7 +516,7 @@
   {
     "id": "bandeja-para-ponquesitos",
     "name": "Bandeja para Ponquesitos y Cupcakes",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-ponquesitos.webp",
@@ -546,7 +531,7 @@
   {
     "id": "bandeja-ovalada-ainox",
     "name": "Bandeja Ovalada de Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-ovalada-ainox.webp",
@@ -560,8 +545,8 @@
   },
   {
     "id": "bandeja-rectangular-ainox",
-    "name": "Bandeja Rectangular de A Inox para Buffet",
-    "brand": "A-Comer",
+    "name": "Bandeja Rectangular de A Inox para Buffet o Self-Service",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-rectangular-ainox.webp",
@@ -576,7 +561,7 @@
   {
     "id": "bandeja-redonda-ainox",
     "name": "Bandeja Redonda de Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
     "image": "/uploads/utensilios/bandejas/bandeja-redonda-ainox.webp",
@@ -591,7 +576,7 @@
   {
     "id": "olla-aluminio-tapa-hotelera",
     "name": "Olla de Aluminio con Tapa Hotelera",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Ollas",
     "image": "/uploads/utensilios/ollas/olla-aluminio-ctapa-hotelera.webp",
@@ -636,7 +621,7 @@
   {
     "id": "cacerola-aluminio-con-tapa",
     "name": "Cacerola de Aluminio con Tapa",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Ollas",
     "image": "/uploads/utensilios/ollas/cacerola-aluminio-ctapa.webp",
@@ -651,7 +636,7 @@
   {
     "id": "paila-cvertedero-sin-tapa",
     "name": "Paila con Vertedero sin Tapa",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Ollas",
     "image": "/uploads/utensilios/ollas/paila-cvertedero-stapa.webp",
@@ -666,7 +651,7 @@
   {
     "id": "molde-aluminio-redondo",
     "name": "Molde de Aluminio Redondo",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Moldes",
     "image": "/uploads/utensilios/moldes/molde-aluminio-redondo.webp",
@@ -681,7 +666,7 @@
   {
     "id": "molde-ppan-sandwich",
     "name": "Molde para Pan de Sándwich",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Moldes",
     "image": "/uploads/utensilios/moldes/molde-ppan-sandwich.webp",
@@ -696,7 +681,7 @@
   {
     "id": "molde-pie-fondo-removible",
     "name": "Molde para Pie con Fondo Removible Antiadherente",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Moldes",
     "image": "/uploads/utensilios/moldes/molde-ppie.webp",
@@ -711,7 +696,7 @@
   {
     "id": "molde-ppizza",
     "name": "Molde para Pizza",
-    "brand": "A-Comer",
+    "brand": "Alubat",
     "category": "utensilios",
     "subCategory": "Moldes",
     "image": "/uploads/utensilios/moldes/molde-ppizza.webp",
@@ -726,7 +711,7 @@
   {
     "id": "tijeras-de-cocina",
     "name": "Tijeras de Cocina Multiuso en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/tijeras-cocina.webp",
@@ -741,7 +726,7 @@
   {
     "id": "descorazonador-manzanas-frutas",
     "name": "Descorazonador de Manzanas y Frutas",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/descorazonador.webp",
@@ -756,7 +741,7 @@
   {
     "id": "tenedor-dos-puntas-ainox",
     "name": "Tenedor de Dos Puntas en Acero Inoxidable (Trinchador)",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/tenedor-dospuntas-ainox.webp",
@@ -771,7 +756,7 @@
   {
     "id": "cuchara-lisa-enteriza-acero-inox",
     "name": "Cuchara Lisa Enteriza en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/cuchara-lisa.webp",
@@ -786,7 +771,7 @@
   {
     "id": "cuchara-con-ranura-acero-inox",
     "name": "Cuchara con Ranuras para Servir en Acero Inox",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/cuchara-cranura.webp",
@@ -801,7 +786,7 @@
   {
     "id": "colador-industrial-aluminio-ainox",
     "name": "Colador Industrial en Acero Inoxidable / Aluminio",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/colador-industrial-aluminio.webp",
@@ -816,7 +801,7 @@
   {
     "id": "colador-para-pasta-con-mango",
     "name": "Colador para Pasta con Mango en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/colador-pasta.webp",
@@ -831,7 +816,7 @@
   {
     "id": "flanera-con-tapa-aluminio",
     "name": "Flanera con Tapa en Aluminio / Acero",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/flanera.webp",
@@ -846,7 +831,7 @@
   {
     "id": "escudilla-bowl-acero-inox",
     "name": "Escudilla / Bol Mezclador en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/escudilla-redonda.webp",
@@ -861,7 +846,7 @@
   {
     "id": "pala-para-cocina-ainox",
     "name": "Pala Espátula para Cocina en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/pala-cocina.webp",
@@ -876,7 +861,7 @@
   {
     "id": "rallo-para-quesos-duros",
     "name": "Rallo para Quesos Duros y Cítricos en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/rallo-quesos.webp",
@@ -891,7 +876,7 @@
   {
     "id": "portacuchillos-magnetico-mesa-ainox",
     "name": "Portacuchillos en Acero Inoxidable (Barra / Bloque)",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/porta-cuchillos.webp",
@@ -906,7 +891,7 @@
   {
     "id": "portavajillas-secador-ainox",
     "name": "Portavajillas y Escurridor en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/porta-vajillas.webp",
@@ -921,7 +906,7 @@
   {
     "id": "sacacorchos-camping-casa",
     "name": "Sacacorchos Camping / Casa",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/sacacorchos.webp",
@@ -937,7 +922,7 @@
   {
     "id": "picahielo-acero-inox",
     "name": "Picahielo en Acero Inoxidable con Mango Reforzado",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/picahielo.webp",
@@ -952,7 +937,7 @@
   {
     "id": "mandolina-cortadora-vegetales-ainox",
     "name": "Mandolina Cortadora de Vegetales en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/mandolina.webp",
@@ -967,7 +952,7 @@
   {
     "id": "chaira-estriada-afilar-ainox",
     "name": "Chaira Estriada para Afilar Cuchillos en Acero Inox",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/chaira.webp",
@@ -982,7 +967,7 @@
   {
     "id": "pinza-para-pan-acero-inox",
     "name": "Pinzas para Pan en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/pinza-ppan.webp",
@@ -997,7 +982,7 @@
   {
     "id": "espumadera-alambre-acero-inox",
     "name": "Espumadera de Malla / Alambre en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/espumadera.webp",
@@ -1012,7 +997,7 @@
   {
     "id": "cucharon-servir-acero-inox",
     "name": "Cucharón para Servir en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/cucharon.webp",
@@ -1027,7 +1012,7 @@
   {
     "id": "jarra-cremera-leche-ainox",
     "name": "Jarra Barista para Leche en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/jarras-leche.webp",
@@ -1042,7 +1027,7 @@
   {
     "id": "pala-para-pizza-aluminio",
     "name": "Pala para Pizza en Aluminio con Mango",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/pala-pizza.webp",
@@ -1057,7 +1042,7 @@
   {
     "id": "pocillo-acero-inoxidable",
     "name": "Pocillo en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/pocillo-ainox.webp",
@@ -1072,7 +1057,7 @@
   {
     "id": "cuchara-de-cocina-perforada",
     "name": "Cuchara de Cocina Perforada en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/cuchara-perforada.webp",
@@ -1087,7 +1072,7 @@
   {
     "id": "cortador-de-masa-doble",
     "name": "Cortador de Masa Doble",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/cortador-masa.webp",
@@ -1102,7 +1087,7 @@
   {
     "id": "cortador-de-pizza",
     "name": "Cortador de Pizza",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/cortador-pizza.webp",
@@ -1117,7 +1102,7 @@
   {
     "id": "pelador-de-verduras-sacapuntas",
     "name": "Pelador de Verduras Tipo Sacapuntas",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/pelador-sacapuntas.webp",
@@ -1132,7 +1117,7 @@
   {
     "id": "tapa-tobo-bano-maria-ainox",
     "name": "Tapa para Tobo Baño María en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Aluminio / A-Inox",
     "image": "/uploads/utensilios/aluminio-ainox/tapa-tobo-bano-maria.webp",
@@ -1206,13 +1191,13 @@
   },
   {
     "id": "rodillo-de-madera",
-    "name": "Rodillo para Amasar en Madera",
+    "name": "Rodillo para Amasar en Madera con Rolinera",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Madera",
     "image": "/uploads/utensilios/madera/rodillo-madera.webp",
     "features": [
-      "Cilindro de madera maciza lisa de rotación equilibrada",
+      "Cilindro de madera maciza lisa de rotación equilibrada con su Rolinera",
       "Mangos ergonómicos laterales para presión uniforme sobre la masa",
       "Superficie antiadherente al enharinar"
     ],
@@ -1267,7 +1252,7 @@
   {
     "id": "espatula-chef-lisa",
     "name": "Espátula de Chef Lisa en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alco",
     "category": "utensilios",
     "subCategory": "Espátulas",
     "image": "/uploads/utensilios/espatulas/espatula-lisa.webp",
@@ -1282,7 +1267,7 @@
   {
     "id": "espatula-chef-perforada",
     "name": "Espátula de Chef Perforada en Acero Inoxidable",
-    "brand": "A-Comer",
+    "brand": "Alco",
     "category": "utensilios",
     "subCategory": "Espátulas",
     "image": "/uploads/utensilios/espatulas/espatula-perf.webp",
@@ -1296,13 +1281,13 @@
   },
   {
     "id": "espatula-pastelera-escalonada",
-    "name": "Espátula Pastelera Escalonada (Codo) Acero Inox",
-    "brand": "A-Comer",
+    "name": "Espátula Pastelera de  35cm",
+    "brand": "Supplies",
     "category": "utensilios",
     "subCategory": "Espátulas",
     "image": "/uploads/utensilios/espatulas/espatula-pasteleria-supp.webp",
     "features": [
-      "Diseño en ángulo / codo que mantiene los dedos alejados del glaseado",
+      "Diseño especial para glaseados",
       "Hoja flexible de acero inoxidable para esparcir cremas uniformemente",
       "Acabado pulido sanitario de fácil limpieza"
     ],
@@ -1327,29 +1312,29 @@
   {
     "id": "espatula-pastelera-mango-madera",
     "name": "Espátula Pastelera con Mango de Madera",
-    "brand": "A-Comer",
+    "brand": "Alco",
     "category": "utensilios",
     "subCategory": "Espátulas",
     "image": "/uploads/utensilios/espatulas/espatula-mmadera.webp",
     "features": [
-      "Hoja recta y flexible en acero inoxidable de precisión",
+      "Hoja recta y flexible en acero inoxidable",
       "Cabo clásico en madera tratada con remaches sólidos",
-      "Excelente tacto y balance para decoración fina"
+      "Excelente tacto y balance para repostería y glaseados"
     ],
     "presentation": "Por unidad según longitud",
     "usage": "Coberturas de fondant, crema chantilly, buttercream y ganache."
   },
   {
     "id": "espatula-pastelera-mango-plastico",
-    "name": "Espátula Pastelera con Mango Plástico Sanitario",
-    "brand": "A-Comer",
+    "name": "Espátula Pastelera con Mango Plástico",
+    "brand": "Alco",
     "category": "utensilios",
     "subCategory": "Espátulas",
     "image": "/uploads/utensilios/espatulas/espatula-mplastico.webp",
     "features": [
       "Hoja delgada y flexible de acero inoxidable",
-      "Mango de polipropileno sanitario antideslizante apto para lavavajillas",
-      "Disponible en medidas estándar para pastelería y repostería"
+      "Mango de plástico",
+      "Excelente tacto y balance para repostería y glaseados"
     ],
     "presentation": "Por unidad según medida",
     "usage": "Esparcido, alisado y trabajo detallado en repostería profesional."
@@ -1357,7 +1342,7 @@
   {
     "id": "espatulas-de-silicon-miserables",
     "name": "Espátulas de Silicón Termorresistente (Miserables)",
-    "brand": "A-Comer",
+    "brand": "Joie",
     "category": "utensilios",
     "subCategory": "Espátulas",
     "image": "/uploads/utensilios/espatulas/espatula-silicon.webp",
@@ -1402,7 +1387,7 @@
   {
     "id": "manga-pastelera-con-boquillas",
     "name": "Manga Pastelera con Juego de Boquillas",
-    "brand": "A-Comer",
+    "brand": "Cook Concept",
     "category": "utensilios",
     "subCategory": "Plásticos",
     "image": "/uploads/utensilios/plasticos/manga-pastelera.webp",
@@ -1461,14 +1446,14 @@
   },
   {
     "id": "tarocos-plasticos-pequenos",
-    "name": "Tarocos / Envases Plásticos Pequeños",
+    "name": "Raspadores de Ollas de Teflón",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
     "image": "/uploads/utensilios/plasticos/tarocos.webp",
     "features": [
-      "Formato compacto ideal para almacenamiento de insumos y porciones",
-      "Tapa de ajuste seguro que conserva la frescura",
+      "Ideal para no dañar la superficie de ollas o sartenes",
+      "Raspador para cualquier tipo de comida",
       "Material plástico higiénico, reutilizable y apilable"
     ],
     "presentation": "Por unidad y paquetes",
@@ -1477,7 +1462,7 @@
   {
     "id": "cortador-de-plastico-moldes",
     "name": "Juego de Cortadores de Plástico para Galletas y Masa",
-    "brand": "A-Comer",
+    "brand": "Supplies",
     "category": "utensilios",
     "subCategory": "Plásticos",
     "image": "/uploads/utensilios/plasticos/cortador-plastic.webp",
@@ -1499,85 +1484,40 @@
     "features": [
       "Herramienta de precisión para calado y tallado decorativo",
       "Mango plástico ergonómico de control preciso",
-      "Ideal para crear esferas, canales y espirales en frutas frescas"
+      "Ideal para crear esferas, canales y espirales en frutas"
     ],
     "presentation": "Unidad individual",
-    "usage": "Tallado de piñas, melones, sandías y decoración de buffets de frutas."
+    "usage": "Tallado de piñas, melones, sandías y decoración."
   },
   {
     "id": "cesta-plastica-amarilla-comida-rapida",
-    "name": "Cesta Plástica Amarilla para Comida Rápida",
+    "name": "Cesta Plástica Amarilla Multiusos",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
     "image": "/uploads/utensilios/plasticos/cesta-amarilla.webp",
     "features": [
-      "Diseño calado clásico americano para ventilación de alimentos crujientes",
-      "Plástico resistente a grasas y calor moderado, apto para papel antigrasa",
-      "Apilamiento ultracompacto para servicio rápido"
+      "Diseño calado clásico americano para múltiples usos",
+      "Plástico resistente",
+      "Apilamiento ultracompacto"
     ],
     "presentation": "Por unidad y paquetes institucionales",
     "usage": "Servicio de hamburguesas, papas fritas, alitas, empanadas y snacks en mesa."
   },
   {
     "id": "cesta-plastica-negra-comida-rapida",
-    "name": "Cesta Plástica Negra para Comida Rápida",
+    "name": "Cesta Plástica Negra Multiusos",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
     "image": "/uploads/utensilios/plasticos/cesta-negra.webp",
     "features": [
       "Acabado negro mate moderno de alta resistencia",
-      "Estructura perforada que evita que el vapor ablande los fritos",
-      "Fácil de lavar, higienizar y desinfectar entre servicios"
+      "Diseño calado clásico americano para múltiples usos",
+      "Apilamiento ultracompacto"
     ],
     "presentation": "Por unidad y paquetes",
     "usage": "Presentación moderna de comida rápida, tequeños, sándwiches y aperitivos."
-  },
-  {
-    "id": "canasta-plastica-1x4",
-    "name": "Canasta Plástica Organizadora 1x4 Compartimientos",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Plásticos",
-    "image": "/uploads/utensilios/plasticos/canasta.webp",
-    "features": [
-      "4 compartimientos profundos para clasificar cubiertos, aderezos o utensilios",
-      "Asa ergonómica central para transporte rápido",
-      "Estructura plástica rígida de alto impacto para uso intensivo"
-    ],
-    "presentation": "Unidad individual",
-    "usage": "Organización de cubiertos, servilletas y salsas en mesas y buffets."
-  },
-  {
-    "id": "canastilla-plastica-multiuso",
-    "name": "Canastilla Plástica Multiuso para Cocina",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Plásticos",
-    "image": "/uploads/utensilios/plasticos/canastilla.webp",
-    "features": [
-      "Rejilla ventilada para lavado, escurrido y transporte de ingredientes",
-      "Bordes reforzados para sujeción cómoda con peso",
-      "Material sanitario lavable y resistente a químicos de limpieza"
-    ],
-    "presentation": "Unidad individual",
-    "usage": "Lavado de frutas, escurrido de hortalizas y almacenamiento de insumos."
-  },
-  {
-    "id": "botella-decorar-con-boquillas",
-    "name": "Botella Plástica para Decorar con Boquillas",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Plásticos",
-    "image": "/uploads/utensilios/plasticos/botella-decorar.webp",
-    "features": [
-      "Botella translúcida flexible que permite ver el nivel de contenido",
-      "Tapa con rosca compatible con boquillas pasteleras estándar",
-      "Control de dosificación fino con suave presión manual"
-    ],
-    "presentation": "Unidad con juego de boquillas",
-    "usage": "Decoración de platos, líneas finas de salsa, chocolate líquido y glaseados."
   },
   {
     "id": "jeringa-para-decoracion-reposteria",
@@ -1626,33 +1566,18 @@
   },
   {
     "id": "embudos-de-silicon",
-    "name": "Embudos de Silicón",
+    "name": "Embudos de Silicón Retraibles",
     "brand": "A-Comer",
     "category": "utensilios",
     "subCategory": "Plásticos",
     "image": "/uploads/utensilios/plasticos/embudos-silicon.webp",
     "features": [
-      "Silicón flexible de grado alimenticio resistente a líquidos fríos y calientes",
+      "Silicón flexible de grado alimenticio resistente a líquidos fríos y calientes o sólidos",
       "Diseño plegable o apilable que ahorra espacio de almacenamiento en cocina",
       "No retiene olores ni manchas y es muy fácil de lavar"
     ],
     "presentation": "Por unidad / Set",
     "usage": "Trasvase limpio de aceites, esencias, jarabes, salsas, cremas y polvos hacia envases o botellas."
-  },
-  {
-    "id": "chefandish-electrico-acero-inox",
-    "name": "Chefandish Eléctrico en Acero Inoxidable",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Servicios",
-    "image": "/uploads/utensilios/servicios/chefanddish-electrico.webp",
-    "features": [
-      "Sistema de calefacción eléctrica integrada sin alcohol",
-      "Cuerpo y depósito gastronómico en acero inoxidable brillante",
-      "Control térmico para mantener alimentos a temperatura óptima"
-    ],
-    "presentation": "Unidad completa con bandeja gastronorm y tapa",
-    "usage": "Buffets, caterings, hoteles y banquetes de autoservicio."
   },
   {
     "id": "chefandish-para-mariscos",
@@ -1663,8 +1588,8 @@
     "image": "/uploads/utensilios/servicios/chefandish-para-mariscos.webp",
     "features": [
       "Diseño especializado para pescados, mariscos y paellas",
-      "Fabricado en acero inoxidable de alto brillo",
-      "Mantiene la humedad y temperatura sin resecar los alimentos"
+      "Plato cerámico refractado de 25 cm de diámetro con su tapa",
+      "Base de acero inoxidable de 32,5 cm de diámetro"
     ],
     "presentation": "Chafing dish con bandeja marina y soporte para quemador",
     "usage": "Servicio elegante y exhibición de mariscos en buffets y eventos."
@@ -1694,25 +1619,10 @@
     "features": [
       "Sistema de bisagra de apertura cómoda para autoservicio",
       "Acero inoxidable higiénico y de fácil limpieza",
-      "Conserva la frescura y temperatura de los alimentos"
+      "Medidas: 52x32"
     ],
     "presentation": "Unidad adaptable a bandejas estándar",
     "usage": "Líneas de buffet, barras de ensaladas y mostradores de autoservicio."
-  },
-  {
-    "id": "tapa-self-service-policarbonato-transparente",
-    "name": "Tapa Self Service en Policarbonato Transparente",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Servicios",
-    "image": "/uploads/utensilios/servicios/tapa-self-service-policarbonato.webp",
-    "features": [
-      "Policarbonato transparente irrompible de alto impacto",
-      "Permite visibilidad completa del producto sin destapar",
-      "Ranura frontal o bisagra de acceso rápido"
-    ],
-    "presentation": "Unidad en policarbonato cristal",
-    "usage": "Exhibición higiénica de alimentos en barras frías y autoservicio."
   },
   {
     "id": "tapa-self-service-acero-inox-medidas",
@@ -1833,21 +1743,6 @@
     ],
     "presentation": "Unidad individual (20.5 cm)",
     "usage": "Servicio de mariscos, pescados enteros, carnes al horno, gratines y arroces."
-  },
-  {
-    "id": "cazuela-refractaria-redonda",
-    "name": "Cazuela Refractaria Redonda",
-    "brand": "A-Comer",
-    "category": "menajes",
-    "subCategory": "Acero Inoxidable",
-    "image": "/uploads/menajes/acero/cazuela-refractaria-redonda.webp",
-    "features": [
-      "Cuerpo refractario de gran espesor resistente a altas temperaturas de horno",
-      "Diseño redondo clásico con reborde exterior para manipulación segura",
-      "Excelente retención térmica que mantiene los alimentos calientes hasta la mesa"
-    ],
-    "presentation": "Unidad individual",
-    "usage": "Horneado y servicio directo de pastichos, gratines de verduras, cremas y guisos."
   },
   {
     "id": "cazuela-ovalada-acero-inoxidable",
@@ -2212,7 +2107,7 @@
   {
     "id": "capsulas-de-cafe-reutilizables-cook-concept",
     "name": "Cápsulas de Café Reutilizables Cook Concept en Acero Inoxidable",
-    "brand": "Cook Concept",
+    "brand": "A-Comer",
     "category": "menajes",
     "subCategory": "Acero Inoxidable",
     "image": "/uploads/menajes/acero/capsulas-cafe.webp",
@@ -2227,7 +2122,7 @@
   {
     "id": "hielera-vidrio-sin-asa",
     "name": "Hielera de Vidrio para Mesa Sin Asa",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/hielera-vidrio.webp",
@@ -2242,7 +2137,7 @@
   {
     "id": "copa-de-vidrio-margarita-12oz",
     "name": "Copa de Vidrio para Margarita (12oz)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/copa-margarita.webp",
@@ -2257,7 +2152,7 @@
   {
     "id": "copa-de-vidrio-flauta",
     "name": "Copa de Vidrio Tipo Flauta",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/copa-flauta.webp",
@@ -2272,7 +2167,7 @@
   {
     "id": "cenicero-vidrio-portofino-facetado",
     "name": "Cenicero de Vidrio Portofino Facetado",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/cenicero-vidrio.webp",
@@ -2287,7 +2182,7 @@
   {
     "id": "jarra-vidrio-agua-cilindrica-torneada",
     "name": "Jarra de Vidrio Cilíndrica Torneada (1.5L)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/jarra-torneada.webp",
@@ -2302,7 +2197,7 @@
   {
     "id": "jarra-vidrio-agua-cilindrica-lisa",
     "name": "Jarra de Vidrio Cilíndrica Lisa (0.5L / 1.5L)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/jarra-cilindro.webp",
@@ -2317,7 +2212,7 @@
   {
     "id": "jarra-vidrio-agua-globo-torneada",
     "name": "Jarra de Vidrio en Globo Torneada (1.5L)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/jarra-globo-torneada.webp",
@@ -2332,7 +2227,7 @@
   {
     "id": "jarra-vidrio-agua-globo-lisa",
     "name": "Jarra de Vidrio en Globo Lisa (1.5L)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/jarra-globo.webp",
@@ -2347,7 +2242,7 @@
   {
     "id": "vaso-vidrio-durable-10-5oz-7-5oz",
     "name": "Vaso de Vidrio Durable (10.5oz / 7.5oz)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/vaso-durable.webp",
@@ -2362,7 +2257,7 @@
   {
     "id": "vaso-vidrio-familiar-11oz-6-5oz",
     "name": "Vaso de Vidrio Familiar (11oz / 6.5oz)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/vaso-familiar.webp",
@@ -2377,7 +2272,7 @@
   {
     "id": "vaso-vidrio-high-class",
     "name": "Vaso de Vidrio High Class",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/vaso-highclass.webp",
@@ -2392,7 +2287,7 @@
   {
     "id": "vaso-vidrio-old-fashion-whisky",
     "name": "Vaso de Vidrio Old Fashion",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/vaso-oldf.webp",
@@ -2407,7 +2302,7 @@
   {
     "id": "vaso-vidrio-triana-300ml-10oz",
     "name": "Vaso de Vidrio Triana (300ml / 10oz)",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/vaso-triana.webp",
@@ -2422,7 +2317,7 @@
   {
     "id": "vaso-vidrio-liso-redondo",
     "name": "Vaso de Vidrio Liso Redondo",
-    "brand": "A-Comer",
+    "brand": "Vidosa",
     "category": "menajes",
     "subCategory": "Vidrio",
     "image": "/uploads/menajes/vidrio/vaso-liso-redondo.webp",
@@ -2433,6 +2328,36 @@
     ],
     "presentation": "Por unidad y cajas de 12 unidades",
     "usage": "Bebidas frías, cocteles de autor, aperitivos y servicio de mesa en restaurantes gourmet."
+  },
+  {
+    "id": "cazuela-refractaria-redonda",
+    "name": "Cazuela Refractaria Redonda",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Cerámica",
+    "image": "/uploads/menajes/ceramica/cazuela-refractaria-redonda.webp",
+    "features": [
+      "Cuerpo refractario de gran espesor resistente a altas temperaturas de horno",
+      "Diseño redondo clásico con reborde exterior para manipulación segura",
+      "Excelente retención térmica que mantiene los alimentos calientes hasta la mesa"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Horneado y servicio directo de pastichos, gratines de verduras, cremas y guisos."
+  },
+  {
+    "id": "plato-ceramico-mesa-borde-dorado",
+    "name": "Plato Cerámico de Mesa con Borde Dorado",
+    "brand": "A-Comer",
+    "category": "menajes",
+    "subCategory": "Cerámica",
+    "image": "/uploads/menajes/ceramica/plato-dorado.webp",
+    "features": [
+      "Cerámica esmaltada de alta resistencia con elegante filo decorativo en color dorado",
+      "Superficie lisa brillante que realza la presentación de platos principales y entradas",
+      "Diseño distinguido ideal para eventos, banquetes, restaurantes y servicio gourmet"
+    ],
+    "presentation": "Por unidad y juegos de vajilla",
+    "usage": "Servicio y presentación elegante de platos fuertes, entradas y postres en mesas de restaurantes, hoteles y eventos."
   },
   {
     "id": "color-oro-en-polvo",
@@ -2595,6 +2520,68 @@
       "Presentaciones industriales y comerciales: 1/4 Litro (CTL), 1 Litro (LT) y 1 Galón (GL)",
       "Fórmula termorresistente que no se evapora durante el horneado",
       "Gama completa de 24 sabores frutales, lácteos, cítricos y tradicionales"
+    ],
+    "presentation": "1/4 de Litro (CTL), 1 Litro (LT) y 1 Galón (GL)",
+    "usage": "Aromatización y saborización de tortas, cupcakes, helados artesanales, gelatinas, bebidas, galletas y panes especiales.",
+    "presentations": [
+      "Cuarto de Litro (1/4 L - CTL)",
+      "1 Litro (LT)",
+      "1 Galón (GL)"
+    ],
+    "flavors": [
+      "Almendra",
+      "Anís",
+      "Aroma de Leche",
+      "Arequipe - Emulsión",
+      "Banana",
+      "Coco - Emulsión",
+      "Fresa",
+      "Chiclets",
+      "Limón",
+      "Mantequilla",
+      "Mantecado",
+      "Ron con Pasas",
+      "Naranja",
+      "Piña",
+      "Ron Jamaica",
+      "Nata",
+      "Queso",
+      "Suave Pan",
+      "Panetone",
+      "Pistacho",
+      "Cereza",
+      "Tutti Frutti",
+      "Vainilla Blanca",
+      "Vainilla Negra",
+      "Mandarina",
+      "Humo",
+      "Maní",
+      "Parchita",
+      "Guanábana",
+      "Canela",
+      "Cola Champagne",
+      "Cacao",
+      "Manzana",
+      "Menta",
+      "Uva Morada",
+      "Frambuesa",
+      "Café Mocca"
+    ]
+  },
+  {
+    "id": "esencias-sabores-liquidos-lurie",
+    "name": "Esencias y Sabores Líquidos Lurie (Línea Económica)",
+    "brand": "Lurie",
+    "category": "insumos",
+    "subCategory": "Colores y Sabores",
+    "subSubCategory": "Sabores Líquidos",
+    "image": "/uploads/insumos/colores-sabores/esencias-lurie.webp",
+    "description": "Línea económica de esencias y sabores líquidos concentrados con la misma variedad de sabores y presentaciones comerciales que la línea tradicional, ideal para optimizar costos de producción sin sacrificar aroma ni rendimiento.",
+    "features": [
+      "Línea económica de esencias y emulsiones líquidas de excelente rendimiento y aroma definido",
+      "Presentaciones industriales y comerciales: 1/4 Litro (CTL), 1 Litro (LT) y 1 Galón (GL)",
+      "Fórmula termorresistente que no se evapora durante el horneado",
+      "Gama completa de 37 sabores frutales, lácteos, cítricos y tradicionales"
     ],
     "presentation": "1/4 de Litro (CTL), 1 Litro (LT) y 1 Galón (GL)",
     "usage": "Aromatización y saborización de tortas, cupcakes, helados artesanales, gelatinas, bebidas, galletas y panes especiales.",
@@ -3732,6 +3719,138 @@
       }
     ],
     "usage": "Relleno horneable para pastelitos, empanadas dulces, donas, brazos gitanos, tartaletas, galletas pepas, bizcochuelos y brillo superficial para tartas."
+  },
+  {
+    "id": "aceitunas-linea-verde",
+    "name": "Aceitunas Seleccionadas",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Línea Verde",
+    "image": "/uploads/insumos/linea-verde/aceitunas.webp",
+    "description": "Aceitunas de primera calidad, carnosas y de sabor equilibrado, protagonistas indispensables en la elaboración del tradicional pan de jamón y las hallacas venezolanas, así como en pizzas, ensaladas, guisos y pasapalos.",
+    "features": [
+      "Ingrediente estrella e infaltable para la preparación de hallacas tradicionales y pan de jamón navideño",
+      "Pulpa firme, carnosa y jugosa conservada en salmuera balanceada que mantiene su textura durante el horneado y la cocción",
+      "Ideales para enriquecer guisos navideños, asado negro, carne mechada, pizzas, focaccias, pastas mediterráneas y ensaladas",
+      "Disponibles en presentaciones comerciales e industriales de 1 kg, 5 kg y 25 kg para panaderías, restaurantes y catering"
+    ],
+    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Elaboración de pan de jamón, adorno y guiso de hallacas, bollos navideños, pizzas, empanadas, ensalada de gallina, pastas, antipastos y pasapalos."
+  },
+  {
+    "id": "alcaparras-linea-verde",
+    "name": "Alcaparras Seleccionadas",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Línea Verde",
+    "image": "/uploads/insumos/linea-verde/alcaparras.webp",
+    "description": "Alcaparras tiernas de aroma intenso y toque ácido-salino característico, esenciales para el guiso y adorno de las hallacas y fundamentales en salsas clásicas como la tártara, puttanesca, piccata y vinagretas.",
+    "features": [
+      "Toque tradicional indispensable en el guiso y decoración de las hallacas venezolanas y platos navideños",
+      "Ingrediente base para las salsas que la llevan: salsa tártara, salsa puttanesca, salsa piccata, remoulade y vinagretas mediterráneas",
+      "Botones florales firmes y seleccionados que realzan el sabor de carnes, aves, pescados, mariscos y antipastos",
+      "Presentaciones rendidoras de 1 kg, 5 kg y 25 kg adaptadas a cocinas profesionales, panaderías y procesadores de salsas"
+    ],
+    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Guiso y armado de hallacas, preparación de salsa tártara, salsa puttanesca para pastas, pollo o pescado al limón y alcaparras (piccata), asado negro, antipastos y ensaladas."
+  },
+  {
+    "id": "uva-pasa-linea-verde",
+    "name": "Uva Pasa Seleccionada",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Línea Verde",
+    "image": "/uploads/insumos/linea-verde/uva-pasa.webp",
+    "description": "Uvas pasas dulces, jugosas y sin semillas, imprescindibles para el clásico contraste dulce-salado en el pan de jamón y las hallacas, además de torta negra, panettone, bollería y repostería tradicional.",
+    "features": [
+      "Protagonista indiscutible en el relleno del pan de jamón y en la confección y guiso de las hallacas",
+      "Granos seleccionados sin semilla, de textura tierna y carnosa con dulzor natural concentrado",
+      "Excelente comportamiento en horneado y maceración con licores para torta negra navideña, panettone, roles de canela y galletas",
+      "Empaques comerciales de 1 kg, 5 kg y 25 kg que preservan su humedad, frescura y suavidad"
+    ],
+    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Pan de jamón, hallacas, torta negra navideña, panettone, roscas dulces, golfeados, galletas de avena, arroz con leche, helado de ron con pasas y rellenos de carnes."
+  },
+  {
+    "id": "almendra-fileteada-linea-verde",
+    "name": "Almendra Fileteada (Laminada)",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Línea Verde",
+    "image": "/uploads/insumos/linea-verde/almendra-fileteada.webp",
+    "description": "Almendras naturales peladas y cortadas en láminas finas y crocantes, ideales para decorar y hornear croissants de almendras, tartaletas, tortas, panettones, ensaladas gourmet y platos de cocina internacional.",
+    "features": [
+      "Láminas delgadas y uniformes de almendra seleccionada que adquieren un dorado y crujido excepcionales al tostar u hornear",
+      "Ideales para pastelería fina: croissants de almendras, tartas frangipane, cobertura de tortas, roscas y galletas",
+      "Aportan textura y distinción en cocina salada: pescados y aves a la almendra, arroces festivos, ensaladas frescas y granolas",
+      "Disponibles en presentaciones de 1 kg, 5 kg y 25 kg con frescura garantizada libre de rancidez"
+    ],
+    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Croissants y hojaldres de almendra, decoración de tortas y tartas, panettone, galletas, granola artesanal, ensaladas gourmet, trucha o pollo a las almendras y arroces."
+  },
+  {
+    "id": "almendra-con-piel-linea-verde",
+    "name": "Almendra Entera con Piel",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Línea Verde",
+    "image": "/uploads/insumos/linea-verde/almendra-cpiel.webp",
+    "description": "Almendras enteras naturales con piel de calibre seleccionado y mordida extra crujiente, utilizadas en turrones, garrapiñadas, chocolatería, torta negra, biscotti, elaboración de harina o leche de almendras y snacks.",
+    "features": [
+      "Almendras enteras de primera calidad con su piel natural rica en fibra, antioxidantes y sabor intenso al tostar",
+      "Uso versátil en confitería y chocolatería: turrones, almendras garrapiñadas, pralinés, bombones y tabletas de chocolate",
+      "Excelente base para repostería tradicional y saludable: biscotti (cantuccini), torta negra, mazapán, mantequilla y harina de almendras",
+      "Presentaciones de 1 kg, 5 kg y 25 kg para panaderías, chocolaterías, pastelerías y tiendas de frutos secos"
+    ],
+    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Turrones, garrapiñadas, praliné, chocolatería, torta negra navideña, panettone, biscotti, elaboración de harina y bebida de almendras, granolas y tablas de quesos."
+  },
+  {
+    "id": "nueces-cerebrito-linea-verde",
+    "name": "Nueces Cerebrito (Mariposa)",
+    "brand": "A-Comer",
+    "category": "insumos",
+    "subCategory": "Línea Verde",
+    "image": "/uploads/insumos/linea-verde/nueces.webp",
+    "description": "Nueces tipo cerebrito (mitades mariposa) seleccionadas por su frescura y sabor mantecoso, indispensables en brownies, torta de zanahoria, torta negra navideña, baklava, galletas, ensalada Waldorf y salsas gourmet.",
+    "features": [
+      "Mitades de nuez tipo cerebrito limpias, frescas y crujientes, sin restos de cáscara ni amargor",
+      "Clásicas en repostería y panadería: brownies con nueces, torta de zanahoria (carrot cake), torta negra navideña, panettone y baklava",
+      "Ideales en gastronomía salada: ensalada Waldorf, salsas de nuez para pastas y ravioles, rellenos navideños y tablas de quesos madurados",
+      "Suministro comercial en formatos de 1 kg, 5 kg y 25 kg para obradores, restaurantes y pastelerías"
+    ],
+    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentations": [
+      "1 kg",
+      "5 kg",
+      "25 kg"
+    ],
+    "usage": "Brownies, torta de zanahoria, torta negra navideña, panettone, galletas chocochips con nuez, baklava, strudel, ensalada Waldorf, salsas para pastas y bombonería."
   },
   {
     "id": "lonchero-hamburguesa-alto-blanco",
