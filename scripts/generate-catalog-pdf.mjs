@@ -127,9 +127,8 @@ function renderPresentations(product) {
             .map((p) => `<span class="pres-pill">${escapeHtml(p)}</span>`)
             .join("");
         return `
-            <div class="pres-box">
+            <div class="pres-box pres-box--pills">
                 <span class="pres-label">Presentaciones:</span>
-                <span class="pres-main">${escapeHtml(basePres)}</span>
                 <div class="pres-pills">${pills}</div>
             </div>
         `;
@@ -376,7 +375,7 @@ const fullHtml = `<!DOCTYPE html>
         .page {
             width: 210mm;
             height: 297mm;
-            padding: 5.5mm 6.5mm 5mm 6.5mm;
+            padding: 4.2mm 5.2mm 3.8mm 5.2mm;
             background: var(--cream);
             display: flex;
             flex-direction: column;
@@ -401,8 +400,8 @@ const fullHtml = `<!DOCTYPE html>
             background: #ffffff;
             border: 0.3mm solid rgba(122, 0, 16, 0.22);
             border-radius: 2.2mm;
-            padding: 2mm 3.2mm;
-            height: 17.5mm;
+            padding: 1.6mm 3mm;
+            height: 15.8mm;
             flex-shrink: 0;
             box-shadow: 0 0.5mm 1.5mm rgba(122, 0, 16, 0.05);
         }
@@ -417,7 +416,7 @@ const fullHtml = `<!DOCTYPE html>
         }
 
         .lh-logo {
-            height: 13mm;
+            height: 12mm;
             width: auto;
             object-fit: contain;
             display: block;
@@ -429,7 +428,7 @@ const fullHtml = `<!DOCTYPE html>
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 0.5mm;
+            gap: 0.4mm;
         }
 
         .lh-company-row {
@@ -505,9 +504,9 @@ const fullHtml = `<!DOCTYPE html>
 
         .lh-divider {
             display: flex;
-            height: 0.9mm;
+            height: 0.8mm;
             width: 100%;
-            margin: 1.2mm 0 1.6mm 0;
+            margin: 0.9mm 0 1.2mm 0;
             border-radius: 99px;
             overflow: hidden;
             flex-shrink: 0;
@@ -532,14 +531,14 @@ const fullHtml = `<!DOCTYPE html>
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             grid-template-rows: repeat(6, minmax(0, 1fr));
-            column-gap: 2.8mm;
-            row-gap: 2.1mm;
+            column-gap: 2.2mm;
+            row-gap: 1.55mm;
             min-height: 0;
         }
 
         .products-grid--last {
             flex: 0 0 auto;
-            grid-template-rows: repeat(2, 41mm);
+            grid-template-rows: repeat(1, 43mm);
             margin-bottom: 3mm;
         }
 
@@ -547,10 +546,10 @@ const fullHtml = `<!DOCTYPE html>
             background: #ffffff;
             border: 0.28mm solid rgba(122, 0, 16, 0.2);
             border-radius: 2mm;
-            padding: 1.5mm 1.9mm;
+            padding: 1.3mm 1.7mm;
             display: flex;
             align-items: stretch;
-            gap: 2.1mm;
+            gap: 1.9mm;
             min-width: 0;
             min-height: 0;
             overflow: hidden;
@@ -558,12 +557,12 @@ const fullHtml = `<!DOCTYPE html>
         }
 
         .card-photo-wrap {
-            width: 25.5mm;
+            width: 24mm;
             flex-shrink: 0;
             background: #fbf4e5;
             border: 0.22mm solid rgba(122, 0, 16, 0.12);
             border-radius: 1.5mm;
-            padding: 1mm;
+            padding: 0.9mm;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -587,7 +586,7 @@ const fullHtml = `<!DOCTYPE html>
 
         .card-photo {
             max-width: 100%;
-            max-height: 35mm;
+            max-height: 36mm;
             width: auto;
             height: auto;
             object-fit: contain;
@@ -600,7 +599,7 @@ const fullHtml = `<!DOCTYPE html>
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            gap: 0.5mm;
+            gap: 0.45mm;
             overflow: hidden;
         }
 
@@ -621,7 +620,7 @@ const fullHtml = `<!DOCTYPE html>
             letter-spacing: 0.03em;
             color: #ffffff;
             background: var(--burgundy);
-            padding: 0.3mm 1.4mm;
+            padding: 0.25mm 1.3mm;
             border-radius: 0.9mm;
             white-space: nowrap;
             flex-shrink: 0;
@@ -629,11 +628,11 @@ const fullHtml = `<!DOCTYPE html>
 
         .cat-tag {
             font-family: "Montserrat", sans-serif;
-            font-size: 4.9pt;
+            font-size: 5pt;
             font-weight: 700;
             color: var(--olive);
             background: rgba(88, 105, 76, 0.12);
-            padding: 0.25mm 1.2mm;
+            padding: 0.22mm 1.1mm;
             border-radius: 0.8mm;
             white-space: nowrap;
             overflow: hidden;
@@ -642,10 +641,10 @@ const fullHtml = `<!DOCTYPE html>
 
         .card-title {
             font-family: "Montserrat", sans-serif;
-            font-size: 7.1pt;
+            font-size: 7.2pt;
             font-weight: 800;
             color: var(--burgundy);
-            line-height: 1.13;
+            line-height: 1.12;
             letter-spacing: -0.01em;
             flex-shrink: 0;
         }
@@ -653,12 +652,19 @@ const fullHtml = `<!DOCTYPE html>
         /* PRESENTACIONES */
         .pres-box {
             background: var(--cream-soft);
-            border-left: 0.6mm solid var(--copper);
-            padding: 0.4mm 1.1mm;
+            border-left: 0.65mm solid var(--copper);
+            padding: 0.45mm 1.1mm;
             border-radius: 0 1mm 1mm 0;
-            font-size: 5.5pt;
-            line-height: 1.16;
+            font-size: 6.4pt;
+            line-height: 1.18;
             flex-shrink: 0;
+        }
+
+        .pres-box--pills {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5mm;
         }
 
         .pres-label {
@@ -666,32 +672,33 @@ const fullHtml = `<!DOCTYPE html>
             font-weight: 800;
             color: var(--burgundy);
             text-transform: uppercase;
-            font-size: 5.1pt;
-            margin-right: 0.7mm;
+            font-size: 5.9pt;
+            margin-right: 0.5mm;
         }
 
         .pres-main {
             font-weight: 700;
-            color: #222222;
+            color: #1f1f1f;
+            font-size: 6.4pt;
         }
 
         .pres-pills {
-            display: flex;
+            display: inline-flex;
             flex-wrap: wrap;
-            gap: 0.45mm;
-            margin-top: 0.3mm;
+            align-items: center;
+            gap: 0.5mm;
         }
 
         .pres-pill {
             font-family: "Montserrat", sans-serif;
-            font-size: 4.5pt;
+            font-size: 5.7pt;
             font-weight: 700;
             color: var(--burgundy);
             background: #ffffff;
-            border: 0.18mm solid rgba(122, 0, 16, 0.25);
-            padding: 0.12mm 0.9mm;
-            border-radius: 0.6mm;
-            line-height: 1.1;
+            border: 0.2mm solid rgba(122, 0, 16, 0.3);
+            padding: 0.15mm 1.05mm;
+            border-radius: 0.7mm;
+            line-height: 1.15;
         }
 
         /* CARACTERÍSTICAS */
@@ -704,7 +711,7 @@ const fullHtml = `<!DOCTYPE html>
 
         .features-title {
             font-family: "Montserrat", sans-serif;
-            font-size: 5pt;
+            font-size: 5.7pt;
             font-weight: 800;
             text-transform: uppercase;
             color: var(--olive);
@@ -715,15 +722,15 @@ const fullHtml = `<!DOCTYPE html>
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 0.2mm;
+            gap: 0.22mm;
         }
 
         .features-list li {
-            font-size: 5.4pt;
-            line-height: 1.15;
-            color: #2f2f2f;
+            font-size: 6.35pt;
+            line-height: 1.17;
+            color: #262626;
             position: relative;
-            padding-left: 1.8mm;
+            padding-left: 1.9mm;
         }
 
         .features-list li::before {
@@ -738,8 +745,8 @@ const fullHtml = `<!DOCTYPE html>
         /* EXTRAS: COLORES Y SABORES */
         .extras-row {
             margin-top: 0.15mm;
-            font-size: 4.6pt;
-            line-height: 1.12;
+            font-size: 5.1pt;
+            line-height: 1.14;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -767,7 +774,7 @@ const fullHtml = `<!DOCTYPE html>
             border: 0.15mm solid rgba(0,0,0,0.15);
             padding: 0.08mm 0.65mm;
             border-radius: 0.5mm;
-            font-size: 4.1pt;
+            font-size: 4.5pt;
             font-weight: 700;
         }
 
@@ -781,32 +788,43 @@ const fullHtml = `<!DOCTYPE html>
 
         /* AJUSTE AUTOMÁTICO PARA TARJETAS CON MUCHO TEXTO */
         .card--medium .card-title {
-            font-size: 6.6pt;
+            font-size: 6.8pt;
         }
         .card--medium .features-list li {
-            font-size: 5pt;
-            line-height: 1.12;
+            font-size: 5.95pt;
+            line-height: 1.14;
         }
-        .card--medium .pres-box {
-            font-size: 5.1pt;
-            padding: 0.3mm 0.9mm;
+        .card--medium .pres-box,
+        .card--medium .pres-main {
+            font-size: 6.0pt;
+            padding: 0.35mm 0.95mm;
+        }
+        .card--medium .pres-label {
+            font-size: 5.6pt;
+        }
+        .card--medium .pres-pill {
+            font-size: 5.4pt;
         }
 
         .card--dense .card-title {
-            font-size: 6.1pt;
-            line-height: 1.08;
+            font-size: 6.4pt;
+            line-height: 1.09;
         }
         .card--dense .features-list li {
-            font-size: 4.55pt;
-            line-height: 1.08;
+            font-size: 5.5pt;
+            line-height: 1.11;
         }
-        .card--dense .pres-box {
-            font-size: 4.7pt;
-            padding: 0.25mm 0.8mm;
+        .card--dense .pres-box,
+        .card--dense .pres-main {
+            font-size: 5.65pt;
+            padding: 0.3mm 0.85mm;
+        }
+        .card--dense .pres-label {
+            font-size: 5.3pt;
         }
         .card--dense .pres-pill {
-            font-size: 4.1pt;
-            padding: 0.08mm 0.65mm;
+            font-size: 5.1pt;
+            padding: 0.1mm 0.8mm;
         }
 
         /* BANNER DE CIERRE EN ÚLTIMA PÁGINA */
@@ -881,13 +899,13 @@ const fullHtml = `<!DOCTYPE html>
 
         /* FOOTER */
         .page-footer {
-            margin-top: 1.4mm;
-            padding-top: 1.1mm;
+            margin-top: 1mm;
+            padding-top: 0.8mm;
             border-top: 0.25mm solid rgba(122, 0, 16, 0.2);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 5.6pt;
+            font-size: 5.5pt;
             color: #555555;
             flex-shrink: 0;
         }
@@ -904,19 +922,23 @@ ${pagesHtml}
     // Auto-adjust any card whose content slightly exceeds the fixed card height
     document.querySelectorAll('.product-card .card-body').forEach((body) => {
         let scale = 1.0;
-        while (body.scrollHeight > body.clientHeight + 1 && scale > 0.72) {
-            scale -= 0.04;
+        while (body.scrollHeight > body.clientHeight + 1 && scale > 0.78) {
+            scale -= 0.03;
             body.style.gap = (0.4 * scale) + 'mm';
             const title = body.querySelector('.card-title');
-            if (title) title.style.fontSize = (6.4 * scale) + 'pt';
+            if (title) title.style.fontSize = (6.8 * scale) + 'pt';
             const pres = body.querySelector('.pres-box');
-            if (pres) pres.style.fontSize = (4.9 * scale) + 'pt';
+            if (pres) pres.style.fontSize = (5.9 * scale) + 'pt';
+            const presMain = body.querySelector('.pres-main');
+            if (presMain) presMain.style.fontSize = (5.9 * scale) + 'pt';
+            const presLabel = body.querySelector('.pres-label');
+            if (presLabel) presLabel.style.fontSize = (5.5 * scale) + 'pt';
             body.querySelectorAll('.features-list li').forEach((li) => {
-                li.style.fontSize = (4.8 * scale) + 'pt';
-                li.style.lineHeight = '1.06';
+                li.style.fontSize = (5.8 * scale) + 'pt';
+                li.style.lineHeight = '1.11';
             });
             body.querySelectorAll('.pres-pill').forEach((pill) => {
-                pill.style.fontSize = (4.1 * scale) + 'pt';
+                pill.style.fontSize = (5.3 * scale) + 'pt';
             });
         }
     });

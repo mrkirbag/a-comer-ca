@@ -2801,95 +2801,49 @@
   },
   {
     "id": "glucosa-arco-2314-indelma-paila",
-    "name": "Jarabe de Glucosa Arco 2314 Liviana Indelma",
+    "name": "Jarabe de Glucosa Pesada Indelma",
     "brand": "Indelma",
     "category": "insumos",
     "subCategory": "Endulzantes Naturales",
     "subSubCategory": "Jarabes",
     "image": "/uploads/insumos/endulzantes/glucosa.webp",
     "features": [
-      "Jarabe de glucosa de maíz purificado de alta conversión y pureza cristalina (Línea Arco 2314)",
+      "Jarabe de glucosa pesada de maíz de alta densidad, cuerpo y poder anticristalizante (Línea Arco 2414 / 2413)",
       "Control eficaz de la cristalización de la sacarosa, aportando brillo, sedosidad y plasticidad",
-      "Presentación en paila plástica con asa y cierre hermético que facilita su manipulación y conservación",
+      "Disponible en envase de 5 kg, paila hermética (2414 de 25 kg) y tambor industrial (2413 de 280 kg)",
       "Excelente capacidad humectante que retrasa el endurecimiento y extiende la vida útil de los productos",
       "Aporta viscosidad equilibrada y mordida elástica perfecta sin opacar colores ni aromas"
     ],
-    "presentation": "5 kg, 25 kg y 280 kg",
+    "presentation": "5 kg, Paila 2414 25 kg y Tambor 2413 280 kg",
     "presentations": [
       "5 kg",
-      "25 kg",
-      "280 kg"
+      "Paila 2414 25 kg",
+      "Tambor 2413 280 kg"
     ],
     "usage": "Elaboración de fondant, pasta de goma, caramelos blandos y duros, gomitas, masmelos, brillo espejo para tortas y helados artesanales."
   },
   {
-    "id": "glucosa-arco-2414-indelma-paila",
-    "name": "Jarabe de Glucosa Arco 2414 Pesada Indelma",
-    "brand": "Indelma",
-    "category": "insumos",
-    "subCategory": "Endulzantes Naturales",
-    "subSubCategory": "Jarabes",
-    "image": "/uploads/insumos/endulzantes/glucosa.webp",
-    "features": [
-      "Jarabe de glucosa de maíz de media-alta viscosidad y gran poder anticristalizante (Línea Arco 2414)",
-      "Presentación en paila hermética ideal para obradores, pastelerías artesanales y talleres reposteros",
-      "Confiere firmeza estructural y elasticidad superior a masas de azúcar y confituras",
-      "Gran resistencia al pardeamiento térmico no deseado durante cocciones a altas temperaturas",
-      "Preserva la frescura y humedad de rellenos horneables y ganaches evitando cuarteaduras"
-    ],
-    "presentation": "5 kg, 25 kg y 280 kg",
-    "presentations": [
-      "5 kg",
-      "25 kg",
-      "280 kg"
-    ],
-    "usage": "Bombones, toffees, nougat, barras de cereal, turrones, jaleas de brillo para frutas y rellenos densos de pastelería."
-  },
-  {
     "id": "glucosa-liviana-arco-2313-indelma-tambor",
-    "name": "Jarabe de Glucosa Liviana Arco 2313 Indelma",
+    "name": "Jarabe de Glucosa Liviana Indelma",
     "brand": "Indelma",
     "category": "insumos",
     "subCategory": "Endulzantes Naturales",
     "subSubCategory": "Jarabes",
     "image": "/uploads/insumos/endulzantes/glucosa.webp",
     "features": [
-      "Jarabe de glucosa liviana de grado industrial formulado para procesos de alto volumen (Arco 2313)",
-      "Fluidez optimizada que facilita las operaciones de bombeo, transferencia y mezclado continuo",
+      "Jarabe de glucosa liviana de maíz purificado con fluidez optimizada y pureza cristalina (Línea Arco 2314 / 2313)",
+      "Facilita las operaciones de dosificación, bombeo, transferencia y mezclado homogéneo",
       "Aporta sólidos solubles controlando la presión osmótica y la actividad de agua (Aw) en formulaciones",
       "Edulcoración moderada que respeta y resalta el perfil de sabor de frutas y esencias",
-      "Suministro industrial en tambor metálico de 280 kg para líneas de producción continuas"
+      "Disponible en envase de 5 kg, paila hermética (2314 de 25 kg) y tambor industrial (2313 de 280 kg)"
     ],
-    "presentation": "5 kg, 25 kg y 280 kg",
+    "presentation": "5 kg, Paila 2314 25 kg y Tambor 2313 280 kg",
     "presentations": [
       "5 kg",
-      "25 kg",
-      "280 kg"
+      "Paila 2314 25 kg",
+      "Tambor 2313 280 kg"
     ],
     "usage": "Fabricación industrial de bebidas, jarabes para sodas y raspados, frutas en almíbar, panificación masiva, salsas y mermeladas."
-  },
-  {
-    "id": "glucosa-pesada-arco-2413-indelma-tambor",
-    "name": "Jarabe de Glucosa Pesada Arco 2413 Indelma",
-    "brand": "Indelma",
-    "category": "insumos",
-    "subCategory": "Endulzantes Naturales",
-    "subSubCategory": "Jarabes",
-    "image": "/uploads/insumos/endulzantes/glucosa.webp",
-    "features": [
-      "Jarabe de glucosa pesada de máxima densidad, cuerpo y viscosidad industrial (Arco 2413)",
-      "Poder anticristalizante insuperable requerido en formulaciones de confitería de alto impacto térmico",
-      "Soporta temperaturas de cocción elevadas en pailas y cocinadores continuos al vacío sin descomponerse",
-      "Aporta textura gomosa, masticabilidad prolongada y cuerpo denso a golosinas y dulces típicos",
-      "Empaque industrial en tambor sellado de 280 kg con garantía y estándares de calidad Indelma"
-    ],
-    "presentation": "5 kg, 25 kg y 280 kg",
-    "presentations": [
-      "5 kg",
-      "25 kg",
-      "280 kg"
-    ],
-    "usage": "Caramelos duros, piruletas, gomas de mascar, masas de turrón, arequipe y dulce de leche industrial, gomas coladas y barritas energéticas."
   },
   {
     "id": "ajinomoto-1kg",
