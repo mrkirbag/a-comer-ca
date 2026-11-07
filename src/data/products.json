@@ -77,7 +77,7 @@
   {
     "id": "molino-industrial-carne-senzani-1hp-220v",
     "name": "Molino Industrial para Carne Senzani 1HP (220V)",
-    "brand": "Senzani",
+    "brand": "Senzani Tritacarne",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/molino-industrial-carne-senzani-1hp-220v.webp",
@@ -92,7 +92,7 @@
   {
     "id": "molino-industrial-carne-senzani-110v",
     "name": "Molino Industrial para Carne Senzani (110V)",
-    "brand": "Senzani",
+    "brand": "Senzani Tritacarne",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/molino-industrial-carne-senzani-110v.webp",
@@ -107,7 +107,7 @@
   {
     "id": "molino-industrial-queso-american-1hp",
     "name": "Molino Industrial para Queso 1HP",
-    "brand": "Tritacarne",
+    "brand": "Senzani American",
     "category": "equipos",
     "subCategory": "",
     "image": "/uploads/equipos/molino-industrial-queso-american-1hp.webp",
@@ -289,6 +289,66 @@
     "usage": "Control de tiempos exactos de horneado, fermentación, frituras y cocciones en repostería y cocina."
   },
   {
+    "id": "cocina-industrial-a-gas-4-hornillas",
+    "name": "Cocina Industrial a Gas de 4 Hornillas con Plancha, Horno y Gratinador",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/cocina.webp",
+    "features": [
+      "4 hornillas a gas de alto rendimiento térmico",
+      "Funciones integradas de plancha asadora, horno y gratinador",
+      "Estructura robusta en acero inoxidable para trabajo pesado continuo"
+    ],
+    "presentation": "Unidad industrial",
+    "usage": "Cocción múltiple, asado a la plancha, horneado y gratinado en restaurantes, hoteles y comedores industriales."
+  },
+  {
+    "id": "bailarina-giratoria-decorar-tortas",
+    "name": "Bailarina Giratoria para Decorar Tortas",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/bailarina.webp",
+    "features": [
+      "Base giratoria de rotación suave y estable en 360°",
+      "Superficie nivelada que facilita el alisado y decoración uniforme",
+      "Diseño resistente y de fácil limpieza para uso en repostería"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Decoración profesional, embetunado, alisado y exhibición de tortas y pasteles en pastelerías y reposterías."
+  },
+  {
+    "id": "cortador-papas-francesas-industrial-manual",
+    "name": "Cortador de Papas Francesas Industrial y Manual",
+    "brand": "A-Comer",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/cortador-papas.webp",
+    "features": [
+      "Accionamiento manual mediante palanca de alta tracción y mínimo esfuerzo",
+      "Cuchillas de acero inoxidable para cortes rápidos, uniformes y precisos",
+      "Estructura industrial resistente con soporte para fijación en mesa o pared"
+    ],
+    "presentation": "Unidad industrial manual",
+    "usage": "Corte rápido de bastones de papas a la francesa y vegetales firmes en restaurantes, comida rápida y cocinas comerciales."
+  },
+  {
+    "id": "molino-carne-la-minerva-senzani-3hp",
+    "name": "Molino de Carne La Minerva Tritacarne 3HP",
+    "brand": "Senzani Tritacarne",
+    "category": "equipos",
+    "subCategory": "",
+    "image": "/uploads/equipos/molino-minerva.webp",
+    "features": [
+      "Motor de alta potencia de 3 HP para molienda industrial pesada",
+      "Cabezal, bandeja y estructura en acero inoxidable de grado alimenticio",
+      "Alto rendimiento continuo para grandes volúmenes de producción"
+    ],
+    "presentation": "Unidad industrial con bandeja y accesorios",
+    "usage": "Molienda intensiva de carnes en carnicerías de alto tráfico, frigoríficos, charcuterías y plantas procesadoras."
+  },
+  {
     "id": "cuchillo-chef-mundial-acero-inox",
     "name": "Cuchillo Chef Mundial Acero Inoxidable",
     "brand": "Mundial",
@@ -455,7 +515,7 @@
   },
   {
     "id": "bandeja-panadera-aluminio-acero-inox",
-    "name": "Bandeja Panadera de Aluminio y Acero Inox",
+    "name": "Bandeja Panadera de Aluminio",
     "brand": "Alumware",
     "category": "utensilios",
     "subCategory": "Bandejas",
@@ -572,6 +632,21 @@
     ],
     "presentation": "Por unidad según medida",
     "usage": "Servicio y presentación de tortas, carnes y acompañamientos."
+  },
+  {
+    "id": "bandeja-exhibicion-40x30",
+    "name": "Bandeja de Exhibición",
+    "brand": "Alumware",
+    "category": "utensilios",
+    "subCategory": "Bandejas",
+    "image": "/uploads/utensilios/bandejas/bandeja-exhibicion.webp",
+    "features": [
+      "Medidas: 40 x 30 cm",
+      "Acabado higiénico y resistente de fácil limpieza",
+      "Diseño ideal para vitrinas, mostradores y estaciones de servicio"
+    ],
+    "presentation": "Unidad (40 x 30 cm)",
+    "usage": "Exhibición y presentación de productos de panadería, pastelería, charcutería y alimentos en vitrina."
   },
   {
     "id": "olla-aluminio-tapa-hotelera",
@@ -1445,21 +1520,6 @@
     "usage": "Dispensado rápido en estaciones de hamburguesas, perros calientes y cocina."
   },
   {
-    "id": "tarocos-plasticos-pequenos",
-    "name": "Raspadores de Ollas de Teflón",
-    "brand": "A-Comer",
-    "category": "utensilios",
-    "subCategory": "Plásticos",
-    "image": "/uploads/utensilios/plasticos/tarocos.webp",
-    "features": [
-      "Ideal para no dañar la superficie de ollas o sartenes",
-      "Raspador para cualquier tipo de comida",
-      "Material plástico higiénico, reutilizable y apilable"
-    ],
-    "presentation": "Por unidad y paquetes",
-    "usage": "Guardado de colorantes, frutos secos, toppings y aderezos individuales."
-  },
-  {
     "id": "cortador-de-plastico-moldes",
     "name": "Juego de Cortadores de Plástico para Galletas y Masa",
     "brand": "Supplies",
@@ -1578,6 +1638,81 @@
     ],
     "presentation": "Por unidad / Set",
     "usage": "Trasvase limpio de aceites, esencias, jarabes, salsas, cremas y polvos hacia envases o botellas."
+  },
+  {
+    "id": "set-tazas-medidoras-supplies",
+    "name": "Set de Tazas Medidoras Supplies",
+    "brand": "Supplies",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/tazas-medidoras.webp",
+    "features": [
+      "Juego graduado con medidas claramente marcadas para repostería y cocina",
+      "Plástico resistente de grado alimenticio apto para ingredientes secos y líquidos",
+      "Diseño apilable con anilla sujetadora para almacenamiento compacto"
+    ],
+    "presentation": "Set de tazas medidoras",
+    "usage": "Medición exacta de harinas, azúcar, líquidos y porciones en panadería, pastelería y cocina general."
+  },
+  {
+    "id": "dispensador-plastico-queso-rallado",
+    "name": "Dispensador Plástico para Queso Rallado",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/dispensador.webp",
+    "features": [
+      "Tapa perforada dosificadora para espolvorear de manera uniforme",
+      "Cuerpo plástico resistente, ligero y de fácil recarga",
+      "Material higiénico lavable que conserva la frescura del contenido"
+    ],
+    "presentation": "Unidad individual",
+    "usage": "Servicio en mesa y cocina de queso parmesano rallado, especias, orégano y condimentos en pizzerías y restaurantes."
+  },
+  {
+    "id": "tarocos-plasticos",
+    "name": "Tarocos Plásticos",
+    "brand": "A-Comer",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/tarocos.webp",
+    "features": [
+      "Lámina plástica flexible y resistente de grado alimenticio",
+      "Borde recto y curvo ideal para raspar, cortar y recoger masas sin dañar mesas ni boles",
+      "Fácil limpieza, agarre cómodo y alta durabilidad en trabajo diario"
+    ],
+    "presentation": "Por unidad / Set",
+    "usage": "Manipulación, boleado y división de masas, rebañado de tazones y alisado en panadería y repostería."
+  },
+  {
+    "id": "canasta-multiusos-marron-sanremo-746ml",
+    "name": "Canasta Multiusos Marrón 746ml (Set de 4)",
+    "brand": "Sanremo",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/canastas.webp",
+    "features": [
+      "Capacidad individual de 746 ml en acabado color marrón",
+      "Plástico resistente, libre de BPA y de fácil lavado",
+      "Diseño calado ventilado y apilable para optimizar el espacio"
+    ],
+    "presentation": "Set de 4 unidades (746 ml)",
+    "usage": "Organización de cocina, servicio de pan, cubiertos, sobres, snacks y almacenamiento multiusos."
+  },
+  {
+    "id": "canastillas-sanremo-multiusos-set-4",
+    "name": "Canastillas Multiusos Sanremo (Set de 4)",
+    "brand": "Sanremo",
+    "category": "utensilios",
+    "subCategory": "Plásticos",
+    "image": "/uploads/utensilios/plasticos/canastillas.webp",
+    "features": [
+      "Juego de 4 canastillas plásticas versátiles y duraderas",
+      "Estructura ligera con bordes cómodos para fácil manipulación",
+      "Apilables e higiénicas para uso comercial y doméstico"
+    ],
+    "presentation": "Set de 4 unidades",
+    "usage": "Clasificación de insumos, organización de estaciones de trabajo, barras, despensas y servicio en mesa."
   },
   {
     "id": "chefandish-para-mariscos",
@@ -2781,7 +2916,7 @@
   },
   {
     "id": "maltodextrina-arco-sol-20-indelma",
-    "name": "Maltodextrina Arco Sol 20 Indelma",
+    "name": "Maltodextrina Arcosol 20 Indelma",
     "brand": "Indelma",
     "category": "insumos",
     "subCategory": "Endulzantes Naturales",
@@ -3266,7 +3401,7 @@
       "Formato uniforme de hebras finas que aportan volumen y acabado profesional a creaciones reposteras",
       "Excelente palatabilidad con textura crujiente sin dejar residuos grasos en boca"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "Bolsa de 500g y 1 kg",
     "presentations": [
       "1 kg"
     ],
@@ -3326,9 +3461,9 @@
       "Perfil aromático lácteo y avainillado con cremosa textura al morder",
       "Tamaño calibrado perfecto para distribución homogénea en masas densas y batidos"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "Bolsa de 500g",
     "presentations": [
-      "1 kg"
+      "500g"
     ],
     "usage": "Cookies estilo americano, blondies, muffins, panes dulces, panettones, bizcochos y decoración en frío."
   },
@@ -3346,9 +3481,9 @@
       "Intensidad de cacao balanceada que contrasta armónicamente con masas dulces",
       "Presentación profesional de 1 kg en empaque protegido contra la humedad y luz"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "Bolsa de 500g",
     "presentations": [
-      "1 kg"
+      "500g"
     ],
     "usage": "Galletas con chispas de chocolate, panettone de chocolate (chocottone), brownies, waffles y mezcla de frutos secos."
   },
@@ -3366,9 +3501,9 @@
       "Aroma achocolatado pronunciado y color tostado cálido",
       "Formato versátil para uso tanto dentro de horneados como en decoración superficial"
     ],
-    "presentation": "Bolsa de 1 kg",
+    "presentation": "Bolsa de 500g",
     "presentations": [
-      "1 kg"
+      "500g"
     ],
     "usage": "Panadería dulce, galletas artesanales, muffins infantiles, panquecas, granola gourmet y topping de helados."
   },
@@ -3386,9 +3521,10 @@
       "Sabor suave a vainilla y leche que admite colorantes liposolubles para teñir en repostería artística",
       "Presentación práctica en barra de 250 g fraccionable para formulaciones exactas"
     ],
-    "presentation": "Barra de 250 g",
+    "presentation": "Barra de 250g y 500g",
     "presentations": [
-      "250 g"
+      "250g",
+      "500g"
     ],
     "usage": "Moldeo de figuras huecas, bombones, paletas de pastel (cakesicles), cake pops, bañado de galletas y ganaches claros."
   },
@@ -3406,9 +3542,10 @@
       "Sabor pronunciado a cacao con elegante equilibrio entre amargor y dulzor",
       "Fácil manipulación sin complicaciones de atemperado, ideal para producción ágil"
     ],
-    "presentation": "Barra de 250 g",
+    "presentation": "Barra de 250g y 500g",
     "presentations": [
-      "250 g"
+      "250g",
+      "500g"
     ],
     "usage": "Bañado de tortas, alfajores, trufas, fresas con chocolate, donas gourmet, barquillas y decoración con filigranas."
   },
@@ -3426,9 +3563,10 @@
       "Sabor clásico y cremoso favorito en pastelería tradicional",
       "Formato en barra de 250 g con divisiones para corte rápido y pesado preciso"
     ],
-    "presentation": "Barra de 250 g",
+    "presentation": "Barra de 250g y 500g",
     "presentations": [
-      "250 g"
+      "250g",
+      "500g"
     ],
     "usage": "Bañado de ponqués, alfajores, galletas decoradas, chocolatería artesanal, rellenos cremosos y ganaches de cobertura."
   },
@@ -3446,8 +3584,9 @@
       "Resistente a altas temperaturas de cocción, manteniendo su humedad y jugosidad interna",
       "Presentación económica y rendidora de 5 kg para panadería, pastelería y repostería profesional"
     ],
-    "presentation": "Caja de 5 kg",
+    "presentation": "Bolsa de 1 kg y Caja de 5 kg",
     "presentations": [
+      "1 kg",
       "5 kg"
     ],
     "usage": "Ingrediente imprescindible en panettone tradicional, roscas de reyes, tortas negras navideñas, ponqués de frutas y galletas."
@@ -3466,8 +3605,9 @@
       "Ideal para mezclas de frutos confitados (tutti frutti) de alta durabilidad sin fermentar",
       "Formato a granel de 5 kg listo para incorporar directamente en masas y batidos"
     ],
-    "presentation": "Caja de 5 kg",
+    "presentation": "Bolsa de 1 kg y Caja de 5 kg",
     "presentations": [
+      "1 kg",
       "5 kg"
     ],
     "usage": "Elaboración de panettone, pan de pasas y frutas, queques navideños, torta de navidad, panes dulces y heladería."
@@ -3486,8 +3626,9 @@
       "Conserva su consistencia y color vivo tanto en horneado como en refrigeración",
       "Suministro comercial de 5 kg indispensable en la temporada de panadería navideña y festiva"
     ],
-    "presentation": "Caja de 5 kg",
+    "presentation": "Bolsa de 1 kg y Caja de 5 kg",
     "presentations": [
+      "1 kg",
       "5 kg"
     ],
     "usage": "Panettone tradicional milanés, roscas trenzadas de pascua, pan dulce festivo, budines ingleses y turrones."
@@ -3596,14 +3737,14 @@
   },
   {
     "id": "mani-natural-1kg-5kg",
-    "name": "Maní Natural Seleccionado",
+    "name": "Maní Natural Picado o Triturado",
     "brand": "A-Comer",
     "category": "insumos",
     "subCategory": "Frutas",
     "subSubCategory": "Frutas en Conserva",
     "image": "/uploads/insumos/frutas/mani.webp",
     "features": [
-      "Granos de maní natural de primera calidad seleccionados por su tamaño uniforme y frescura superior",
+      "Granos de maní natural picado de primera calidad seleccionados por su tamaño uniforme y frescura superior",
       "Textura sumamente crujiente e intenso sabor al tostar, libre de impurezas, granos partidos o rancidez",
       "Fuente rica en proteínas y grasas saludables que aporta cuerpo, mordida y valor gastronómico a las recetas",
       "Presentación comercial en bolsas de 1 kg y 5 kg adaptada al consumo de obradores, heladerías y cocinas"
@@ -3676,29 +3817,29 @@
   },
   {
     "id": "aceitunas-linea-verde",
-    "name": "Aceitunas Seleccionadas",
+    "name": "Aceitunas Rellenas",
     "brand": "A-Comer",
     "category": "insumos",
     "subCategory": "Línea Verde",
     "image": "/uploads/insumos/linea-verde/aceitunas.webp",
-    "description": "Aceitunas de primera calidad, carnosas y de sabor equilibrado, protagonistas indispensables en la elaboración del tradicional pan de jamón y las hallacas venezolanas, así como en pizzas, ensaladas, guisos y pasapalos.",
+    "description": "Aceitunas rellenas de primera calidad, carnosas y de sabor equilibrado, protagonistas indispensables en la elaboración del tradicional pan de jamón y las hallacas venezolanas, así como en pizzas, ensaladas, guisos y pasapalos.",
     "features": [
       "Ingrediente estrella e infaltable para la preparación de hallacas tradicionales y pan de jamón navideño",
       "Pulpa firme, carnosa y jugosa conservada en salmuera balanceada que mantiene su textura durante el horneado y la cocción",
       "Ideales para enriquecer guisos navideños, asado negro, carne mechada, pizzas, focaccias, pastas mediterráneas y ensaladas",
       "Disponibles en presentaciones comerciales e industriales de 1 kg, 5 kg y 25 kg para panaderías, restaurantes y catering"
     ],
-    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentation": "1 kg, 15 kg y 55 kg",
     "presentations": [
       "1 kg",
-      "5 kg",
-      "25 kg"
+      "15 kg",
+      "55 kg"
     ],
     "usage": "Elaboración de pan de jamón, adorno y guiso de hallacas, bollos navideños, pizzas, empanadas, ensalada de gallina, pastas, antipastos y pasapalos."
   },
   {
     "id": "alcaparras-linea-verde",
-    "name": "Alcaparras Seleccionadas",
+    "name": "Alcaparras en Sal",
     "brand": "A-Comer",
     "category": "insumos",
     "subCategory": "Línea Verde",
@@ -3710,17 +3851,16 @@
       "Botones florales firmes y seleccionados que realzan el sabor de carnes, aves, pescados, mariscos y antipastos",
       "Presentaciones rendidoras de 1 kg, 5 kg y 25 kg adaptadas a cocinas profesionales, panaderías y procesadores de salsas"
     ],
-    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentation": "1 kg y 15 kg",
     "presentations": [
       "1 kg",
-      "5 kg",
-      "25 kg"
+      "15 kg"
     ],
     "usage": "Guiso y armado de hallacas, preparación de salsa tártara, salsa puttanesca para pastas, pollo o pescado al limón y alcaparras (piccata), asado negro, antipastos y ensaladas."
   },
   {
     "id": "uva-pasa-linea-verde",
-    "name": "Uva Pasa Seleccionada",
+    "name": "Uva Pasa",
     "brand": "A-Comer",
     "category": "insumos",
     "subCategory": "Línea Verde",
@@ -3732,11 +3872,10 @@
       "Excelente comportamiento en horneado y maceración con licores para torta negra navideña, panettone, roles de canela y galletas",
       "Empaques comerciales de 1 kg, 5 kg y 25 kg que preservan su humedad, frescura y suavidad"
     ],
-    "presentation": "1 kg, 5 kg y 25 kg",
+    "presentation": "1 kg y 10 kg",
     "presentations": [
       "1 kg",
-      "5 kg",
-      "25 kg"
+      "10 kg"
     ],
     "usage": "Pan de jamón, hallacas, torta negra navideña, panettone, roscas dulces, golfeados, galletas de avena, arroz con leche, helado de ron con pasas y rellenos de carnes."
   },
@@ -3987,6 +4126,43 @@
     "usage": "Exhibición y entrega de tortas completas, cheesecakes, brazos gitanos, tartas frutales y roscas."
   },
   {
+    "id": "barquito-plastico-banana-split-zupla",
+    "name": "Barquito Plástico para Banana Split Zupla (x240 und)",
+    "brand": "Zupla",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/barquito.webp",
+    "features": [
+      "Diseño alargado tipo barquito ideal para porciones de helado, banana split y postres",
+      "Plástico resistente de grado alimenticio que soporta bajas temperaturas, siropes y toppings",
+      "Presentación comercial en caja de 240 unidades apilables para ahorro de espacio"
+    ],
+    "presentation": "Caja x 240 unidades",
+    "presentations": [
+      "Caja x 240 unidades"
+    ],
+    "usage": "Servicio de banana split, helados con toppings, fresas con crema, degustaciones, tequeños y postres en heladerías y fuentes de soda."
+  },
+  {
+    "id": "contenedor-triangular-bisagra-selva",
+    "name": "Contenedor Triangular con Bisagra Selva (Alto y Bajo)",
+    "brand": "Selva",
+    "category": "desechables",
+    "subCategory": "Envases",
+    "image": "/uploads/desechables/envases/contenedor-triangular.webp",
+    "features": [
+      "Disponible en versiones Alto y Bajo para adaptarse a la altura de cada porción",
+      "Formato triangular transparente con tapa abisagrada de cierre hermético a presión",
+      "Visibilidad cristalina que realza las capas de tortas, cheesecakes y postres en vitrina"
+    ],
+    "presentation": "Modelos Alto y Bajo",
+    "presentations": [
+      "Triangular Alto",
+      "Triangular Bajo"
+    ],
+    "usage": "Empaque, exhibición y venta individual de porciones de tortas, tartas, pies, cheesecakes, quesillos y sándwiches."
+  },
+  {
     "id": "platos-plasticos-desechables",
     "name": "Platos Plásticos Desechables (N° 5, 6, 7 y 8)",
     "brand": "A-Comer",
@@ -4019,9 +4195,14 @@
       "Pared estriada que proporciona agarre firme y resistencia estructural sin colapsar",
       "Borde enrollado suave compatible con tapas plásticas herméticas"
     ],
-    "presentation": "Paquete x 50 unidades / Bulto",
+    "presentation": "Caja",
     "presentations": [
-      "Vaso 127SS 12 oz (x50 und)"
+      "3 oz",
+      "5 oz",
+      "8 oz",
+      "10 oz",
+      "12 oz",
+      "16 oz"
     ],
     "usage": "Servicio de jugos naturales, refrescos, tizanas, merengadas, café frío, chicha y bebidas para llevar."
   },
@@ -4063,10 +4244,9 @@
     ],
     "presentation": "Paquetes por modelo (Colores surtidos y Negros)",
     "presentations": [
-      "Colores Surtidos (x100 und)",
-      "Frappé Negros 7 1/2\" (x80 und)",
-      "Negro Envuelto 10 1/2\" (x80 und)",
-      "Removedores de Colores"
+      "Colores Surtidos",
+      "Negro Envuelto",
+      "Removedores negros"
     ],
     "usage": "Servicio de frappés, merengadas, smoothies, cócteles, refrescos y agitación de bebidas en cafeterías."
   },
@@ -4088,6 +4268,24 @@
       "Removedores Blancos"
     ],
     "usage": "Servicio higiénico de jugos, refrescos, agua, café e infusiones en panaderías, restaurantes y eventos."
+  },
+  {
+    "id": "vasos-conicos-plasticos-selva",
+    "name": "Caja de Vasos Cónicos Plásticos Selva",
+    "brand": "Selva",
+    "category": "desechables",
+    "subCategory": "Platos y Vasos",
+    "image": "/uploads/desechables/platos-vasos/vasos-conicos.webp",
+    "features": [
+      "Diseño cónico ergonómico compatible con dispensadores tubulares de pared y botellones",
+      "Plástico higiénico, liviano y resistente que evita el uso reutilizado en áreas comunes",
+      "Presentación institucional en caja de alto rendimiento para gran tráfico de usuarios"
+    ],
+    "presentation": "Caja institucional",
+    "presentations": [
+      "Caja"
+    ],
+    "usage": "Suministro de agua potable en dispensadores de oficinas, clínicas, consultorios, gimnasios, comedores y salas de espera."
   },
   {
     "id": "discos-de-carton-para-tortas",
@@ -4131,7 +4329,7 @@
   },
   {
     "id": "papel-de-aluminio-alumware-80m",
-    "name": "Papel de Aluminio Gastronómico Alumware (80 metros)",
+    "name": "Papel de Aluminio Multiusos Alumware (80 metros)",
     "brand": "Alumware",
     "category": "desechables",
     "subCategory": "Papel",
@@ -4192,8 +4390,8 @@
   },
   {
     "id": "papel-envoplast-polifilm-1500m",
-    "name": "Papel Envoplast Polifilm (1500m x 34cm)",
-    "brand": "Polifilm",
+    "name": "Papel Envoplast (1500m x 34cm)",
+    "brand": "A-Comer",
     "category": "desechables",
     "subCategory": "Papel",
     "image": "/uploads/desechables/papel/papel-envoplast.webp",
@@ -4219,6 +4417,24 @@
     ],
     "presentation": "Por Kilogramo (Kg)",
     "usage": "Envoltura higiénica de pan caliente, pastelería, charcutería, forrado de cestas de comida rápida y despacho."
+  },
+  {
+    "id": "guantes-plasticos-bolsa-mr-brite",
+    "name": "Guantes Plásticos de Bolsa Mr. Brite (x100 und)",
+    "brand": "Mr. Brite",
+    "category": "desechables",
+    "subCategory": "Papel",
+    "image": "/uploads/desechables/papel/guantes-desechables.webp",
+    "features": [
+      "Guantes desechables de polietileno transparente ambidiestros de fácil colocación",
+      "Aptos para manipulación higiénica de alimentos evitando el contacto directo con las manos",
+      "Empaque práctico de 100 unidades ideal para estaciones de preparación y despacho"
+    ],
+    "presentation": "Paquete x 100 unidades",
+    "presentations": [
+      "Paquete x 100 unidades"
+    ],
+    "usage": "Manipulación sanitaria de alimentos en panaderías, charcuterías, restaurantes, preparación de ensaladas y autoservicios."
   },
   {
     "id": "alcohol-solido-lata-carton",

@@ -34,7 +34,7 @@ for rel in unique_imgs:
     src = os.path.join('public', rel.lstrip('/'))
     key = rel.lstrip('/').replace('/', '__').replace('.webp', '.jpg').replace('.png', '.jpg')
     dst = os.path.join(out_dir, key)
-    if not os.path.exists(dst):
+    if not os.path.exists(dst) or os.path.getmtime(src) > os.path.getmtime(dst):
         with Image.open(src) as im:
             im = im.convert('RGBA')
             im.thumbnail((420, 420), Image.Resampling.LANCZOS)
